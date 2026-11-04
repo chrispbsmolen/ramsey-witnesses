@@ -1,0 +1,22 @@
+parameters,source,where_claimed
+"4,15",alphaevolve,repository file only (paper claims 159)
+"3,17",alphaevolve,repository file only (the paper's table lists 92)
+"4,16",alphaevolve,NaRT v5 abstract (arXiv:2603.09172v5)
+"4,18",alphaevolve,NaRT v5 abstract (arXiv:2603.09172v5)
+"4,19",alphaevolve,NaRT v5 abstract (arXiv:2603.09172v5)
+"4,20",alphaevolve,NaRT v5 abstract (arXiv:2603.09172v5)
+"4,21",alphaevolve,repository file only (not in the paper)
+"6,8",fritzcremer,"arXiv:2610.12122 (October 2026), repository README"
+"3,24",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,25",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,26",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,28",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,29",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,30",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,31",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,32",furini_certificates,"arXiv:2608.18769v1 (19 August 2026), Table 7"
+"3,3,9",lachy_dauth,"preprint and README in the repository (commit of 26 October 2026)"
+"3,3,11",lachy_dauth,"preprint and README in the repository (commit of 26 October 2026)"
+"3,3,12",lachy_dauth,"preprint and README in the repository (commit of 26 October 2026)"
+"3,3,13",lachy_dauth,"preprint and README in the repository (commit of 26 October 2026)"
+"3,3,14",lachy_dauth,"preprint and README in the repository (commit of 26 October 2026)"

@@ -1,0 +1,4 @@
+constructions/cubic127_R4_12.g6: n = 127, clique number 3 (< 4, ok), independence number 11 (< 12, ok)
+fritzcremer/R6_8/n134-gpt-6.1-sol.g6: n = 134, clique number 5 (< 6, ok), independence number 7 (< 8, ok)
+alphaevolve/R(3, 13) >= 61.txt: n = 60, clique number 2 (< 3, ok), independence number 12 (< 13, ok)
+alphaevolve/R(4, 15) >= 163.txt: n = 162, clique number 3 (< 4, ok), independence number 14 (< 15, ok)

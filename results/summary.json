@@ -1,0 +1,1416 @@
+{
+ "manifest_witnesses": 213,
+ "committed": 32,
+ "ledger_verdicts": {
+  "PARTIAL": 3,
+  "PASS": 184,
+  "NOT_COMPLETED": 1,
+  "NOT_CHECKED": 25
+ },
+ "ledger_by_source": {
+  "alphaevolve": {
+   "PARTIAL": 3,
+   "PASS": 15
+  },
+  "constructed_here": {
+   "PASS": 9
+  },
+  "exoo_site": {
+   "PASS": 19
+  },
+  "exoo_tatarevic2015": {
+   "PASS": 28
+  },
+  "fritzcremer": {
+   "PASS": 1,
+   "NOT_CHECKED": 6
+  },
+  "furini_certificates": {
+   "PASS": 28,
+   "NOT_CHECKED": 17
+  },
+  "kuznetsov_table2": {
+   "PASS": 13
+  },
+  "lachy_dauth": {
+   "PASS": 5,
+   "NOT_CHECKED": 1
+  },
+  "mckay": {
+   "PASS": 62
+  },
+  "tatarevic2016": {
+   "NOT_COMPLETED": 1,
+   "NOT_CHECKED": 1,
+   "PASS": 4
+  }
+ },
+ "graphs_pass": 12492,
+ "coverage": {
+  "two-colour, k <= l <= 15": {
+   "VERIFIED": 46,
+   "NO_FILE_FOUND": 6,
+   "RECIPE": 13,
+   "PARTIAL": 2,
+   "NO_SURVEY_BOUND": 3
+  },
+  "two-colour, l > 15": {
+   "RECIPE": 11,
+   "NO_FILE_FOUND": 25,
+   "VERIFIED": 19,
+   "PARTIAL": 18
+  },
+  "multicolour": {
+   "VERIFIED": 14,
+   "NO_FILE_FOUND": 42,
+   "RECIPE": 8
+  }
+ },
+ "survey_cells_with_lower_bound": 204,
+ "exceeds": [
+  {
+   "parameters": "4,15",
+   "survey_lower": 159,
+   "survey_tables": "Ia",
+   "other_table_values": "IIa lists 158",
+   "verified": 163,
+   "witness": "alphaevolve/R(4, 15) >= 163.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "6,8",
+   "survey_lower": 134,
+   "survey_tables": "Ia",
+   "other_table_values": "",
+   "verified": 135,
+   "witness": "fritzcremer/R6_8/n134-gpt-6.1-sol.g6",
+   "source": "fritzcremer"
+  },
+  {
+   "parameters": "3,17",
+   "survey_lower": 92,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 93,
+   "witness": "alphaevolve/R(3, 17) >= 93.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "4,16",
+   "survey_lower": 170,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 174,
+   "witness": "alphaevolve/R(4, 16) >= 174.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "4,18",
+   "survey_lower": 205,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 209,
+   "witness": "alphaevolve/R(4, 18) >= 209.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "4,19",
+   "survey_lower": 213,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 219,
+   "witness": "alphaevolve/R(4, 19) >= 219.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "4,20",
+   "survey_lower": 234,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 237,
+   "witness": "alphaevolve/R(4, 20) >= 237.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "4,21",
+   "survey_lower": 242,
+   "survey_tables": "IIa",
+   "other_table_values": "",
+   "verified": 244,
+   "witness": "alphaevolve/R(4,21)>=244.txt",
+   "source": "alphaevolve"
+  },
+  {
+   "parameters": "3,24",
+   "survey_lower": 143,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 151,
+   "witness": "furini/R_3_24_graphSize_150.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,25",
+   "survey_lower": 154,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 160,
+   "witness": "furini/R_3_25_graphSize_159.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,26",
+   "survey_lower": 161,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 163,
+   "witness": "furini/R_3_26_graphSize_162.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,28",
+   "survey_lower": 179,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 181,
+   "witness": "furini/R_3_28_graphSize_180.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,29",
+   "survey_lower": 190,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 194,
+   "witness": "furini/R_3_29_graphSize_193.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,30",
+   "survey_lower": 197,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 199,
+   "witness": "furini/R_3_30_graphSize_198.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,31",
+   "survey_lower": 208,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 210,
+   "witness": "furini/R_3_31_graphSize_209.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,32",
+   "survey_lower": 217,
+   "survey_tables": "IIb",
+   "other_table_values": "",
+   "verified": 219,
+   "witness": "furini/R_3_32_graphSize_218.clq",
+   "source": "furini_certificates"
+  },
+  {
+   "parameters": "3,3,9",
+   "survey_lower": 129,
+   "survey_tables": "XIb",
+   "other_table_values": "",
+   "verified": 133,
+   "witness": "lachy_dauth/circulants.json#0",
+   "source": "lachy_dauth"
+  },
+  {
+   "parameters": "3,3,11",
+   "survey_lower": 174,
+   "survey_tables": "XIb",
+   "other_table_values": "",
+   "verified": 183,
+   "witness": "lachy_dauth/circulants.json#1",
+   "source": "lachy_dauth"
+  },
+  {
+   "parameters": "3,3,12",
+   "survey_lower": 194,
+   "survey_tables": "XIb",
+   "other_table_values": "",
+   "verified": 203,
+   "witness": "lachy_dauth/circulants.json#2",
+   "source": "lachy_dauth"
+  },
+  {
+   "parameters": "3,3,13",
+   "survey_lower": 217,
+   "survey_tables": "XIb",
+   "other_table_values": "",
+   "verified": 232,
+   "witness": "lachy_dauth/circulants.json#3",
+   "source": "lachy_dauth"
+  },
+  {
+   "parameters": "3,3,14",
+   "survey_lower": 242,
+   "survey_tables": "XIb",
+   "other_table_values": "",
+   "verified": 267,
+   "witness": "lachy_dauth/circulants.json#4",
+   "source": "lachy_dauth"
+  }
+ ],
+ "unverified_above_survey": [
+  {
+   "parameters": "7,13",
+   "survey_lower": 511,
+   "claimed": 513,
+   "witness": "alphaevolve/R(7, 13) >= 513.txt",
+   "check": "PARTIAL: no K_7 only"
+  },
+  {
+   "parameters": "8,10",
+   "survey_lower": 343,
+   "claimed": 345,
+   "witness": "fritzcremer/R8_10/n344-gpt-6.1-sol-1.g6",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "10,12",
+   "survey_lower": null,
+   "claimed": 856,
+   "witness": "alphaevolve/R(10, 12) >= 856.txt",
+   "check": "PARTIAL: no K_10 only"
+  },
+  {
+   "parameters": "8,18",
+   "survey_lower": 1049,
+   "claimed": 1052,
+   "witness": "alphaevolve/R(8, 18) >= 1052.txt",
+   "check": "PARTIAL: no K_8 only"
+  },
+  {
+   "parameters": "3,33",
+   "survey_lower": 227,
+   "claimed": 230,
+   "witness": "furini/R_3_33_graphSize_229.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,34",
+   "survey_lower": 234,
+   "claimed": 239,
+   "witness": "furini/R_3_34_graphSize_238.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,35",
+   "survey_lower": 248,
+   "claimed": 253,
+   "witness": "furini/R_3_35_graphSize_252.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,36",
+   "survey_lower": 255,
+   "claimed": 261,
+   "witness": "furini/R_3_36_graphSize_260.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,37",
+   "survey_lower": 267,
+   "claimed": 272,
+   "witness": "furini/R_3_37_graphSize_271.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,38",
+   "survey_lower": 278,
+   "claimed": 281,
+   "witness": "furini/R_3_38_graphSize_280.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,39",
+   "survey_lower": 290,
+   "claimed": 294,
+   "witness": "furini/R_3_39_graphSize_293.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,40",
+   "survey_lower": 298,
+   "claimed": 305,
+   "witness": "furini/R_3_40_graphSize_304.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,41",
+   "survey_lower": 311,
+   "claimed": 317,
+   "witness": "furini/R_3_41_graphSize_316.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,42",
+   "survey_lower": 320,
+   "claimed": 327,
+   "witness": "furini/R_3_42_graphSize_326.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,43",
+   "survey_lower": 333,
+   "claimed": 340,
+   "witness": "furini/R_3_43_graphSize_339.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,44",
+   "survey_lower": 339,
+   "claimed": 348,
+   "witness": "furini/R_3_44_graphSize_347.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,45",
+   "survey_lower": 354,
+   "claimed": 364,
+   "witness": "furini/R_3_45_graphSize_363.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,46",
+   "survey_lower": 362,
+   "claimed": 371,
+   "witness": "furini/R_3_46_graphSize_370.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,47",
+   "survey_lower": 380,
+   "claimed": 385,
+   "witness": "furini/R_3_47_graphSize_384.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,48",
+   "survey_lower": 384,
+   "claimed": 391,
+   "witness": "furini/R_3_48_graphSize_390.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,49",
+   "survey_lower": 402,
+   "claimed": 411,
+   "witness": "furini/R_3_49_graphSize_410.clq",
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,3,15",
+   "survey_lower": 269,
+   "claimed": 278,
+   "witness": "lachy_dauth/R_3_3_15_n277_compact.json",
+   "check": "NOT_CHECKED: none"
+  }
+ ],
+ "no_survey_bound_verified": [
+  {
+   "parameters": "8,12",
+   "verified": 511,
+   "witness": "alphaevolve/R(8, 12) >= 511.txt"
+  },
+  {
+   "parameters": "9,11",
+   "verified": 617,
+   "witness": "alphaevolve/R(9, 11) >= 617.txt"
+  }
+ ],
+ "no_public_witness": [
+  {
+   "parameters": "3,14",
+   "survey_lower": 67,
+   "lower_ref": "Kol2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "64"
+  },
+  {
+   "parameters": "4,10",
+   "survey_lower": 92,
+   "lower_ref": "HaKr1",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,7",
+   "survey_lower": 80,
+   "lower_ref": "CaET",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,8",
+   "survey_lower": 101,
+   "lower_ref": "HaKr1",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,15",
+   "survey_lower": 275,
+   "lower_ref": "2.3.h",
+   "status": "RECIPE",
+   "best_verified": "269"
+  },
+  {
+   "parameters": "6,13",
+   "survey_lower": 347,
+   "lower_ref": "Kuz",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,15",
+   "survey_lower": 401,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,11",
+   "survey_lower": 405,
+   "lower_ref": "XXER",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,12",
+   "survey_lower": 417,
+   "lower_ref": "XSR2",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,9",
+   "survey_lower": 329,
+   "lower_ref": "Kuz",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,11",
+   "survey_lower": 457,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,13",
+   "survey_lower": 817,
+   "lower_ref": "XXER",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,15",
+   "survey_lower": 873,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "9,10",
+   "survey_lower": 581,
+   "lower_ref": "XSR2",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "10,15",
+   "survey_lower": 1313,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "11,11",
+   "survey_lower": 1597,
+   "lower_ref": "2.2.c",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "13,13",
+   "survey_lower": 2557,
+   "lower_ref": "2.2.c",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "14,14",
+   "survey_lower": 2989,
+   "lower_ref": "2.2.c",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "15,15",
+   "survey_lower": 5485,
+   "lower_ref": "2.2.c",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "16,16",
+   "survey_lower": 5605,
+   "lower_ref": "2.2.c",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "17,17",
+   "survey_lower": 8917,
+   "lower_ref": "LuSL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "18,18",
+   "survey_lower": 11005,
+   "lower_ref": "LuSL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "19,19",
+   "survey_lower": 17885,
+   "lower_ref": "LuSL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "20,20",
+   "survey_lower": 21725,
+   "lower_ref": "Ex23",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "21,21",
+   "survey_lower": 30925,
+   "lower_ref": "Ex23",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "22,22",
+   "survey_lower": 39109,
+   "lower_ref": "Ex23",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "23,23",
+   "survey_lower": 49421,
+   "lower_ref": "Ex23",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,21",
+   "survey_lower": 122,
+   "lower_ref": "W1+",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,22",
+   "survey_lower": 131,
+   "lower_ref": "W2+",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,23",
+   "survey_lower": 139,
+   "lower_ref": "XWCS",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,17",
+   "survey_lower": 200,
+   "lower_ref": "Lia+",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,22",
+   "survey_lower": 314,
+   "lower_ref": "LinCa",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,17",
+   "survey_lower": 388,
+   "lower_ref": "XSR2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,18",
+   "survey_lower": 396,
+   "lower_ref": "2.3.h",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,19",
+   "survey_lower": 411,
+   "lower_ref": "XSR2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,20",
+   "survey_lower": 424,
+   "lower_ref": "XSR2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,21",
+   "survey_lower": 441,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,22",
+   "survey_lower": 492,
+   "lower_ref": "Ihr",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,23",
+   "survey_lower": 521,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,16",
+   "survey_lower": 434,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,17",
+   "survey_lower": 548,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,18",
+   "survey_lower": 614,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,19",
+   "survey_lower": 710,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,20",
+   "survey_lower": 878,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,21",
+   "survey_lower": 888,
+   "lower_ref": "2.3.h",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,22",
+   "survey_lower": 1070,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,16",
+   "survey_lower": 629,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,17",
+   "survey_lower": 729,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,18",
+   "survey_lower": 797,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,19",
+   "survey_lower": 908,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,21",
+   "survey_lower": 1214,
+   "lower_ref": "SLLL",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,17",
+   "survey_lower": 1005,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,19",
+   "survey_lower": 1237,
+   "lower_ref": "2.2.h",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,21",
+   "survey_lower": 1617,
+   "lower_ref": "2.3.i",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,27",
+   "survey_lower": 172,
+   "lower_ref": "LiLi",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,5,5",
+   "survey_lower": 454,
+   "lower_ref": "Ex23",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "415"
+  },
+  {
+   "parameters": "6,6,6",
+   "survey_lower": 1106,
+   "lower_ref": "Row3",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,7,7",
+   "survey_lower": 3214,
+   "lower_ref": "XuR1",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,8,8",
+   "survey_lower": 7174,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "9,9,9",
+   "survey_lower": 15041,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "10,10,10",
+   "survey_lower": 23094,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3",
+   "survey_lower": 51,
+   "lower_ref": "Chu1",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,4,4,4",
+   "survey_lower": 634,
+   "lower_ref": "XXER",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "578"
+  },
+  {
+   "parameters": "5,5,5,5",
+   "survey_lower": 4073,
+   "lower_ref": "Row3",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,6,6,6",
+   "survey_lower": 23502,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "7,7,7,7",
+   "survey_lower": 94874,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,8,8,8",
+   "survey_lower": 182002,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "9,9,9,9",
+   "survey_lower": 719204,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3,3",
+   "survey_lower": 162,
+   "lower_ref": "Ex10",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,4,4,4,4",
+   "survey_lower": 4176,
+   "lower_ref": "Row1",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,5,5,5,5",
+   "survey_lower": 41626,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,6,6,6,6",
+   "survey_lower": 258506,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3,3,3",
+   "survey_lower": 538,
+   "lower_ref": "FreSw",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,4,4,4,4,4",
+   "survey_lower": 32006,
+   "lower_ref": "Row1",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "5,5,5,5,5,5",
+   "survey_lower": 441606,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3,3,3,3",
+   "survey_lower": 1698,
+   "lower_ref": "Row4",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "4,4,4,4,4,4,4",
+   "survey_lower": 160024,
+   "lower_ref": "Row1",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3,3,3,3,3",
+   "survey_lower": 5288,
+   "lower_ref": "Row3",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,3,3,3,3,3,3",
+   "survey_lower": 17805,
+   "lower_ref": "AgCP+",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,4",
+   "survey_lower": 30,
+   "lower_ref": "Ka2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,5",
+   "survey_lower": 45,
+   "lower_ref": "Ex2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,7",
+   "survey_lower": 85,
+   "lower_ref": "Ex18",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "79"
+  },
+  {
+   "parameters": "3,3,8",
+   "survey_lower": 103,
+   "lower_ref": "Ex18",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,4,4",
+   "survey_lower": 55,
+   "lower_ref": "KrLR",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,4,6",
+   "survey_lower": 117,
+   "lower_ref": "Ex17",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,4,8",
+   "survey_lower": 193,
+   "lower_ref": "6.2.g",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,5,5",
+   "survey_lower": 139,
+   "lower_ref": "Ex17",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,5,6",
+   "survey_lower": 181,
+   "lower_ref": "Ex17",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,5,7",
+   "survey_lower": 241,
+   "lower_ref": "6.2.g",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,4",
+   "survey_lower": 97,
+   "lower_ref": "Ex17",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "93"
+  },
+  {
+   "parameters": "3,3,4,4",
+   "survey_lower": 174,
+   "lower_ref": "Row2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": "171"
+  },
+  {
+   "parameters": "3,4,4,4",
+   "survey_lower": 381,
+   "lower_ref": "6.2.j",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,5",
+   "survey_lower": 162,
+   "lower_ref": "XXER",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,10",
+   "survey_lower": 513,
+   "lower_ref": "6.2.g",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,11",
+   "survey_lower": 597,
+   "lower_ref": "6.2.g",
+   "status": "RECIPE",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,4,5,5",
+   "survey_lower": 729,
+   "lower_ref": "Row2",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,5,5,5",
+   "survey_lower": 1430,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,6,6",
+   "survey_lower": 338,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,7,7",
+   "survey_lower": 674,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,8,8",
+   "survey_lower": 941,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,9,9",
+   "survey_lower": 1844,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,10,10",
+   "survey_lower": 2841,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "8,8,9",
+   "survey_lower": 10769,
+   "lower_ref": "Row5",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "6,6,6,6,6,6",
+   "survey_lower": 4515702,
+   "lower_ref": "Row2/Row3 (linear Ramsey graphs)",
+   "status": "NO_FILE_FOUND",
+   "best_verified": ""
+  },
+  {
+   "parameters": "3,3,3,7",
+   "survey_lower": 247,
+   "lower_ref": "6.2.h (derived, unpublished explicit)",
+   "status": "RECIPE",
+   "best_verified": ""
+  }
+ ],
+ "partial": [
+  {
+   "parameters": "7,13",
+   "survey_lower": 511,
+   "witness": "alphaevolve/R(7, 13) >= 513.txt",
+   "claimed": 513,
+   "check": "PARTIAL: no K_7 only"
+  },
+  {
+   "parameters": "12,12",
+   "survey_lower": 1640,
+   "witness": "tatarevic/g1212.1639",
+   "claimed": 1640,
+   "check": "NOT_COMPLETED: none"
+  },
+  {
+   "parameters": "8,18",
+   "survey_lower": 1049,
+   "witness": "alphaevolve/R(8, 18) >= 1052.txt",
+   "claimed": 1052,
+   "check": "PARTIAL: no K_8 only"
+  },
+  {
+   "parameters": "3,33",
+   "survey_lower": 227,
+   "witness": "furini/R_3_33_graphSize_229.clq",
+   "claimed": 230,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,34",
+   "survey_lower": 234,
+   "witness": "furini/R_3_34_graphSize_238.clq",
+   "claimed": 239,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,35",
+   "survey_lower": 248,
+   "witness": "furini/R_3_35_graphSize_252.clq",
+   "claimed": 253,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,36",
+   "survey_lower": 255,
+   "witness": "furini/R_3_36_graphSize_260.clq",
+   "claimed": 261,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,37",
+   "survey_lower": 267,
+   "witness": "furini/R_3_37_graphSize_271.clq",
+   "claimed": 272,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,38",
+   "survey_lower": 278,
+   "witness": "furini/R_3_38_graphSize_280.clq",
+   "claimed": 281,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,39",
+   "survey_lower": 290,
+   "witness": "furini/R_3_39_graphSize_293.clq",
+   "claimed": 294,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,40",
+   "survey_lower": 298,
+   "witness": "furini/R_3_40_graphSize_304.clq",
+   "claimed": 305,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,41",
+   "survey_lower": 311,
+   "witness": "furini/R_3_41_graphSize_316.clq",
+   "claimed": 317,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,42",
+   "survey_lower": 320,
+   "witness": "furini/R_3_42_graphSize_326.clq",
+   "claimed": 327,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,43",
+   "survey_lower": 333,
+   "witness": "furini/R_3_43_graphSize_339.clq",
+   "claimed": 340,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,44",
+   "survey_lower": 339,
+   "witness": "furini/R_3_44_graphSize_347.clq",
+   "claimed": 348,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,45",
+   "survey_lower": 354,
+   "witness": "furini/R_3_45_graphSize_363.clq",
+   "claimed": 364,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,46",
+   "survey_lower": 362,
+   "witness": "furini/R_3_46_graphSize_370.clq",
+   "claimed": 371,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,47",
+   "survey_lower": 380,
+   "witness": "furini/R_3_47_graphSize_384.clq",
+   "claimed": 385,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,48",
+   "survey_lower": 384,
+   "witness": "furini/R_3_48_graphSize_390.clq",
+   "claimed": 391,
+   "check": "NOT_CHECKED: none"
+  },
+  {
+   "parameters": "3,49",
+   "survey_lower": 402,
+   "witness": "furini/R_3_49_graphSize_410.clq",
+   "claimed": 411,
+   "check": "NOT_CHECKED: none"
+  }
+ ],
+ "runs": {
+  "cloud": {
+   "records": 171,
+   "graphs_pass": 12115,
+   "seconds": 4483.7
+  },
+  "cloud_constructions": {
+   "records": 5,
+   "graphs_pass": 5,
+   "seconds": 84.8
+  },
+  "mac": {
+   "records": 9,
+   "graphs_pass": 2,
+   "seconds": 9869.7
+  },
+  "repo": {
+   "records": 150,
+   "graphs_pass": 9455,
+   "seconds": 45.5
+  }
+ },
+ "run_verifiers": {
+  "cloud": [
+   "verify_ramsey.py 786a69c43a9b4b95 (working version), clique.c 34b72631979d0ebf"
+  ],
+  "repo": [
+   "verify_ramsey.py 657db0ada9f88716, clique.c 34b72631979d0ebf"
+  ],
+  "cloud_constructions": [
+   "verify_ramsey.py 786a69c43a9b4b95 (working version), clique.c 34b72631979d0ebf"
+  ],
+  "mac": [
+   "tools/run_hard.py, clique.c 34b72631979d0ebf (the copy kept on the Mac, hashed afterwards)"
+  ]
+ },
+ "rerun_overlap": 143,
+ "rerun_disagreements": [],
+ "repo_run_new_ids": [
+  "constructions/c5_R3_3.g6",
+  "constructions/clebsch16_R3_3_3.txt",
+  "constructions/cubic127_R4_12.g6",
+  "constructions/cubic3_127_R4_4_4.txt",
+  "fritzcremer/R6_8/n134-gpt-6.1-sol.g6",
+  "mckay/r46_35some.g6",
+  "mckay/r55_42some.g6"
+ ],
+ "mac_half_runs": 9,
+ "mac_duplicate_half_runs": 2,
+ "paley_omega": [
+  {
+   "run": "cloud_constructions",
+   "p": 101,
+   "omega": 5,
+   "seconds": 0.0,
+   "paley_bound": "R(6,6) >= 102",
+   "mathon_bound": "R(7,7) >= 205"
+  },
+  {
+   "run": "cloud_constructions",
+   "p": 281,
+   "omega": 7,
+   "seconds": 0.0,
+   "paley_bound": "R(8,8) >= 282",
+   "mathon_bound": "R(9,9) >= 565"
+  },
+  {
+   "run": "cloud_constructions",
+   "p": 797,
+   "omega": 9,
+   "seconds": 0.1,
+   "paley_bound": "R(10,10) >= 798",
+   "mathon_bound": "R(11,11) >= 1597"
+  },
+  {
+   "run": "cloud_constructions",
+   "p": 1277,
+   "omega": 11,
+   "seconds": 0.3,
+   "paley_bound": "R(12,12) >= 1278",
+   "mathon_bound": "R(13,13) >= 2557"
+  },
+  {
+   "run": "cloud_constructions",
+   "p": 1493,
+   "omega": 12,
+   "seconds": 0.7,
+   "paley_bound": "R(13,13) >= 1494",
+   "mathon_bound": "R(14,14) >= 2989"
+  },
+  {
+   "run": "cloud_constructions",
+   "p": 2741,
+   "omega": 13,
+   "seconds": 32.1,
+   "paley_bound": "R(14,14) >= 2742",
+   "mathon_bound": "R(15,15) >= 5485"
+  }
+ ],
+ "mac_max_half_seconds": 2959.9,
+ "unclaimed_files": [
+  {
+   "id": "tatarevic/g1212.1640",
+   "n": 1640,
+   "verdict": "NOT_CHECKED"
+  }
+ ],
+ "selftest": "ALL TESTS PASS"
+}

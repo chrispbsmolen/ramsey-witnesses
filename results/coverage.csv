@@ -1,0 +1,208 @@
+parameters,colours,survey_tables,survey_lower,lower_ref,survey_table_of_lower,other_table_values,status,best_verified,verified_witness,verified_source,exceeds_survey,best_unverified,unverified_witness,unverified_check,search_note
+"3,3",2,Ia,6,,Ia,,VERIFIED,6,constructions/c5_R3_3.g6,constructed_here,,,,,"5-cycle, built here (constructions/witnesses/c5_R3_3.g6)"
+"3,4",2,Ia,9,GG,Ia,,VERIFIED,9,mckay/r34_8.g6,mckay,,,,,McKay; complete set of extremal graphs
+"3,5",2,Ia,14,GG,Ia,,VERIFIED,14,mckay/r35_13.g6,mckay,,,,,McKay; complete set of extremal graphs
+"3,6",2,Ia,18,Kéry,Ia,,VERIFIED,18,mckay/r36_17.g6,mckay,,,,,McKay; complete set of extremal graphs
+"3,7",2,Ia,23,Ka2,Ia,,VERIFIED,23,mckay/r37_22.g6,mckay,,,,,McKay; complete set of extremal graphs
+"3,8",2,Ia,28,GR,Ia,,VERIFIED,28,mckay/r38_27.g6.gz,mckay,,,,,McKay; complete set of extremal graphs
+"3,9",2,Ia,36,Ka2,Ia,,VERIFIED,36,furini/R_3_9_graphSize_35.clq,furini_certificates,,,,,McKay; complete set of extremal graphs
+"3,10",2,Ia,40,Ex5,Ia,,VERIFIED,40,exoo_site/r3.10.39,exoo_site,,,,,Exoo site (Ex5)
+"3,11",2,Ia,47,Ex20,Ia,,VERIFIED,47,exoo_site/r3.11.46,exoo_site,,,,,Exoo site (Ex20); also g.3.11.46 (list form)
+"3,12",2,Ia,53,Kol1,Ia,,VERIFIED,53,"alphaevolve/R(3, 12) >= 53.txt",alphaevolve,,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"3,13",2,Ia,61,NaRT,Ia,,VERIFIED,61,"alphaevolve/R(3, 13) >= 61.txt",alphaevolve,,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"3,14",2,Ia,67,Kol2,Ia,,NO_FILE_FOUND,64,furini/R_3_14_graphSize_63.clq,furini_certificates,,,,,no public witness found
+"3,15",2,IIa/Ia,74,Kol2,IIa/Ia,,VERIFIED,74,"alphaevolve/R(3, 15) >= 74.txt",alphaevolve,,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"4,4",2,Ia,18,GG,Ia,,VERIFIED,18,mckay/r44_17.g6,mckay,,,,,McKay; complete set of extremal graphs
+"4,5",2,Ia,25,Ka1,Ia,,VERIFIED,25,mckay/r45_24.g6,mckay,,,,,McKay; complete set of extremal graphs
+"4,6",2,Ia,36,Ex19,Ia,,VERIFIED,36,exoo_site/r4.6.35,exoo_site,,,,,McKay; sample of known witnesses
+"4,7",2,Ia,49,Ex3,Ia,,VERIFIED,49,exoo_site/r4.7.48,exoo_site,,,,,Exoo site (Ex3)
+"4,8",2,Ia,59,ExT,Ia,,VERIFIED,59,exoo_tatarevic/g48.58,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"4,9",2,Ia,73,Ex16,Ia,,VERIFIED,73,exoo_site/r4.9.72,exoo_site,,,,,Exoo site (Ex16)
+"4,10",2,Ia,92,HaKr1,Ia,,NO_FILE_FOUND,,,,,,,,no public witness found
+"4,11",2,Ia,102,ExT,Ia,,VERIFIED,102,exoo_tatarevic/g411.101,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"4,12",2,Ia,128,SuLL,Ia,,VERIFIED,128,constructions/cubic127_R4_12.g6,constructed_here,,,,,cubic-residue (cyclotomic) graph on Z_127; see ExT Sec.1 and ref SuLL (no file located)
+"4,13",2,Ia,139,NaRT,Ia,,VERIFIED,139,"alphaevolve/R(4, 13) >= 139.txt",alphaevolve,,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"4,14",2,Ia,148,NaRT,Ia,,VERIFIED,148,"alphaevolve/R(4, 14) >= 148.txt",alphaevolve,,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"4,15",2,IIa/Ia,159,NaRT,Ia,IIa lists 158,VERIFIED,163,"alphaevolve/R(4, 15) >= 163.txt",alphaevolve,yes,,,,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"5,5",2,Ia,43,Ex4,Ia,,VERIFIED,43,exoo_site/g55.42,exoo_site,,,,,McKay; sample of known witnesses
+"5,6",2,Ia,59,Ex25,Ia,,VERIFIED,59,exoo_site/r5.6.58,exoo_site,,,,,"Exoo site (Ex25); file name r5.6.58; page links it from the R(5,6) note"
+"5,7",2,Ia,80,CaET,Ia,,NO_FILE_FOUND,,,,,,,,no public witness found
+"5,8",2,Ia,101,HaKr1,Ia,,NO_FILE_FOUND,,,,,,,,no public witness found
+"5,9",2,Ia,133,Kuz,Ia,,VERIFIED,133,"kuznetsov/table2(5,9)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"5,10",2,Ia,149,ExT,Ia,,VERIFIED,149,exoo_tatarevic/g510.148,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"5,11",2,Ia,183,Kuz,Ia,,VERIFIED,183,"kuznetsov/table2(5,11)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"5,12",2,Ia,203,Kuz,Ia,,VERIFIED,203,"kuznetsov/table2(5,12)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"5,13",2,Ia,233,Kuz,Ia,,VERIFIED,233,"kuznetsov/table2(5,13)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"5,14",2,Ia,267,Kuz,Ia,,VERIFIED,267,"kuznetsov/table2(5,14)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"5,15",2,IIa/Ia,275,2.3.h,IIa/Ia,,RECIPE,269,exoo_tatarevic/g515.268,exoo_tatarevic2015,,,,,survey item 2.3.h (glue two witnesses along a common induced subgraph); no graph file located; weaker files on disk: Exoo-Tatarevic 2015 data (ExT) n=268
+"6,6",2,Ia,102,Ka2,Ia,,VERIFIED,102,constructions/paley101_R6_6.g6,constructed_here,,,,,"House of Graphs #56953 Paley(101); row for graphId 56953; computed here: clique number of Q_101 is 5, so the construction gives R(6,6) >= 102; that graph was not built or checked here"
+"6,7",2,Ia,115,ExT,Ia,,VERIFIED,115,exoo_tatarevic/g67.114,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"6,8",2,Ia,134,ExT,Ia,,VERIFIED,135,fritzcremer/R6_8/n134-gpt-6.1-sol.g6,fritzcremer,yes,,,,Exoo-Tatarevic 2015 data (ExT) at the survey bound; a 134-vertex graph in fritzcremer/ramsey-lower-bounds (arXiv:2610.12122) passed here
+"6,9",2,Ia,183,Kuz,Ia,,VERIFIED,183,"kuznetsov/table2(6,9)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"6,10",2,Ia,204,Kuz,Ia,,VERIFIED,204,"kuznetsov/table2(6,10)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"6,11",2,Ia,262,Tat,Ia,,VERIFIED,262,tatarevic/g611.261,tatarevic2016,,,,,Tatarevic GitHub (Tat)
+"6,12",2,Ia,294,Kuz,Ia,,VERIFIED,294,"kuznetsov/table2(6,12)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"6,13",2,Ia,347,Kuz,Ia,,NO_FILE_FOUND,,,,,,,,no public witness found
+"6,15",2,IIa/Ia,401,2.3.i,IIa/Ia,,RECIPE,,,,,,,,survey item 2.3.i (general construction from other witnesses); no graph file located
+"7,7",2,Ia,205,Math,Ia,,VERIFIED,205,constructions/mathon101_R7_7.g6,constructed_here,,,,,"Mathon cyclotomic/doubling construction (Math); no file located (Kuznetsov has only a 202-vertex circulant, i.e. R>=203); weaker files on disk: Kuznetsov arXiv:1505.07186 Table 2 n=153; Kuznetsov arXiv:1505.07186 Table 2 n=202; computed here: clique number of Q_101 is 5, so the construction gives R(7,7) >= 205; that graph was not built or checked here"
+"7,8",2,Ia,219,Tat,Ia,,VERIFIED,219,tatarevic/g78.218,tatarevic2016,,,,,Tatarevic GitHub (Tat)
+"7,9",2,Ia,252,Kuz,Ia,,VERIFIED,252,"kuznetsov/table2(7,9)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"7,10",2,Ia,292,Kuz,Ia,,VERIFIED,292,"kuznetsov/table2(7,10)",kuznetsov_table2,,,,,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"7,11",2,Ia,405,XXER,Ia,,RECIPE,,,,,,,,construction in cited paper XXER (from other witnesses); no graph file located
+"7,12",2,Ia,417,XSR2,Ia,,RECIPE,,,,,,,,construction in cited paper XSR2 (from other witnesses); no graph file located
+"7,13",2,Ia,511,XuXR,Ia,,PARTIAL,,,,,513,"alphaevolve/R(7, 13) >= 513.txt",PARTIAL: no K_7 only,"google-research/ramsey_number_bounds (AlphaEvolve, NaRT)"
+"8,8",2,Ia,282,BurR,Ia,,VERIFIED,282,constructions/paley281_R8_8.g6,constructed_here,,,,,"BurR (Burling-Reyner) 1972 construction, n=281; Kuznetsov mentions an isolated 281-vertex coloring but gives no data; no file located; computed here: clique number of Q_281 is 7, so the construction gives R(8,8) >= 282; that graph was not built or checked here"
+"8,9",2,Ia,329,Kuz,Ia,,NO_FILE_FOUND,,,,,,,,"Kuznetsov arXiv:1505.07186 review.py; provisional: n=328 entries present under label (8,9); 3 entries"
+"8,10",2,Ia,343,Kuz,Ia,,VERIFIED,343,"kuznetsov/table2(8,10)",kuznetsov_table2,,345,fritzcremer/R8_10/n344-gpt-6.1-sol-1.g6,NOT_CHECKED: none,Kuznetsov arXiv:1505.07186 Table 2; extracted from PDF text
+"8,11",2,Ia,457,2.3.i,Ia,,RECIPE,,,,,,,,survey item 2.3.i (general construction from other witnesses); no graph file located
+"8,12",2,Ia,,,Ia,,NO_SURVEY_BOUND,511,"alphaevolve/R(8, 12) >= 511.txt",alphaevolve,,,,,
+"8,13",2,Ia,817,XXER,Ia,,RECIPE,,,,,,,,construction in cited paper XXER (from other witnesses); no graph file located
+"8,15",2,IIa/Ia,873,2.3.i,IIa/Ia,,RECIPE,,,,,,,,survey item 2.3.i (general construction from other witnesses); no graph file located
+"9,9",2,Ia,565,Math,Ia,,VERIFIED,565,constructions/mathon281_R9_9.g6,constructed_here,,,,,"Mathon construction (Math), n=564; no file located; computed here: clique number of Q_281 is 7, so the construction gives R(9,9) >= 565; that graph was not built or checked here"
+"9,10",2,Ia,581,XSR2,Ia,,RECIPE,,,,,,,,construction in cited paper XSR2 (from other witnesses); no graph file located
+"9,11",2,Ia,,,Ia,,NO_SURVEY_BOUND,617,"alphaevolve/R(9, 11) >= 617.txt",alphaevolve,,,,,
+"10,10",2,Ia,798,Math,Ia,,VERIFIED,798,constructions/paley797_R10_10.g6,constructed_here,,,,,"Mathon construction (Math), n=797; no file located; computed here: clique number of Q_797 is 9, so the construction gives R(10,10) >= 798; that graph was not built or checked here"
+"10,12",2,Ia,,,Ia,,NO_SURVEY_BOUND,,,,,856,"alphaevolve/R(10, 12) >= 856.txt",PARTIAL: no K_10 only,
+"10,15",2,Ia,1313,2.3.i,Ia,,RECIPE,,,,,,,,survey item 2.3.i (general construction from other witnesses); no graph file located
+"11,11",2,IIc/Ia,1597,2.2.c,IIc/Ia,,RECIPE,,,,,,,,"Paley doubling (Mathon) with p=797 (clique number 9), 2.2.c; no file; computed here: clique number of Q_797 is 9, so the construction gives R(11,11) >= 1597; that graph was not built or checked here"
+"12,12",2,IIc/Ia,1640,Tat,IIc/Ia,,PARTIAL,,,,,1640,tatarevic/g1212.1639,NOT_COMPLETED: none,Tatarevic GitHub (Tat)
+"13,13",2,IIc/Ia,2557,2.2.c,IIc/Ia,,RECIPE,,,,,,,,"Paley doubling p=1277 (2.2.c); no file; computed here: clique number of Q_1277 is 11, so the construction gives R(13,13) >= 2557; that graph was not built or checked here"
+"14,14",2,IIc/Ia,2989,2.2.c,IIc/Ia,,RECIPE,,,,,,,,"Paley doubling p=1493 (2.2.c); no file; computed here: clique number of Q_1493 is 12, so the construction gives R(14,14) >= 2989; that graph was not built or checked here"
+"15,15",2,IIc/Ia,5485,2.2.c,IIc/Ia,,RECIPE,,,,,,,,"Paley doubling p=2741 (2.2.c); no file; computed here: clique number of Q_2741 is 13, so the construction gives R(15,15) >= 5485; that graph was not built or checked here"
+"16,16",2,IIc,5605,2.2.c,IIc,,RECIPE,,,,,,,,
+"17,17",2,IIc,8917,LuSL,IIc,,NO_FILE_FOUND,,,,,,,,
+"18,18",2,IIc,11005,LuSL,IIc,,NO_FILE_FOUND,,,,,,,,
+"19,19",2,IIc,17885,LuSL,IIc,,NO_FILE_FOUND,,,,,,,,
+"20,20",2,IIc,21725,Ex23,IIc,,NO_FILE_FOUND,,,,,,,,
+"21,21",2,IIc,30925,Ex23,IIc,,NO_FILE_FOUND,,,,,,,,
+"22,22",2,IIc,39109,Ex23,IIc,,NO_FILE_FOUND,,,,,,,,
+"23,23",2,IIc,49421,Ex23,IIc,,NO_FILE_FOUND,,,,,,,,
+"3,16",2,IIa,82,Ex21,IIa,,VERIFIED,82,exoo_site/r3.16.81,exoo_site,,,,,
+"3,17",2,IIa,92,W1+,IIa,,VERIFIED,93,"alphaevolve/R(3, 17) >= 93.txt",alphaevolve,yes,,,,
+"3,18",2,IIa,100,NaRT,IIa,,VERIFIED,100,"alphaevolve/R(3, 18) >= 100.txt",alphaevolve,,,,,
+"3,19",2,IIa,106,W1+,IIa,,VERIFIED,106,furini/R_3_19_graphSize_105.clq,furini_certificates,,,,,
+"3,20",2,IIa,111,Ex16,IIa,,VERIFIED,111,exoo_site/r3.20.110,exoo_site,,,,,
+"3,21",2,IIa,122,W1+,IIa,,NO_FILE_FOUND,,,,,,,,
+"3,22",2,IIa,131,W2+,IIa,,NO_FILE_FOUND,,,,,,,,
+"3,23",2,IIa,139,XWCS,IIa,,NO_FILE_FOUND,,,,,,,,
+"4,16",2,IIa,170,Tat,IIa,,VERIFIED,174,"alphaevolve/R(4, 16) >= 174.txt",alphaevolve,yes,,,,
+"4,17",2,IIa,200,Lia+,IIa,,NO_FILE_FOUND,,,,,,,,
+"4,18",2,IIa,205,2.3.e,IIa,,VERIFIED,209,"alphaevolve/R(4, 18) >= 209.txt",alphaevolve,yes,,,,
+"4,19",2,IIa,213,2.3.h,IIa,,VERIFIED,219,"alphaevolve/R(4, 19) >= 219.txt",alphaevolve,yes,,,,
+"4,20",2,IIa,234,Ex16,IIa,,VERIFIED,237,"alphaevolve/R(4, 20) >= 237.txt",alphaevolve,yes,,,,
+"4,21",2,IIa,242,SLZL,IIa,,VERIFIED,244,"alphaevolve/R(4,21)>=244.txt",alphaevolve,yes,,,,
+"4,22",2,IIa,314,LinCa,IIa,,NO_FILE_FOUND,,,,,,,,
+"5,16",2,IIa,293,ExT,IIa,,VERIFIED,293,exoo_tatarevic/g516.292,exoo_tatarevic2015,,,,,
+"5,17",2,IIa,388,XSR2,IIa,,NO_FILE_FOUND,,,,,,,,
+"5,18",2,IIa,396,2.3.h,IIa,,RECIPE,,,,,,,,
+"5,19",2,IIa,411,XSR2,IIa,,NO_FILE_FOUND,,,,,,,,
+"5,20",2,IIa,424,XSR2,IIa,,NO_FILE_FOUND,,,,,,,,
+"5,21",2,IIa,441,2.3.i,IIa,,RECIPE,,,,,,,,
+"5,22",2,IIa,492,Ihr,IIa,,NO_FILE_FOUND,,,,,,,,
+"5,23",2,IIa,521,2.3.i,IIa,,RECIPE,,,,,,,,
+"6,16",2,IIa,434,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"6,17",2,IIa,548,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"6,18",2,IIa,614,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"6,19",2,IIa,710,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"6,20",2,IIa,878,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"6,21",2,IIa,888,2.3.h,IIa,,RECIPE,,,,,,,,
+"6,22",2,IIa,1070,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"7,16",2,IIa,629,2.3.i,IIa,,RECIPE,,,,,,,,
+"7,17",2,IIa,729,2.3.i,IIa,,RECIPE,,,,,,,,
+"7,18",2,IIa,797,2.3.i,IIa,,RECIPE,,,,,,,,
+"7,19",2,IIa,908,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"7,21",2,IIa,1214,SLLL,IIa,,NO_FILE_FOUND,,,,,,,,
+"8,17",2,IIa,1005,2.3.i,IIa,,RECIPE,,,,,,,,
+"8,18",2,IIa,1049,2.2.h,IIa,,PARTIAL,,,,,1052,"alphaevolve/R(8, 18) >= 1052.txt",PARTIAL: no K_8 only,
+"8,19",2,IIa,1237,2.2.h,IIa,,RECIPE,,,,,,,,
+"8,21",2,IIa,1617,2.3.i,IIa,,RECIPE,,,,,,,,
+"3,24",2,IIb,143,W1+,IIb,,VERIFIED,151,furini/R_3_24_graphSize_150.clq,furini_certificates,yes,,,,
+"3,25",2,IIb,154,W2+,IIb,,VERIFIED,160,furini/R_3_25_graphSize_159.clq,furini_certificates,yes,,,,
+"3,26",2,IIb,161,FuLS,IIb,,VERIFIED,163,furini/R_3_26_graphSize_162.clq,furini_certificates,yes,,,,
+"3,27",2,IIb,172,LiLi,IIb,,NO_FILE_FOUND,,,,,,,,
+"3,28",2,IIb,179,FuLS,IIb,,VERIFIED,181,furini/R_3_28_graphSize_180.clq,furini_certificates,yes,,,,
+"3,29",2,IIb,190,LiLi,IIb,,VERIFIED,194,furini/R_3_29_graphSize_193.clq,furini_certificates,yes,,,,
+"3,30",2,IIb,197,FuLS,IIb,,VERIFIED,199,furini/R_3_30_graphSize_198.clq,furini_certificates,yes,,,,
+"3,31",2,IIb,208,FuLS,IIb,,VERIFIED,210,furini/R_3_31_graphSize_209.clq,furini_certificates,yes,,,,
+"3,32",2,IIb,217,LiLi,IIb,,VERIFIED,219,furini/R_3_32_graphSize_218.clq,furini_certificates,yes,,,,
+"3,33",2,IIb,227,LiaX,IIb,,PARTIAL,,,,,230,furini/R_3_33_graphSize_229.clq,NOT_CHECKED: none,
+"3,34",2,IIb,234,LiaX,IIb,,PARTIAL,,,,,239,furini/R_3_34_graphSize_238.clq,NOT_CHECKED: none,
+"3,35",2,IIb,248,LiaX,IIb,,PARTIAL,,,,,253,furini/R_3_35_graphSize_252.clq,NOT_CHECKED: none,
+"3,36",2,IIb,255,FuLS,IIb,,PARTIAL,,,,,261,furini/R_3_36_graphSize_260.clq,NOT_CHECKED: none,
+"3,37",2,IIb,267,LiaX,IIb,,PARTIAL,,,,,272,furini/R_3_37_graphSize_271.clq,NOT_CHECKED: none,
+"3,38",2,IIb,278,LiaX,IIb,,PARTIAL,,,,,281,furini/R_3_38_graphSize_280.clq,NOT_CHECKED: none,
+"3,39",2,IIb,290,LiaX,IIb,,PARTIAL,,,,,294,furini/R_3_39_graphSize_293.clq,NOT_CHECKED: none,
+"3,40",2,IIb,298,LiaX,IIb,,PARTIAL,,,,,305,furini/R_3_40_graphSize_304.clq,NOT_CHECKED: none,
+"3,41",2,IIb,311,FuLS,IIb,,PARTIAL,,,,,317,furini/R_3_41_graphSize_316.clq,NOT_CHECKED: none,
+"3,42",2,IIb,320,FuLS,IIb,,PARTIAL,,,,,327,furini/R_3_42_graphSize_326.clq,NOT_CHECKED: none,
+"3,43",2,IIb,333,FuLS,IIb,,PARTIAL,,,,,340,furini/R_3_43_graphSize_339.clq,NOT_CHECKED: none,
+"3,44",2,IIb,339,FuLS,IIb,,PARTIAL,,,,,348,furini/R_3_44_graphSize_347.clq,NOT_CHECKED: none,
+"3,45",2,IIb,354,Ji+,IIb,,PARTIAL,,,,,364,furini/R_3_45_graphSize_363.clq,NOT_CHECKED: none,
+"3,46",2,IIb,362,FuLS,IIb,,PARTIAL,,,,,371,furini/R_3_46_graphSize_370.clq,NOT_CHECKED: none,
+"3,47",2,IIb,380,Ji+,IIb,,PARTIAL,,,,,385,furini/R_3_47_graphSize_384.clq,NOT_CHECKED: none,
+"3,48",2,IIb,384,Ji+,IIb,,PARTIAL,,,,,391,furini/R_3_48_graphSize_390.clq,NOT_CHECKED: none,
+"3,49",2,IIb,402,Ji+,IIb,,PARTIAL,,,,,411,furini/R_3_49_graphSize_410.clq,NOT_CHECKED: none,
+"3,3,3",3,XIa,17,GG,XIa,,VERIFIED,17,constructions/clebsch16_R3_3_3.txt,constructed_here,,,,,Greenwood-Gleason / Kalbfleisch-Stanton critical colorings (classical; recipe via GF(16) cubic residues)
+"4,4,4",3,XIa,128,HiIr,XIa,,VERIFIED,128,constructions/cubic3_127_R4_4_4.txt,constructed_here,,,,,"Hill-Irving group partition (HiIr), no file located; the cubic-coset colouring of Z_127 built here (constructions/witnesses/cubic3_127_R4_4_4.txt) passed"
+"5,5,5",3,XIa,454,Ex23,XIa,,NO_FILE_FOUND,415,exoo_site/ch555.414,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=414 (needs 453); cited source Ex23 not retrieved
+"6,6,6",3,XIa,1106,Row3,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row3 not retrieved
+"7,7,7",3,XIa,3214,XuR1,XIa,,RECIPE,,,,,,,,Mathon cyclotomic coloring of a Paley graph (XuR1 improvement); no file located
+"8,8,8",3,XIa,7174,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"9,9,9",3,XIa,15041,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"10,10,10",3,XIa,23094,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,3,3,3",4,XIa,51,Chu1,XIa,,RECIPE,,,,,,,,"Chung recursion from R(3,3,3)=17 (Chu1) ; no file located"
+"4,4,4,4",4,XIa,634,XXER,XIa,,NO_FILE_FOUND,578,exoo_site/ch4444.577,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=577 (needs 633); cited source XXER not retrieved
+"5,5,5,5",4,XIa,4073,Row3,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row3 not retrieved
+"6,6,6,6",4,XIa,23502,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"7,7,7,7",4,XIa,94874,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"8,8,8,8",4,XIa,182002,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"9,9,9,9",4,XIa,719204,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,3,3,3,3",5,XIa,162,Ex10,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex10 not retrieved
+"4,4,4,4,4",5,XIa,4176,Row1,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row1 not retrieved
+"5,5,5,5,5",5,XIa,41626,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"6,6,6,6,6",5,XIa,258506,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,3,3,3,3,3",6,XIa,538,FreSw,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source FreSw not retrieved
+"4,4,4,4,4,4",6,XIa,32006,Row1,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row1 not retrieved
+"5,5,5,5,5,5",6,XIa,441606,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,3,3,3,3,3,3",7,XIa,1698,Row4,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2107.03560 ancillary (Schur S(7)>=1696 partition, xls); sum-free partition; Ramsey colouring is the circulant colouring of Z_n by partition class of |i-j|; coverage not confirmed"
+"4,4,4,4,4,4,4",7,XIa,160024,Row1,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row1 not retrieved
+"3,3,3,3,3,3,3,3",8,XIa,5288,Row3,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row3 not retrieved
+"3,3,3,3,3,3,3,3,3",9,XIa,17805,AgCP+,XIa,,NO_FILE_FOUND,,,,,,,,AgCP+ arXiv:2112.03175 PDF (Schur-partition templates); PDF downloaded; whether the partition is printed was not checked
+"3,3,4",3,XIb,30,Ka2,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ka2 not retrieved
+"3,3,5",3,XIb,45,Ex2,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex2 not retrieved
+"3,3,6",3,XIb,61,ExT,XIb,,VERIFIED,61,exoo_tatarevic/g336.60,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,7",3,XIb,85,Ex18,XIb,,NO_FILE_FOUND,79,exoo_site/g337.78,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=78 (needs 84); cited source Ex18 not retrieved
+"3,3,8",3,XIb,103,Ex18,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex18 not retrieved
+"3,3,9",3,XIb,129,Ex18,XIb,,VERIFIED,133,lachy_dauth/circulants.json#0,lachy_dauth,yes,,,,"Lachy-Dauth/ramsey-neighbourhood-counting (preprint), 3-colour circulant in ancillary/circulants.json; passed here"
+"3,3,10",3,XIb,150,ExT,XIb,,VERIFIED,150,exoo_tatarevic/g3310.149,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,11",3,XIb,174,ExT,XIb,,VERIFIED,183,lachy_dauth/circulants.json#1,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,12",3,XIb,194,ExT,XIb,,VERIFIED,203,lachy_dauth/circulants.json#2,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,13",3,XIb,217,ExT,XIb,,VERIFIED,232,lachy_dauth/circulants.json#3,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,14",3,XIb,242,ExT,XIb,,VERIFIED,267,lachy_dauth/circulants.json#4,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,3,15",3,XIb/text,269,ExT,XIb,text lists 261,VERIFIED,269,exoo_tatarevic/g3315.268,exoo_tatarevic2015,,278,lachy_dauth/R_3_3_15_n277_compact.json,NOT_CHECKED: none,Exoo-Tatarevic 2015 data (ExT)
+"3,3,16",3,XIb,291,ExT,XIb,,VERIFIED,291,exoo_tatarevic/g3316.290,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,4,4",3,XIb,55,KrLR,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source KrLR not retrieved
+"3,4,5",3,XIb,89,Ex17,XIb,,VERIFIED,89,exoo_site/g345.88.20,exoo_site,,,,,"Exoo site (older colorings); Exoo page states R>n here, i.e. R>=n+1"
+"3,4,6",3,XIb,117,Ex17,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex17 not retrieved
+"3,4,7",3,XIb,152,ExT,XIb,,VERIFIED,152,exoo_tatarevic/g347.151,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,4,8",3,XIb,193,6.2.g,XIb,,RECIPE,,,,,,,,survey 6.2.g construction
+"3,4,9",3,XIb,242,ExT,XIb,,VERIFIED,242,exoo_tatarevic/g349.241,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
+"3,5,5",3,XIb,139,Ex17,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex17 not retrieved
+"3,5,6",3,XIb,181,Ex17,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex17 not retrieved
+"3,5,7",3,XIb,241,6.2.g,XIb,,RECIPE,,,,,,,,survey 6.2.g construction
+"3,3,3,4",4,text,97,Ex17,text,,NO_FILE_FOUND,93,exoo_site/g3334.92,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=92 (needs 96); cited source Ex17 not retrieved
+"3,3,4,4",4,text,174,Row2,text,,NO_FILE_FOUND,171,exoo_site/g3344.170,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=170 (needs 173); cited source Row2 not retrieved
+"3,4,4,4",4,text,381,6.2.j,text,,RECIPE,,,,,,,,survey 6.2.j construction
+"3,3,3,5",4,text,162,XXER,text,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source XXER not retrieved
+"3,3,3,10",4,text,513,6.2.g,text,,RECIPE,,,,,,,,survey 6.2.g construction
+"3,3,3,11",4,text,597,6.2.g,text,,RECIPE,,,,,,,,survey 6.2.g construction
+"3,4,5,5",4,text,729,Row2,text,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row2 not retrieved
+"3,5,5,5",4,text,1430,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,6,6",3,text,338,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,7,7",3,text,674,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,8,8",3,text,941,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,9,9",3,text,1844,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"3,10,10",3,text,2841,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"8,8,9",3,text,10769,Row5,text,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
+"6,6,6,6,6,6",6,text,4515702,Row2/Row3 (linear Ramsey graphs),text,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row2/Row3 (linear Ramsey graphs) not retrieved
+"3,3,3,7",4,text,247,"6.2.h (derived, unpublished explicit)",text,,RECIPE,,,,,,,,"survey 6.2.h construction (derived, not published explicitly)"

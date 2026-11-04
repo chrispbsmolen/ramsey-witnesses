@@ -1,0 +1,19 @@
+A. oracle: 40 random graphs, disagreements 0               ok
+B. planted K6 in G(80, 0.15) found                         ok
+B. planted independent 12-set in G(80, 0.85) found         ok
+B. Paley(101) passes R(6,6)                                ok
+B. Paley(101) fails R(5,6) (its clique number is 5)        ok
+B. Paley(101) with a planted K6 fails R(6,6)               ok
+B. Clebsch colouring passes R(3,3,3)                       ok
+B. Clebsch colouring with one edge recoloured fails        ok
+B. Lachy-Dauth R(3,3,9) circulant fails as R(3,3,8)        ok
+C. circulant shortcut agrees with full search, k = 4..8    ok
+C. is_circulant: Paley(101) yes, Clebsch colouring no      ok
+D. g6, matrix01, npmatrix, dimacs, circulant load identically ok
+D. colormat loads the same partition                       ok
+D. distrow: colour of ij is c[|i-j|]                       ok
+E. networkx: c5_R3_3.g6 has clique number < 3 and independence number < 3 ok
+E. networkx: paley101_R6_6.g6 has clique number < 6 and independence number < 6 ok
+E. networkx: each colour class of clebsch16 is triangle-free ok
+
+ALL TESTS PASS

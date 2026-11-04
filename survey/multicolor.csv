@@ -1,0 +1,66 @@
+parameters,lower,upper,lower_ref,upper_ref,table,flags
+"3,3,3",17,17,GG,GG,XIa,"exact value R(3,3,3)=17 (text 6.0)"
+"4,4,4",128,229,HiIr,Boza9 (2026),XIa,upper from text 6.1.1 (230 via 6.1.a)
+"5,5,5",454,,Ex23,,XIa,"R_3(5), diagonal, r=3 colors, K_5"
+"6,6,6",1106,,Row3,,XIa,"R_3(6), diagonal, r=3 colors, K_6"
+"7,7,7",3214,,XuR1,,XIa,"R_3(7), diagonal, r=3 colors, K_7"
+"8,8,8",7174,,Row5,,XIa,"R_3(8), diagonal, r=3 colors, K_8"
+"9,9,9",15041,,Row5,,XIa,"R_3(9), diagonal, r=3 colors, K_9"
+"10,10,10",23094,,Row5,,XIa,"R_3(10), diagonal, r=3 colors, K_10"
+"3,3,3,3",51,62,Chu1,FeKR,XIa,upper from text 6.1.1; open case 51<=R4(3)<=62
+"4,4,4,4",634,6301,XXER,implicit in Boza9,XIa,upper from text 6.1.1 (6306 via 6.1.a)
+"5,5,5,5",4073,,Row3,,XIa,"R_4(5), diagonal, r=4 colors, K_5"
+"6,6,6,6",23502,,Row5,,XIa,"R_4(6), diagonal, r=4 colors, K_6"
+"7,7,7,7",94874,,Row5,,XIa,"R_4(7), diagonal, r=4 colors, K_7"
+"8,8,8,8",182002,,Row5,,XIa,"R_4(8), diagonal, r=4 colors, K_8"
+"9,9,9,9",719204,,Row5,,XIa,"R_4(9), diagonal, r=4 colors, K_9"
+"3,3,3,3,3",162,307,Ex10,6.1.a,XIa,upper from text 6.1.1
+"4,4,4,4,4",4176,,Row1,,XIa,"R_5(4), diagonal, r=5 colors, K_4"
+"5,5,5,5,5",41626,,Row5,,XIa,"R_5(5), diagonal, r=5 colors, K_5"
+"6,6,6,6,6",258506,,Row5,,XIa,"R_5(6), diagonal, r=5 colors, K_6"
+"3,3,3,3,3,3",538,1838,FreSw,6.1.a,XIa,upper from text 6.1.1
+"4,4,4,4,4,4",32006,,Row1,,XIa,"R_6(4), diagonal, r=6 colors, K_4"
+"5,5,5,5,5,5",441606,,Row5,,XIa,"R_6(5), diagonal, r=6 colors, K_5"
+"3,3,3,3,3,3,3",1698,12861,Row4,6.1.a,XIa,upper from text 6.1.1
+"4,4,4,4,4,4,4",160024,,Row1,,XIa,"R_7(4), diagonal, r=7 colors, K_4"
+"3,3,3,3,3,3,3,3",5288,,Row3,,XIa,"R_8(3), diagonal, r=8 colors, K_3"
+"3,3,3,3,3,3,3,3,3",17805,,AgCP+,,XIa,"R_9(3), diagonal, r=9 colors, K_3"
+"3,3,4",30,30,Ka2,CodFIM,XIb,"exact R(3,3,4)=30 (text 6.1.b, CodFIM 2016)"
+"3,3,5",45,57,Ex2,6.1.a,XIb,upper from text 6.1.d
+"3,3,6",61,91,ExT,Boza9 (2026),XIb,upper from text 6.1.d
+"3,3,7",85,,Ex18,,XIb,"3-color R(3,k,m)"
+"3,3,8",103,,Ex18,,XIb,"3-color R(3,k,m)"
+"3,3,9",129,,Ex18,,XIb,"3-color R(3,k,m)"
+"3,3,10",150,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,11",174,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,12",194,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,13",217,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,14",242,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,15",269,,ExT,,XIb,"3-color R(3,k,m)"
+"3,3,16",291,,ExT,,XIb,"3-color R(3,k,m)"
+"3,4,4",55,77,KrLR,6.1.a,XIb,upper from text 6.1.d
+"3,4,5",89,157,Ex17,Boza9 (2026),XIb,upper from text 6.1.d (158 before 2026)
+"3,4,6",117,,Ex17,,XIb,"3-color R(3,k,m)"
+"3,4,7",152,,ExT,,XIb,"3-color R(3,k,m)"
+"3,4,8",193,,6.2.g,,XIb,"3-color R(3,k,m)"
+"3,4,9",242,,ExT,,XIb,"3-color R(3,k,m)"
+"3,5,5",139,,Ex17,,XIb,"3-color R(3,k,m)"
+"3,5,6",181,,Ex17,,XIb,"3-color R(3,k,m)"
+"3,5,7",241,,6.2.g,,XIb,"3-color R(3,k,m)"
+"3,3,3,4",97,149,Ex17,6.1.a,text,text 6.1.2(h)
+"3,3,4,4",174,450,Row2,6.1.a,text,text 6.1.2(h)
+"3,4,4,4",381,1576,6.2.j,implicit in Boza9,text,text 6.1.2(h)
+"3,3,3,5",162,,XXER,,text,text 6.1.2(h)
+"3,3,3,10",513,,6.2.g,,text,text 6.1.2(h)
+"3,3,3,11",597,,6.2.g,,text,text 6.1.2(h)
+"3,4,5,5",729,,Row2,,text,text 6.1.2(h)
+"3,5,5,5",1430,,Row5,,text,text 6.1.2(h)
+"3,6,6",338,,Row5,,text,"text 6.1.2(c),(f); earlier 303 [XXER]"
+"3,7,7",674,,Row5,,text,"text 6.1.2(c),(f); earlier 609 [XXER]"
+"3,8,8",941,,Row5,,text,text 6.1.2(f)
+"3,9,9",1844,,Row5,,text,"text 6.1.2(c),(f); earlier 1689 [XXER]"
+"3,10,10",2841,,Row5,,text,text 6.1.2(f)
+"8,8,9",10769,,Row5,,text,text 6.1.2(f)
+"6,6,6,6,6,6",4515702,,Row2/Row3 (linear Ramsey graphs),,text,text p.56 (R6(6) >= 4515702)
+"3,3,15",261,,"6.2.g (derived, unpublished explicit)",,text,text 6.1.2(h); weaker than Table XIb entry 269 [ExT]; derived
+"3,3,3,7",247,,"6.2.h (derived, unpublished explicit)",,text,text 6.1.2(h); derived

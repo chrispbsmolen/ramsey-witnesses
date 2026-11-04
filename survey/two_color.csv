@@ -1,0 +1,82 @@
+k,l,lower,upper,lower_ref,upper_ref,status,upper_best_TableIb,upper_best_ref,flags
+3,3,6,6,,,exact,,,"R(3,3)=6 has no reference column in Table Ia"
+3,4,9,9,GG,GG,exact,,,
+3,5,14,14,GG,GG,exact,,,
+3,6,18,18,Kéry,Kéry,exact,,,
+3,7,23,23,Ka2,GrY,exact,,,
+3,8,28,28,GR,McZ,exact,,,
+3,9,36,36,Ka2,GR,exact,,,
+3,10,40,41,Ex5,Ang1,bounds,,,
+3,11,47,50,Ex20,GoeR1,bounds,,,
+3,12,53,59,Kol1,Les,bounds,,,
+3,13,61,68,NaRT,GoeR1,bounds,,,
+3,14,67,77,Kol2,GoeR1,bounds,,,
+3,15,74,87,Kol2,GoeR1,bounds,,,
+4,4,18,18,GG,GG,exact,,,
+4,5,25,25,Ka1,MR4,exact,25,MR4,
+4,6,36,41,Ex19,MR5,bounds,40,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,7,49,61,Ex3,Mac,bounds,58,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,8,59,84,ExT,Mac,bounds,79,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,9,73,115,Ex16,Mac,bounds,105,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,10,92,149,HaKr1,Mac,bounds,135,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,11,102,191,ExT,Spe4,bounds,170,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,12,128,238,SuLL,Spe4,bounds,210,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,13,139,291,NaRT,Spe4,bounds,256,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,14,148,349,NaRT,Spe4,bounds,307,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+4,15,159,417,NaRT,Spe4,bounds,364,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,5,43,46,Ex4,AnM4,bounds,46,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,6,59,87,Ex25,HZ1,bounds,85,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,7,80,143,CaET,HZ1,bounds,133,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,8,101,216,HaKr1,Spe4,bounds,193,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,9,133,316,Kuz,Mac,bounds,282,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,10,149,442,ExT,Mac,bounds,381,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,11,183,633,Kuz,HW+,bounds,511,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,12,203,848,Kuz,HW+,bounds,672,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,13,233,1138,Kuz,HW+,bounds,860,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,14,267,1461,Kuz,HW+,bounds,1081,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+5,15,275,1878,2.3.h,HW+,bounds,1341,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,6,102,165,Ka2,Mac,bounds,160,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,7,115,298,ExT,HZ1,bounds,270,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,8,134,495,ExT,Mac,bounds,423,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,9,183,780,Kuz,Mac,bounds,651,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,10,204,1171,Kuz,Mac,bounds,944,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,11,262,1804,Tat,HW+,bounds,1346,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,12,294,2566,Kuz,HW+,bounds,1855,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,13,347,3703,Kuz,HW+,bounds,2499,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+6,14,,5033,,HW+,bounds,3301,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),lower bound cell blank in Table Ia (no lower bound shown)
+6,15,401,6911,2.3.i,HW+,bounds,4305,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,7,205,540,Math,Mac,bounds,492,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,8,219,1031,Tat,HZ1,bounds,832,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,9,252,1713,Kuz,HZ2,bounds,1368,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,10,292,2826,Kuz,Mac,bounds,2119,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,11,405,4553,XXER,HW+,bounds,3197,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,12,417,6954,XSR2,HW+,bounds,4665,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,13,511,10578,XuXR,HW+,bounds,6653,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+7,14,,15263,,HW+,bounds,9260,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),lower bound cell blank in Table Ia (no lower bound shown)
+7,15,,22112,,HW+,bounds,12635,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),lower bound cell blank in Table Ia (no lower bound shown)
+8,8,282,1870,BurR,Mac,bounds,1518,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+8,9,329,3583,Kuz,Ea1,bounds,2662,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+8,10,343,6090,Kuz,HZ2,bounds,4402,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+8,11,457,10630,2.3.i,HW+,bounds,7040,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+8,12,,16944,,HW+,bounds,10836,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),lower bound cell blank in Table Ia (no lower bound shown)
+8,13,817,27485,XXER,HW+,bounds,,,
+8,14,,41525,,HW+,bounds,,,lower bound cell blank in Table Ia (no lower bound shown)
+8,15,873,63609,2.3.i,HW+,bounds,,,
+9,9,565,6588,Math,ShZ1,bounds,4956,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+9,10,581,12677,XSR2,Ea1,bounds,8675,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+9,11,,22325,,HW+,bounds,14631,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),lower bound cell blank in Table Ia (no lower bound shown)
+9,12,,38832,,HW+,bounds,,,lower bound cell blank in Table Ia (no lower bound shown)
+9,13,,64864,,HW+,bounds,,,lower bound cell blank in Table Ia (no lower bound shown)
+9,14,,,,,bounds,,,no entry in Table Ia (both cells blank)
+9,15,,,,,bounds,,,no entry in Table Ia (both cells blank)
+10,10,798,23556,Math,Shi2,bounds,16064,AnM2/AnM3/AnM4 (Table Ib caption; per-cell split not given),
+10,11,,45881,,HW+,bounds,,,lower bound cell blank in Table Ia (no lower bound shown)
+10,12,,81123,,HW+,bounds,,,lower bound cell blank in Table Ia (no lower bound shown)
+10,13,,,,,bounds,,,no entry in Table Ia (both cells blank)
+10,14,,,,,bounds,,,no entry in Table Ia (both cells blank)
+10,15,1313,,2.3.i,,bounds,,,upper bound cell blank in Table Ia
+11,11,1597,,2.2.c,,"bounds (lower only, Table IIc)",,,no upper bound listed in Table IIc
+12,12,1640,,Tat,,"bounds (lower only, Table IIc)",,,no upper bound listed in Table IIc
+13,13,2557,,2.2.c,,"bounds (lower only, Table IIc)",,,no upper bound listed in Table IIc
+14,14,2989,,2.2.c,,"bounds (lower only, Table IIc)",,,no upper bound listed in Table IIc
+15,15,5485,,2.2.c,,"bounds (lower only, Table IIc)",,,no upper bound listed in Table IIc

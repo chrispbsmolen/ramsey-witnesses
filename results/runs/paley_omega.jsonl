@@ -1,0 +1,6 @@
+{"run": "cloud_constructions", "p": 101, "omega": 5, "seconds": 0.0, "paley_bound": "R(6,6) >= 102", "mathon_bound": "R(7,7) >= 205"}
+{"run": "cloud_constructions", "p": 281, "omega": 7, "seconds": 0.0, "paley_bound": "R(8,8) >= 282", "mathon_bound": "R(9,9) >= 565"}
+{"run": "cloud_constructions", "p": 797, "omega": 9, "seconds": 0.1, "paley_bound": "R(10,10) >= 798", "mathon_bound": "R(11,11) >= 1597"}
+{"run": "cloud_constructions", "p": 1277, "omega": 11, "seconds": 0.3, "paley_bound": "R(12,12) >= 1278", "mathon_bound": "R(13,13) >= 2557"}
+{"run": "cloud_constructions", "p": 1493, "omega": 12, "seconds": 0.7, "paley_bound": "R(13,13) >= 1494", "mathon_bound": "R(14,14) >= 2989"}
+{"run": "cloud_constructions", "p": 2741, "omega": 13, "seconds": 32.1, "paley_bound": "R(14,14) >= 2742", "mathon_bound": "R(15,15) >= 5485"}
