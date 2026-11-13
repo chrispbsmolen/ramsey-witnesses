@@ -1,25 +1,26 @@
 # Phase 2 coverage: the 105 cells without a public witness on 4 November 2026
 
-Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 12 November 2026.
+Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 13 November 2026.
 
 | group | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED, every half or colour checked by two independent checkers on the object | 7 | 27 | 34 |
+| VERIFIED, every half or colour checked by two independent checkers on the object | 8 | 27 | 35 |
 | VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 14 | 6 | 20 |
-| VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 18 | 8 | 26 |
+| VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 18 | 9 | 27 |
 | VERIFIED (witness found here by search), the witness or its input found here by search (Amendments 2 and 6), every colour checked by both checkers | 3 | 1 | 4 |
-| PARTIAL | 1 | 1 | 2 |
+| PARTIAL | 1 | 0 | 1 |
 | RECIPE ONLY | 5 | 0 | 5 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 4 | 5 | 9 |
+| STILL NO FILE | 3 | 5 | 8 |
 | all | 55 | 50 | 105 |
 
-VERIFIED in one of its three forms: 84 of 105.
+VERIFIED in one of its four forms: 86 of 105.
 
-## VERIFIED, every half or colour checked by two independent checkers on the object (34)
+## VERIFIED, every half or colour checked by two independent checkers on the object (35)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
+| R(3,14) | 67 [Kol2] | VERIFIED | `R3_14_n66.colormat.gz` | 66 | clique.c and gen0 on the whole graph, no reduction: no triangle (NONE 2) and no independent set of 14 vertices (NONE 13 on the complement). verify_ramsey PASS on the ... |
 | R(5,7) | 80 [CaET] | VERIFIED | `R5_7_n79.g6.gz` | 79 | verify_ramsey PASS both halves. networkx PASS both halves. Cloud, 7 Nov. |
 | R(5,15) | 275 [2.3.h] | VERIFIED | `R5_15_n274.g6.gz` | 274 | No K5: clique.c NONE and networkx NONE (cloud). No independent 15-set: clique.c NONE, 52.7 s (cloud), networkx NONE, best 14, 5877 s (Mac, wave 3, 8 Nov). |
 | R(8,9) | 329 [Kuz] | VERIFIED | `R8_9_n328.g6.gz` | 328 | verify_ramsey PASS and networkx PASS, both halves, for both 328-vertex entries. Cloud, 7 Nov. Decoded and checked a second time, independently, by build_G3. |
@@ -80,7 +81,7 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(4,4,4,4,4,4) | 32,006 [Row1] | VERIFIED (symmetry-reduced) | `R4x6_n32005.lengths.gz` | 32,005 | Cyclic, cliques through vertex 0. clique.c --sym NONE 3 in all 6 colours (58 s) and linear0 NONE in all 6 colours. Cloud, 7 Nov. |
 | R(4,4,4,4,4,4,4) | 160,024 [Row1] | VERIFIED (symmetry-reduced) | `R4x7_n160023.lengths.gz` | 160,023 | Cyclic, cliques through vertex 0: clique.c on N(0) in each of 7 colours (82 s) and linear0 NONE in all 7 colours (50 s). Cloud, 7 Nov. |
 
-## VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers (26)
+## VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers (27)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
@@ -106,6 +107,7 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(10,10,10) | 23,094 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R10_10_10_n23093.lengths.gz` | 23,093 | Colours 2 and 3: linear0 NONE (Mac, wave 8a) and clique.c NONE 9 (Mac, wave 8b). Colour 1 on the 253-vertex window the theorem leaves: clique.c, gen0 and linear0 NONE ... |
 | R(7,7,7,7) | 94,874 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R7x4_n94873.lengths.gz` | 94,873 | Inputs U and V: clique.c and gen0 on every colour, whole graph, with lowered-k controls. Template colour checked triangle-free and containing length m-1, phi and N ... |
 | R(8,8,8,8) | 182,002 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R8x4_n182001.lengths.gz` | 182,001 | Inputs U and V: clique.c and gen0 on every colour, whole graph, with lowered-k controls. Template colour checked triangle-free and containing length m-1, phi and N ... |
+| R(9,9,9,9) | 719,204 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R9x4_n719203.lengths.gz` | 719,203 | Inputs. U (9,9,3;1282): colours 1, 2 clique.c and gen0 through vertex 0 with lowered-k controls (the whole-graph run did not finish in 140 s), colour 3 both checkers on ... |
 | R(6,6,6,6,6) | 258,506 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R6x5_n258505.lengths.gz` | 258,505 | Inputs U and V: clique.c and gen0 on every colour, whole graph, with lowered-k controls. Template colour checked triangle-free and containing length m-1, phi and N ... |
 | R(5,5,5,5,5,5) | 441,606 [Row5] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R5x6_n441605.lengths.gz` | 441,605 | Inputs U and V: clique.c and gen0 on every colour, whole graph, with lowered-k controls. Template colour checked triangle-free and containing length m-1, phi and N ... |
 | R(8,8,9) | 10,769 [Row5] | VERIFIED (by proof: XXER Cor. 5, p.15) | `R8_8_9_n10768.colormat.gz` | 10,768 | Vertex-transitive (7 automorphisms checked). Colours 1 and 2: no K7 in N(0), clique.c (37 s, 32 s) and gen0 (39 s, 35 s), cloud. Input (3,7,7;673): verify_ramsey and ... |
@@ -120,12 +122,11 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(4,17) | 200 [Lia+] | VERIFIED (witness found here by search) | `R4_17_n199.g6.gz` | 199 | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
 | R(3,3,3,7) | 247 [6.2.h (derived, unpublished explicit)] | VERIFIED (witness found here by search) | `R3_3_3_7_n246.colormat.gz` | 246 | Input (3,3,7;80): verify_ramsey PASS (circulant), and clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Witness (3,3,3,7;246): verify_ramsey PASS ... |
 
-## PARTIAL (2)
+## PARTIAL (1)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
 | R(7,21) | 1,214 [SLLL] | PARTIAL: one independence subproblem (w = 4) has clique.c only, gen0 not finished | `R7_21_n1213.g6.gz` | 1,213 | No K7: clique.c and gen0 NONE (cloud). Independence subproblem w = 2 (532 vertices): clique.c NONE 18 (424.5 s, Mac, wave 8b) and gen0 NONE (546 s, cloud). Subproblem w ... |
-| R(9,9,9,9) | 719,204 [Row5] | PARTIAL: the window for colours 1 and 2 (K9 on vertices 0..10240) is not finished | `R9x4_n719203.lengths.gz` | 719,203 | Rebuild certificate CERTIFIED. U: colours 1, 2 both checkers through vertex 0, colour 3 both checkers whole graph. V (9,9;562): both checkers, whole graph. So colours 3, ... |
 
 ## RECIPE ONLY (5)
 
@@ -147,11 +148,10 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(8,8,8) | 7,174 [Row5] | NOT REPRODUCED | the (8,9,8;10768) colouring of row R(8,8,9) built from the public (3,7,7;673) | See NOTES.md. |
 | R(3,3,3,5) | 162 [XXER] | NOT REPRODUCED | merges tested on every public and every symmetric S(5) partition | See NOTES.md. |
 
-## STILL NO FILE (9)
+## STILL NO FILE (8)
 
 | cell | survey bound [ref] | label | what there is | notes |
 |---|---|---|---|---|
-| R(3,14) | 67 [Kol2] | STILL NO FILE | searched in three rounds (phase2/search_records/) | The page is served with a self-signed certificate and was not opened. The best public file has 63 vertices. |
 | R(6,13) | 347 [Kuz] | STILL NO FILE | searched in three rounds (phase2/search_records/) | The paper states a cyclic (6,13;346) colouring. Its data were not printed and were not found. |
 | R(3,23) | 139 [XWCS] | STILL NO FILE | searched in three rounds (phase2/search_records/) | No public version found. |
 | R(5,18) | 396 [2.3.h] | STILL NO FILE | not built: the input G387 was not reproduced (row R(5,17)) |  |

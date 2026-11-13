@@ -1,0 +1,81 @@
+{
+ "label": "R(3,14) Kol2 n66 (Wayback 2025-02-20)",
+ "file": "witnesses/R3_14_n66_Kol2.matrix01",
+ "sha256": "4822346058be0da9b49a645d8ebb53986b998cb545647aa673bff080d9139980",
+ "n": 66,
+ "ks": [
+  14,
+  3
+ ],
+ "colours_used": 2,
+ "clique_c_sha256": "137a100275a4a0618412707af2ebee2b1f4fc3b0c24e49bc709b83be09369101",
+ "gen0_c_sha256": "d82e1855554e5a43264dbd63d16494d837860ecd2d281e7d61a39873d4396614",
+ "verify_ramsey": {
+  "n": 66,
+  "ks": [
+   14,
+   3
+  ],
+  "colours": 2,
+  "seconds": 0.0,
+  "verdict": "PASS",
+  "assignment": {
+   "0": 14,
+   "1": 3
+  },
+  "claim": "R(14,3) > 66"
+ },
+ "per_colour": [
+  {
+   "colour": 0,
+   "k": 14,
+   "edges": 1725,
+   "clique_c": "NONE 13",
+   "clique_c_s": 0.01,
+   "gen0": "NONE n=66 K=14 start_vertices_done=66/66",
+   "gen0_s": 0.01,
+   "control_lowered_k": {
+    "clique_c": "FOUND 13 65 ",
+    "gen0": "FOUND"
+   },
+   "corrupted_copy": {
+    "vertex_added": 0,
+    "edges_recoloured": 5,
+    "clique_c": "FOUND 14 65 ",
+    "gen0": "FOUND",
+    "detected_by_both": true
+   },
+   "pass": true,
+   "controls_pass": true
+  },
+  {
+   "colour": 1,
+   "k": 3,
+   "edges": 420,
+   "clique_c": "NONE 2",
+   "clique_c_s": 0.0,
+   "gen0": "NONE n=66 K=3 start_vertices_done=66/66",
+   "gen0_s": 0.0,
+   "control_lowered_k": {
+    "clique_c": "FOUND 2 64 4",
+    "gen0": "FOUND"
+   },
+   "corrupted_copy": {
+    "vertex_added": 0,
+    "edges_recoloured": 2,
+    "clique_c": "FOUND 3 64 4",
+    "gen0": "FOUND",
+    "detected_by_both": true
+   },
+   "pass": true,
+   "controls_pass": true
+  }
+ ],
+ "verdict": "PASS",
+ "claim": "R(14,3) > 66",
+ "logged_at": "2026-11-13T11:47:47-0600"
+}
+
+real	0m0.184s
+user	0m0.149s
+sys	0m0.033s

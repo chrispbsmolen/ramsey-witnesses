@@ -2,7 +2,7 @@
 
 On 4 November 2026, 105 lower bounds in the tables of Radziszowski's survey *Small Ramsey Numbers* (DS1, revision
 18) had no public witness file that was checked here (32 marked RECIPE and 73 marked NO_FILE_FOUND in
-`results/coverage.csv`). Phase 2, from 7 to 12 November 2026, built the constructions that the survey and the cited
+`results/coverage.csv`). Phase 2, from 7 to 13 November 2026, built the constructions that the survey and the cited
 papers describe, looked again for public files, and checked what was found or built. This folder holds the result.
 
 The work followed a registration written before it started, with six amendments on what each label means and on
@@ -26,25 +26,32 @@ searching. The labels are:
 
 A TIMEOUT is never counted as a check.
 
-## Status on 12 November 2026
+## Status on 13 November 2026
 
 | status | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED | 7 | 27 | 34 |
+| VERIFIED | 8 | 27 | 35 |
 | VERIFIED (symmetry-reduced) | 14 | 6 | 20 |
-| VERIFIED (by proof: citation) | 18 | 8 | 26 |
+| VERIFIED (by proof: citation) | 18 | 9 | 27 |
 | VERIFIED (witness found here by search) | 3 | 1 | 4 |
-| PARTIAL | 1 | 1 | 2 |
+| PARTIAL | 1 | 0 | 1 |
 | RECIPE ONLY | 5 | 0 | 5 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 4 | 5 | 9 |
+| STILL NO FILE | 3 | 5 | 8 |
 | all | 55 | 50 | 105 |
 
-84 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
-`summary.json` and `COVERAGE.md`. Two rows are PARTIAL while a check is still running:
+86 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
+`summary.json` and `COVERAGE.md`. Two rows changed on 13 November:
 
-- R(9,9,9,9): the object is built and certified and its inputs have both checkers, but the window search for
-  colours 1 and 2 (K9 on vertices 0..10240) is not finished.
+- R(9,9,9,9) is VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250). The window search for colours 1 and 2
+  (K9 on vertices 0..10240) was split exactly into 2981 and 2908 pieces, and every piece was decided by clique.c and
+  by gen0. The record is `certificates/rowley_round6_windows_full.jsonl`.
+- R(3,14) is VERIFIED with Kolodyazhny's own (3,14;66) graph, read from three Wayback Machine captures of his page
+  (21 January 2022, 31 December 2024, 20 February 2025). The page states no licence. The matrix is included as a
+  transcribed fact with credit, exact source and SHA-256, and is removed on request (`CORRECTIONS.md`).
+
+One row is PARTIAL:
+
 - R(7,21): one reduced independence subproblem has been decided by clique.c only.
 
 When such a check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
@@ -83,7 +90,7 @@ recorded.
 |---|---|
 | `coverage.csv` | one row per cell: survey bound and reference, label, witness file and SHA-256, source with page, table or row, URL or DOI, how the file was read or built, licence or credit, checks, proof, notes |
 | `COVERAGE.md` | the same, as tables grouped by label |
-| `witnesses/` | 86 witness files, gzip-compressed (2.5 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
+| `witnesses/` | 87 witness files, gzip-compressed (2.5 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
 | `CHECKS.md` | the checks behind each label, the checkers and machines, and how to rerun a check |
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
@@ -99,7 +106,8 @@ recorded.
 ## File formats
 
 - `.g6.gz`: graph6, one graph (two-colour witnesses). The graph has no K_k and no independent l-set for R(k,l).
-- `.colormat.gz`: n lines of n digits, the colour of edge ij (the `colormat` format of `verify_ramsey.py`).
+- `.colormat.gz`: n lines of n digits, the colour of edge ij (the `colormat` format of `verify_ramsey.py`). The
+  R(3,14) file is the 0/1 adjacency matrix as its author printed it: digit 1 is an edge, digit 0 a non-edge.
 - `.lengths.gz`: a linear colouring. Line 1 is n, line 2 the colours of the edge lengths 1..n-1, and edge {i, j}
   has the colour of length |i - j|. All of these are cyclic (the colour of length d equals that of n - d).
 

@@ -1,12 +1,12 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "cells": 105,
- "verified": 84,
+ "verified": 86,
  "by_group": {
   "computer": {
-   "two_colour": 7,
+   "two_colour": 8,
    "multicolour": 27,
-   "total": 34
+   "total": 35
   },
   "symmetry": {
    "two_colour": 14,
@@ -15,8 +15,8 @@
   },
   "proof": {
    "two_colour": 18,
-   "multicolour": 8,
-   "total": 26
+   "multicolour": 9,
+   "total": 27
   },
   "search": {
    "two_colour": 3,
@@ -25,8 +25,8 @@
   },
   "partial": {
    "two_colour": 1,
-   "multicolour": 1,
-   "total": 2
+   "multicolour": 0,
+   "total": 1
   },
   "recipe": {
    "two_colour": 5,
@@ -39,15 +39,14 @@
    "total": 5
   },
   "no_file": {
-   "two_colour": 4,
+   "two_colour": 3,
    "multicolour": 5,
-   "total": 9
+   "total": 8
   }
  },
- "witness_files": 86,
- "witness_bytes": 2544330,
+ "witness_files": 87,
+ "witness_bytes": 2545003,
  "partial": [
-  "7,21",
-  "9,9,9,9"
+  "7,21"
  ]
 }

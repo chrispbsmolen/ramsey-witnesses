@@ -1,0 +1,1 @@
+matrix01 witnesses/R3_14_n66_Kol2.matrix01: clique number 2 (< 3, ok), independence number 13 (< 14, ok)

@@ -87,7 +87,8 @@ Evidence: `checks/logs/build_round2/` and the R(3,7,7) and R(8,8,9) rows.
 - Ageron et al., arXiv:2112.03175v2, Table 6 as printed omits the element 49. Exactly two colours keep the S-template
   conditions with it added, one of them was used, and the finished colouring of R(3^9) is checked directly.
 - Rowley's spreadsheet (arXiv:2203.13476v3), column 25, has the header ORDER = 8001, while Table 1 gives order 1282.
-  The first 1281 lengths were used for R(9,9,9,9) (a RECIPE ONLY row).
+  The parameter block of the column also gives 1282, and the header value is the order of a test compound further
+  down the sheet. The first 1281 lengths were used for R(9,9,9,9) and checked as a (9,9,3;1282) colouring.
 
 ## 4. Witnesses taken from a different paper than the one the survey cites
 
@@ -153,3 +154,6 @@ The working tally of 12 November 20:30 Chicago gave 77 VERIFIED. Counting the ta
 point, and 84 after the six Rowley rows (five VERIFIED, R(9,9,9,9) PARTIAL) and the search find for R(3,3,3,7). The
 difference of one is R(6,20): it became VERIFIED (symmetry-reduced) under Amendment 5 at 18:46, and it is one of the 105
 cells, but it was not added to the running count at that step. The table counts it.
+
+On 13 November two rows moved, and the count is 86: R(9,9,9,9) (the window search finished, VERIFIED by proof) and
+R(3,14) (Kolodyazhny's graph found in the Wayback Machine, VERIFIED).

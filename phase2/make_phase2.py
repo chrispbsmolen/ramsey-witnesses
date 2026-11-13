@@ -29,7 +29,7 @@ cnt = {g: collections.Counter() for g, _ in GROUPS}
 for c in cov: cnt[c['group']]['two' if two(c) else 'multi'] += 1
 ver = sum(sum(cnt[g].values()) for g in ('computer', 'symmetry', 'proof', 'search'))
 partial = [c['cell'] for c in cov if c['group'] == 'partial']
-summary = dict(date='2026-11-12', cells=len(cov), verified=ver,
+summary = dict(date='2026-11-13', cells=len(cov), verified=ver,
                by_group={g: dict(two_colour=cnt[g]['two'], multicolour=cnt[g]['multi'], total=sum(cnt[g].values())) for g, _ in GROUPS},
                witness_files=len(man), witness_bytes=sum(int(m['bytes']) for m in man), partial=partial)
 json.dump(summary, open('phase2/summary.json', 'w'), indent=1)
@@ -39,12 +39,12 @@ def short(t, k=170):
     return t if len(t) <= k else t[:k].rsplit(' ', 1)[0] + ' ...'
 
 lines = ['# Phase 2 coverage: the 105 cells without a public witness on 4 November 2026', '',
-         'Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 12 November 2026.', '',
+         'Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 13 November 2026.', '',
          '| group | two-colour | multicolour | total |', '|---|---|---|---|']
 for g, name in GROUPS:
     lines.append('| %s | %d | %d | %d |' % (name, cnt[g]['two'], cnt[g]['multi'], sum(cnt[g].values())))
 lines += ['| all | %d | %d | %d |' % (sum(cnt[g]['two'] for g in cnt), sum(cnt[g]['multi'] for g in cnt), len(cov)), '',
-          'VERIFIED in one of its three forms: %d of 105.' % ver, '']
+          'VERIFIED in one of its four forms: %d of 105.' % ver, '']
 for g, name in GROUPS:
     rows = [c for c in cov if c['group'] == g]
     if not rows: continue
@@ -71,7 +71,7 @@ ck = ['# Checks behind the phase-2 labels', '',
       '| linear0 | `phase2/scripts_as_run/build_round2/checker/linear0.c` (sha256 db46ca7e...) | exact clique search for colourings given by a length vector, cliques through vertex 0 |', '',
       'Every record names the SHA-256 of the object it checked. The witness files in `phase2/witnesses/` are those objects, gzip-compressed where they were not already. `phase2/witnesses/manifest.csv` gives both hashes: `sha256` of the committed file and `sha256_as_checked` of the object as named in the logs.', '',
       '## Machines', '',
-      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 12 November 2026.',
+      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 13 November 2026.',
       '- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`.', '',
       '## How to rerun one check', '',
       '```',
@@ -97,9 +97,9 @@ open('phase2/CHECKS.md', 'w').write('\n'.join(ck) + '\n')
 
 # section for the top-level README (make_readme.py includes it)
 P = lambda g: sum(cnt[g].values())
-sec = ['## Phase 2 (12 November 2026)', '',
-       'On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published colouring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input colouring needed by the published construction is not public, and a registered search found one (see below). Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.', '',
-       '| status on 12 November | two-colour | multicolour | total |', '|---|---|---|---|']
+sec = ['## Phase 2 (13 November 2026)', '',
+       'On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published colouring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input colouring needed by the published construction is not public, and a registered search found one (see below). For R(3,14) the witness is the graph of the author the survey cites, Kolodyazhny, read from archived copies of his page. Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.', '',
+       '| status on 13 November | two-colour | multicolour | total |', '|---|---|---|---|']
 for g, name in GROUPS:
     sec.append('| %s | %d | %d | %d |' % (name.split(',')[0], cnt[g]['two'], cnt[g]['multi'], P(g)))
 sec += ['| all | %d | %d | %d |' % (sum(cnt[g]['two'] for g in cnt), sum(cnt[g]['multi'] for g in cnt), len(cov)), '',
@@ -109,6 +109,6 @@ sec += ['| all | %d | %d | %d |' % (sum(cnt[g]['two'] for g in cnt), sum(cnt[g][
         '- VERIFIED (witness found here by search): the witness, or the input it is built from, was found here by a search (Amendment 2 or 6, see below), and every colour of the witness was checked by both checkers, on the whole object or with a reduction verified on the object, as the row says.',
         '- PARTIAL: one check is missing, as stated in the row. RECIPE ONLY: the construction is written down or built, and not checked. NOT REPRODUCED: the construction as described could not be reproduced from the paper here (`phase2/NOTES.md`). STILL NO FILE: no public witness was found.',
         '- Credit for every construction goes to the authors named in the row. The survey reference is kept for each cell, and where the witness comes from a different paper the row names it (`phase2/NOTES.md`, section 4).', '', '%d witness files (%s bytes in all, compressed) are in `phase2/witnesses/`, each with its SHA-256, source and licence or credit in `phase2/witnesses/manifest.csv`. The checks behind each label are summarised in `phase2/CHECKS.md`, with the logs in `phase2/checks/logs/`. `python3 phase2/check_phase2.py` reruns the repository checker on every witness file.' % (len(man), fmt(summary['witness_bytes'])),
-        '', '**Searches.** Searching for new witnesses was outside the original registration. It was allowed later by two amendments, and every row whose witness was found by search says so. Amendment 2 (7 November) kept three witnesses found by short searches, R(4,10), R(5,8) and R(4,17), with this label. Amendment 6 (12 November) allowed a search for the lost cells, with these rules: runs in the cloud only, each restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code only from its public source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled \"witness found here by search\". Nothing is published or sent as part of the search. Under Amendment 6 a cyclic (3,3,7;80) colouring was found by SAT on Z_80. With Robertson\'s construction it gives the 246-vertex witness for R(3,3,3,7) >= 247 (`phase2/NOTES.md`, section 5, and `phase2/search_s1/SEARCH_RECORD.md`). The other targets of that search were still being searched, with no results recorded.', '', 'Observations made on the way (a misprint in Shearer 1986, three constructions that could not be reproduced from the text, and third-party claims above the survey, which are noted and not counted) are in `phase2/NOTES.md`.', '', 'Two rows are PARTIAL (%s): each row says which check is missing.' % ', '.join(R(x) for x in partial), '']
+        '', '**Searches.** Searching for new witnesses was outside the original registration. It was allowed later by two amendments, and every row whose witness was found by search says so. Amendment 2 (7 November) kept three witnesses found by short searches, R(4,10), R(5,8) and R(4,17), with this label. Amendment 6 (12 November) allowed a search for the lost cells, with these rules: runs in the cloud only, each restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code only from its public source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled \"witness found here by search\". Nothing is published or sent as part of the search. Under Amendment 6 a cyclic (3,3,7;80) colouring was found by SAT on Z_80. With Robertson\'s construction it gives the 246-vertex witness for R(3,3,3,7) >= 247 (`phase2/NOTES.md`, section 5, and `phase2/search_s1/SEARCH_RECORD.md`). The other targets of that search were still being searched, with no results recorded.', '', 'Observations made on the way (a misprint in Shearer 1986, three constructions that could not be reproduced from the text, and third-party claims above the survey, which are noted and not counted) are in `phase2/NOTES.md`.', '', ('One row is PARTIAL (%s): the row says which check is missing.' if len(partial) == 1 else 'These rows are PARTIAL (%s): each row says which check is missing.') % ', '.join(R(x) for x in partial), '']
 open('phase2/README_section.md', 'w').write('\n'.join(sec))
 print(json.dumps(summary['by_group']), ver)
