@@ -2,3 +2,5 @@ Run from a fresh clone of branch phase2-2026-11-12 at commit 117da16. The witnes
 Command: python3 phase2/check_phase2.py --limit 120, at idle CPU priority on one core while another long run shared the machine, so the 120 s limit is wall-clock time under load.
 
 repo_check_v2.*: the seven witness files added at commit a7145f1 (the six Rowley rows and R(3,3,3,7)), from a fresh clone of the branch with those files, same command with --only for those cells. The six Rowley objects have more than 6,000 vertices and are not loaded by the in-memory checker. Their checks are the window searches and input checks listed in CHECKS.md. The (3,3,7;80) input in witnesses/inputs/ also passes verify_ramsey.py (colormat, 3,3,7) at that commit.
+
+repo_check_v3.*: the two rows that changed on 13 November (R(3,14), new witness file, and R(9,9,9,9), new label), from a fresh clone of this branch at commit c22ec07, command python3 phase2/check_phase2.py --limit 120 --only 3,14 9,9,9,9. The R(9,9,9,9) object has more than 6,000 vertices and is not loaded by the in-memory checker. Its checks are the window search and input checks listed in CHECKS.md.

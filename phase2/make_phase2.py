@@ -93,6 +93,9 @@ if os.path.exists('phase2/results/repo_check.txt'):
 if os.path.exists('phase2/results/repo_check_v2.txt'):
     ck += ['', 'The seven witness files added later (the six Rowley rows and R(3,3,3,7)), checked the same way from a fresh clone (`phase2/results/repo_check_v2.txt`):', '',
            '```'] + open('phase2/results/repo_check_v2.txt').read().rstrip().split('\n') + ['```']
+if os.path.exists('phase2/results/repo_check_v3.txt'):
+    ck += ['', 'The two rows that changed on 13 November, R(3,14) and R(9,9,9,9), checked the same way from a fresh clone (`phase2/results/repo_check_v3.txt`):', '',
+           '```'] + open('phase2/results/repo_check_v3.txt').read().rstrip().split('\n') + ['```']
 open('phase2/CHECKS.md', 'w').write('\n'.join(ck) + '\n')
 
 # section for the top-level README (make_readme.py includes it)

@@ -232,3 +232,17 @@ cell                   file                                     n verdict       
 totals: NOT_RUN_SIZE 6, PASS 1
 sha256 all match: True
 ```
+
+The two rows that changed on 13 November, R(3,14) and R(9,9,9,9), checked the same way from a fresh clone (`phase2/results/repo_check_v3.txt`):
+
+```
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 120 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+3,14                   R3_14_n66.colormat.gz                   66 PASS                0.0  VERIFIED
+9,9,9,9                R9x4_n719203.lengths.gz             719203 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+
+totals: NOT_RUN_SIZE 1, PASS 1
+sha256 all match: True
+```
