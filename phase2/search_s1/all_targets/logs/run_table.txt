@@ -1,0 +1,110 @@
+| log | label | ansatz / input | method | legs | CPU s (sum) | result | detail |
+|---|---|---|---|---|---|---|---|
+| calibration.jsonl | calib-337-78 | cyc:78 | symsat | 1 | 31 | FOUND | lazy clauses 34065, solve calls (last leg) 5124 |
+| calibration.jsonl | calib-337-78-orbsa | cyc:78 | orbsa | 1 | 100 | NOT_FOUND | best cost 3 (T 2.0) |
+| calibration.jsonl | calib-337-78-orbsa | cyc:78 | orbsa | 2 | 90 | NOT_FOUND | best cost 3 (T 0.5) |
+| calibration.jsonl | calib-337-78-orbsa | cyc:78 | orbsa | 2 | 90 | NOT_FOUND | best cost 3 (T 1.0) |
+| calibration.jsonl | calib-337-78-images | cyc:78 | symsat | 1 | 7 | FOUND | lazy clauses 37006, solve calls (last leg) 498 |
+| calibration.jsonl | calib-337-78-maxdeg | cyc:78 | symsat | 1 | 11 | FOUND | lazy clauses 13807, solve calls (last leg) 1170 |
+| calibration.jsonl | calib extsat: cyc80 minus one vertex plus one | cyc80.colormat +1 | extsat | 1 | 0 | FOUND | lazy clauses 412, solve calls (last leg) 104 |
+| calibration.jsonl | calib (3,14;63) cyclic | cyc:63 | symsat | 1 | 0 | FOUND | lazy clauses 1069, solve calls (last leg) 62 |
+| calibration.jsonl | calib edgesa (3,3,4;29) from random |  | edgesa | 1 | 60 | NOT_FOUND | best cost 51 monochromatic forbidden cliques (start 301, T 1.0, 160868352 moves last leg) |
+| calibration.jsonl | calib edgesa (3,3,4;29) from random |  | edgesa | 1 | 40 | NOT_FOUND | best cost 17 monochromatic forbidden cliques (start 300, T 0.3, 7899136 moves last leg) |
+| calibration.jsonl | calib edgesa (3,3,4;29) from random |  | edgesa | 1 | 40 | NOT_FOUND | best cost 13 monochromatic forbidden cliques (start 300, T 0.15, 14913536 moves last leg) |
+| calibration.jsonl | calib edgesa (3,3,4;25) from random |  | edgesa | 1 | 1 | FOUND | best cost 0 monochromatic forbidden cliques (start 182, T 0.25, 268089 moves last leg) |
+| calibration.jsonl | calib edgesa (3,3,4;27) from random |  | edgesa | 1 | 40 | NOT_FOUND | best cost 5 monochromatic forbidden cliques (start 249, T 0.25, 12368896 moves last leg) |
+| calibration.jsonl | calib (3,3,3,4;92) cyclic | cyc:92 | symsat | 1 | 252 | FOUND | lazy clauses 5082, solve calls (last leg) 45 |
+| t314_R314.jsonl | R(3,14) n=66 Cayley D33 | dih:33 | symsat | 7 | 3471 | UNSAT | lazy clauses 117297, solve calls (last leg) 3218 |
+| t314_R314.jsonl | R(3,14) n=66 Cayley S3xZ11 | dprod:3:11 | symsat | 1 | 13 | UNSAT | lazy clauses 3389, solve calls (last leg) 3389 |
+| t314_R314.jsonl | R(3,14) n=66 Cayley Z3xD11 | zxd:3:11 | symsat | 1 | 127 | UNSAT | lazy clauses 18159, solve calls (last leg) 18159 |
+| t314_R314.jsonl | R(3,14) n=66 cyclic (control: expected none, Kuznetsov max 63) | cyc:66 | symsat | 1 | 1 | UNSAT | lazy clauses 2621, solve calls (last leg) 271 |
+| t314_R314.jsonl | R(3,14) n=66 extension: cyclic 63 fixed + 3 new vertices | c63_314.colormat +3 | extsat | 1 | 2 | UNSAT | lazy clauses 1411, solve calls (last leg) 133 |
+| t314_R314.jsonl | R(3,14) n=66 extension: cyclic 63, 9 spread vertices freed, + 3 new | c63_314.colormat +3 | extsat | 3 | 1681 | TIME | lazy clauses 299239, solve calls (last leg) 803 |
+| t314_R314.jsonl | R(3,14) n=66 edge annealing from cyclic 63 + 3 random vertices |  | edgesa | 1 | 584 | NOT_FOUND | best cost 52 monochromatic forbidden cliques (start 348, T 0.3, 5120 moves last leg) |
+| t3334_R3334.jsonl | R(3,3,3,4) n=96 cyclic + multiplier 7 (order 4) | cycmul:96:7 | symsat | 1 | 0 | UNSAT | lazy clauses 336, solve calls (last leg) 19 |
+| t3334_R3334.jsonl | R(3,3,3,4) n=96 cyclic + multiplier 5 (order 8) | cycmul:96:5 | symsat | 1 | 0 | UNSAT | lazy clauses 90, solve calls (last leg) 15 |
+| t3334_R3334.jsonl | R(3,3,3,4) n=96 edge annealing from cyclic 92 + 4 random vertices |  | edgesa | 1 | 540 | NOT_FOUND | best cost 63 monochromatic forbidden cliques (start 944, T 0.3, 36346880 moves last leg) |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 cyclic + multiplier 24 (order 6) | cycmul:161:24 | symsat | 1 | 0 | UNSAT | lazy clauses 22, solve calls (last leg) 1 |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 cyclic + multiplier 8 (order 11) | cycmul:161:8 | symsat | 1 | 0 | UNSAT | lazy clauses 1, solve calls (last leg) 1 |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 cyclic + multiplier 93 (order 3) | cycmul:161:93 | symsat | 1 | 0 | UNSAT | lazy clauses 22, solve calls (last leg) 1 |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 edge annealing from random |  | edgesa | 1 | 540 | NOT_FOUND | best cost 1687 monochromatic forbidden cliques (start 32461, T 0.3, 22354944 moves last leg) |
+| t337_R337.jsonl | R(3,3,7) n=84 cyclic | cyc:84 | symsat | 4 | 2256 | TIME | lazy clauses 142161, solve calls (last leg) 116 |
+| t337_R337.jsonl | R(3,3,7) frontier n=80 cyclic (n>=80 gives R(3,3,3,7) via Robertson) | cyc:80 | symsat | 1 | 15 | FOUND | lazy clauses 17574, solve calls (last leg) 1177 |
+| t337_R337.jsonl | R(3,3,7) frontier n=81 cyclic (n>=80 gives R(3,3,3,7) via Robertson) | cyc:81 | symsat | 1 | 15 | FOUND | lazy clauses 19557, solve calls (last leg) 736 |
+| t337_R337.jsonl | R(3,3,7) n=84 extension: cyclic 81 fixed + 3 new vertices | cyc81.colormat +3 | extsat | 1 | 2 | UNSAT | lazy clauses 4109, solve calls (last leg) 344 |
+| t337_R337.jsonl | R(3,3,7) n=82 extension: cyclic 81 fixed + 1 new vertex | cyc81.colormat +1 | extsat | 1 | 1 | UNSAT | lazy clauses 1076, solve calls (last leg) 269 |
+| t337_R337.jsonl | R(3,3,7) n=84 block-cyclic Z42 x 2 | bcyc:42:2 | symsat | 4 | 2245 | TIME | lazy clauses 417582, solve calls (last leg) 544 |
+| t337_R337.jsonl | R(3,3,7) n=84 extension: cyclic 81, 6 spread vertices freed, + 3 new | cyc81.colormat +3 | extsat | 1 | 17 | UNSAT | lazy clauses 38254, solve calls (last leg) 1205 |
+| t337_R337.jsonl | R(3,3,7) n=84 extension: cyclic 81, 12 consecutive vertices freed, + 3 new | cyc81.colormat +3 | extsat | 3 | 1681 | TIME | lazy clauses 837773, solve calls (last leg) 1660 |
+| t337_R337.jsonl | R(3,3,7) n=84 edge annealing from cyclic 81 + 3 random vertices |  | edgesa | 3 | 1683 | NOT_FOUND | best cost 165 monochromatic forbidden cliques (start 165, T 0.2, 375808 moves last leg) |
+| t337_R337.jsonl | R(3,3,7) n=84 edge annealing from cyclic 81 + 3 random vertices |  | edgesa | 3 | 1682 | NOT_FOUND | best cost 97 monochromatic forbidden cliques (start 95, T 0.4, 497664 moves last leg) |
+| t337_R337.jsonl | R(3,3,7) n=84 block-cyclic Z28 x 3 | bcyc:28:3 | symsat | 1 | 560 | TIME | lazy clauses 472584, solve calls (last leg) 547 |
+| t338_R338.jsonl | R(3,3,8) n=102 cyclic + multiplier 13 (order 4) | cycmul:102:13 | symsat | 1 | 0 | UNSAT | lazy clauses 274, solve calls (last leg) 71 |
+| t338_R338.jsonl | R(3,3,8) n=102 cyclic + multiplier 19 (order 8) | cycmul:102:19 | symsat | 1 | 0 | UNSAT | lazy clauses 4, solve calls (last leg) 2 |
+| t338_R338.jsonl | R(3,3,8) n=102 cyclic | cyc:102 | symsat | 1 | 562 | TIME | lazy clauses 108848, solve calls (last leg) 6854 |
+| t338_R338.jsonl | R(3,3,8) n=102 edge annealing from random |  | edgesa | 1 | 541 | NOT_FOUND | best cost 894 monochromatic forbidden cliques (start 13177, T 0.3, 1008640 moves last leg) |
+| t346_R346.jsonl | R(3,4,6) n=116 Z29 x 4 blocks, multiplier -1 (order 2) | bcycmul:29:4:28 | symsat | 2 | 1135 | TIME | lazy clauses 362012, solve calls (last leg) 25 |
+| t346_R346.jsonl | R(3,4,6) n=116 Z29 x 4 blocks, multiplier 12 (order 4, cyclotomic index 7) | bcycmul:29:4:12 | symsat | 1 | 573 | TIME | lazy clauses 128667, solve calls (last leg) 172 |
+| t346_R346.jsonl | R(3,4,6) n=116 Z29 x 4 blocks, multiplier 7 (order 7, cyclotomic index 4) | bcycmul:29:4:7 | symsat | 1 | 0 | UNSAT | lazy clauses 60, solve calls (last leg) 2 |
+| t346_R346.jsonl | R(3,4,6) n=116 Z29 x 4 blocks, multiplier 4 (order 14, cyclotomic index 2) | bcycmul:29:4:4 | symsat | 1 | 0 | UNSAT | lazy clauses 36, solve calls (last leg) 2 |
+| t346_R346.jsonl | R(3,4,6) n=116 cyclic + multiplier 17 (order 4) | cycmul:116:17 | symsat | 1 | 1 | UNSAT | lazy clauses 1156, solve calls (last leg) 115 |
+| t346_R346.jsonl | R(3,4,6) n=116 cyclic + multiplier 25 (order 7) | cycmul:116:25 | symsat | 1 | 0 | UNSAT | lazy clauses 20, solve calls (last leg) 5 |
+| t346_R346.jsonl | R(3,4,6) n=116 cyclic | cyc:116 | symsat | 1 | 563 | TIME | lazy clauses 66053, solve calls (last leg) 1767 |
+| t346_R346.jsonl | R(3,4,6) n=116 edge annealing from random |  | edgesa | 1 | 540 | NOT_FOUND | best cost 874 monochromatic forbidden cliques (start 19597, T 0.3, 21953536 moves last leg) |
+| t613_R613.jsonl | R(6,13) n=346 cyclic with multiplier x->175x (subgroup order 172) | cycmul:346:175 | symsat | 1 | 0 | UNSAT | lazy clauses 4, solve calls (last leg) 4 |
+| t613_R613.jsonl | R(6,13) n=346 cyclic with multiplier x->177x (subgroup order 86) | cycmul:346:177 | symsat | 1 | 0 | UNSAT | lazy clauses 7, solve calls (last leg) 4 |
+| t613_R613.jsonl | R(6,13) n=346 cyclic with multiplier x->189x (subgroup order 43) | cycmul:346:189 | symsat | 1 | 0 | UNSAT | lazy clauses 7, solve calls (last leg) 4 |
+| t613_R613.jsonl | R(6,13) n=346 cyclic with multiplier x->253x (subgroup order 4) | cycmul:346:253 | symsat | 3 | 1681 | TIME | lazy clauses 504820, solve calls (last leg) 1178 |
+| t613_R613.jsonl | R(6,13) n=346 cyclic (plain) | cyc:346 | symsat | 1 | 560 | TIME | lazy clauses 527008, solve calls (last leg) 3152 |
+| t613_kuznetsov.jsonl | R(6,13) n=346 cyclic | ladder 4 11 69 140 50000 141 | Kuznetsov ramsey_df cyclic ladder search | 1 | 581 | TIME | largest cyclic order reached 172; 14363 colourings saved |
+| t613_kuznetsov.jsonl | R(6,13) n=346 cyclic | resume 4 11 168 141 | Kuznetsov ramsey_df cyclic ladder search | 2 | 1160 | TIME | largest cyclic order reached 172; 14363 colourings saved |
+| t613_kuznetsov.jsonl | R(6,13) n=346 cyclic | resume 4 11 172 141 | Kuznetsov ramsey_df cyclic ladder search | 2 | 1160 | TIME | largest cyclic order reached 172; 14363 colourings saved |
+| t3334_R3334.jsonl | R(3,3,3,4) n=96 cyclic | (see label) | symsat/extsat | 1 started | about 580 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 cyclic + multiplier 22 (order 3) | (see label) | symsat/extsat | 2 started | about 1160 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t3335_R3335.jsonl | R(3,3,3,5) n=161 cyclic | (see label) | symsat/extsat | 1 started | about 580 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t337_R337.jsonl | R(3,3,7) frontier n=83 cyclic (n>=80 gives R(3,3,3,7) via Robertson) | (see label) | symsat/extsat | 2 started | about 1160 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t337_R337.jsonl | R(3,3,7) n=84 extension: cyclic 81, 12 spread vertices freed, + 3 new | (see label) | symsat/extsat | 5 started | about 2900 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t337_R337.jsonl | R(3,3,7) n=84 block-cyclic Z21 x 4 | (see label) | symsat/extsat | 1 started | about 580 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+| t338_R338.jsonl | R(3,3,8) n=102 Z17 x 6 blocks, multiplier 4 (order 4) | (see label) | symsat/extsat | 2 started | about 1160 | TIME (every leg stopped by the 590 s process limit inside one solve call) | no end record |
+
+Legs started (leg_start records) per label, including legs stopped by the process limit:
+- calibration.jsonl: calib extsat: cyc80 minus one vertex plus one: 1
+- calibration.jsonl: calib (3,14;63) cyclic: 1
+- calibration.jsonl: calib (3,3,3,4;92) cyclic: 1
+- t314_R314.jsonl: R(3,14) n=66 Cayley D33: 8
+- t314_R314.jsonl: R(3,14) n=66 Cayley S3xZ11: 1
+- t314_R314.jsonl: R(3,14) n=66 Cayley Z3xD11: 1
+- t314_R314.jsonl: R(3,14) n=66 cyclic (control: expected none, Kuznetsov max 63): 1
+- t314_R314.jsonl: R(3,14) n=66 extension: cyclic 63 fixed + 3 new vertices: 1
+- t314_R314.jsonl: R(3,14) n=66 extension: cyclic 63, 9 spread vertices freed, + 3 new: 3
+- t3334_R3334.jsonl: R(3,3,3,4) n=96 cyclic + multiplier 7 (order 4): 1
+- t3334_R3334.jsonl: R(3,3,3,4) n=96 cyclic + multiplier 5 (order 8): 1
+- t3334_R3334.jsonl: R(3,3,3,4) n=96 cyclic: 1
+- t3335_R3335.jsonl: R(3,3,3,5) n=161 cyclic + multiplier 22 (order 3): 2
+- t3335_R3335.jsonl: R(3,3,3,5) n=161 cyclic + multiplier 24 (order 6): 1
+- t3335_R3335.jsonl: R(3,3,3,5) n=161 cyclic + multiplier 8 (order 11): 1
+- t3335_R3335.jsonl: R(3,3,3,5) n=161 cyclic + multiplier 93 (order 3): 1
+- t3335_R3335.jsonl: R(3,3,3,5) n=161 cyclic: 1
+- t337_R337.jsonl: R(3,3,7) frontier n=83 cyclic (n>=80 gives R(3,3,3,7) via Robertson): 2
+- t337_R337.jsonl: R(3,3,7) n=84 extension: cyclic 81 fixed + 3 new vertices: 1
+- t337_R337.jsonl: R(3,3,7) n=82 extension: cyclic 81 fixed + 1 new vertex: 1
+- t337_R337.jsonl: R(3,3,7) n=84 block-cyclic Z42 x 2: 4
+- t337_R337.jsonl: R(3,3,7) n=84 extension: cyclic 81, 6 spread vertices freed, + 3 new: 1
+- t337_R337.jsonl: R(3,3,7) n=84 extension: cyclic 81, 12 spread vertices freed, + 3 new: 5
+- t337_R337.jsonl: R(3,3,7) n=84 extension: cyclic 81, 12 consecutive vertices freed, + 3 new: 3
+- t337_R337.jsonl: R(3,3,7) n=84 block-cyclic Z28 x 3: 2
+- t337_R337.jsonl: R(3,3,7) n=84 block-cyclic Z21 x 4: 1
+- t337_R337.jsonl: R(3,3,7) n=84 cyclic: 1
+- t338_R338.jsonl: R(3,3,8) n=102 cyclic + multiplier 13 (order 4): 1
+- t338_R338.jsonl: R(3,3,8) n=102 cyclic + multiplier 19 (order 8): 1
+- t338_R338.jsonl: R(3,3,8) n=102 Z17 x 6 blocks, multiplier 4 (order 4): 2
+- t338_R338.jsonl: R(3,3,8) n=102 cyclic: 1
+- t346_R346.jsonl: R(3,4,6) n=116 Z29 x 4 blocks, multiplier -1 (order 2): 2
+- t346_R346.jsonl: R(3,4,6) n=116 Z29 x 4 blocks, multiplier 12 (order 4, cyclotomic index 7): 2
+- t346_R346.jsonl: R(3,4,6) n=116 Z29 x 4 blocks, multiplier 7 (order 7, cyclotomic index 4): 1
+- t346_R346.jsonl: R(3,4,6) n=116 Z29 x 4 blocks, multiplier 4 (order 14, cyclotomic index 2): 1
+- t346_R346.jsonl: R(3,4,6) n=116 cyclic + multiplier 17 (order 4): 1
+- t346_R346.jsonl: R(3,4,6) n=116 cyclic + multiplier 25 (order 7): 1
+- t346_R346.jsonl: R(3,4,6) n=116 cyclic: 1
+- t613_R613.jsonl: R(6,13) n=346 cyclic with multiplier x->253x (subgroup order 4): 2
+- t613_R613.jsonl: R(6,13) n=346 cyclic (plain): 1

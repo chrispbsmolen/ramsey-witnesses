@@ -1,0 +1,4 @@
+21:17:30 rc=1 python3 src/symsat.py cycmul:346:175 6,13 560 state/t613/cm175.jsonl finds/t613/cm175 logs/t613_R613.jsonl --label "R(6,13) n=346 cyclic with multiplier x->175x (subgroup order 172)"
+21:17:30 rc=1 python3 src/symsat.py cycmul:346:177 6,13 560 state/t613/cm177.jsonl finds/t613/cm177 logs/t613_R613.jsonl --label "R(6,13) n=346 cyclic with multiplier x->177x (subgroup order 86)"
+21:17:31 rc=1 python3 src/symsat.py cycmul:346:189 6,13 560 state/t613/cm189.jsonl finds/t613/cm189 logs/t613_R613.jsonl --label "R(6,13) n=346 cyclic with multiplier x->189x (subgroup order 43)"
+21:45:35 rc=3 python3 src/symsat.py cycmul:346:253 6,13 560 state/t613/cm253.jsonl finds/t613/cm253 logs/t613_R613.jsonl --label "R(6,13) n=346 cyclic with multiplier x->253x (subgroup order 4)"

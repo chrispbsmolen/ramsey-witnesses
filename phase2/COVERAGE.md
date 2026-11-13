@@ -146,17 +146,17 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(5,19) | 411 [XSR2] | NOT REPRODUCED | needs G387, see row R(5,17) | See NOTES.md. |
 | R(5,20) | 424 [XSR2] | NOT REPRODUCED | needs G387, see row R(5,17) | See NOTES.md. |
 | R(8,8,8) | 7,174 [Row5] | NOT REPRODUCED | the (8,9,8;10768) colouring of row R(8,8,9) built from the public (3,7,7;673) | See NOTES.md. |
-| R(3,3,3,5) | 162 [XXER] | NOT REPRODUCED | merges tested on every public and every symmetric S(5) partition | See NOTES.md. |
+| R(3,3,3,5) | 162 [XXER] | NOT REPRODUCED | merges tested on every public and every symmetric S(5) partition | See NOTES.md, sections 2 and 9. No partition file was captured on Exoo's pages. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
 
 ## STILL NO FILE (8)
 
 | cell | survey bound [ref] | label | what there is | notes |
 |---|---|---|---|---|
-| R(6,13) | 347 [Kuz] | STILL NO FILE | searched in three rounds (phase2/search_records/) | The paper states a cyclic (6,13;346) colouring. Its data were not printed and were not found. |
-| R(3,23) | 139 [XWCS] | STILL NO FILE | searched in three rounds (phase2/search_records/) | No public version found. |
+| R(6,13) | 347 [Kuz] | STILL NO FILE | searched in four rounds (phase2/search_records/) | The paper states a cyclic (6,13;346) colouring. Its data were not printed and were not found. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
+| R(3,23) | 139 [XWCS] | STILL NO FILE | searched in four rounds (phase2/search_records/) | No public version found. |
 | R(5,18) | 396 [2.3.h] | STILL NO FILE | not built: the input G387 was not reproduced (row R(5,17)) |  |
-| R(3,3,7) | 85 [Ex18] | STILL NO FILE | searched in three rounds, including Wayback captures of cs.indstate.edu/ge/RAMSEY (phase2/search_records/) | Only the older g337.78 is public. |
-| R(3,3,8) | 103 [Ex18] | STILL NO FILE | searched in three rounds (phase2/search_records/) |  |
-| R(3,4,6) | 117 [Ex17] | STILL NO FILE | searched in three rounds (phase2/search_records/) |  |
-| R(3,3,3,4) | 97 [Ex17] | STILL NO FILE | searched in three rounds, including Wayback captures | Only g3334.92 and an older cyclic colouring on 86 vertices are public. |
-| R(3,10,10) | 2,841 [Row5] | STILL NO FILE | searched in three rounds (phase2/search_records/) | Neither the text, the tables nor the spreadsheet of Row5 contain a (3,10,10) or (10,10,3) colouring. |
+| R(3,3,7) | 85 [Ex18] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 84-vertex file was captured. The largest (3,3,7) files in the fullest captured listing have 80 vertices (g337.80a to g337.80e), and the older g337.78 is ... |
+| R(3,3,8) | 103 [Ex18] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 102-vertex file was captured. The largest in the fullest captured listing is g338.100. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
+| R(3,4,6) | 117 [Ex17] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 116-vertex file was captured. The largest in the fullest captured listing is g346.108. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
+| R(3,3,3,4) | 97 [Ex17] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 96-vertex file was captured. Only g3334.92 and an older cyclic colouring on 86 vertices are public. Search S1 did not find one ... |
+| R(3,10,10) | 2,841 [Row5] | STILL NO FILE | searched in four rounds (phase2/search_records/) | Neither the text, the tables nor the spreadsheet of Row5 contain a (3,10,10) or (10,10,3) colouring. |

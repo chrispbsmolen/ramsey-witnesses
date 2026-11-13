@@ -73,16 +73,31 @@ witness was found by search says so in its label or its notes.
   source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled
   "witness found here by search". Nothing is published or sent as part of the search.
 
-Find so far under Amendment 6 (full record of the run, with scripts, solver versions and logs, in `search_s1/SEARCH_RECORD.md`):
+Finds under Amendment 6 (the record of the search, with scripts, solver versions and logs, is `search_s1/SEARCH_RECORD.md`):
 
 | find | how | check |
 |---|---|---|
 | cyclic (3,3,7;80) colouring, `witnesses/inputs/R3_3_7_n80_cyclic.colormat.gz` (sha256 636ac4bc... uncompressed) | SAT on Z_80 | verify_ramsey PASS (circulant). clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Controls: lowered k FOUND, one edge recoloured caught, by both checkers |
 | (3,3,3,7;246) colouring, `witnesses/R3_3_3_7_n246.colormat.gz` (sha256 e1e5cda0... uncompressed), so R(3,3,3,7) >= 247 | Robertson's construction (Electron. J. Combin. 6 (1999) #R3, Part Two) applied to the find above | verify_ramsey PASS. clique.c and gen0 on every colour, whole graph, no reduction: NONE 2, 2, 2, 6. Controls as above |
 
-The (3,3,7;80) colouring is below the survey's value R(3,3,7) >= 85, so that cell stays STILL NO FILE. The other
-targets (R(6,13), R(3,3,7), R(3,4,6), R(3,3,8), R(3,3,3,4), R(3,3,3,5), R(3,14)): search in progress, no results
-recorded.
+The (3,3,7;80) colouring is below the survey's value R(3,3,7) >= 85, so that cell stays STILL NO FILE. The search also
+found a cyclic (3,3,7;81) colouring, which is not used in any row.
+
+The search ended on 13 November. Outcome for the other targets:
+
+| target | outcome |
+|---|---|
+| R(6,13), a (6,13;346) colouring | not found. Three cyclic forms with a multiplier excluded exactly, two forms undecided. Kuznetsov's public code reached cyclic order 172 within the run limits |
+| R(3,3,7), a (3,3,7;84) colouring | not found. The cyclic (3,3,7;81) colouring has no extension by one or by three new vertices (exact). Cyclic and block-cyclic forms on 82 to 84 vertices undecided |
+| R(3,4,6), a (3,4,6;116) colouring | not found. Four symmetric forms excluded exactly, three undecided |
+| R(3,3,8), a (3,3,8;102) colouring | not found. Two symmetric forms excluded exactly, two undecided |
+| R(3,3,3,4), a (3,3,3,4;96) colouring | not found. Two symmetric forms excluded exactly, the cyclic form undecided |
+| R(3,3,3,5), a (3,3,3,5;161) colouring | not found. Three symmetric forms excluded exactly, two undecided |
+| R(3,14), a (3,14;66) graph | not found by the search. There is no Cayley graph of this kind on any of the four groups of order 66 (exact). The cell is VERIFIED by Kolodyazhny's graph, which is not a Cayley graph |
+
+An exact negative holds only for the symmetric form stated in `search_s1/SEARCH_RECORD.md`. A run that reached its
+time limit decides nothing. The annealing runs stopped improving for every target, which is a plateau of the method
+and not evidence that no colouring exists.
 
 ## Contents
 
@@ -94,8 +109,8 @@ recorded.
 | `CHECKS.md` | the checks behind each label, the checkers and machines, and how to rerun a check |
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
-| `NOTES.md` | a misprint, three constructions not reproduced from the text, readings of printed tables, third-party claims noted and not counted |
-| `search_s1/` | the record of the Amendment 6 search run behind R(3,3,3,7): scripts, solver versions, log entries, `SEARCH_RECORD.md` |
+| `NOTES.md` | a misprint, three constructions not reproduced from the text, readings of printed tables, third-party claims noted and not counted, and what the search for Exoo's unpublished colourings covered |
+| `search_s1/` | the record of the Amendment 6 search: the run behind R(3,3,3,7), and in `all_targets/` the scripts and logs of every target, with the outcome for each in `SEARCH_RECORD.md` |
 | `search_records/` | where each search round looked, with what it found, including searches that found nothing (`sources.csv` and `searched_before.csv` of the rounds), with `INDEX.csv` |
 | `recipes.csv` | the large built objects (the five RECIPE ONLY rows and the six Rowley rows): the object, the expected SHA-256 of the built file, the build script and the row's status |
 | `scripts_as_run/` | the build and check scripts as they were run, with `INDEX.csv` |

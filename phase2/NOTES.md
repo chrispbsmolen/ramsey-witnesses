@@ -117,8 +117,14 @@ Z_80 found a cyclic (3,3,7;80) colouring. Robertson's construction (Electron. J.
 turns it into a (3,3,3,7;246) colouring, so R(3,3,3,7) >= 247, the survey's value (item 6.2.h). The row is labelled
 "VERIFIED (witness found here by search)". The (3,3,7;80) colouring is not Exoo's (3,3,7;84) colouring, which is not
 public, and it does not reach the survey's value for R(3,3,7) itself. The search run (scripts, python-sat and CaDiCaL
-versions, log entries) is recorded in `search_s1/SEARCH_RECORD.md`. The other targets of that search were still being
-searched, with no results recorded.
+versions, log entries) is recorded in `search_s1/SEARCH_RECORD.md`.
+
+The search ended on 13 November. It also found a cyclic (3,3,7;81) colouring, which is below the survey's value for
+R(3,3,7) as well and is not used in any row. For the other targets (R(6,13), R(3,3,7), R(3,4,6),
+R(3,3,8), R(3,3,3,4), R(3,3,3,5), R(3,14)) the search found no witness. `search_s1/SEARCH_RECORD.md` lists for each of
+them the symmetric forms that were excluded exactly and the runs that ended undecided. An exact negative holds only
+for the form stated. For example, there is no (3,14;66) Cayley graph on any of the four groups of order 66, while
+Kolodyazhny's (3,14;66) graph, which is not a Cayley graph, is the witness of row R(3,14).
 
 ## 6. Choices made in builds
 
@@ -157,3 +163,23 @@ cells, but it was not added to the running count at that step. The table counts 
 
 On 13 November two rows moved, and the count is 86: R(9,9,9,9) (the window search finished, VERIFIED by proof) and
 R(3,14) (Kolodyazhny's graph found in the Wayback Machine, VERIFIED).
+
+## 9. The cells that rest on colourings by Exoo that are not public (fourth search round, 13 November)
+
+The survey cites personal communications of Exoo for R(3,3,7) >= 85 and R(3,3,8) >= 103 (Ex18) and for
+R(3,4,6) >= 117 and R(3,3,3,4) >= 97 (Ex17). R(3,3,3,5) >= 162 (XXER) uses a (3,3,3,3,3;161) colouring by Exoo that
+is not printed (section 2). The fourth search round looked for these files in the Wayback Machine:
+
+- every capture of every address under /ge/RAMSEY on cs.indstate.edu (210 captures), isu.indstate.edu (576) and
+  ginger.indstate.edu (1736), and under isu.indstate.edu/~gexoo (25), was listed,
+- all 23 distinct versions of the index pages (2001 to 2026) and all 6 versions of the ExTa/ directory listing were
+  read,
+- the three hosts were searched for other addresses containing 337, 338, 346, 3334, 3335 or "schur".
+
+No file with 84, 102, 116, 96 or 161 vertices appears in any capture. The fullest directory listing (ginger, 16 May
+2015, 63 files) has g337.80a to g337.80e, g338.100 and g346.108, and the index pages link g337.78 and g3334.92. So
+these five colourings could not be checked here. Four rows stay STILL NO FILE and R(3,3,3,5) stays NOT REPRODUCED.
+This is a statement about which files are public, and nothing else. The record is `search_records/hunt4__sources.csv`,
+and the SHA-256 of every listing and page that was read is in `checks/logs/hunt4/downloads_SHA256SUMS.txt`.
+
+The same round found Kolodyazhny's page in the Wayback Machine (row R(3,14)). For R(6,13), R(3,23), R(5,17) to R(5,20), R(8,8,8) and R(3,10,10) it found nothing new.
