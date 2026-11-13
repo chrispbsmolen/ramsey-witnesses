@@ -1,0 +1,2 @@
+20:46:57 rc=0 python3 src/symsat.py cyc:80 3,3,7 560 state/t337/cyc80.jsonl finds/t337/cyc80 logs/t337_R337.jsonl --label "R(3,3,7) frontier n=80 cyclic (n>=80 gives R(3,3,3,7) via Robertson)" --maxdeg 0:22,1:22
+20:47:12 rc=0 python3 src/symsat.py cyc:81 3,3,7 560 state/t337/cyc81.jsonl finds/t337/cyc81 logs/t337_R337.jsonl --label "R(3,3,7) frontier n=81 cyclic (n>=80 gives R(3,3,3,7) via Robertson)" --maxdeg 0:22,1:22

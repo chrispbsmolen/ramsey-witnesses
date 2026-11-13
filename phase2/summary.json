@@ -4,14 +4,14 @@
  "verified": 84,
  "by_group": {
   "computer": {
-   "two_colour": 9,
+   "two_colour": 7,
    "multicolour": 27,
-   "total": 36
+   "total": 34
   },
   "symmetry": {
-   "two_colour": 15,
+   "two_colour": 14,
    "multicolour": 6,
-   "total": 21
+   "total": 20
   },
   "proof": {
    "two_colour": 18,
@@ -19,9 +19,9 @@
    "total": 26
   },
   "search": {
-   "two_colour": 0,
+   "two_colour": 3,
    "multicolour": 1,
-   "total": 1
+   "total": 4
   },
   "partial": {
    "two_colour": 1,

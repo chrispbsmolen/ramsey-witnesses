@@ -107,7 +107,7 @@ kept in the table, and the source column names the paper actually used.
 
 For R(4,10) >= 92, R(5,8) >= 101 and R(4,17) >= 200 the cited colourings (Harborth and Krause, HaKr1, and LiaWXS)
 are not public. The witnesses here were found by a short circulant tabu search (R(4,10), R(5,8)) and by a scan of
-unions of cyclotomic classes mod 199 (R(4,17)). They are labelled as such in every row and file, and the search
+unions of cyclotomic classes mod 199 (R(4,17)). Their rows are labelled "VERIFIED (witness found here by search)" and the files say so, and the search
 scripts are in `scripts_as_run/hunt3_two_colour/` with their SHA-256 in `scripts_as_run/INDEX.csv`. R(6,15) and
 R(7,18) are built from two of these witnesses by the survey's construction and carry the same label on their input.
 
@@ -115,8 +115,9 @@ Under Amendment 6 (12 November, a registered search for the lost cells, rules in
 Z_80 found a cyclic (3,3,7;80) colouring. Robertson's construction (Electron. J. Combin. 6 (1999) #R3, Part Two)
 turns it into a (3,3,3,7;246) colouring, so R(3,3,3,7) >= 247, the survey's value (item 6.2.h). The row is labelled
 "VERIFIED (witness found here by search)". The (3,3,7;80) colouring is not Exoo's (3,3,7;84) colouring, which is not
-public, and it does not reach the survey's value for R(3,3,7) itself. The search scripts and full search logs were
-not yet in the record on 12 November. The check log of the two finds is `checks/logs/search_s1/logs/verify_finds.jsonl`.
+public, and it does not reach the survey's value for R(3,3,7) itself. The search run (scripts, python-sat and CaDiCaL
+versions, log entries) is recorded in `search_s1/SEARCH_RECORD.md`. The other targets of that search were still being
+searched, with no results recorded.
 
 ## 6. Choices made in builds
 

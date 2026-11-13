@@ -33,9 +33,9 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 
 | cell | label | witness (sha256 of committed file) | checks |
 |---|---|---|---|
-| R(4,10) | VERIFIED | `R4_10_n91.g6.gz` (4d6491b990d7...) | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 3, independence number 9. Cloud, 7 Nov. |
+| R(4,10) | VERIFIED (witness found here by search) | `R4_10_n91.g6.gz` (4d6491b990d7...) | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 3, independence number 9. Cloud, 7 Nov. |
 | R(5,7) | VERIFIED | `R5_7_n79.g6.gz` (e1f088fe7efe...) | verify_ramsey PASS both halves. networkx PASS both halves. Cloud, 7 Nov. |
-| R(5,8) | VERIFIED | `R5_8_n100.g6.gz` (2981ac092220...) | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 4, independence number 7. Cloud, 7 Nov. |
+| R(5,8) | VERIFIED (witness found here by search) | `R5_8_n100.g6.gz` (2981ac092220...) | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 4, independence number 7. Cloud, 7 Nov. |
 | R(5,15) | VERIFIED | `R5_15_n274.g6.gz` (bee135f0e847...) | No K5: clique.c NONE and networkx NONE (cloud). No independent 15-set: clique.c NONE, 52.7 s (cloud), networkx NONE, best 14, 5877 s (Mac, wave 3, 8 Nov). |
 | R(6,15) | VERIFIED (symmetry-reduced) | `R6_15_n400.g6.gz` (1e57095fc237...) | No K6: clique.c and networkx on the whole graph. No independent 15-set: clique.c --sym NONE 14 (54 s) and gen0 on N(0) (38.6 s), 4 automorphism generators and transitivity checked on the matrix. Cloud, 12 Nov. |
 | R(7,11) | VERIFIED (symmetry-reduced) | `R7_11_n404.g6.gz` (7ae34e4d30ae...) | Vertex transitivity checked on the graph (4 automorphism generators, orbit of vertex 0 is everything). Both checkers on cliques through vertex 0: no K7, clique.c NONE and networkx NONE. No independent 11-set, clique.c NONE (6 s) and networkx NONE (431 s). Cloud, 7 Nov. |
@@ -55,7 +55,7 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 | R(18,18) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R18_18_n11004.g6.gz` (4e4e1a46c4f7...) | Input: omega(Q_5501) = 16, no K_17 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_16 checked edge by edge (Mac wave 8a, 12 Nov). |
 | R(3,21) | VERIFIED | `R3_21_n121.g6.gz` (ad8557d4ac2a...) | verify_ramsey PASS and networkx PASS, both halves. Cloud, 7 Nov. |
 | R(3,22) | VERIFIED | `R3_22_n130.g6.gz` (f581a1592676...) | verify_ramsey PASS and networkx PASS, both halves. Cloud, 7 Nov. |
-| R(4,17) | VERIFIED (symmetry-reduced) | `R4_17_n199.g6.gz` (ce66ef50b537...) | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
+| R(4,17) | VERIFIED (witness found here by search) | `R4_17_n199.g6.gz` (ce66ef50b537...) | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
 | R(4,22) | VERIFIED (symmetry-reduced) | `R4_22_n313.g6.gz` (a45f36747cd6...) | verify_ramsey PASS both halves (46 s, cloud). networkx with translation symmetry: clique number 3, independence number 21 (23075 s, Mac, wave 7). |
 | R(5,21) | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R5_21_n440.g6.gz` (315aaf8a6948...) | No K5: clique.c NONE (0.1 s) and networkx NONE (2.4 s), cloud. Input r3.20.110: both checkers, whole graph (build_round5). |
 | R(5,22) | VERIFIED (symmetry-reduced) | `R5_22_n491.g6.gz` (b1597d918c89...) | verify_ramsey PASS both halves (104.5 s, cloud). Reduced check after verifying x -> x+1 and x -> 2^7 x on the matrix: clique.c and gen0 NONE on all 7 subproblems (cloud, 12 Nov). networkx without reduction reached its 24 h limit (Mac, wave 7), not a check. |

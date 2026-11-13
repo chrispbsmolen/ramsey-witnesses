@@ -17,8 +17,8 @@ searching. The labels are:
   with page, applied to inputs that were themselves checked by both checkers. Every computed part was checked by
   both checkers. Proofs written here do not count.
 - **VERIFIED (witness found here by search)**: the witness, or the input it is built from, was found here by a search
-  run under the rules below (Amendment 6), and every colour of the witness was checked by both checkers on the whole
-  object, with negative controls.
+  (Amendment 2 or 6, see Searches below), and every colour of the witness was checked by both checkers, on the whole
+  object or with a reduction verified on the object, as the row says.
 - **PARTIAL**: one check is missing, as the row says.
 - **RECIPE ONLY**: the construction is written down or built, and not checked.
 - **NOT REPRODUCED**: the construction as described could not be reproduced from the paper here.
@@ -30,10 +30,10 @@ A TIMEOUT is never counted as a check.
 
 | status | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED | 9 | 27 | 36 |
-| VERIFIED (symmetry-reduced) | 15 | 6 | 21 |
+| VERIFIED | 7 | 27 | 34 |
+| VERIFIED (symmetry-reduced) | 14 | 6 | 20 |
 | VERIFIED (by proof: citation) | 18 | 8 | 26 |
-| VERIFIED (witness found here by search) | 0 | 1 | 1 |
+| VERIFIED (witness found here by search) | 3 | 1 | 4 |
 | PARTIAL | 1 | 1 | 2 |
 | RECIPE ONLY | 5 | 0 | 5 |
 | NOT REPRODUCED | 3 | 2 | 5 |
@@ -57,8 +57,8 @@ Searching for new witnesses was outside the registration at first. Two amendment
 witness was found by search says so in its label or its notes.
 
 - Amendment 2 (7 November) kept three witnesses found by short searches outside the original scope: R(4,10) and
-  R(5,8) (circulant tabu search) and R(4,17) (unions of cyclotomic classes mod 199). Their rows carry the note
-  "independent witness found here by search", and so do the inputs of R(6,15) and R(7,18).
+  R(5,8) (circulant tabu search) and R(4,17) (unions of cyclotomic classes mod 199). Their rows are labelled
+  "VERIFIED (witness found here by search)", and the rows R(6,15) and R(7,18), built from two of them, say so in their notes.
 - Amendment 6 (12 November) allowed a search for the lost cells under these rules: runs in the cloud only, each
   restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a
   target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and
@@ -66,15 +66,16 @@ witness was found by search says so in its label or its notes.
   source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled
   "witness found here by search". Nothing is published or sent as part of the search.
 
-Find so far under Amendment 6 (log `checks/logs/search_s1/logs/verify_finds.jsonl`):
+Find so far under Amendment 6 (full record of the run, with scripts, solver versions and logs, in `search_s1/SEARCH_RECORD.md`):
 
 | find | how | check |
 |---|---|---|
 | cyclic (3,3,7;80) colouring, `witnesses/inputs/R3_3_7_n80_cyclic.colormat.gz` (sha256 636ac4bc... uncompressed) | SAT on Z_80 | verify_ramsey PASS (circulant). clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Controls: lowered k FOUND, one edge recoloured caught, by both checkers |
 | (3,3,3,7;246) colouring, `witnesses/R3_3_3_7_n246.colormat.gz` (sha256 e1e5cda0... uncompressed), so R(3,3,3,7) >= 247 | Robertson's construction (Electron. J. Combin. 6 (1999) #R3, Part Two) applied to the find above | verify_ramsey PASS. clique.c and gen0 on every colour, whole graph, no reduction: NONE 2, 2, 2, 6. Controls as above |
 
-The (3,3,7;80) colouring is below the survey's value R(3,3,7) >= 85, so that cell stays STILL NO FILE. The search
-for the other targets was still running on 12 November.
+The (3,3,7;80) colouring is below the survey's value R(3,3,7) >= 85, so that cell stays STILL NO FILE. The other
+targets (R(6,13), R(3,3,7), R(3,4,6), R(3,3,8), R(3,3,3,4), R(3,3,3,5), R(3,14)): search in progress, no results
+recorded.
 
 ## Contents
 
@@ -87,6 +88,7 @@ for the other targets was still running on 12 November.
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
 | `NOTES.md` | a misprint, three constructions not reproduced from the text, readings of printed tables, third-party claims noted and not counted |
+| `search_s1/` | the record of the Amendment 6 search run behind R(3,3,3,7): scripts, solver versions, log entries, `SEARCH_RECORD.md` |
 | `search_records/` | where each search round looked, with what it found, including searches that found nothing (`sources.csv` and `searched_before.csv` of the rounds), with `INDEX.csv` |
 | `recipes.csv` | the large built objects (the five RECIPE ONLY rows and the six Rowley rows): the object, the expected SHA-256 of the built file, the build script and the row's status |
 | `scripts_as_run/` | the build and check scripts as they were run, with `INDEX.csv` |

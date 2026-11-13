@@ -4,10 +4,10 @@ Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the ful
 
 | group | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED, every half or colour checked by two independent checkers on the object | 9 | 27 | 36 |
-| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 15 | 6 | 21 |
+| VERIFIED, every half or colour checked by two independent checkers on the object | 7 | 27 | 34 |
+| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 14 | 6 | 20 |
 | VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 18 | 8 | 26 |
-| VERIFIED (witness found here by search), both checkers on the whole object, the witness found by a registered search (Amendment 6) | 0 | 1 | 1 |
+| VERIFIED (witness found here by search), the witness or its input found here by search (Amendments 2 and 6), every colour checked by both checkers | 3 | 1 | 4 |
 | PARTIAL | 1 | 1 | 2 |
 | RECIPE ONLY | 5 | 0 | 5 |
 | NOT REPRODUCED | 3 | 2 | 5 |
@@ -16,13 +16,11 @@ Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the ful
 
 VERIFIED in one of its three forms: 84 of 105.
 
-## VERIFIED, every half or colour checked by two independent checkers on the object (36)
+## VERIFIED, every half or colour checked by two independent checkers on the object (34)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
-| R(4,10) | 92 [HaKr1] | VERIFIED | `R4_10_n91.g6.gz` | 91 | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 3, independence number 9. Cloud, 7 Nov. |
 | R(5,7) | 80 [CaET] | VERIFIED | `R5_7_n79.g6.gz` | 79 | verify_ramsey PASS both halves. networkx PASS both halves. Cloud, 7 Nov. |
-| R(5,8) | 101 [HaKr1] | VERIFIED | `R5_8_n100.g6.gz` | 100 | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 4, independence number 7. Cloud, 7 Nov. |
 | R(5,15) | 275 [2.3.h] | VERIFIED | `R5_15_n274.g6.gz` | 274 | No K5: clique.c NONE and networkx NONE (cloud). No independent 15-set: clique.c NONE, 52.7 s (cloud), networkx NONE, best 14, 5877 s (Mac, wave 3, 8 Nov). |
 | R(8,9) | 329 [Kuz] | VERIFIED | `R8_9_n328.g6.gz` | 328 | verify_ramsey PASS and networkx PASS, both halves, for both 328-vertex entries. Cloud, 7 Nov. Decoded and checked a second time, independently, by build_G3. |
 | R(8,11) | 457 [2.3.i] | VERIFIED | `R8_11_n456.g6.gz` | 456 | No K8: clique.c NONE (0.4 s) and networkx NONE (49.8 s), cloud. No independent 11-set: clique.c NONE 10, 301 s (Mac, wave 2) and networkx NONE, 16212 s (Mac, wave 4). |
@@ -57,14 +55,13 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(3,8,8) | 941 [Row5] | VERIFIED | `R3_8_8_n940.colormat.gz` | 940 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,9,9) | 1,844 [Row5] | VERIFIED | `R3_9_9_n1843.colormat.gz` | 1,843 | verify_ramsey PASS (14 s) and crosscheck_mc PASS (110 s). Cloud, 7 Nov. |
 
-## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (21)
+## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (20)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
 | R(6,15) | 401 [2.3.i] | VERIFIED (symmetry-reduced) | `R6_15_n400.g6.gz` | 400 | No K6: clique.c and networkx on the whole graph. No independent 15-set: clique.c --sym NONE 14 (54 s) and gen0 on N(0) (38.6 s), 4 automorphism generators and ... |
 | R(7,11) | 405 [XXER] | VERIFIED (symmetry-reduced) | `R7_11_n404.g6.gz` | 404 | Vertex transitivity checked on the graph (4 automorphism generators, orbit of vertex 0 is everything). Both checkers on cliques through vertex 0: no K7, clique.c NONE ... |
 | R(11,11) | 1,597 [2.2.c] | VERIFIED (symmetry-reduced) | `R11_11_n1596.g6.gz` | 1,596 | Reduced check with verified automorphisms, clique.c and networkx, both colours (10 searches, 908 s, cloud). Full verify_ramsey on both colours, NONE 10 (23039 s and ... |
-| R(4,17) | 200 [Lia+] | VERIFIED (symmetry-reduced) | `R4_17_n199.g6.gz` | 199 | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
 | R(4,22) | 314 [LinCa] | VERIFIED (symmetry-reduced) | `R4_22_n313.g6.gz` | 313 | verify_ramsey PASS both halves (46 s, cloud). networkx with translation symmetry: clique number 3, independence number 21 (23075 s, Mac, wave 7). |
 | R(5,22) | 492 [Ihr] | VERIFIED (symmetry-reduced) | `R5_22_n491.g6.gz` | 491 | verify_ramsey PASS both halves (104.5 s, cloud). Reduced check after verifying x -> x+1 and x -> 2^7 x on the matrix: clique.c and gen0 NONE on all 7 subproblems (cloud, ... |
 | R(6,16) | 434 [SLLL] | VERIFIED (symmetry-reduced) | `R6_16_n433.g6.gz` | 433 | Translations and x -> g^3 x verified on the matrix, edge and non-edge orbits through 0 computed (clique side w=1 (47 vertices), independence side w=3, 7 (195, 187 ... |
@@ -114,10 +111,13 @@ VERIFIED in one of its three forms: 84 of 105.
 | R(8,8,9) | 10,769 [Row5] | VERIFIED (by proof: XXER Cor. 5, p.15) | `R8_8_9_n10768.colormat.gz` | 10,768 | Vertex-transitive (7 automorphisms checked). Colours 1 and 2: no K7 in N(0), clique.c (37 s, 32 s) and gen0 (39 s, 35 s), cloud. Input (3,7,7;673): verify_ramsey and ... |
 | R(6,6,6,6,6,6) | 4,515,702 [Row2/Row3 (linear Ramsey graphs)] | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R6x6_n5499101.lengths.gz` | 5,499,101 | Inputs U and V: clique.c and gen0 on every colour, whole graph, with lowered-k controls. Template colour checked triangle-free and containing length m-1, phi and N ... |
 
-## VERIFIED (witness found here by search), both checkers on the whole object, the witness found by a registered search (Amendment 6) (1)
+## VERIFIED (witness found here by search), the witness or its input found here by search (Amendments 2 and 6), every colour checked by both checkers (4)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
+| R(4,10) | 92 [HaKr1] | VERIFIED (witness found here by search) | `R4_10_n91.g6.gz` | 91 | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 3, independence number 9. Cloud, 7 Nov. |
+| R(5,8) | 101 [HaKr1] | VERIFIED (witness found here by search) | `R5_8_n100.g6.gz` | 100 | verify_ramsey PASS (circulant). networkx, whole graph, no symmetry: clique number 4, independence number 7. Cloud, 7 Nov. |
+| R(4,17) | 200 [Lia+] | VERIFIED (witness found here by search) | `R4_17_n199.g6.gz` | 199 | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
 | R(3,3,3,7) | 247 [6.2.h (derived, unpublished explicit)] | VERIFIED (witness found here by search) | `R3_3_3_7_n246.colormat.gz` | 246 | Input (3,3,7;80): verify_ramsey PASS (circulant), and clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Witness (3,3,3,7;246): verify_ramsey PASS ... |
 
 ## PARTIAL (2)
