@@ -212,3 +212,22 @@ cell                   file                                     n verdict       
 totals: NOT_COMPLETED 30, NOT_RUN_SIZE 10, PASS 39
 sha256 all match: True
 ```
+
+The seven witness files added later (the six Rowley rows and R(3,3,3,7)), checked the same way from a fresh clone (`phase2/results/repo_check_v2.txt`):
+
+```
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 120 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+7,7,7,7                R7x4_n94873.lengths.gz               94873 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+8,8,8,8                R8x4_n182001.lengths.gz             182001 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+9,9,9,9                R9x4_n719203.lengths.gz             719203 NOT_RUN_SIZE             PARTIAL: the window for colours 1 and 2 (K9 on vertices 0..10240) is not finished
+6,6,6,6,6              R6x5_n258505.lengths.gz             258505 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+5,5,5,5,5,5            R5x6_n441605.lengths.gz             441605 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+6,6,6,6,6,6            R6x6_n5499101.lengths.gz           5499101 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+3,3,3,7                R3_3_3_7_n246.colormat.gz              246 PASS                0.2  VERIFIED (witness found here by search)
+
+totals: NOT_RUN_SIZE 6, PASS 1
+sha256 all match: True
+```
