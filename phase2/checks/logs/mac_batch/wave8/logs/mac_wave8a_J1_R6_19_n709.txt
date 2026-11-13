@@ -1,0 +1,22 @@
+=== start 2026-11-12 14:03:59 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 -c import sys, os, json; sys.path.insert(0, "tools"); import verify_ramsey as V; V.CLIQUE = os.path.abspath("tools/clique_mac"); print(json.dumps(V.verify(V.load(sys.argv[1], sys.argv[2], ""), [int(x) for x in sys.argv[3].split(",")], timeout=float(sys.argv[4])))) g6 witnesses/R6_19_n709_SLLLcubic.g6 6,19 86400
+{"n": 709, "ks": [6, 19], "colours": 2, "circulant": true, "seconds": 459.9, "verdict": "PASS", "assignment": {"0": 19, "1": 6}, "claim": "R(6,19) > 709"}
+      460.17 real       459.96 user         0.15 sys
+            91258880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10665  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 333  voluntary context switches
+                2375  involuntary context switches
+          6760780546  instructions retired
+          1439187982  cycles elapsed
+            63685472  peak memory footprint
+=== end 2026-11-12 14:11:39 exit=0

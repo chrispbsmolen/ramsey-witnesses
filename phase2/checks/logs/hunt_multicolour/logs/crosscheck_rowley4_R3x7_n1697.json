@@ -1,0 +1,8 @@
+{"k": 3, "has_Kk": false, "seconds": 0.2}
+{"k": 3, "has_Kk": false, "seconds": 0.2}
+{"k": 3, "has_Kk": false, "seconds": 0.3}
+{"k": 3, "has_Kk": false, "seconds": 0.3}
+{"k": 3, "has_Kk": false, "seconds": 0.2}
+{"k": 3, "has_Kk": false, "seconds": 0.2}
+{"k": 3, "has_Kk": false, "seconds": 0.3}
+{"file": "converted/rowley4_R3x7_n1697.lengths", "N": 1697, "circulant": true, "colours": [1, 2, 3, 4, 5, 6, 7], "ks": [3, 3, 3, 3, 3, 3, 3], "assignment": {"1": 3, "2": 3, "3": 3, "4": 3, "5": 3, "6": 3, "7": 3}, "results": {"1": {"k": 3, "has_Kk": false, "seconds": 0.2}, "2": {"k": 3, "has_Kk": false, "seconds": 0.2}, "3": {"k": 3, "has_Kk": false, "seconds": 0.3}, "4": {"k": 3, "has_Kk": false, "seconds": 0.3}, "5": {"k": 3, "has_Kk": false, "seconds": 0.2}, "6": {"k": 3, "has_Kk": false, "seconds": 0.2}, "7": {"k": 3, "has_Kk": false, "seconds": 0.3}}, "verdict": "PASS"}

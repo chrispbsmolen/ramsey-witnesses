@@ -1,0 +1,1 @@
+{"n": 673, "ks": [3, 7, 7], "colours": 3, "circulant": true, "seconds": 0.7, "verdict": "PASS", "assignment": {"0": 7, "1": 7, "2": 3}, "claim": "R(3,7,7) > 673"}

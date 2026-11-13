@@ -1,0 +1,22 @@
+=== start 2026-11-09 18:21:04 wave=wave6 dir=/Users/<user>/Ramsey/phase2/build_G1_G2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 /Users/<user>/Ramsey/phase2/mac_batch/onecolour.py checker g6 built/mathon797_R11_11.g6.gz 0 1 11 86400
+{"colour": 1, "file": "built/mathon797_R11_11.g6.gz", "sha256_file": "57ea197e3cf3141a440970aab508b508f2da605d750e3954dd482031fe1c3c1e", "n": 1596, "K11": [false, "NONE 10"], "seconds": 22668.3}
+    22668.40 real     22634.05 user        23.28 sys
+           305414144  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22238  page reclaims
+                 103  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 279  voluntary context switches
+              800513  involuntary context switches
+         18963243108  instructions retired
+          3663819528  cycles elapsed
+           247202968  peak memory footprint
+=== end 2026-11-10 00:38:52 exit=0

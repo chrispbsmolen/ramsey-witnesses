@@ -1,0 +1,1 @@
+g6 witnesses/R6_22_n1069_SLLLcubic.g6: clique number not completed in 160 s, independence number not completed in 160 s

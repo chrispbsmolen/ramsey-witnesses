@@ -1,0 +1,5 @@
+{"k": 5, "has_Kk": false, "seconds": 0.1}
+{"k": 5, "has_Kk": false, "seconds": 0.2}
+{"k": 5, "has_Kk": false, "seconds": 0.1}
+{"k": 3, "has_Kk": false, "seconds": 0.1}
+{"file": "converted/rowley5_R3_5_5_5_n1429.lengths", "N": 1429, "circulant": true, "colours": [1, 2, 3, 4], "ks": [3, 5, 5, 5], "assignment": {"1": 5, "2": 5, "3": 5, "4": 3}, "results": {"1": {"k": 5, "has_Kk": false, "seconds": 0.1}, "2": {"k": 5, "has_Kk": false, "seconds": 0.2}, "3": {"k": 5, "has_Kk": false, "seconds": 0.1}, "4": {"k": 3, "has_Kk": false, "seconds": 0.1}}, "verdict": "PASS"}

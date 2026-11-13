@@ -1,0 +1,5 @@
+g6 witnesses/R6_16_n433_SLLLcubic.g6: clique number 5 (< 6, ok), independence number not completed in 300 s
+
+real	5m0.129s
+user	4m58.190s
+sys	0m0.049s

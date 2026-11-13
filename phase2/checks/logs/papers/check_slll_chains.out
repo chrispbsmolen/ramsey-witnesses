@@ -1,0 +1,9 @@
+433 g 5 S1 clique 5 =k-1 True | S2 clique 15 =l-1 True e= [25] | witness = cube graph
+547 g 2 S1 clique 5 =k-1 True | S2 clique 16 =l-1 True e= [4] | witness = cube graph
+613 g 2 S1 clique 5 =k-1 True | S2 clique 17 =l-1 True e= [2] | witness = cube graph
+709 g 2 S1 clique 5 =k-1 True | S2 clique 18 =l-1 True e= [2] | witness = cube graph
+877 g 2 S1 clique 5 =k-1 True | S2 clique 19 =l-1 True e= [4] | witness = cube graph
+907 g 2 S1 clique 6 =k-1 True | S2 clique 18 =l-1 True e= [4] | witness = cube graph
+1069 g 6 S1 clique 5 =k-1 True | S2 clique 21 =l-1 True e= [6] | witness = cube graph
+1213 g 2 S1 clique 6 =k-1 True | S2 clique 20 =l-1 True e= [2] | witness = cube graph
+ALL OK

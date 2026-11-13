@@ -1,0 +1,2 @@
+{"n": 100, "ks": [5, 8], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "PASS", "assignment": {"0": 8, "1": 5}, "claim": "R(5,8) > 100"}
+{"n": 100, "ks": [5, 8], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "PASS", "assignment": {"0": 8, "1": 5}, "claim": "R(5,8) > 100"}

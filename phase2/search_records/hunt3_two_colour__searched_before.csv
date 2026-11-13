@@ -1,0 +1,31 @@
+cell,place_or_query,round,result
+"3,14",http://aluarium.net/forum/wiki-article-17.html (Kol2 host),SOURCES 3-4 Nov; r1; r2,HTTP 403 live; https self-signed cert not bypassed
+"3,14",web.archive.org snapshot of aluarium.net (2025-02-20 exists per availability API),SOURCES; r1,connection reset
+"3,14",archive.ph aluarium.net,r2,connection reset
+"3,14",GitHub code search aluarium / kolodyazhny / R(3,14) 66,r2,only leaps-in-bounds sources.yml citation
+"3,14",web search EN + RU (Колодяжный числа Рамсея),r2,nothing (habr Quanta translation only)
+"3,14",Furini et al. arXiv:2608.18769 Table 7 + repo fabiofurini/ramsey-number-lower-bounds,r1; r2,covers n>=24 only; best R(3,14) file 63 vertices
+"3,14",leaps-in-bounds ramsey-3-14-lower-64.g6,r1,64-vertex file only (below 66)
+"3,14",Kuznetsov arXiv:1505.07186 Table 1,r1; r2,longest distance colouring 63
+"3,14",OpenAlex Kolodyazhny,r2,no Ramsey works indexed
+"4,10",HaKr1 Congr. Numer. 161 (2003) 139-150 web search,r1; r2,not online; OEIS A267295/A267296 cite it (RC(3,n) only)
+"4,10",Kuznetsov arXiv:1505.07186 v1-v5 PDF+source review.tex/review.py,r1; r2,Table 1 order 91 by full enumeration; no data
+"4,10",github.com/ekuznetsov139/ramsey,r1; r2,HEAD f5c81c7 code only
+"4,10",OpenAlex citers of Kuznetsov (DAM 2021 Kk-e; Cremer arXiv:2610.12122 + repo),r2,nothing for (4,10)
+"4,10",Semantic Scholar citations API,r2,429 rate limited twice
+"5,8",same routes as 4,10 (HaKr1; Kuznetsov v1-v5; ekuznetsov139; OpenAlex citers),r1; r2,Table 1 order 100; no data
+"6,13",Kuznetsov v5 review.tex l.371 Table 3 + l.334 + l.719; review.py all versions,r1; r2,order 346 reported; only 333-vertex circulant printed
+"6,13",ekuznetsov139/ramsey; OpenAlex citers,r2,nothing
+"3,23",XWCS 'in preparation 2011' web search EN + ZH (许成章 吴康 苏文龙),r1; r2,nothing
+"3,23",OpenAlex title:ramsey + raw_author_name Su Wenlong / Wu Kang / Xu Chengzhang / Chen Hong / Li Mingbo,r2,Su 13 works latest 2012; Wu 6 works 2000-2008; others none
+"3,23",Crossref,r2,nothing
+"3,23",WSLX2 (R(3,23)>=137),r1,n=136 only
+"3,23",JCTN 9(10) 2012 Deng-Shao-Xu doi 10.1166/jctn.2012.2251,r2,not XWCS; up to 121 vertices
+"3,23",Furini arXiv:2608.18769 Table 7,r1; r2,no certificate printed for n>=24 in paper
+"4,17",LiaWXS 'in preparation 2011' web search / OpenAlex (Liang Wenzhong) / Crossref,r1; r2,nothing
+"4,17",Lindsay-Cain arXiv:1510.06102 ref [5] (Li-Su-Luo-Wu unpublished 2011),r2,citation only
+"4,17",LiaWXCS J. Inner Mongolia Normal Univ. 41 (2012) 591-596,r2,title only; not retrieved
+"4,17",AlphaEvolve repo; arXiv:2608.18169,r1,do not cover
+"5,17 (G387)",XSR2 preprint cs.rit.edu/~spr/PUBL/paper68.pdf Thm 3/5 Table 1 p.7,r1; r2,G387 = one colour of p=127 tripling per [9]; M and partition unpublished
+"5,17 (G387)",XuR1 EJC 16 (2009) #N1 rebuild of M_127',r2 + G1 build,not reproduced: each colour has independent 17-set
+"all",House of Graphs; google-research ramsey_number_bounds; Lachy-Dauth; Exoo site; McKay page; Radziszowski survey DS1 rev18,SOURCES 3-4 Nov; r1,no file for these cells

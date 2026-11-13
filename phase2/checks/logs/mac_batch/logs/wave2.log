@@ -1,0 +1,26 @@
+2026-11-07 23:39:58 wave2: begin
+2026-11-07 23:39:58 wave2: start mac_wave2_linear0_c2.txt
+2026-11-07 23:39:58 wave2: start mac_wave2_linear0_c1.txt
+2026-11-07 23:39:58 wave2: start mac_wave2_7_16_clique_nx.txt
+2026-11-07 23:39:58 wave2: start mac_wave2_8_11_indep_repo.txt
+2026-11-07 23:42:06 wave2: done  mac_wave2_linear0_c2.txt (exit 0)
+2026-11-07 23:42:06 wave2: start mac_wave2_10_15_clique_nx.txt
+2026-11-07 23:44:48 wave2: done  mac_wave2_linear0_c1.txt (exit 0)
+2026-11-07 23:44:59 wave2: done  mac_wave2_8_11_indep_repo.txt (exit 0)
+2026-11-07 23:44:59 wave2: start mac_wave2_8_13_clique_nx.txt
+2026-11-07 23:46:17 wave2: done  mac_wave2_10_15_clique_nx.txt (exit 0)
+2026-11-07 23:46:17 wave2: start mac_wave2_8_19_clique_nx.txt
+2026-11-07 23:49:38 wave2: done  mac_wave2_7_16_clique_nx.txt (exit 0)
+2026-11-07 23:52:25 wave2: done  mac_wave2_8_13_clique_nx.txt (exit 0)
+2026-11-07 23:52:25 wave2: start mac_wave2_8_15_clique_nx.txt
+2026-11-08 00:00:40 wave2: done  mac_wave2_8_15_clique_nx.txt (exit 0)
+2026-11-08 00:17:05 wave2: done  mac_wave2_8_19_clique_nx.txt (exit 0)
+2026-11-08 00:17:05 wave2: end; linear0 PASS = lines starting NONE; G3 PASS = "result": "NONE":
+NONE N=44337 colour=1 k=5 degree(0)=14484 start_vertices_done=14484/14484 seconds=289.7
+NONE N=44337 colour=2 k=5 degree(0)=12676 start_vertices_done=12676/12676 seconds=128.1
+{"cell": "10,15", "half": "clique", "checker": "nx", "n": 1312, "timeout": 43200.0, "sha256_file": "af65811b537d5bdd7304b4e6364c53831d3561087a442a51799135b4d5407d34", "n_ok": true, "vt_checked": {"generators": 4, "all_automorphisms": true, "transitive": true}, "sym": true, "nx": {"best": 9, "maximal_cliques": 216949543, "found": false}, "result": "NONE", "seconds": 250.0, "claim": "no K_10"}
+{"cell": "7,16", "half": "clique", "checker": "nx", "n": 628, "timeout": 43200.0, "sha256_file": "d3d908f0abe9d9798053fe8c81354e221130d0bad99af3f2185a4afa98f0dc4e", "n_ok": true, "sym": false, "nx": {"best": 6, "maximal_cliques": 451928132, "found": false}, "result": "NONE", "seconds": 580.4, "claim": "no K_7"}
+{"cell": "8,11", "half": "indep", "checker": "repo", "n": 456, "timeout": 43200.0, "sha256_file": "a59f7c426ad3bce4575e2b90d4e3cd899e25afbea810632bfd6081a7bea5e0a9", "n_ok": true, "sym": false, "result": "NONE", "solver": "NONE 10", "seconds": 301.1, "claim": "no independent 11-set"}
+{"cell": "8,13", "half": "clique", "checker": "nx", "n": 816, "timeout": 43200.0, "sha256_file": "93d6912b362b2c5a81968c3d5f4defec447908fc80f63f3c12adeaf2621317fd", "n_ok": true, "sym": false, "nx": {"best": 7, "maximal_cliques": 281883936, "found": false}, "result": "NONE", "seconds": 445.6, "claim": "no K_8"}
+{"cell": "8,15", "half": "clique", "checker": "nx", "n": 872, "timeout": 43200.0, "sha256_file": "cff93148c47986689312c78cf68ad2c884a2a6168fffc5f535595740bc4705b6", "n_ok": true, "sym": false, "nx": {"best": 7, "maximal_cliques": 313141322, "found": false}, "result": "NONE", "seconds": 494.6, "claim": "no K_8"}
+{"cell": "8,19", "half": "clique", "checker": "nx", "n": 1236, "timeout": 43200.0, "sha256_file": "8598388ef20f8300816fc1f03a3def836ae7cdacdac55df9b1d6cbb931bbc306", "n_ok": true, "sym": false, "nx": {"best": 7, "maximal_cliques": 1213643536, "found": false}, "result": "NONE", "seconds": 1847.9, "claim": "no K_8"}

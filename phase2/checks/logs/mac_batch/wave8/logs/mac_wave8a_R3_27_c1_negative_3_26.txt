@@ -1,0 +1,22 @@
+=== start 2026-11-12 11:38:48 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/r3_27
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 -c import sys, os, json; sys.path.insert(0, "tools"); import verify_ramsey as V; V.CLIQUE = os.path.abspath("tools/clique_mac"); print(json.dumps(V.verify(V.load(sys.argv[1], sys.argv[2], ""), [int(x) for x in sys.argv[3].split(",")], timeout=float(sys.argv[4])))) circulant 171:1,3,5,9,15,17,28,36,47,58,69,76,82 3,26 600
+{"n": 171, "ks": [3, 26], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:3": true, "0:26": true}}
+        0.06 real         0.05 user         0.01 sys
+            35733504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4692  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                  18  involuntary context switches
+           812142968  instructions retired
+           255731844  cycles elapsed
+            20300640  peak memory footprint
+=== end 2026-11-12 11:38:48 exit=0

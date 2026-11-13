@@ -1,0 +1,6 @@
+{"input": "kuz514", "half": "clique", "size": 5, "sym": true, "result": "NONE", "nx": {"best": 4, "maximal_cliques": 3418, "found": false}, "seconds": 0.2}
+{"input": "mathon204", "half": "clique", "size": 7, "sym": false, "result": "NONE", "nx": {"best": 6, "maximal_cliques": 1236240, "found": false}, "seconds": 4.4}
+{"input": "mathon204", "half": "indep", "size": 7, "sym": false, "result": "NONE", "nx": {"best": 6, "maximal_cliques": 1236342, "found": false}, "seconds": 4.8}
+{"input": "kuz514", "half": "indep", "size": 14, "sym": true, "result": "NONE", "nx": {"best": 13, "maximal_cliques": 43943449, "found": false}, "seconds": 111.8}
+{"input": "kuznetsov (8,9;328)", "half": "edges K9", "nx": {"best": 8, "maximal_cliques": 1019322, "found": false}, "seconds": 3.2}
+{"input": "kuznetsov (8,9;328)", "half": "nonedges K8", "nx": {"best": 7, "maximal_cliques": 145733, "found": false}, "seconds": 0.6}

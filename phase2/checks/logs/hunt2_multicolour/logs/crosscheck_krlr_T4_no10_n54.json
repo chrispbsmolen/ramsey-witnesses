@@ -1,0 +1,1 @@
+{"file": "converted/krlr_T4_no10_n54.lengths", "N": 54, "circulant": true, "colours": [1, 2, 3], "ks": [3, 4, 4], "assignment": {"1": 3, "2": 4, "3": 4}, "results": {"1": {"k": 3, "has_Kk": false, "seconds": 0.0}, "2": {"k": 4, "has_Kk": false, "seconds": 0.0}, "3": {"k": 4, "has_Kk": false, "seconds": 0.0}}, "verdict": "PASS"}

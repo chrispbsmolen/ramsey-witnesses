@@ -1,0 +1,56 @@
+2026-11-12 11:37:34 wave8a: setup (log /Users/<user>/Ramsey/phase2/mac_batch/wave8/logs/wave8_setup.txt)
+2026-11-12 11:38:25 wave8a: setup OK
+2026-11-12 11:38:25 wave8a: begin part a
+2026-11-12 11:38:25 wave8a: start mac_wave8a_M1_c1_linear0.txt
+2026-11-12 11:38:25 wave8a: start mac_wave8a_J1_R6_20_n877.txt
+2026-11-12 11:38:25 wave8a: start mac_wave8a_M3_c1_clique.txt
+2026-11-12 11:38:25 wave8a: start mac_wave8a_R3_27_c1_verify.txt
+2026-11-12 11:38:48 wave8a: done  mac_wave8a_R3_27_c1_verify.txt (exit 0)
+2026-11-12 11:38:48 wave8a: start mac_wave8a_R3_27_c1_negative_3_26.txt
+2026-11-12 11:38:48 wave8a: done  mac_wave8a_R3_27_c1_negative_3_26.txt (exit 0)
+2026-11-12 11:38:48 wave8a: start mac_wave8a_R3_27_xcheck.txt
+2026-11-12 11:39:26 wave8a: done  mac_wave8a_M3_c1_clique.txt (exit 0)
+2026-11-12 11:39:26 wave8a: start mac_wave8a_M3_c2_clique.txt
+2026-11-12 11:40:07 wave8a: done  mac_wave8a_M3_c2_clique.txt (exit 0)
+2026-11-12 11:40:07 wave8a: start mac_wave8a_J2_alpha_1069.txt
+2026-11-12 11:44:58 wave8a: done  mac_wave8a_J2_alpha_1069.txt (exit 0)
+2026-11-12 11:47:30 wave8a: done  mac_wave8a_M1_c1_linear0.txt (exit 0)
+2026-11-12 11:47:30 wave8a: start mac_wave8a_M1_c2_linear0.txt
+2026-11-12 11:56:17 wave8a: done  mac_wave8a_M1_c2_linear0.txt (exit 0)
+2026-11-12 11:56:17 wave8a: start mac_wave8a_M2_c2_linear0.txt
+2026-11-12 12:03:46 wave8a: done  mac_wave8a_M2_c2_linear0.txt (exit 0)
+2026-11-12 12:03:46 wave8a: start mac_wave8a_M2_c3_linear0.txt
+2026-11-12 12:11:45 wave8a: done  mac_wave8a_M2_c3_linear0.txt (exit 0)
+2026-11-12 12:11:45 wave8a: start mac_wave8a_M4_5501_gen0.txt
+2026-11-12 12:33:11 wave8a: done  mac_wave8a_J1_R6_20_n877.txt (exit 0)
+2026-11-12 12:54:31 wave8a: done  mac_wave8a_M4_5501_gen0.txt (exit 0)
+2026-11-12 12:54:31 wave8a: start mac_wave8a_M4_5501_repo.txt
+2026-11-12 13:37:25 wave8a: done  mac_wave8a_M4_5501_repo.txt (exit 0)
+2026-11-12 13:37:25 wave8a: start mac_wave8a_M3_c1_gen0.txt
+2026-11-12 13:38:30 wave8a: done  mac_wave8a_M3_c1_gen0.txt (exit 0)
+2026-11-12 13:38:30 wave8a: start mac_wave8a_M3_c2_gen0.txt
+2026-11-12 13:39:13 wave8a: done  mac_wave8a_M3_c2_gen0.txt (exit 0)
+2026-11-12 14:03:59 wave8a: done  mac_wave8a_R3_27_xcheck.txt (exit 0)
+2026-11-12 14:03:59 wave8a: start mac_wave8a_J1_R6_19_n709.txt
+2026-11-12 14:11:39 wave8a: done  mac_wave8a_J1_R6_19_n709.txt (exit 0)
+2026-11-12 14:11:39 wave8a: start mac_wave8a_J1_R7_19_n907.txt
+2026-11-12 14:34:25 wave8a: done  mac_wave8a_J1_R7_19_n907.txt (exit 0)
+2026-11-12 14:34:25 wave8a: end part a.  PASS lines (see README_wave8.txt):
+{"n": 171, "ks": [3, 27], "colours": 2, "circulant": true, "seconds": 22.6, "verdict": "PASS", "assignment": {"0": 27, "1": 3}, "claim": "R(3,27) > 171"}
+{"n": 709, "ks": [6, 19], "colours": 2, "circulant": true, "seconds": 459.9, "verdict": "PASS", "assignment": {"0": 19, "1": 6}, "claim": "R(6,19) > 709"}
+{"n": 877, "ks": [6, 20], "colours": 2, "circulant": true, "seconds": 3286.1, "verdict": "PASS", "assignment": {"0": 20, "1": 6}, "claim": "R(6,20) > 877"}
+{"n": 907, "ks": [7, 19], "colours": 2, "circulant": true, "seconds": 1365.5, "verdict": "PASS", "assignment": {"0": 19, "1": 7}, "claim": "R(7,19) > 907"}
+negative control, must be FAIL: {"n": 171, "ks": [3, 26], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignm
+circulant 171:1,3,5,9,15,17,28,36,47,58,69,76,82: clique number 2 (< 3, ok), independence number 26 (< 27, ok)
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "linear0", "colours": [1], "cyclic": true, "timeout": 86400.0, "result": {"1": {"out": "NONE N=23501 colour=1 k=6 degree(0)=6850 start_vertices_done=6850/6850 seconds=545.2", "seconds": 545.5}}, "seconds": 545.5, "time": "2026-11-12 11:47:30"}
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "linear0", "colours": [2], "cyclic": true, "timeout": 86400.0, "result": {"2": {"out": "NONE N=23501 colour=2 k=6 degree(0)=6850 start_vertices_done=6850/6850 seconds=526.8", "seconds": 526.9}}, "seconds": 526.9, "time": "2026-11-12 11:56:17"}
+{"file": "built/R10^3_n23093.lengths", "sha256": "7c26d1205680411161a5f0ff010d738bd1d838509e396672fd1cafd1635462a2", "N": 23093, "k": 10, "checker": "linear0", "colours": [2], "cyclic": true, "timeout": 86400.0, "result": {"2": {"out": "NONE N=23093 colour=2 k=10 degree(0)=3582 start_vertices_done=3582/3582 seconds=448.1", "seconds": 448.2}}, "seconds": 448.2, "time": "2026-11-12 12:03:46"}
+{"file": "built/R10^3_n23093.lengths", "sha256": "7c26d1205680411161a5f0ff010d738bd1d838509e396672fd1cafd1635462a2", "N": 23093, "k": 10, "checker": "linear0", "colours": [3], "cyclic": true, "timeout": 86400.0, "result": {"3": {"out": "NONE N=23093 colour=3 k=10 degree(0)=3582 start_vertices_done=3582/3582 seconds=479.4", "seconds": 479.4}}, "seconds": 479.4, "time": "2026-11-12 12:11:45"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 1, "k": 9, "checker": "repo", "maxv": "-", "timeout": 86400.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 3045, "result": "NONE 7", "stderr": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 136701127", "seconds": 61.5, "time": "2026-11-12 11:39:26"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 1, "k": 9, "checker": "gen0", "maxv": "-", "timeout": 86400.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 3045, "result": "NONE n=3045 K=8 start_vertices_done=3045/3045 seconds=61.0", "stderr": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted", "seconds": 65.0, "time": "2026-11-12 13:38:30"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 2, "k": 9, "checker": "repo", "maxv": "-", "timeout": 86400.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 2953, "result": "NONE 7", "stderr": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 79853918", "seconds": 40.9, "time": "2026-11-12 11:40:07"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 2, "k": 9, "checker": "gen0", "maxv": "-", "timeout": 86400.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 2953, "result": "NONE n=2953 K=8 start_vertices_done=2953/2953 seconds=38.4", "stderr": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted", "seconds": 42.4, "time": "2026-11-12 13:39:13"}
+{"p": 5501, "alpha": 16, "checker": "gen0", "B": 1374, "orbit_reps": 687, "range": [0, 687], "claim": "no K_17 in Q_5501", "found": [], "verdict": "PASS", "max_subproblem": 704, "seconds": 2565.8, "time": "2026-11-12 12:54:31"}
+{"p": 5501, "alpha": 16, "checker": "repo", "B": 1374, "orbit_reps": 687, "range": [0, 687], "claim": "no K_17 in Q_5501", "found": [], "verdict": "PASS", "max_subproblem": 704, "seconds": 2570.8, "K_alpha_witness": {"vertices": [0, 1, 5, 5237, 4260, 2598, 3082, 3336, 2094, 1838, 1062, 917, 711, 615, 595, 496], "size": 16, "all_edges_checked": true}, "time": "2026-11-12 13:37:25"}
+p=1069 L=22 w=6 |V|=475: NONE 19  nodes:nodes 337939899  141.9s
+p=1069 L=22 w=36 |V|=479: NONE 19  nodes:nodes 358901342  149.0s

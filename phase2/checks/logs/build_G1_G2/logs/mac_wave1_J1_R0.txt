@@ -1,0 +1,22 @@
+=== start 2026-11-07 23:28:58 wave=wave1 dir=/Users/<user>/Ramsey/phase2/build_G1_G2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 scripts/crosscheck_split.py colormat built/R3_3_3_11_n596.txt.gz 2 0 596 --mod 4 0
+{"file": "R3_3_3_11_n596.txt.gz", "colour": 2, "lo": 0, "mod": [4, 0], "hi_requested": 596, "hi_done": 593, "omega_max": 10, "status": "done", "seconds": 504.5}
+      504.68 real       503.64 user         0.45 sys
+           132087808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9150  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               34920  involuntary context switches
+       8045697931552  instructions retired
+       1918949537894  cycles elapsed
+           106808400  peak memory footprint
+=== end 2026-11-07 23:37:22 exit=0

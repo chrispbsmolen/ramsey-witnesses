@@ -1,0 +1,5 @@
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 111.4, "colour": 1, "r": 0, "s": 2}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 111.2, "colour": 1, "r": 2, "s": 0}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.1, "sec_nx": 112.5, "colour": 1, "r": 2, "s": 3}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 113.1, "colour": 1, "r": 2, "s": 801}
+{"p": 797, "n": 1596, "k": 11, "colours": [1], "reps": [0, 2], "searches": 4, "verdict": "PASS", "nx_complete": true, "seconds": 452.9}

@@ -1,0 +1,22 @@
+=== start 2026-11-12 15:58:35 wave=wave8b dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/round2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 scripts/verify_linear.py built/R6^4_n23501.lengths 6 repo_stream 1 86400
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "repo_stream", "colours": [1], "cyclic": true, "timeout": 86400.0, "result": {"1": {"out": "NONE 5", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 193353108", "seconds": 2673.5}}, "seconds": 2673.5, "time": "2026-11-12 16:43:09"}
+     2673.58 real      2653.33 user         5.73 sys
+            85458944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12249  page reclaims
+                   4  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               33708  voluntary context switches
+              769807  involuntary context switches
+           694125363  instructions retired
+           240790430  cycles elapsed
+            22168536  peak memory footprint
+=== end 2026-11-12 16:43:09 exit=0

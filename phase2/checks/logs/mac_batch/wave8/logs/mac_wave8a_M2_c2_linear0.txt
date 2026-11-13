@@ -1,0 +1,22 @@
+=== start 2026-11-12 11:56:17 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/round2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 scripts/verify_linear.py built/R10^3_n23093.lengths 10 linear0 2 86400
+{"file": "built/R10^3_n23093.lengths", "sha256": "7c26d1205680411161a5f0ff010d738bd1d838509e396672fd1cafd1635462a2", "N": 23093, "k": 10, "checker": "linear0", "colours": [2], "cyclic": true, "timeout": 86400.0, "result": {"2": {"out": "NONE N=23093 colour=2 k=10 degree(0)=3582 start_vertices_done=3582/3582 seconds=448.1", "seconds": 448.2}}, "seconds": 448.2, "time": "2026-11-12 12:03:46"}
+      448.23 real       447.95 user         0.25 sys
+            35618816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4227  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                2357  involuntary context switches
+           702622789  instructions retired
+           230401851  cycles elapsed
+            20136680  peak memory footprint
+=== end 2026-11-12 12:03:46 exit=0

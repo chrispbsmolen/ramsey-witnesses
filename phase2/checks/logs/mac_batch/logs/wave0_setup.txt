@@ -1,0 +1,77 @@
+=== wave0 start 2026-11-07 23:28:23 Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+hunt_multicolour/converted/julojc_R5x5_n44337.lengths: OK
+hunt_multicolour/mac_jobs/linear0.c: OK
+hunt_multicolour/mac_jobs/stream_adj.py: OK
+hunt_two_colour/scripts/xcheck.py: OK
+hunt_two_colour/tools/verify_ramsey.py: OK
+hunt_two_colour/witnesses/R4_22_n313_LinCa.circ: OK
+hunt_two_colour/witnesses/R5_22_n491_Ihr.circ: OK
+hunt_two_colour/witnesses/R5_7_n79_CaET.circ: OK
+build_G3/verify_built.py: OK
+build_G3/g3lib.py: OK
+build_G3/tools/verify_ramsey.py: OK
+build_G3/tools/clique.c: OK
+build_G3/built/manifest.json: OK
+build_G3/built/G3_R10_15_1312.g6.gz: OK
+build_G3/built/G3_R5_15_274.g6: OK
+build_G3/built/G3_R7_12_416.g6: OK
+build_G3/built/G3_R7_16_628.g6.gz: OK
+build_G3/built/G3_R8_11_456.g6: OK
+build_G3/built/G3_R8_13_816.g6.gz: OK
+build_G3/built/G3_R8_15_872.g6.gz: OK
+build_G3/built/G3_R8_19_1236.g6.gz: OK
+build_G3/built/G3_R9_10_580.g6.gz: OK
+build_G1_G2/checker/verify_ramsey.py: OK
+build_G1_G2/checker/clique.c: OK
+build_G1_G2/scripts/crosscheck_split.py: OK
+build_G1_G2/scripts/reduced_G2.py: OK
+build_G1_G2/scripts/orbit_check.py: OK
+build_G1_G2/scripts/lib.py: OK
+build_G1_G2/scripts/constructions.py: OK
+build_G1_G2/built/R3_3_3_3_n50.txt: OK
+build_G1_G2/built/R3_3_3_11_n596.txt.gz: OK
+build_G1_G2/built/mathon797_R11_11.g6.gz: OK
+build_G1_G2/built/R7_7_7_n3213.txt.gz: OK
+mac_batch/common.sh: OK
+mac_batch/clique_bigstack.c: OK
+mac_batch/with_clique_mac.py: OK
+mac_batch/onecolour.py: OK
+mac_batch/wave0.sh: OK
+mac_batch/wave1.sh: OK
+mac_batch/wave2.sh: OK
+mac_batch/wave3.sh: OK
+mac_batch/wave4.sh: OK
+mac_batch/wave5.sh: OK
+mac_batch/wave6.sh: OK
+mac_batch/wave7.sh: OK
+Collecting numpy
+  Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting networkx
+  Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 91.0 MB/s eta 0:00:00
+Using cached networkx-3.7-py3-none-any.whl (2.1 MB)
+Installing collected packages: numpy, networkx
+Successfully installed networkx-3.7 numpy-2.5.4
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: python3 -m pip install --upgrade pip
+python 3.12.10 numpy 2.5.4 networkx 3.7
+cc -O2 /Users/<user>/Ramsey/phase2/hunt_multicolour/mac_jobs/linear0.c -> /Users/<user>/Ramsey/phase2/hunt_multicolour/mac_jobs/linear0_mac
+cc -O2 -I /Users/<user>/Ramsey/phase2/build_G3/tools /Users/<user>/Ramsey/phase2/mac_batch/clique_bigstack.c -lpthread -> /Users/<user>/Ramsey/phase2/hunt_multicolour/mac_jobs/clique_bigstack_mac
+cc -O2 /Users/<user>/Ramsey/phase2/build_G3/tools/clique.c -> /Users/<user>/Ramsey/phase2/build_G3/tools/clique_mac
+cc -O2 /Users/<user>/Ramsey/phase2/build_G1_G2/checker/clique.c -> /Users/<user>/Ramsey/phase2/build_G1_G2/checker/clique_mac
+nodes 3
+nodes 1
+nodes 1
+OK solvers on a triangle
+OK lengths file: N = 44337 colours 1..5, cyclic (c[d] == c[N-d]), degree of 0 per colour [14484, 12676, 5168, 7372, 4636]
+NONE N=44337 colour=5 k=5 degree(0)=4636 start_vertices_done=4636/4636 seconds=0.1
+OK linear0_mac colour 5 (cloud: NONE, 0.4 s)
+{"colour": 0, "file": "built/R3_3_3_3_n50.txt", "sha256_file": "daf0354fce84d6d9e302cd3dc448a462cb4b1475650db49381c3cb6a162ba097", "n": 50, "K3": [false, "NONE 2"], "seconds": 0.0}
+OK onecolour.py on R(3,3,3,3) n=50, colour 0
+OK reduced_G2 imports
+OK verify_built imports
+circulant 79:1,2,3,4,5,7,8,9,11,13,15,16,18,19,23,: clique number 6 (< 7, ok), independence number 4 (< 5, ok)
+OK xcheck.py on R(5,7) n=79
+=== wave0 OK 2026-11-07 23:28:28

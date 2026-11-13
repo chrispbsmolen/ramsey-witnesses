@@ -1,0 +1,4 @@
+{"k": 7, "has_Kk": false, "seconds": 0.2}
+{"k": 7, "has_Kk": false, "seconds": 0.2}
+{"k": 3, "has_Kk": false, "seconds": 0.0}
+{"file": "converted/rowley5_R3_7_7_n673.lengths", "N": 673, "circulant": true, "colours": [1, 2, 3], "ks": [3, 7, 7], "assignment": {"1": 7, "2": 7, "3": 3}, "results": {"1": {"k": 7, "has_Kk": false, "seconds": 0.2}, "2": {"k": 7, "has_Kk": false, "seconds": 0.2}, "3": {"k": 3, "has_Kk": false, "seconds": 0.0}}, "verdict": "PASS"}

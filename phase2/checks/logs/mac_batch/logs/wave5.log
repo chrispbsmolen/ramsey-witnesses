@@ -1,0 +1,14 @@
+2026-11-09 15:55:03 wave5: begin
+2026-11-09 15:55:03 wave5: start mac_wave5_J3_c0.txt
+2026-11-09 15:55:03 wave5: start mac_wave5_J4_2801_c1.txt
+2026-11-09 15:55:03 wave5: start mac_wave5_J3_c1.txt
+2026-11-09 15:55:03 wave5: start mac_wave5_J4_2801_c0.txt
+2026-11-09 16:14:57 wave5: done  mac_wave5_J3_c0.txt (exit 0)
+2026-11-09 16:15:13 wave5: done  mac_wave5_J3_c1.txt (exit 0)
+2026-11-09 17:52:58 wave5: done  mac_wave5_J4_2801_c1.txt (exit 0)
+2026-11-09 17:59:13 wave5: done  mac_wave5_J4_2801_c0.txt (exit 0)
+2026-11-09 17:59:13 wave5: end; J4 PASS = "verdict": "PASS"; J3 PASS = "K7": [false, "NONE 6"]:
+mac_wave5_J4_2801_c0.txt: {"p": 2801, "n": 5604, "k": 16, "colours": [0], "reps": [0, 2], "searches": 6, "verdict": "PASS", "nx_complete": false, "seconds": 7449.6}
+mac_wave5_J4_2801_c1.txt: {"p": 2801, "n": 5604, "k": 16, "colours": [1], "reps": [0, 2], "searches": 4, "verdict": "PASS", "nx_complete": false, "seconds": 7074.6}
+{"colour": 0, "file": "built/R7_7_7_n3213.txt.gz", "sha256_file": "857a106a572795113e5fa19b73d89239310f66b745b23b34e8349282b8a04fb1", "n": 3213, "K7": [false, "NONE 6"], "seconds": 1193.4}
+{"colour": 1, "file": "built/R7_7_7_n3213.txt.gz", "sha256_file": "857a106a572795113e5fa19b73d89239310f66b745b23b34e8349282b8a04fb1", "n": 3213, "K7": [false, "NONE 6"], "seconds": 1210.0}

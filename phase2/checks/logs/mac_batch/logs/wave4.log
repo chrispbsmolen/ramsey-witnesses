@@ -1,0 +1,14 @@
+2026-11-09 03:07:48 wave4: begin
+2026-11-09 03:07:48 wave4: start mac_wave4_J4_2741_c1.txt
+2026-11-09 03:07:48 wave4: start mac_wave4_J4_2741_c0.txt
+2026-11-09 03:07:48 wave4: start mac_wave4_7_12_indep_nx.txt
+2026-11-09 03:07:48 wave4: start mac_wave4_8_11_indep_nx.txt
+2026-11-09 05:26:01 wave4: done  mac_wave4_J4_2741_c1.txt (exit 0)
+2026-11-09 05:29:41 wave4: done  mac_wave4_J4_2741_c0.txt (exit 0)
+2026-11-09 07:38:00 wave4: done  mac_wave4_8_11_indep_nx.txt (exit 0)
+2026-11-09 15:07:48 wave4: done  mac_wave4_7_12_indep_nx.txt (exit 0)
+2026-11-09 15:07:48 wave4: end; G3 PASS = "result": "NONE"; J4 PASS = last line "verdict": "PASS":
+{"cell": "7,12", "half": "indep", "checker": "nx", "n": 416, "timeout": 43200.0, "sha256_file": "6ea40d4ab79ac434f4caf3eb168df9cbbda57a09a9984e0726e00d813c1a9304", "n_ok": true, "sym": false, "result": "TIMEOUT", "seconds": 43200.4, "claim": "no independent 12-set"}
+{"cell": "8,11", "half": "indep", "checker": "nx", "n": 456, "timeout": 43200.0, "sha256_file": "a59f7c426ad3bce4575e2b90d4e3cd899e25afbea810632bfd6081a7bea5e0a9", "n_ok": true, "sym": false, "nx": {"best": 10, "maximal_cliques": 11150365364, "found": false}, "result": "NONE", "seconds": 16212.3, "claim": "no independent 11-set"}
+mac_wave4_J4_2741_c0.txt: {"p": 2741, "n": 5484, "k": 15, "colours": [0], "reps": [0, 2], "searches": 6, "verdict": "PASS", "nx_complete": false, "seconds": 8513.2}
+mac_wave4_J4_2741_c1.txt: {"p": 2741, "n": 5484, "k": 15, "colours": [1], "reps": [0, 2], "searches": 4, "verdict": "PASS", "nx_complete": false, "seconds": 8292.7}

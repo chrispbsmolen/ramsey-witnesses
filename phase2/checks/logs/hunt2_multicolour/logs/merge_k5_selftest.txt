@@ -1,0 +1,5 @@
+colour 1 K3-free ; K5: None
+colour 2 K3-free ; K5: None
+colour 3 K3-free ; K5: None
+colour 4 K3-free ; K5: None
+colour 5 K3-free ; K5: None

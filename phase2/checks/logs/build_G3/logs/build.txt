@@ -1,0 +1,26 @@
+input constructions/paley101_R6_6.g6: n=101 sha256 ok; verify_ramsey PASS R(6,6) > 101 in 0.0 s
+input constructions/mathon101_R7_7.g6: n=204 sha256 ok; verify_ramsey PASS R(7,7) > 204 in 0.1 s
+input constructions/mathon281_R9_9.g6: n=564 sha256 ok; not rechecked here (repo ledger PASS)
+input exoo_tatarevic/g67.114: n=114 sha256 ok; verify_ramsey PASS R(6,7) > 114 in 0.0 s
+input tatarevic/g78.218: n=218 sha256 ok; verify_ramsey PASS R(8,7) > 218 in 0.4 s
+input kuznetsov/table2(7,9): n=251 sha256 ok; verify_ramsey PASS R(9,7) > 251 in 0.0 s
+input tatarevic/g415.157: n=157 sha256 ok; verify_ramsey PASS R(4,15) > 157 in 0.6 s
+input kuznetsov/table2(6,9): n=182 sha256 ok; verify_ramsey PASS R(9,6) > 182 in 0.0 s
+input exoo_site/r3.20.110: n=110 sha256 ok; verify_ramsey PASS R(3,20) > 110 in 3.3 s
+input kuznetsov/table2(5,14): n=266 sha256 ok; verify_ramsey PASS R(5,14) > 266 in 0.5 s
+built G3_R7_11_404.g6              n= 404 edges=  30502 sha256(file)=6de553ddfcf9726e
+built G3_R8_13_816.g6.gz           n= 816 edges= 125256 sha256(file)=93d6912b362b2c5a
+built G3_R8_11_456.g6              n= 456 edges=  40848 sha256(file)=a59f7c426ad3bce4
+built G3_R8_15_872.g6.gz           n= 872 edges= 137392 sha256(file)=cff93148c4798668
+built G3_R8_17_1004.g6.gz          n=1004 edges= 172186 sha256(file)=ccb32910e8413e13
+built G3_R7_16_628.g6.gz           n= 628 edges=  92860 sha256(file)=d3d908f0abe9d979
+built G3_R7_17_728.g6.gz           n= 728 edges=  81172 sha256(file)=0026a3def1fe5489
+built G3_R5_21_440.g6              n= 440 edges=  35640 sha256(file)=482e0c6ca850f0f1
+built G3_R8_21_1616.g6.gz          n=1616 edges= 366832 sha256(file)=6a1a5f7262000e89
+built G3_R5_15_274.g6              n= 274 edges=  12765 sha256(file)=5d8b5ac9b1bbbb08
+built G3_R7_12_416.g6              n= 416 edges=  31466 sha256(file)=6ea40d4ab79ac434
+built G3_R9_10_580.g6.gz           n= 580 edges=  81598 sha256(file)=6f849d9d21e4f999
+built G3_aux_R7_8_216.g6           n= 216 edges=  10966 sha256(file)=de893ee661608318
+built G3_R8_19_1236.g6.gz          n=1236 edges= 228138 sha256(file)=8598388ef20f8300
+input kuznetsov (8,9;328) decoded: verify_ramsey PASS R(8,9) > 328 in 0.1 s (circulant, through vertex 0)
+built G3_R10_15_1312.g6.gz         n=1312 edges= 348992 sha256(file)=af65811b537d5bdd

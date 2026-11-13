@@ -1,0 +1,1 @@
+circulant 199:1,2,4,13,15,19,21,24,26,27,30,33,37,: clique number 3 (< 4, ok), independence number 16 (< 17, ok)

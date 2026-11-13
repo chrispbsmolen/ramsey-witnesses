@@ -1,0 +1,1 @@
+{"result": "KILLED_BY_TIMEOUT_600s", "note": "first unseeded run (Cadical153, symmetric): no output; the first SAT call did not return within 600 s; rerun with seeding is logs/schur_merge_sat_symmetric_seeded.txt"}

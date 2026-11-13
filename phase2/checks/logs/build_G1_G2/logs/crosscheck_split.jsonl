@@ -1,0 +1,9 @@
+{"file": "R3_3_3_10_n512.txt", "colour": 2, "lo": 0, "hi_requested": 512, "hi_done": 79, "omega_max": 9, "status": "stopped at limit", "seconds": 541.2}
+{"file": "R3_3_3_10_n512.txt", "colour": 2, "lo": 79, "hi_requested": 512, "hi_done": 226, "omega_max": 9, "status": "stopped at limit", "seconds": 540.2}
+{"file": "R3_3_3_10_n512.txt", "colour": 2, "lo": 226, "hi_requested": 512, "hi_done": 512, "omega_max": 9, "status": "done", "seconds": 16.8}
+{"file": "R3_3_3_10_n512.txt", "colour": 0, "lo": 0, "hi_requested": 512, "hi_done": 512, "omega_max": 2, "status": "done", "seconds": 0.0}
+{"file": "R3_3_3_10_n512.txt", "colour": 1, "lo": 0, "hi_requested": 512, "hi_done": 512, "omega_max": 2, "status": "done", "seconds": 0.0}
+{"file": "R3_3_3_10_n512.txt", "colour": 3, "lo": 0, "hi_requested": 512, "hi_done": 512, "omega_max": 2, "status": "done", "seconds": 0.0}
+{"file": "R3_3_3_11_n596.txt", "colour": 0, "lo": 0, "hi_requested": 596, "hi_done": 596, "omega_max": 2, "status": "done", "seconds": 0.0}
+{"file": "R3_3_3_11_n596.txt", "colour": 1, "lo": 0, "hi_requested": 596, "hi_done": 596, "omega_max": 2, "status": "done", "seconds": 0.0}
+{"file": "R3_3_3_11_n596.txt", "colour": 3, "lo": 0, "hi_requested": 596, "hi_done": 596, "omega_max": 2, "status": "done", "seconds": 0.1}

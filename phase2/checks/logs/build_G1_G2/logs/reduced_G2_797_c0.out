@@ -1,0 +1,7 @@
+{"n_sub": 0, "size": 9, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 0, "s": 1}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 114.4, "colour": 0, "r": 0, "s": 799}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 112.1, "colour": 0, "r": 2, "s": 1}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 111.5, "colour": 0, "r": 2, "s": 4}
+{"n_sub": 0, "size": 9, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 2, "s": 799}
+{"n_sub": 398, "size": 9, "clique_c": false, "nx_omega": 8, "nx_found": false, "sec_c": 1.2, "sec_nx": 111.9, "colour": 0, "r": 2, "s": 800}
+{"p": 797, "n": 1596, "k": 11, "colours": [0], "reps": [0, 2], "searches": 6, "verdict": "PASS", "nx_complete": true, "seconds": 454.7}

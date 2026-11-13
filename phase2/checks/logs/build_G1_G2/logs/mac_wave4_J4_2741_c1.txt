@@ -1,0 +1,27 @@
+=== start 2026-11-09 03:07:48 wave=wave4 dir=/Users/<user>/Ramsey/phase2/build_G1_G2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 /Users/<user>/Ramsey/phase2/mac_batch/with_clique_mac.py --default-timeout 21600 /Users/<user>/Ramsey/phase2/build_G1_G2/checker scripts/reduced_G2.py 2741 0 0 1
+with_clique_mac: solver /Users/<user>/Ramsey/phase2/build_G1_G2/checker/clique_mac, has_clique default timeout 21600.0 s
+{"n_sub": 1370, "size": 13, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 2047.0, "colour": 1, "r": 0, "s": 2}
+{"n_sub": 1370, "size": 13, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 2045.7, "colour": 1, "r": 2, "s": 0}
+{"n_sub": 1370, "size": 13, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 2095.6, "colour": 1, "r": 2, "s": 3}
+{"n_sub": 1370, "size": 13, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 2103.8, "colour": 1, "r": 2, "s": 2745}
+{"p": 2741, "n": 5484, "k": 15, "colours": [1], "reps": [0, 2], "searches": 4, "verdict": "PASS", "nx_complete": false, "seconds": 8292.7}
+     8292.88 real      8288.22 user         3.99 sys
+           720666624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               69467  page reclaims
+                  51  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 118  voluntary context switches
+               45453  involuntary context switches
+         28634529695  instructions retired
+          5366033884  cycles elapsed
+           654443816  peak memory footprint
+=== end 2026-11-09 05:26:01 exit=0

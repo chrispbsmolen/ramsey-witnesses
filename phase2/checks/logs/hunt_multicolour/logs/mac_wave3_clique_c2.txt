@@ -1,0 +1,23 @@
+=== start 2026-11-08 00:19:27 wave=wave3 dir=/Users/<user>/Ramsey/phase2/hunt_multicolour
+=== cmd: /bin/sh -c "$0" -I "$2" converted/julojc_R5x5_n44337.lengths "$1" | CLIQUE_TIME_LIMIT="$3" ./mac_jobs/clique_bigstack_mac 5 --sym /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 2 mac_jobs/stream_adj.py 86400
+nodes 4405890
+NONE 4
+      848.53 real       846.35 user         1.68 sys
+           290947072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21334  page reclaims
+                   6  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              110982  voluntary context switches
+               91771  involuntary context switches
+            26047631  instructions retired
+             9934383  cycles elapsed
+             1589632  peak memory footprint
+=== end 2026-11-08 00:33:36 exit=0

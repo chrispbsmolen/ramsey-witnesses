@@ -1,0 +1,3 @@
+control complete 4-partite (d not divisible by 4), expect None: None
+control complete graph, expect a K5: [160, 159, 158, 157, 156]
+control 5-partite (d%5), expect a K5: [160, 159, 158, 157, 156]

@@ -1,0 +1,83 @@
+{
+ "7,11": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 404
+ },
+ "8,13": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 816
+ },
+ "8,11": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 456
+ },
+ "8,15": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 872
+ },
+ "8,17": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 1004
+ },
+ "7,16": {
+  "rule": "XXER Thm 9",
+  "identical": true,
+  "n": 628
+ },
+ "7,17": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 728
+ },
+ "5,21": {
+  "rule": "XXER Thm 9",
+  "identical": true,
+  "n": 440
+ },
+ "8,21": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 1616
+ },
+ "10,15": {
+  "rule": "XXER Thm 9 then complement",
+  "identical": true,
+  "n": 1312
+ },
+ "5,15": {
+  "rule": "XSR2 Thm 3 / Cor 3, H = M = K_4, |W1| = 2",
+  "identical": true,
+  "n": 274,
+  "M_is_clique_in_G": true
+ },
+ "7,12": {
+  "rule": "XSR2 Thm 3 / Cor 3, H = M = K_6, |W1| = 2",
+  "identical": true,
+  "n": 416,
+  "M_is_clique_in_G": true
+ },
+ "9,10": {
+  "rule": "XSR2 Thm 3 / Cor 3, H = M = K_8, |W1| = 2",
+  "identical": true,
+  "n": 580,
+  "M_is_clique_in_G": true
+ },
+ "aux_7,8": {
+  "rule": "XSR2 Thm 3 / Cor 3, H = M = K_6, |W1| = 2",
+  "identical": true,
+  "n": 216,
+  "M_is_clique_in_G": true
+ },
+ "8,19": {
+  "rule": "XSR2 Thm 3, G = (8,13;816), H = complement of (7,8;216), M = complement of Mathon(204) on vertices 0..203 of both",
+  "identical": true,
+  "n": 1236,
+  "M_induced_in_G": true,
+  "M_induced_in_H": true
+ }
+}

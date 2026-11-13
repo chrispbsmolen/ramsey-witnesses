@@ -1,0 +1,6 @@
+{"n": 199, "ks": [4, 17], "colours": 2, "circulant": true, "seconds": 0.2, "verdict": "PASS", "assignment": {"0": 17, "1": 4}, "claim": "R(4,17) > 199"}
+
+real	0m0.286s
+user	0m0.272s
+sys	0m0.004s
+{"n": 199, "ks": [4, 17], "colours": 2, "circulant": true, "seconds": 0.2, "verdict": "PASS", "assignment": {"0": 17, "1": 4}, "claim": "R(4,17) > 199"}

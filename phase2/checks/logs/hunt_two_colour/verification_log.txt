@@ -1,0 +1,21 @@
+Verification log, hunt_two_colour, 7 Nov 2026. Tools: tools/verify_ramsey.py + tools/clique.c (byte-identical copies of repo/, SHA-256 657db0ad... and 137a1002...),
+scripts/xcheck.py (networkx maximal-clique enumeration, same CHILD logic as repo/crosscheck.py; with --sym the alpha side is taken
+over cliques of the complement through vertex 0, valid because circulance is tested with verify_ramsey.is_circulant first).
+scripts/onecolour.py = single-colour clique test through verify_ramsey.has_clique (timed tests).
+
+R(5,7)  79  circulant  verify: {"n": 79, "ks": [5, 7], "circulant": true, "verdict": "PASS", "assignment": {"0": 5, "1": 7}}
+             xcheck: clique number 6 (< 7, ok), independence number 4 (< 5, ok)   [no --sym needed]
+             g6 copy: PASS
+R(3,21) 121 circulant  verify: PASS {"0": 21, "1": 3} 0.5 s ; xcheck --sym: clique number 2 (< 3, ok), independence number 20 (< 21, ok); g6 copy PASS
+R(3,22) 130 circulant  verify: PASS {"0": 22, "1": 3} 3.2 s ; xcheck --sym: clique number 2 (< 3, ok), independence number 21 (< 22, ok); g6 copy PASS
+R(4,22) 313 circulant  verify: PASS {"0": 22, "1": 4} 46.4 s ; xcheck --sym: clique number 3 (< 4, ok), independence number not completed in 600 s
+             onecolour: colour1 K4 NONE, K3 FOUND; colour0 K22 NONE (33 s), K21 FOUND. S1 == quartic residues mod 313 (computed).
+R(5,22) 491 circulant  onecolour: colour1 K5 NONE, K4 FOUND; colour0 K21 FOUND, K22 NONE (109 s)
+             verify: {"n": 491, "ks": [5, 22], "circulant": true, "seconds": 104.5, "verdict": "PASS", "assignment": {"0": 22, "1": 5}}
+             xcheck --sym: clique number 4 (< 5, ok), independence number not completed in 600 s
+R(8,9)  328 circulant (Kuznetsov review.py entry 1 of (8,9))  onecolour: c1 K8 FOUND, c0 K8 NONE, c1 K9 NONE, c0 K9 NONE
+             verify: PASS {"0": 8, "1": 9} ; xcheck --sym: clique number 8 (< 9, ok), independence number 7 (< 8, ok)
+R(8,9)  328 circulant (entry 2)  verify: PASS {"0": 8, "1": 9} ; xcheck --sym: clique number 8 (< 9, ok), independence number 7 (< 8, ok)
+R(5,15) 282 Quantavane R5_15_K282.txt matrix01  verify: PASS {"0": 15, "1": 5} 0.7 s ; xcheck --sym: clique number 4 (< 5, ok), independence number 14 (< 15, ok)
+R(5,15) 282 R5_15_K282_b.txt  verify: PASS 0.6 s (no crosscheck run)
+R(5,15) 278 R5_15_K278.txt    verify: PASS 0.7 s (no crosscheck run)

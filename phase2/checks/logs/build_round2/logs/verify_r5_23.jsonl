@@ -1,0 +1,4 @@
+{"cell": "5,23", "half": "clique (no K5)", "checker": "repo clique.c --sym", "result": "NONE 4", "seconds": 0.0, "time": "2026-11-07 19:43:01"}
+{"cell": "5,23", "half": "clique (no K5)", "checker": "networkx find_cliques on N(0) (+1)", "omega": 4, "result": "NONE", "seconds": 0.0, "time": "2026-11-07 19:43:02"}
+{"cell": "5,23", "half": "negative control: K4 must exist", "checker": "repo clique.c --sym", "result": "FOUND 4 0 518 390 378", "time": "2026-11-07 19:43:02"}
+{"cell": "5,23", "half": "independence (no independent 23-set)", "checker": "repo clique.c --sym", "result": "TIMEOUT 300 s", "seconds": 300.1, "time": "2026-11-07 19:48:02"}

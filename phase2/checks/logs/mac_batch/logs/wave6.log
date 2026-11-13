@@ -1,0 +1,14 @@
+2026-11-09 18:20:59 wave6: begin
+2026-11-09 18:20:59 wave6: start mac_wave6_clique_c1.txt
+2026-11-09 18:21:04 wave6: start mac_wave6_J2_c0.txt
+2026-11-09 18:21:04 wave6: start mac_wave6_J2_c1.txt
+2026-11-09 18:21:04 wave6: start mac_wave6_J3_c2.txt
+2026-11-09 18:38:26 wave6: done  mac_wave6_clique_c1.txt (exit 0)
+2026-11-09 18:40:59 wave6: done  mac_wave6_J3_c2.txt (exit 0)
+2026-11-10 00:38:52 wave6: done  mac_wave6_J2_c1.txt (exit 0)
+2026-11-10 00:45:03 wave6: done  mac_wave6_J2_c0.txt (exit 0)
+2026-11-10 00:45:03 wave6: end; R(5^5) PASS = NONE 4; J2 PASS = "K11": [false, "NONE 10"]; J3 PASS = "K7": [false, "NONE 6"]:
+NONE 4
+{"colour": 0, "file": "built/mathon797_R11_11.g6.gz", "sha256_file": "57ea197e3cf3141a440970aab508b508f2da605d750e3954dd482031fe1c3c1e", "n": 1596, "K11": [false, "NONE 10"], "seconds": 23039.0}
+{"colour": 1, "file": "built/mathon797_R11_11.g6.gz", "sha256_file": "57ea197e3cf3141a440970aab508b508f2da605d750e3954dd482031fe1c3c1e", "n": 1596, "K11": [false, "NONE 10"], "seconds": 22668.3}
+{"colour": 2, "file": "built/R7_7_7_n3213.txt.gz", "sha256_file": "857a106a572795113e5fa19b73d89239310f66b745b23b34e8349282b8a04fb1", "n": 3213, "K7": [false, "NONE 6"], "seconds": 1194.7}

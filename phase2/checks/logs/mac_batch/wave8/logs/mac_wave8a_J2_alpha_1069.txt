@@ -1,0 +1,23 @@
+=== start 2026-11-12 11:40:07 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/scripts
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 cube_alpha.py 1069 22 86400
+p=1069 L=22 w=6 |V|=475: NONE 19  nodes:nodes 337939899  141.9s
+p=1069 L=22 w=36 |V|=479: NONE 19  nodes:nodes 358901342  149.0s
+      290.94 real       290.51 user         0.32 sys
+            14204928  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2356  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                9017  involuntary context switches
+           994833308  instructions retired
+           193467427  cycles elapsed
+            10175064  peak memory footprint
+=== end 2026-11-12 11:44:58 exit=0

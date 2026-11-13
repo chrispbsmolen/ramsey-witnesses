@@ -1,0 +1,5 @@
+{"n": 547, "ks": [6, 17], "colours": 2, "circulant": true, "seconds": 35.0, "verdict": "PASS", "assignment": {"0": 17, "1": 6}, "claim": "R(6,17) > 547"}
+
+real	0m35.228s
+user	0m34.817s
+sys	0m0.035s

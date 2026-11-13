@@ -1,0 +1,16 @@
+p=547 L=17 w=2 |V|=246: NONE 14  nodes:nodes 1915933  0.7s
+p=547 L=17 w=4 |V|=237: NONE 14  nodes:nodes 1539017  0.6s
+p=613 L=18 w=2 |V|=272: NONE 15  nodes:nodes 11352467  4.7s
+p=613 L=18 w=4 |V|=275: NONE 15  nodes:nodes 12188171  5.0s
+p=709 L=19 w=2 |V|=316: NONE 16  nodes:nodes 28317405  12.7s
+p=709 L=19 w=4 |V|=317: NONE 16  nodes:nodes 28295681  12.6s
+p=877 L=20 w=2 |V|=392: NONE 17  nodes:nodes 140972088  75.2s
+p=877 L=20 w=4 |V|=391: NONE 17  nodes:nodes 142170702  76.2s
+p=1069 L=22 w=6 |V|=475: not completed in 140s
+p=1069 L=22 w=36 |V|=479: not completed in 140s
+p=907 L=19 w=2 |V|=406: NONE 16  nodes:nodes 56910687  30.7s
+p=907 L=19 w=4 |V|=395: NONE 16  nodes:nodes 49952843  27.1s
+p=1213 L=21 w=2 |V|=532: not completed in 140s
+p=1213 L=21 w=4 |V|=545: not completed in 140s
+
+[exited with code 0]

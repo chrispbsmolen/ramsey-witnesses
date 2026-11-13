@@ -1,0 +1,23 @@
+=== start 2026-11-07 23:44:59 wave=wave2 dir=/Users/<user>/Ramsey/phase2/build_G3
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 /Users/<user>/Ramsey/phase2/mac_batch/with_clique_mac.py /Users/<user>/Ramsey/phase2/build_G3/tools verify_built.py 8,13 clique nx 43200
+with_clique_mac: solver /Users/<user>/Ramsey/phase2/build_G3/tools/clique_mac, has_clique default timeout 3600 s
+{"cell": "8,13", "half": "clique", "checker": "nx", "n": 816, "timeout": 43200.0, "sha256_file": "93d6912b362b2c5a81968c3d5f4defec447908fc80f63f3c12adeaf2621317fd", "n_ok": true, "sym": false, "nx": {"best": 7, "maximal_cliques": 281883936, "found": false}, "result": "NONE", "seconds": 445.6, "claim": "no K_8"}
+      445.87 real       443.28 user         1.08 sys
+           128073728  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17368  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+              123240  involuntary context switches
+          3780772333  instructions retired
+           947797400  cycles elapsed
+            69321568  peak memory footprint
+=== end 2026-11-07 23:52:25 exit=0

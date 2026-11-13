@@ -1,0 +1,156 @@
+=== wave8 setup start 2026-11-12 11:37:34 part=a Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+hunt2/scripts/cube_alpha.py: OK
+hunt2/scripts/cubes.py: OK
+hunt2/tools/clique.c: OK
+hunt2/tools/verify_ramsey.py: OK
+hunt2/witnesses/R6_16_n433_SLLLcubic.circ: OK
+hunt2/witnesses/R6_16_n433_SLLLcubic.g6: OK
+hunt2/witnesses/R6_19_n709_SLLLcubic.circ: OK
+hunt2/witnesses/R6_19_n709_SLLLcubic.g6: OK
+hunt2/witnesses/R6_20_n877_SLLLcubic.circ: OK
+hunt2/witnesses/R6_20_n877_SLLLcubic.g6: OK
+hunt2/witnesses/R6_22_n1069_SLLLcubic.circ: OK
+hunt2/witnesses/R6_22_n1069_SLLLcubic.g6: OK
+hunt2/witnesses/R7_19_n907_SLLLcubic.circ: OK
+hunt2/witnesses/R7_19_n907_SLLLcubic.g6: OK
+hunt2/witnesses/R7_21_n1213_SLLLcubic.circ: OK
+hunt2/witnesses/R7_21_n1213_SLLLcubic.g6: OK
+macsrc/clique_bigstack.c: OK
+r3_27/R3_27_n171_H0.colormat: OK
+r3_27/R3_27_n171_LiLi.circ: OK
+r3_27/checker/verify_ramsey.py: OK
+r3_27/make_sub.py: OK
+r3_27/scripts/crosscheck_split.py: OK
+r3_27/scripts/xcheck.py: OK
+r3_27/tools/clique.c: OK
+r3_27/tools/verify_ramsey.py: OK
+r3_27/transcribe_check.py: OK
+round2/built/R10^3_n23093.lengths: OK
+round2/built/R6^4_n23501.lengths: OK
+round2/built/R9^3_n15040.colormat.gz: OK
+round2/checker/clique.c: OK
+round2/checker/gen0.c: OK
+round2/checker/linear0.c: OK
+round2/checker/stream_adj.py: OK
+round2/checker/verify_ramsey.py: OK
+round2/scripts/build_quad.py: OK
+round2/scripts/lib2.py: OK
+round2/scripts/paley_omega_check.py: OK
+round2/scripts/verify_linear.py: OK
+round2/scripts/verify_nbhd.py: OK
+wave8.sh: OK
+python 3.12.10 numpy 2.5.4 networkx 3.7
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave8/r3_27/tools/clique.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave8/r3_27/tools/clique_mac
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/tools/clique.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/tools/clique_mac
+cc -O2 -I /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker /Users/<user>/Ramsey/phase2/mac_batch/wave8/macsrc/clique_bigstack.c -lpthread -> /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/clique_bigstack_mac
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/linear0.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/linear0_mac
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/gen0.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/gen0_mac
+link /Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/tools/clique -> clique_mac
+link /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/clique_r2 -> clique_bigstack_mac
+link /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/gen0_r2 -> gen0_mac
+nodes 3
+nodes 1
+nodes 1
+OK solvers on a triangle
+{"n": 13, "ks": [3, 5], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "PASS", "assignment": {"0": 5, "1": 3}, "claim": "R(3,5) > 13"}
+negative control: {"n": 13, "ks": [3, 4], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:3": true, "0:4": true}}
+circulant 13:1,5: clique number 2 (< 3, ok), independence number 4 (< 5, ok)
+negative control: circulant 13:1,5: clique number 2 (< 3, ok), independence number 4 (NOT < 4)
+{"file": "R3_27_n171_H0.colormat", "colour": 1, "lo": 100, "mod": null, "hi_requested": 144, "hi_done": 144, "omega_max": 15, "status": "done", "seconds": 0.0}
+OK r3_27 tools (checker 1, xcheck, derived H0 file, split checker)
+{"n": 433, "ks": [6, 16], "colours": 2, "circulant": true, "seconds": 3.0, "verdict": "PASS", "assignment": {"0": 16, "1": 6}, "claim": "R(6,16) > 433"}
+negative control: {"n": 433, "ks": [6, 15], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:6": true, "0:15": true}}
+p=433 L=16 w=5 |V|=195: NONE 13  nodes:nodes 343738  0.1s
+p=433 L=16 w=25 |V|=187: NONE 13  nodes:nodes 282729  0.1s
+negative control: p=433 L=15 w=5 |V|=195: FOUND 13 187 183 194 136 172 154 103 88 54 38 19 7 3  nodes:nodes 138  0.0s
+p=433 L=15 w=25 |V|=187: FOUND 13 186 180 168 170 154 160 117 113 133 115 89 25 4  nodes:nodes 351  0.0s
+OK hunt2 tools (J1 one-liner, cube_alpha.py)
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "linear0", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "NONE N=23501 colour=3 k=6 degree(0)=4900 start_vertices_done=4900/4900 seconds=5.1", "seconds": 5.2}}, "seconds": 5.2, "time": "2026-11-12 11:37:44"}
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "repo_stream", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "NONE 5", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted
+nodes 8021235", "seconds": 33.2}}, "seconds": 33.2, "time": "2026-11-12 11:38:18"}
+negative control: {"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 5, "checker": "repo_stream", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "FOUND 5 0 23400 22230 22464 18486", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted
+nodes 4", "seconds": 2.1}}, "seconds": 2.1, "time": "2026-11-12 11:38:20"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 2, "k": 9, "checker": "gen0", "maxv": "3", "timeout": 600.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 2953, "result": "PARTIAL_NONE n=2953 K=8 start_vertices_done=3/2953 seconds=0.7", "stderr": "x: line 0:
+{"p": 101, "alpha": 5, "checker": "repo", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_6 in Q_101", "found": [], "verdict": "PASS", "max_subproblem": 12, "seconds": 0.1, "K_alpha_witness": {"vertices": [0, 1, 5, 97, 81], "size": 5, "all_edges_checked": true}, "time": "2026-11-12 11:38:25"}
+{"p": 101, "alpha": 5, "checker": "gen0", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_6 in Q_101", "found": [], "verdict": "PASS", "max_subproblem": 12, "seconds": 0.1, "time": "2026-11-12 11:38:25"}
+negative control: {"p": 101, "alpha": 4, "checker": "gen0", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_5 in Q_101", "found": [[5, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [6, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [14, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [17, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [20, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [21, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [22, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [23, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [24, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [25, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [31, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [37, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"]], "verdict": "FAIL", "max_subproblem": 12, "seconds": 0.1, "time": "2026-11-12 11:38:25"}
+OK round2 tools (verify_linear, verify_nbhd, paley_omega_check)
+=== wave8 setup OK 2026-11-12 11:38:25
+=== wave8 setup start 2026-11-12 15:57:46 part=b Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+hunt2/scripts/cube_alpha.py: OK
+hunt2/scripts/cubes.py: OK
+hunt2/tools/clique.c: OK
+hunt2/tools/verify_ramsey.py: OK
+hunt2/witnesses/R6_16_n433_SLLLcubic.circ: OK
+hunt2/witnesses/R6_16_n433_SLLLcubic.g6: OK
+hunt2/witnesses/R6_19_n709_SLLLcubic.circ: OK
+hunt2/witnesses/R6_19_n709_SLLLcubic.g6: OK
+hunt2/witnesses/R6_20_n877_SLLLcubic.circ: OK
+hunt2/witnesses/R6_20_n877_SLLLcubic.g6: OK
+hunt2/witnesses/R6_22_n1069_SLLLcubic.circ: OK
+hunt2/witnesses/R6_22_n1069_SLLLcubic.g6: OK
+hunt2/witnesses/R7_19_n907_SLLLcubic.circ: OK
+hunt2/witnesses/R7_19_n907_SLLLcubic.g6: OK
+hunt2/witnesses/R7_21_n1213_SLLLcubic.circ: OK
+hunt2/witnesses/R7_21_n1213_SLLLcubic.g6: OK
+macsrc/clique_bigstack.c: OK
+r3_27/R3_27_n171_H0.colormat: OK
+r3_27/R3_27_n171_LiLi.circ: OK
+r3_27/checker/verify_ramsey.py: OK
+r3_27/make_sub.py: OK
+r3_27/scripts/crosscheck_split.py: OK
+r3_27/scripts/xcheck.py: OK
+r3_27/tools/clique.c: OK
+r3_27/tools/verify_ramsey.py: OK
+r3_27/transcribe_check.py: OK
+round2/built/R10^3_n23093.lengths: OK
+round2/built/R6^4_n23501.lengths: OK
+round2/built/R9^3_n15040.colormat.gz: OK
+round2/checker/clique.c: OK
+round2/checker/gen0.c: OK
+round2/checker/linear0.c: OK
+round2/checker/stream_adj.py: OK
+round2/checker/verify_ramsey.py: OK
+round2/scripts/build_quad.py: OK
+round2/scripts/lib2.py: OK
+round2/scripts/paley_omega_check.py: OK
+round2/scripts/verify_linear.py: OK
+round2/scripts/verify_nbhd.py: OK
+wave8.sh: OK
+python 3.12.10 numpy 2.5.4 networkx 3.7
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave8/r3_27/tools/clique_mac
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/tools/clique_mac
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/clique_bigstack_mac
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/linear0_mac
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/gen0_mac
+keep link /Users/<user>/Ramsey/phase2/mac_batch/wave8/hunt2/tools/clique -> clique_mac
+keep link /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/clique_r2 -> clique_bigstack_mac
+keep link /Users/<user>/Ramsey/phase2/mac_batch/wave8/round2/checker/gen0_r2 -> gen0_mac
+nodes 3
+nodes 1
+nodes 1
+OK solvers on a triangle
+{"n": 13, "ks": [3, 5], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "PASS", "assignment": {"0": 5, "1": 3}, "claim": "R(3,5) > 13"}
+negative control: {"n": 13, "ks": [3, 4], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:3": true, "0:4": true}}
+circulant 13:1,5: clique number 2 (< 3, ok), independence number 4 (< 5, ok)
+negative control: circulant 13:1,5: clique number 2 (< 3, ok), independence number 4 (NOT < 4)
+{"file": "R3_27_n171_H0.colormat", "colour": 1, "lo": 100, "mod": null, "hi_requested": 144, "hi_done": 144, "omega_max": 15, "status": "done", "seconds": 0.0}
+OK r3_27 tools (checker 1, xcheck, derived H0 file, split checker)
+{"n": 433, "ks": [6, 16], "colours": 2, "circulant": true, "seconds": 2.9, "verdict": "PASS", "assignment": {"0": 16, "1": 6}, "claim": "R(6,16) > 433"}
+negative control: {"n": 433, "ks": [6, 15], "colours": 2, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:6": true, "0:15": true}}
+p=433 L=16 w=5 |V|=195: NONE 13  nodes:nodes 343738  0.1s
+p=433 L=16 w=25 |V|=187: NONE 13  nodes:nodes 282729  0.1s
+negative control: p=433 L=15 w=5 |V|=195: FOUND 13 187 183 194 136 172 154 103 88 54 38 19 7 3  nodes:nodes 138  0.0s
+p=433 L=15 w=25 |V|=187: FOUND 13 186 180 168 170 154 160 117 113 133 115 89 25 4  nodes:nodes 351  0.0s
+OK hunt2 tools (J1 one-liner, cube_alpha.py)
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "linear0", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "NONE N=23501 colour=3 k=6 degree(0)=4900 start_vertices_done=4900/4900 seconds=5.0", "seconds": 5.1}}, "seconds": 5.1, "time": "2026-11-12 15:57:55"}
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "repo_stream", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "NONE 5", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted
+nodes 8021235", "seconds": 32.8}}, "seconds": 32.8, "time": "2026-11-12 15:58:28"}
+negative control: {"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 5, "checker": "repo_stream", "colours": [3], "cyclic": true, "timeout": 600.0, "result": {"3": {"out": "FOUND 5 0 23400 22230 22464 18486", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted
+nodes 4", "seconds": 2.1}}, "seconds": 2.1, "time": "2026-11-12 15:58:30"}
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 2, "k": 9, "checker": "gen0", "maxv": "3", "timeout": 600.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 2953, "result": "PARTIAL_NONE n=2953 K=8 start_vertices_done=3/2953 seconds=0.7", "stderr": "x: line 0:
+{"p": 101, "alpha": 5, "checker": "repo", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_6 in Q_101", "found": [], "verdict": "PASS", "max_subproblem": 12, "seconds": 0.1, "K_alpha_witness": {"vertices": [0, 1, 5, 97, 81], "size": 5, "all_edges_checked": true}, "time": "2026-11-12 15:58:35"}
+{"p": 101, "alpha": 5, "checker": "gen0", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_6 in Q_101", "found": [], "verdict": "PASS", "max_subproblem": 12, "seconds": 0.1, "time": "2026-11-12 15:58:35"}
+negative control: {"p": 101, "alpha": 4, "checker": "gen0", "B": 24, "orbit_reps": 12, "range": [0, 12], "claim": "no K_5 in Q_101", "found": [[5, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [6, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [14, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [17, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [20, "FOUND n=12 K=2 start_vertices_done=1/12 seconds=0.0"], [21, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [22, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [23, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [24, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [25, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [31, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"], [37, "FOUND n=10 K=2 start_vertices_done=1/10 seconds=0.0"]], "verdict": "FAIL", "max_subproblem": 12, "seconds": 0.1, "time": "2026-11-12 15:58:35"}
+OK round2 tools (verify_linear, verify_nbhd, paley_omega_check)
+=== wave8 setup OK 2026-11-12 15:58:35

@@ -1,0 +1,22 @@
+=== start 2026-11-12 11:38:25 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/round2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 scripts/verify_nbhd.py built/R9^3_n15040.colormat.gz 940 2 1 9 repo - 86400
+{"file": "built/R9^3_n15040.colormat.gz", "sha256": "8411c743ec0953f68bc894019778f9c742da8dbc9c0d6c991b0d091427ed353e", "colour": 1, "k": 9, "checker": "repo", "maxv": "-", "timeout": 86400.0, "automorphisms": {"generators": 7, "all_automorphisms": true, "transitive": true}, "n": 15040, "degree0": 3045, "result": "NONE 7", "stderr": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 136701127", "seconds": 61.5, "time": "2026-11-12 11:39:26"}
+       61.60 real        61.42 user         0.15 sys
+           828817408  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               67373  page reclaims
+                   4  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 564  voluntary context switches
+                2920  involuntary context switches
+         33255704319  instructions retired
+         15328785392  cycles elapsed
+           564332104  peak memory footprint
+=== end 2026-11-12 11:39:26 exit=0

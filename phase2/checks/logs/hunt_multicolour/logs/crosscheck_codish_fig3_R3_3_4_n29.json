@@ -1,0 +1,1 @@
+{"file": "converted/codish_fig3_R3_3_4_n29.colormat", "N": 29, "circulant": false, "colours": [1, 2, 3], "ks": [3, 3, 4], "assignment": {"1": 4, "2": 3, "3": 3}, "results": {"1": {"k": 4, "has_Kk": false, "seconds": 0.0}, "2": {"k": 3, "has_Kk": false, "seconds": 0.0}, "3": {"k": 3, "has_Kk": false, "seconds": 0.0}}, "verdict": "PASS"}

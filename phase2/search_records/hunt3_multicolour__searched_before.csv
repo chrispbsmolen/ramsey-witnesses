@@ -1,0 +1,33 @@
+cell,place_or_query,round,result
+"3,3,7;3,3,8;3,4,6;3,3,3,4",Exoo constructions page https://cs.indstate.edu/ge/RAMSEY/ (sha256 9ee57eb4...),SOURCES 3-4 Nov; round 1; round 2,"only weaker g337.78, g3334.92; no Ex17/Ex18 files"
+"3,3,7;3,3,8;3,4,6;3,3,3,4",Exoo old mirror isu.indstate.edu/~gexoo/RAMSEY (2005) incl. r.mc.html,round 2,"R(3,3,7)>80, R(3,3,8)>100, R(3,4,6)>106 no files; cyclic R(3,3,3,4)>86"
+"3,3,7;3,3,8;3,4,6;3,3,3,4","guessed file names g337.84, g338.102, g346.116, g3334.96, ch* on both Exoo hosts",round 1; round 2,404
+"3,3,7;3,3,8;3,4,6;3,3,3,4",web.archive.org and archive.ph for Exoo page,round 1; round 2,could not be reached
+"3,3,7;3,3,8;3,4,6;3,3,3,4",survey DS1.13 (2011) and DS1.14 (2014),round 2,"same bounds, no constructions"
+"3,3,7;3,3,8;3,4,6;3,3,3,4","Exoo-Tatarevic EJC 22(3) P3.11, arXiv:1504.02403 and data zip",SOURCES; round 2,no mention of these four bounds; data has other cells
+"3,3,7;3,3,8;3,4,6;3,3,3,4",Radziszowski theses list cs.rit.edu/~spr/master.html,round 2,theses predate Ex17/Ex18
+"3,3,7;3,3,8;3,4,6;3,3,3,4","Goedgebeur-Radziszowski ber12.pdf slides",round 2,R(3,k) upper bounds only
+"3,3,7;3,3,8;3,4,6;3,3,3,4",Hugging Face linxy/RamseyGraph,round 2,two-colour only
+"3,3,7;3,3,8;3,4,6;3,3,3,4",Lachy-Dauth ramsey-neighbourhood-counting,round 1; round 2,"(3,3,k) circulants k=9,11..14 only"
+"3,3,7;3,3,8;3,4,6;3,3,3,4;3,10,10",Courties JuloJC/multicolour-ramsey-numbers (d9ca62fe),round 1; round 2,"weaker (3,3,7) N=81, (3,3,8) N=100; nothing for 3,4,6/3,3,3,4/3,10,10"
+"3,3,7;3,3,8;3,4,6;3,3,3,4;3,10,10",google-research ramsey_number_bounds; McKay Ramsey page; House of Graphs,SOURCES; round 1,"two-colour only / unchanged / API Unauthorized"
+"3,3,7",web query R(3,3,7) 85 lower bound coloring Exoo,round 2,nothing new
+"3,3,8",web query Exoo multicolor R(3,3,8) 103 OR 102 circulant block,round 2,nothing new
+"3,4,6;3,3,3,4",web query R(3,3,3,4) 97 OR R(3,4,6) 117 construction,round 2,nothing new
+"3,3,7;3,3,8;3,4,6;3,3,3,4",web query file names g337.84 etc.,round 2,not indexed
+"3,4,6",Wesley SEICCGTC 56 abstract; Boza-Dybizbanski-Dzido Ulysseus record,round 2,irrelevant / metadata only
+"3,10,10","Rowley arXiv:2203.13476 v1, v2, v3 text, tables, ancillary spreadsheets",round 1; round 2,no (10,10,3) template or order 2840/2841
+"3,10,10",Thm 3.2 combinations of published templates for order 2840,round 2,none gives 2840
+"3,10,10",arXiv API au:Rowley AND abs:Ramsey,round 2,"no paper after 2203.13476"
+"3,10,10",Semantic Scholar citations of 2203.13476 (2 items); of 1912.01143/1912.01164/2107.03560 (429),round 2,nothing / rate-limited
+"3,10,10",OpenAlex Rowley,round 2,rate-limited
+"3,10,10",web query Rowley R(3,10,10) 2841; Rowley 2023-2025 papers,round 2,nothing new
+"3,3,3,5",Exoo EJC 1 #R8 printed symmetric partition: 10 merges,round 1; round 2,all contain K5
+"3,3,3,5",Heule arXiv:1711.08076 Fig.1 palindromic S(5,160): 10 merges,round 2,all contain K5
+"3,3,3,5",all 5840 symmetric depth-44 partitions (SAT enumeration): 58400 merges,round 2,none K5-free
+"3,3,3,5",38424 non-symmetric partitions one move from Exoo/Heule,round 2,none K5-free
+"3,3,3,5",Heule Schur data page cs.utexas.edu/~marijn/Schur,round 2,"CNF/DRAT/cubes, no partition lists"
+"3,3,3,5",Fredricksen-Sweet EJC 7 #R32,round 1; round 2,symmetric partitions / counts only
+"3,3,3,5",Semantic Scholar citations of XXER (59 items),round 2,none reprints a (3,3,3,5;161) colouring
+"3,3,3,5",Chen-Zhu-Long arXiv:2610.31362,round 2,S(6) only
+"3,3,3,5",Ageron et al. arXiv:2112.03175 PDF,round 1,uses Exoo S(5) partition as template input (not checked for non-symmetric data)

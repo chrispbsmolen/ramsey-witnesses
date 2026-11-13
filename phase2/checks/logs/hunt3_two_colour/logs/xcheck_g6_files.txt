@@ -1,0 +1,3 @@
+g6 witnesses/R4_10_n91_circ.g6: clique number 3 (< 4, ok), independence number 9 (< 10, ok)
+g6 witnesses/R5_8_n100_circ.g6: clique number 4 (< 5, ok), independence number 7 (< 8, ok)
+g6 witnesses/R4_17_n199_cyclo11.g6: clique number 3 (< 4, ok), independence number 16 (< 17, ok)

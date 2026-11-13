@@ -1,0 +1,11 @@
+{"n_sub": 0, "size": 11, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 0, "s": 1}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 15.1, "colour": 0, "r": 0, "s": 1279}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 16.2, "colour": 0, "r": 2, "s": 1}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 19.1, "colour": 0, "r": 2, "s": 4}
+{"n_sub": 0, "size": 11, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 2, "s": 1279}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 20.3, "colour": 0, "r": 2, "s": 1280}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 22.2, "colour": 1, "r": 0, "s": 2}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 22.6, "colour": 1, "r": 2, "s": 0}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 22.5, "colour": 1, "r": 2, "s": 3}
+{"n_sub": 638, "size": 11, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 22.4, "colour": 1, "r": 2, "s": 1281}
+{"p": 1277, "n": 2556, "k": 13, "colours": [0, 1], "reps": [0, 2], "searches": 10, "verdict": "PASS", "nx_complete": false, "seconds": 160.6}

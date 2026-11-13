@@ -1,0 +1,11 @@
+{"file": "R7_7_7_n3213.txt.gz", "sha256": "857a106a572795113e5fa19b73d89239310f66b745b23b34e8349282b8a04fb1", "reloads_identical": true}
+{"file": "mathon797_R11_11.g6.gz", "sha256": "57ea197e3cf3141a440970aab508b508f2da605d750e3954dd482031fe1c3c1e", "reloads_identical": true}
+{"file": "mathon1277_R13_13.g6.gz", "sha256": "bbbaf5df236e2af25eb2f7af33fcba60117d5369a03388720c93244fbcfbad76", "reloads_identical": true}
+{"file": "mathon1493_R14_14.g6.gz", "sha256": "98e7263d240623fb57059a7bb8f9d31b6ff9553cf2456ae2418316af7ae19537", "reloads_identical": true}
+{"file": "mathon2741_R15_15.g6.gz", "sha256": "7f03f23df617b8226cbb3c9acc4575c85a6f6b213e95dd46f1b000d3b325c06b", "reloads_identical": true}
+{"file": "mathon2801_R16_16.g6.gz", "sha256": "5f6e3f8d58a3885ce4b6359952dcdfd53cfbad122d7c48a0a27acf319f60fc70", "reloads_identical": true}
+{"file": "R3_3_3_3_n50.txt", "control": "edge {18,19} recoloured to triangle-free colour 0", "verdict": "FAIL", "expected": "FAIL"}
+{"file": "R3_4_8_n192.txt", "control": "edge {49,50} recoloured to triangle-free colour 2", "verdict": "FAIL", "expected": "FAIL"}
+{"file": "R3_5_7_n240.txt", "control": "edge {1,4} recoloured to triangle-free colour 0", "verdict": "FAIL", "expected": "FAIL"}
+{"file": "R3_4_4_4_n380.txt", "control": "edge {127,128} recoloured to triangle-free colour 3", "verdict": "FAIL", "expected": "FAIL"}
+{"file": "R3_3_3_7_n240_demo.txt", "control": "edge {79,81} recoloured to triangle-free colour 0", "verdict": "FAIL", "expected": "FAIL"}

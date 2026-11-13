@@ -1,0 +1,11 @@
+{"n": 433, "ks": [6, 16], "colours": 2, "circulant": true, "seconds": 4.3, "verdict": "PASS", "assignment": {"0": 16, "1": 6}, "claim": "R(6,16) > 433"}
+
+real	0m4.554s
+user	0m4.491s
+sys	0m0.023s
+== R6_17_n547 6,17
+== R6_18_n613 6,18
+
+real	4m28.254s
+user	4m24.707s
+sys	0m0.232s

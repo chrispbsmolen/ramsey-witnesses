@@ -1,0 +1,22 @@
+=== start 2026-11-12 12:11:45 wave=wave8a dir=/Users/<user>/Ramsey/phase2/mac_batch/wave8/round2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 scripts/paley_omega_check.py 5501 16 gen0
+{"p": 5501, "alpha": 16, "checker": "gen0", "B": 1374, "orbit_reps": 687, "range": [0, 687], "claim": "no K_17 in Q_5501", "found": [], "verdict": "PASS", "max_subproblem": 704, "seconds": 2565.8, "time": "2026-11-12 12:54:31"}
+     2565.82 real      2559.97 user         5.99 sys
+           199999488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1022133  page reclaims
+                2748  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 697  voluntary context switches
+               70313  involuntary context switches
+         59925160605  instructions retired
+         15962196394  cycles elapsed
+            38028344  peak memory footprint
+=== end 2026-11-12 12:54:31 exit=0

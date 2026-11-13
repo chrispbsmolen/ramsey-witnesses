@@ -1,0 +1,1 @@
+# lines tested 11360, triples 227200, K5-free hits 0, seconds 455.0

@@ -1,0 +1,1 @@
+g6 witnesses/R6_17_n547_SLLLcubic.g6: clique number 5 (< 6, ok), independence number not completed in 130 s

@@ -1,0 +1,4 @@
+{"k": 8, "has_Kk": false, "seconds": 0.9}
+{"k": 8, "has_Kk": false, "seconds": 0.8}
+{"k": 3, "has_Kk": false, "seconds": 0.0}
+{"file": "converted/rowley5_R3_8_8_n940.lengths", "N": 940, "circulant": true, "colours": [1, 2, 3], "ks": [3, 8, 8], "assignment": {"1": 8, "2": 8, "3": 3}, "results": {"1": {"k": 8, "has_Kk": false, "seconds": 0.9}, "2": {"k": 8, "has_Kk": false, "seconds": 0.8}, "3": {"k": 3, "has_Kk": false, "seconds": 0.0}}, "verdict": "PASS"}

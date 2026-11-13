@@ -1,0 +1,1 @@
+sample of 100 enumerated partitions re-tested with merge_k5.py: sum-free all; partitions with a K5-free merge: 0

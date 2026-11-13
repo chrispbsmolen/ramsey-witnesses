@@ -1,0 +1,22 @@
+=== start 2026-11-09 15:55:03 wave=wave5 dir=/Users/<user>/Ramsey/phase2/build_G1_G2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 /Users/<user>/Ramsey/phase2/mac_batch/onecolour.py checker colormat built/R7_7_7_n3213.txt.gz  0 7 86400
+{"colour": 0, "file": "built/R7_7_7_n3213.txt.gz", "sha256_file": "857a106a572795113e5fa19b73d89239310f66b745b23b34e8349282b8a04fb1", "n": 3213, "K7": [false, "NONE 6"], "seconds": 1193.4}
+     1193.48 real      1192.96 user         0.34 sys
+           472776704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33106  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                2041  voluntary context switches
+               11224  involuntary context switches
+         45200112148  instructions retired
+          7252472315  cycles elapsed
+           328156288  peak memory footprint
+=== end 2026-11-09 16:14:57 exit=0

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<cloud>/ramsey-p2/build_G3/decomp.py", line 80, in <module>
+    main()
+    ~~~~^^
+  File "<cloud>/ramsey-p2/build_G3/decomp.py", line 74, in main
+    implied=sum(1 for r in recs if r.get('implied')), max_order=max(r['order'] for r in recs if not r.get('implied')), sha256_file=m['sha256_file'])
+                                                                ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: max() iterable argument is empty

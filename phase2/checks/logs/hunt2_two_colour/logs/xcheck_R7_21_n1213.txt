@@ -1,0 +1,1 @@
+g6 witnesses/R7_21_n1213_SLLLcubic.g6: clique number not completed in 160 s, independence number not completed in 160 s

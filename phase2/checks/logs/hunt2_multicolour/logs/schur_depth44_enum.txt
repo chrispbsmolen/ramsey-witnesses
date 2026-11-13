@@ -1,0 +1,12 @@
+{"enumerated": 500, "s": 7}
+{"enumerated": 1000, "s": 14}
+{"enumerated": 1500, "s": 22}
+{"enumerated": 2000, "s": 28}
+{"enumerated": 2500, "s": 35}
+{"enumerated": 3000, "s": 42}
+{"enumerated": 3500, "s": 49}
+{"enumerated": 4000, "s": 56}
+{"enumerated": 4500, "s": 62}
+{"enumerated": 5000, "s": 70}
+{"enumerated": 5500, "s": 77}
+{"result": "EXHAUSTED", "partitions_enumerated": 5840, "merges_tested": 58400, "k5_free_merges": 0, "seconds": 82}

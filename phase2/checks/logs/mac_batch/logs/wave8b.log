@@ -1,0 +1,20 @@
+2026-11-12 15:57:46 wave8b: setup (log /Users/<user>/Ramsey/phase2/mac_batch/wave8/logs/wave8_setup.txt)
+2026-11-12 15:58:35 wave8b: setup OK
+2026-11-12 15:58:35 wave8b: begin part b
+2026-11-12 15:58:35 wave8b: start mac_wave8b_M1_c1_clique.txt
+2026-11-12 15:59:00 wave8b: start mac_wave8b_M1_c2_clique.txt
+2026-11-12 15:59:25 wave8b: start mac_wave8b_M2_c2_clique.txt
+2026-11-12 15:59:50 wave8b: start mac_wave8b_M2_c3_clique.txt
+2026-11-12 16:43:09 wave8b: done  mac_wave8b_M1_c1_clique.txt (exit 0)
+2026-11-12 16:43:09 wave8b: start mac_wave8b_J2_alpha_1213.txt
+2026-11-12 16:45:54 wave8b: done  mac_wave8b_M1_c2_clique.txt (exit 0)
+2026-11-12 16:51:12 wave8b: done  mac_wave8b_M2_c2_clique.txt (exit 0)
+2026-11-12 16:54:38 wave8b: done  mac_wave8b_M2_c3_clique.txt (exit 0)
+2026-11-12 16:57:59 wave8b: done  mac_wave8b_J2_alpha_1213.txt (exit 0)
+2026-11-12 16:57:59 wave8b: end part b.  PASS lines (see README_wave8.txt):
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "repo_stream", "colours": [1], "cyclic": true, "timeout": 86400.0, "result": {"1": {"out": "NONE 5", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 193353108", "seconds": 2673.5}}, "seconds": 2673.5, "time": "2026-11-12 16:43:09"}
+{"file": "built/R6^4_n23501.lengths", "sha256": "a43c939da7dc68381b1674e417c003129295b07ce1189a475389b4786c18730a", "N": 23501, "k": 6, "checker": "repo_stream", "colours": [2], "cyclic": true, "timeout": 86400.0, "result": {"2": {"out": "NONE 5", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 192194548", "seconds": 2814.0}}, "seconds": 2814.0, "time": "2026-11-12 16:45:54"}
+{"file": "built/R10^3_n23093.lengths", "sha256": "7c26d1205680411161a5f0ff010d738bd1d838509e396672fd1cafd1635462a2", "N": 23093, "k": 10, "checker": "repo_stream", "colours": [2], "cyclic": true, "timeout": 86400.0, "result": {"2": {"out": "NONE 9", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 1395471902", "seconds": 3107.1}}, "seconds": 3107.1, "time": "2026-11-12 16:51:12"}
+{"file": "built/R10^3_n23093.lengths", "sha256": "7c26d1205680411161a5f0ff010d738bd1d838509e396672fd1cafd1635462a2", "N": 23093, "k": 10, "checker": "repo_stream", "colours": [3], "cyclic": true, "timeout": 86400.0, "result": {"3": {"out": "NONE 9", "err": "x: line 0: ulimit: stack size: cannot modify limit: Operation not permitted\nnodes 1513535497", "seconds": 3287.4}}, "seconds": 3287.4, "time": "2026-11-12 16:54:38"}
+p=1213 L=21 w=2 |V|=532: NONE 18  nodes:nodes 990086948  424.5s
+p=1213 L=21 w=4 |V|=545: NONE 18  nodes:nodes 1099519288  465.6s

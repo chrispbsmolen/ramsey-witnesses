@@ -1,0 +1,22 @@
+=== start 2026-11-10 17:39:33 wave=wave7 dir=/Users/<user>/Ramsey/phase2/hunt_two_colour/scripts
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 xcheck.py circulant 491:1,2,11,12,19,20,23,24,27,31,39,40,41,45,49,56,63,65,66,75,82,91,97,101,105,110,111,112,114,119,125,126,128,129,132,136,138,141,144,153,159,162,167,173,175,181,182,183,185,186,190,197,202,203,208,210,213,215,219,220,221,223,226,228,230,232,234,235,236,240 5,22 86400 --sym
+circulant 491:1,2,11,12,19,20,23,24,27,31,39,40,41: clique number 4 (< 5, ok), independence number not completed in 86400 s
+    86400.75 real     86134.47 user       199.13 sys
+           107479040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9065  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 197  voluntary context switches
+             4173615  involuntary context switches
+           175192318  instructions retired
+            77460260  cycles elapsed
+             9126464  peak memory footprint
+=== end 2026-11-11 17:39:34 exit=0

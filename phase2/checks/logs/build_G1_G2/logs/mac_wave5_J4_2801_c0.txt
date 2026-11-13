@@ -1,0 +1,29 @@
+=== start 2026-11-09 15:55:03 wave=wave5 dir=/Users/<user>/Ramsey/phase2/build_G1_G2
+=== cmd: /Users/<user>/Ramsey/phase2/mac_batch/venv/bin/python3 /Users/<user>/Ramsey/phase2/mac_batch/with_clique_mac.py --default-timeout 21600 /Users/<user>/Ramsey/phase2/build_G1_G2/checker scripts/reduced_G2.py 2801 0 0 0
+with_clique_mac: solver /Users/<user>/Ramsey/phase2/build_G1_G2/checker/clique_mac, has_clique default timeout 21600.0 s
+{"n_sub": 0, "size": 14, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 0, "s": 1}
+{"n_sub": 1400, "size": 14, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 1912.6, "colour": 0, "r": 0, "s": 2803}
+{"n_sub": 1400, "size": 14, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 1886.7, "colour": 0, "r": 2, "s": 1}
+{"n_sub": 1400, "size": 14, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 1825.4, "colour": 0, "r": 2, "s": 5}
+{"n_sub": 0, "size": 14, "clique_c": false, "nx_omega": 0, "nx_found": false, "sec_c": 0.0, "sec_nx": 0.0, "colour": 0, "r": 2, "s": 2803}
+{"n_sub": 1400, "size": 14, "clique_c": false, "nx_omega": null, "nx_found": false, "nx": "not run (subproblem larger than NX_MAX=0)", "sec_c": 1824.3, "colour": 0, "r": 2, "s": 2804}
+{"p": 2801, "n": 5604, "k": 16, "colours": [0], "reps": [0, 2], "searches": 6, "verdict": "PASS", "nx_complete": false, "seconds": 7449.6}
+     7449.83 real      7445.69 user         3.56 sys
+           753565696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               71949  page reclaims
+                  35  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 193  voluntary context switches
+               42614  involuntary context switches
+         29854005672  instructions retired
+          5812610234  cycles elapsed
+           682181928  peak memory footprint
+=== end 2026-11-09 17:59:13 exit=0

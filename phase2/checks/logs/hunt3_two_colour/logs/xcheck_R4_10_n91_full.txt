@@ -1,0 +1,1 @@
+circulant 91:3,5,6,7,10,11,12,14,20,22,24,28,40,43: clique number 3 (< 4, ok), independence number 9 (< 10, ok)

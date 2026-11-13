@@ -1,0 +1,23 @@
+2026-11-08 00:19:27 wave3: begin
+2026-11-08 00:19:27 wave3: start mac_wave3_clique_c2.txt
+2026-11-08 00:19:32 wave3: start mac_wave3_7_16_indep_nx.txt
+2026-11-08 00:19:32 wave3: start mac_wave3_7_12_indep_repo.txt
+2026-11-08 00:19:32 wave3: start mac_wave3_7_16_indep_repo.txt
+2026-11-08 00:33:36 wave3: done  mac_wave3_clique_c2.txt (exit 0)
+2026-11-08 00:37:28 wave3: done  mac_wave3_7_16_indep_repo.txt (exit 0)
+2026-11-08 00:37:28 wave3: start mac_wave3_9_10_indep_nx.txt
+2026-11-08 00:40:50 wave3: done  mac_wave3_7_12_indep_repo.txt (exit 0)
+2026-11-08 00:40:50 wave3: start mac_wave3_5_15_indep_nx.txt
+2026-11-08 02:18:46 wave3: done  mac_wave3_5_15_indep_nx.txt (exit 0)
+2026-11-08 03:33:06 wave3: done  mac_wave3_9_10_indep_nx.txt (exit 0)
+2026-11-08 03:33:06 wave3: start mac_wave3_9_10_clique_nx.txt
+2026-11-08 03:57:13 wave3: done  mac_wave3_9_10_clique_nx.txt (exit 0)
+2026-11-08 12:19:33 wave3: done  mac_wave3_7_16_indep_nx.txt (exit 0)
+2026-11-08 12:19:33 wave3: end; R(5^5) PASS = NONE 4; G3 PASS = "result": "NONE":
+NONE 4
+{"cell": "5,15", "half": "indep", "checker": "nx", "n": 274, "timeout": 43200.0, "sha256_file": "5d8b5ac9b1bbbb089d8d8ee97b772d8e35e7bcd00a563713121e27e9a3428f25", "n_ok": true, "sym": false, "nx": {"best": 14, "maximal_cliques": 4152387782, "found": false}, "result": "NONE", "seconds": 5876.5, "claim": "no independent 15-set"}
+{"cell": "7,12", "half": "indep", "checker": "repo", "n": 416, "timeout": 43200.0, "sha256_file": "6ea40d4ab79ac434f4caf3eb168df9cbbda57a09a9984e0726e00d813c1a9304", "n_ok": true, "sym": false, "result": "NONE", "solver": "NONE 11", "seconds": 1277.6, "claim": "no independent 12-set"}
+{"cell": "7,16", "half": "indep", "checker": "nx", "n": 628, "timeout": 43200.0, "sha256_file": "d3d908f0abe9d9798053fe8c81354e221130d0bad99af3f2185a4afa98f0dc4e", "n_ok": true, "sym": false, "result": "TIMEOUT", "seconds": 43200.4, "claim": "no independent 16-set"}
+{"cell": "7,16", "half": "indep", "checker": "repo", "n": 628, "timeout": 43200.0, "sha256_file": "d3d908f0abe9d9798053fe8c81354e221130d0bad99af3f2185a4afa98f0dc4e", "n_ok": true, "sym": false, "result": "NONE", "solver": "NONE 15", "seconds": 1076.2, "claim": "no independent 16-set"}
+{"cell": "9,10", "half": "clique", "checker": "nx", "n": 580, "timeout": 43200.0, "sha256_file": "6f849d9d21e4f999df172706340390b5af9e63040462032ca9e97ed62f84d321", "n_ok": true, "sym": false, "nx": {"best": 8, "maximal_cliques": 315466391, "found": false}, "result": "NONE", "seconds": 1446.7, "claim": "no K_9"}
+{"cell": "9,10", "half": "indep", "checker": "nx", "n": 580, "timeout": 43200.0, "sha256_file": "6f849d9d21e4f999df172706340390b5af9e63040462032ca9e97ed62f84d321", "n_ok": true, "sym": false, "nx": {"best": 9, "maximal_cliques": 2295417088, "found": false}, "result": "NONE", "seconds": 10537.1, "claim": "no independent 10-set"}

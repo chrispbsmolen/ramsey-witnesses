@@ -1,0 +1,14 @@
+2026-11-07 23:28:58 wave1: begin
+2026-11-07 23:28:58 wave1: start mac_wave1_J1_R2.txt
+2026-11-07 23:28:58 wave1: start mac_wave1_J1_R1.txt
+2026-11-07 23:28:58 wave1: start mac_wave1_J1_R0.txt
+2026-11-07 23:28:58 wave1: start mac_wave1_J1_R3.txt
+2026-11-07 23:37:07 wave1: done  mac_wave1_J1_R3.txt (exit 0)
+2026-11-07 23:37:22 wave1: done  mac_wave1_J1_R0.txt (exit 0)
+2026-11-07 23:37:25 wave1: done  mac_wave1_J1_R2.txt (exit 0)
+2026-11-07 23:37:35 wave1: done  mac_wave1_J1_R1.txt (exit 0)
+2026-11-07 23:37:35 wave1: end; PASS needs 4 lines with "status": "done" and omega_max <= 10:
+{"file": "R3_3_3_11_n596.txt.gz", "colour": 2, "lo": 0, "mod": [4, 0], "hi_requested": 596, "hi_done": 593, "omega_max": 10, "status": "done", "seconds": 504.5}
+{"file": "R3_3_3_11_n596.txt.gz", "colour": 2, "lo": 0, "mod": [4, 1], "hi_requested": 596, "hi_done": 594, "omega_max": 10, "status": "done", "seconds": 516.9}
+{"file": "R3_3_3_11_n596.txt.gz", "colour": 2, "lo": 0, "mod": [4, 2], "hi_requested": 596, "hi_done": 595, "omega_max": 10, "status": "done", "seconds": 507.5}
+{"file": "R3_3_3_11_n596.txt.gz", "colour": 2, "lo": 0, "mod": [4, 3], "hi_requested": 596, "hi_done": 596, "omega_max": 10, "status": "done", "seconds": 489.7}

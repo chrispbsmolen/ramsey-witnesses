@@ -1,0 +1,1 @@
+{"result": "TIMEOUT_IN_SOLVE", "iterations": 1, "k5_clauses": 132, "seconds": 544}

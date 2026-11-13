@@ -1,0 +1,2 @@
+partitions/exoo94_full.txt multipliers giving depth 44: [1, 160] found in enumeration: [True, True]
+partitions/heule2018_fig1_full.txt multipliers giving depth 44: [64, 97] found in enumeration: [True, True]

@@ -1,0 +1,22 @@
+=== start 2026-11-07 23:39:58 wave=wave2 dir=/Users/<user>/Ramsey/phase2/hunt_multicolour
+=== cmd: ./mac_jobs/linear0_mac converted/julojc_R5x5_n44337.lengths 2 5
+NONE N=44337 colour=2 k=5 degree(0)=12676 start_vertices_done=12676/12676 seconds=128.1
+      128.56 real       127.92 user         0.21 sys
+            23740416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1639  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               28304  involuntary context switches
+       1214664663943  instructions retired
+        480441705805  cycles elapsed
+            23265640  peak memory footprint
+=== end 2026-11-07 23:42:06 exit=0

@@ -1,0 +1,1 @@
+{"n": 161, "ks": [3, 3, 3, 5], "colours": 4, "circulant": true, "seconds": 0.0, "verdict": "FAIL", "note": "some colour class contains a forbidden clique under every assignment", "found": {"0:3": false, "1:3": true, "1:5": true, "0:5": false}}

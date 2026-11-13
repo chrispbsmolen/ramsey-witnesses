@@ -1,0 +1,16 @@
+julojc_R5x5_n44337.lengths (sha256 7fbf9281c868874145be294d3852614e9110222a1bc44fedf0cd9d7e0b10ed07), from
+github.com/JuloJC/multicolour-ramsey-numbers records/R_5_5_5_5_5_n44337_firstrow.txt (sha256 993cff57...eb9a70), colours +1.
+Colouring is linear and cyclic (c[d] == c[N-d] for all d), so cliques through vertex 0 suffice.
+Checks run here (7 Nov 2026), K5 in each colour (lengths-file colour labels 1..5):
+  mac_jobs/linear0 (independent C, this folder):
+    colour 5: NONE  degree(0)=4636   0.4 s
+    colour 3: NONE  degree(0)=5168   0.6 s
+    colour 4: NONE  degree(0)=7372   4.1 s
+    colour 1: PARTIAL_NONE 300/14484 start vertices in 70.1 s  (not completed here)
+    colour 2: PARTIAL_NONE 300/12676 start vertices in 29.2 s  (not completed here)
+  repo/clique.c (the solver behind repo/verify_ramsey.py), input streamed by mac_jobs/stream_adj.py, --sym, ulimit -s unlimited:
+    colour 5: NONE 4   36 s wall (162812 nodes)
+    colour 3: NONE 4   51 s wall (258268 nodes)
+    colour 4: NONE 4   75 s wall (625405 nodes)
+    (with the default 8 MB stack clique.c segfaults at this size: alloca inside the loop of expand())
+  repo/verify_ramsey.py itself cannot load this colouring (it builds an n x n int64 matrix, about 15.7 GB).

@@ -1,0 +1,1 @@
+quad == round-1 xxer_quadruple+merge on 20 random inputs: True

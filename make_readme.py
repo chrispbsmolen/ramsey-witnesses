@@ -33,6 +33,7 @@ po = '; '.join('Q_%d has clique number %d' % (o['p'], o['omega']) for o in S['pa
 src_rows = '\n'.join('| %s | %s | %s | %s |' % (s['name'], s['where'], s['licence found'], s['here']) for s in src)
 by_src = '\n'.join('| %s | %s |' % (k, ', '.join('%s %s' % (kk, vv) for kk, vv in sorted(v.items()))) for k, v in S['ledger_by_source'].items())
 part_rows = '\n'.join('| %s | %s | %s | %s |' % (R(x['parameters']), fmt(x['survey_lower']), fmt(x['claimed']), x['check']) for x in S['partial'])
+phase2 = rd('phase2/README_section.md') + '\n' if os.path.exists('phase2/README_section.md') else ''
 fl = rd('results/fetch_log.txt').split('\n'); fetch_ok = sum(1 for l in fl if l.startswith('OK ')); fetch_n = len(fl) - 1
 
 readme = f'''# ramsey-witnesses
@@ -47,6 +48,9 @@ decides this exactly: for each colour class the C program `clique.c` (bitset bra
 bounds) searches for a clique of the forbidden size. `selftest.py` checks the solver against networkx on random
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
+
+The results below are those of 4 November 2026. Phase 2 (12 November 2026) adds witnesses, checks and notes for the
+105 cells that had no public witness then. It is summarised in the section Phase 2 below and kept in `phase2/`.
 
 ## Results
 
@@ -108,7 +112,9 @@ newer than the survey or not cited in it, not of omissions from the survey.
 
 {unclaimed}
 
-### Survey lower bounds with no public witness found
+### Survey lower bounds with no public witness found on 4 November 2026
+
+The section Phase 2 below gives the status of each of these cells on 12 November 2026.
 
 No witness file of the survey's strength was found for these (in brackets the survey's reference; "recipe" marks
 a construction described in the survey or the cited paper). Two-colour with k <= l <= 15 ({n0}): {m0}.
@@ -128,8 +134,9 @@ of K_127):
 {cons_rows}
 
 `constructions/paley_omega.py` computes the clique numbers of larger Paley graphs exactly ({po}); with the doubling
-construction these give the survey's bounds for {pc}, whose graphs were not built or checked here (status RECIPE).
+construction these give the survey's bounds for {pc}, whose graphs were not built or checked here by 4 November (status RECIPE). Phase 2 built them, and their status on 12 November is in the section Phase 2.
 
+{phase2}
 ## Usage
 
 Python 3 with numpy and networkx (`requirements.txt`), a C compiler (`clique.c` is compiled on first use) and,
@@ -144,6 +151,8 @@ python3 crosscheck.py                  # results/crosscheck_output.txt
 python3 constructions/build.py         # rebuilds constructions/witnesses/
 python3 make_ledger.py                 # results/ledger.csv, coverage.csv, summary.json
 python3 make_readme.py                 # this file and results/VERIFICATION.md
+python3 phase2/make_phase2.py          # phase2/COVERAGE.md, phase2/CHECKS.md, phase2/summary.json (run before make_readme.py)
+python3 phase2/check_phase2.py         # phase2/results/: the repository checker on every phase-2 witness file
 ```
 
 A full `run_ramsey.py` without `--quick` takes hours: the cloud run took about {fmt(round(S['runs']['cloud']['seconds'], -2))} s in all, with a
@@ -162,6 +171,33 @@ the large AlphaEvolve witnesses on a separate machine.
 
 Files of the other sources are identified by URL and SHA-256 in `sources/manifest.csv` and are not
 redistributed. The survey and the papers are not included.
+
+The phase-2 witness files are listed with their source, page or table, licence or credit in
+`phase2/witnesses/manifest.csv` and `phase2/coverage.csv`. They use the constructions and data of:
+
+- Calkin, Erdos and Tovey
+- Kuznetsov
+- Wu, Su, Luo and Xu
+- Lindsay and Cain
+- Ihringer
+- Su, Li, Luo and Li
+- Li Mingbo and Li Yusheng
+- Xu, Xie, Exoo and Radziszowski
+- Xu, Shao and Radziszowski
+- Xu and Radziszowski
+- Shearer, and Mathon
+- Luo, Su and Li
+- Paley, Kalbfleisch, Hill and Irving, Giraud, Chung, and Robertson
+- Exoo, Exoo and Tatarevic, and Tatarevic
+- Rowley
+- Courties
+- Fredricksen and Sweet
+- Ageron, Casteras, Pellerin, Portella, Rimmel and Tomasik
+- Codish, Frank, Itzhakov and Miller
+- Kreher, Li and Radziszowski
+- Dauth
+
+Please cite them for their results.
 
 ## Credit, corrections and removal
 

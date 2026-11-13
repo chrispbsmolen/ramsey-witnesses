@@ -1,0 +1,7 @@
+t9 C13(1,5) (3,5)   n= 13 -> n= 52 omega 4 (< 5) alpha 5 (< 6) ok
+t9 Paley13 (4,4)    n= 13 -> n= 52 omega 6 (< 7) alpha 4 (< 5) ok
+t9 C8(1,4) (3,4)    n=  8 -> n= 32 omega 4 (< 5) alpha 4 (< 5) ok
+cor3 comp C13(1,5) (5,3) n= 13 -> n= 21 omega 4 (< 5) alpha 3 (< 4) ok
+cor3 random graphs: 30 tested
+thm3 random graphs: 30 tested
+ALL OK
