@@ -103,7 +103,7 @@ kept in the table, and the source column names the paper actually used.
 | R(3,4,5,5) | Row2 | Rowley, arXiv:2203.13476v3 spreadsheet |
 | R(3^8) | Row3 | Ageron et al., arXiv:2112.03175v2, Table 5 |
 
-## 5. Witnesses found here by search (Amendment 2 of the registration)
+## 5. Witnesses found here by search (Amendments 2 and 6 of the registration)
 
 For R(4,10) >= 92, R(5,8) >= 101 and R(4,17) >= 200 the cited colourings (Harborth and Krause, HaKr1, and LiaWXS)
 are not public. The witnesses here were found by a short circulant tabu search (R(4,10), R(5,8)) and by a scan of
@@ -111,12 +111,22 @@ unions of cyclotomic classes mod 199 (R(4,17)). They are labelled as such in eve
 scripts are in `scripts_as_run/hunt3_two_colour/` with their SHA-256 in `scripts_as_run/INDEX.csv`. R(6,15) and
 R(7,18) are built from two of these witnesses by the survey's construction and carry the same label on their input.
 
+Under Amendment 6 (12 November, a registered search for the lost cells, rules in `README.md`), a SAT search on
+Z_80 found a cyclic (3,3,7;80) colouring. Robertson's construction (Electron. J. Combin. 6 (1999) #R3, Part Two)
+turns it into a (3,3,3,7;246) colouring, so R(3,3,3,7) >= 247, the survey's value (item 6.2.h). The row is labelled
+"VERIFIED (witness found here by search)". The (3,3,7;80) colouring is not Exoo's (3,3,7;84) colouring, which is not
+public, and it does not reach the survey's value for R(3,3,7) itself. The search scripts and full search logs were
+not yet in the record on 12 November. The check log of the two finds is `checks/logs/search_s1/logs/verify_finds.jsonl`.
+
 ## 6. Choices made in builds
 
 - R(8,19): XSR2 Thm 3 needs a "properly chosen H" (survey 2.2.h). H here is the complement of the (7,8;216) graph
   built from XSR2 Thm 4. This is a reading of the text.
 - R(3,3,3,10): the input is the first 128 vertices of the Lachy-Dauth R(3,3,9) circulant (repository
   `third_party/lachy-dauth/`). The full 132-vertex input would give 528 vertices.
+- R(6,6,6,6,6,6): the object follows the 5,499,101-vertex route of Rowley, arXiv:2203.13476v3 Table 2, not the
+  survey's recipe (Row2/Row3 with a (6,6,3;213) template that is not printed). Its first 4,515,701 vertices give the
+  survey's value.
 - R(5,5,5): the file is Exoo's colouring as published by Courties (CC0). Rowley's spreadsheet has the same colouring
   (first 453 vertices of column 27), and the two agree byte for byte after relabelling.
 
@@ -138,6 +148,7 @@ the survey's value.
 
 ## 8. Count
 
-The working tally of 12 November 20:30 Chicago gave 77 VERIFIED. Counting the table row by row gives 78. The
-difference is R(6,20): it became VERIFIED (symmetry-reduced) under Amendment 5 at 18:46, and it is one of the 105
+The working tally of 12 November 20:30 Chicago gave 77 VERIFIED. Counting the table row by row gave 78 at that
+point, and 84 after the six Rowley rows (five VERIFIED, R(9,9,9,9) PARTIAL) and the search find for R(3,3,3,7). The
+difference of one is R(6,20): it became VERIFIED (symmetry-reduced) under Amendment 5 at 18:46, and it is one of the 105
 cells, but it was not added to the running count at that step. The table counts it.

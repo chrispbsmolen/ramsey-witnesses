@@ -5,8 +5,8 @@ On 4 November 2026, 105 lower bounds in the tables of Radziszowski's survey *Sma
 `results/coverage.csv`). Phase 2, from 7 to 12 November 2026, built the constructions that the survey and the cited
 papers describe, looked again for public files, and checked what was found or built. This folder holds the result.
 
-The work followed a registration written before it started, with five amendments on what each label means. The
-labels are:
+The work followed a registration written before it started, with six amendments on what each label means and on
+searching. The labels are:
 
 - **VERIFIED**: every half (two colours) or every colour of the witness was checked by two independent exact
   checkers on the object itself.
@@ -16,6 +16,9 @@ labels are:
 - **VERIFIED (by proof: citation)**: one half, one colour or the whole row follows from a published theorem, cited
   with page, applied to inputs that were themselves checked by both checkers. Every computed part was checked by
   both checkers. Proofs written here do not count.
+- **VERIFIED (witness found here by search)**: the witness, or the input it is built from, was found here by a search
+  run under the rules below (Amendment 6), and every colour of the witness was checked by both checkers on the whole
+  object, with negative controls.
 - **PARTIAL**: one check is missing, as the row says.
 - **RECIPE ONLY**: the construction is written down or built, and not checked.
 - **NOT REPRODUCED**: the construction as described could not be reproduced from the paper here.
@@ -27,33 +30,51 @@ A TIMEOUT is never counted as a check.
 
 | status | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED | 10 | 27 | 37 |
-| VERIFIED (symmetry-reduced) | 14 | 6 | 20 |
-| VERIFIED (by proof: citation) | 18 | 3 | 21 |
-| PARTIAL | 1 | 0 | 1 |
-| RECIPE ONLY | 5 | 6 | 11 |
+| VERIFIED | 9 | 27 | 36 |
+| VERIFIED (symmetry-reduced) | 15 | 6 | 21 |
+| VERIFIED (by proof: citation) | 18 | 8 | 26 |
+| VERIFIED (witness found here by search) | 0 | 1 | 1 |
+| PARTIAL | 1 | 1 | 2 |
+| RECIPE ONLY | 5 | 0 | 5 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 4 | 6 | 10 |
+| STILL NO FILE | 4 | 5 | 9 |
 | all | 55 | 50 | 105 |
 
-The table is written by `make_phase2.py` into `summary.json` and `COVERAGE.md`. Six of the RECIPE ONLY rows,
-R(7,7,7,7), R(8,8,8,8), R(9,9,9,9), R(6,6,6,6,6), R(5,5,5,5,5,5) and R(6,6,6,6,6,6), are being checked in a run
-that had not finished on 12 November. Their rows say so, and they stay RECIPE ONLY until a new check entry exists.
-R(7,21) is PARTIAL because one of its reduced subproblems has been decided by clique.c only.
+84 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
+`summary.json` and `COVERAGE.md`. Two rows are PARTIAL while a check is still running:
 
-### Slot for the six rows still running
+- R(9,9,9,9): the object is built and certified and its inputs have both checkers, but the window search for
+  colours 1 and 2 (K9 on vertices 0..10240) is not finished.
+- R(7,21): one reduced independence subproblem has been decided by clique.c only.
 
-When that run finishes, each of the six rows is filled in the same way as the others:
+When such a check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
+`label`, `group`, `checks` and `proof` in `coverage.csv`, then `python3 phase2/make_phase2.py`,
+`python3 make_readme.py` and `python3 phase2/check_phase2.py --only CELL`. A row moves up only with a new check entry.
 
-1. add the witness file to `witnesses/` (gzip) and a row to `witnesses/manifest.csv`,
-2. in `coverage.csv`, set `label`, `group`, `witness`, `n`, the two SHA-256 fields, `checks` and `proof`, and replace
-   the note "SLOT build_round6",
-3. add the logs under `checks/logs/build_round6/` (and to its `INDEX.csv`) and any rebuild certificate to
-   `certificates/`,
-4. set the row's status in `recipes.csv`, then run `python3 phase2/make_phase2.py`, `python3 make_readme.py` and
-   `python3 phase2/check_phase2.py --only CELL`.
+## Searches
 
-A row whose checks do not meet the rules above stays RECIPE ONLY or becomes PARTIAL, with what is missing.
+Searching for new witnesses was outside the registration at first. Two amendments allowed it, and every row whose
+witness was found by search says so in its label or its notes.
+
+- Amendment 2 (7 November) kept three witnesses found by short searches outside the original scope: R(4,10) and
+  R(5,8) (circulant tabu search) and R(4,17) (unions of cyclotomic classes mod 199). Their rows carry the note
+  "independent witness found here by search", and so do the inputs of R(6,15) and R(7,18).
+- Amendment 6 (12 November) allowed a search for the lost cells under these rules: runs in the cloud only, each
+  restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a
+  target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and
+  Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code is used only from its public
+  source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled
+  "witness found here by search". Nothing is published or sent as part of the search.
+
+Find so far under Amendment 6 (log `checks/logs/search_s1/logs/verify_finds.jsonl`):
+
+| find | how | check |
+|---|---|---|
+| cyclic (3,3,7;80) colouring, `witnesses/inputs/R3_3_7_n80_cyclic.colormat.gz` (sha256 636ac4bc... uncompressed) | SAT on Z_80 | verify_ramsey PASS (circulant). clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Controls: lowered k FOUND, one edge recoloured caught, by both checkers |
+| (3,3,3,7;246) colouring, `witnesses/R3_3_3_7_n246.colormat.gz` (sha256 e1e5cda0... uncompressed), so R(3,3,3,7) >= 247 | Robertson's construction (Electron. J. Combin. 6 (1999) #R3, Part Two) applied to the find above | verify_ramsey PASS. clique.c and gen0 on every colour, whole graph, no reduction: NONE 2, 2, 2, 6. Controls as above |
+
+The (3,3,7;80) colouring is below the survey's value R(3,3,7) >= 85, so that cell stays STILL NO FILE. The search
+for the other targets was still running on 12 November.
 
 ## Contents
 
@@ -61,13 +82,13 @@ A row whose checks do not meet the rules above stays RECIPE ONLY or becomes PART
 |---|---|
 | `coverage.csv` | one row per cell: survey bound and reference, label, witness file and SHA-256, source with page, table or row, URL or DOI, how the file was read or built, licence or credit, checks, proof, notes |
 | `COVERAGE.md` | the same, as tables grouped by label |
-| `witnesses/` | 79 witness files, gzip-compressed (2.5 MB in all, the largest 1.2 MB), and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
+| `witnesses/` | 86 witness files, gzip-compressed (2.5 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
 | `CHECKS.md` | the checks behind each label, the checkers and machines, and how to rerun a check |
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
 | `NOTES.md` | a misprint, three constructions not reproduced from the text, readings of printed tables, third-party claims noted and not counted |
 | `search_records/` | where each search round looked, with what it found, including searches that found nothing (`sources.csv` and `searched_before.csv` of the rounds), with `INDEX.csv` |
-| `recipes.csv` | the RECIPE ONLY rows: the object, the expected SHA-256 of the built file and the build script |
+| `recipes.csv` | the large built objects (the five RECIPE ONLY rows and the six Rowley rows): the object, the expected SHA-256 of the built file, the build script and the row's status |
 | `scripts_as_run/` | the build and check scripts as they were run, with `INDEX.csv` |
 | `check_phase2.py` | runs the repository checker on every witness file |
 | `make_phase2.py` | writes `COVERAGE.md`, `CHECKS.md`, `summary.json` and the README section from the CSV files |

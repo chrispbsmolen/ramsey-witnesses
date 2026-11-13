@@ -1,6 +1,6 @@
 # Certificates for the rows labelled VERIFIED (by proof: citation)
 
-In these 21 rows one half, one colour or the whole row follows from a published theorem. The rule (Amendments 3 and 4
+In these 26 rows one half, one colour or the whole row follows from a published theorem. The rule (Amendments 3 and 4
 of the phase-2 registration) is that the theorem is cited with page, that every input it is applied to was checked
 here by both checkers, and that every computed part was checked by both checkers. Where a whole row rests on the
 theorem, the object was also rebuilt from its hashed inputs, the hypotheses of the theorem were checked, and the
@@ -15,6 +15,7 @@ Files in this folder (copies of records also kept in `../checks/logs/`):
 | `rowley_r10_window.jsonl` | the 253-vertex window that Rowley Thm 3.2 leaves for colour 1 of R(10,10,10), checked by clique.c, gen0 and linear0, with a K9 control |
 | `inputs_both_checkers.jsonl` | the inputs of the XXER Thm 9 rows, each rerun with both checkers on the whole graph and matched to its pinned SHA-256 |
 | `xsr2_reduction_G3.jsonl`, `xsr2_reduction_6_21.jsonl` | the exact reduction alpha(F) <= alpha(G) + 1 of XSR2 Thm 3, checked on the object |
+| `rowley_round6_certificates.jsonl`, `rowley_round6_inputs.jsonl`, `rowley_round6_windows.jsonl` | the six Rowley rows of 12 November: rebuild certificates, the inputs U and V with both checkers, and the window searches (R(9,9,9,9) window not finished) |
 | `two_implementations_G3.json`, `two_implementations_round4.jsonl` | every built graph was produced by two separate implementations and the two agree edge for edge |
 
 The scripts that wrote these records are in `../scripts_as_run/build_round5/scripts/` (`cert_shearer.py`,
@@ -55,7 +56,15 @@ section 1).
 | R(8,21) | XXER Thm 9 | no K8 | (7,11;404) graph | two implementations agree |
 | R(9,9,9) | XXER Cor. 5 p.15 | colours 1 and 2 (Mac, wave 8a) | Rowley (3,8,8;940) | 7 automorphisms verified |
 | R(8,8,9) | XXER Cor. 5 p.15 | colours 1 and 2 (cloud) | Rowley (3,7,7;673) | 7 automorphisms verified |
+| R(7,7,7,7) | Rowley Thm 3.2, pp.248-250 | colours 1, 2: window 0..2820, clique.c, gen0, linear0 | U (7,7,3;472), V circulant (7,7;202) | rebuilt from the proof text, byte-identical (3133b7b0...) |
+| R(8,8,8,8) | same | colours 1, 2: window 0..4536 | U (8,8,3;650), V Q_281 | identical (b5653bc4...) |
+| R(5,5,5,5,5,5) | same | colours 1, 2, 3: window 0..3900 | U (5,5,5,3;977), V (5,5,5;453) | identical (e4599410... decompressed) |
+| R(6,6,6,6,6) | same | colour 1: window 0..50 | U (6,3;12), V the R(6,6,6,6) object | identical (ceb3897e... decompressed) |
+| R(6,6,6,6,6,6) | same | colours 1, 2: window 0..1165 | U (6,6,3;235), V the R(6,6,6,6) object | identical (f9413e70... decompressed). 5,499,101 vertices, Rowley's Table 2 route, first 4,515,701 used |
 | R(10,10,10) | Rowley, Australas. J. Combin. 81(2) Thm 3.2, pp.248-250 | colours 2 and 3 (Mac, waves 8a and 8b), colour 1 window (cloud) | template (10,3;30) (sheet sha256 53f2bf9d...), Q_797 | length file rebuilt from the proof text, byte-identical (7c26d120...) |
+
+Window searches use the translation step of Rowley's proof (cliques through vertex 0). R(9,9,9,9) has the same
+certificate and checked inputs, but its window is not finished, so it is PARTIAL.
 
 For R(7,12) and R(7,16) one checker also ran the independence half directly on the object (clique.c, Mac, wave 3),
 and found no forbidden set. networkx did not finish those runs in 12 hours, so they are recorded as extra evidence

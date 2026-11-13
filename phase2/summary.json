@@ -1,32 +1,37 @@
 {
  "date": "2026-11-12",
  "cells": 105,
- "verified": 78,
+ "verified": 84,
  "by_group": {
   "computer": {
-   "two_colour": 10,
+   "two_colour": 9,
    "multicolour": 27,
-   "total": 37
+   "total": 36
   },
   "symmetry": {
-   "two_colour": 14,
+   "two_colour": 15,
    "multicolour": 6,
-   "total": 20
+   "total": 21
   },
   "proof": {
    "two_colour": 18,
-   "multicolour": 3,
-   "total": 21
+   "multicolour": 8,
+   "total": 26
+  },
+  "search": {
+   "two_colour": 0,
+   "multicolour": 1,
+   "total": 1
   },
   "partial": {
    "two_colour": 1,
-   "multicolour": 0,
-   "total": 1
+   "multicolour": 1,
+   "total": 2
   },
   "recipe": {
    "two_colour": 5,
-   "multicolour": 6,
-   "total": 11
+   "multicolour": 0,
+   "total": 5
   },
   "not_reproduced": {
    "two_colour": 3,
@@ -35,18 +40,14 @@
   },
   "no_file": {
    "two_colour": 4,
-   "multicolour": 6,
-   "total": 10
+   "multicolour": 5,
+   "total": 9
   }
  },
- "witness_files": 79,
- "witness_bytes": 2457784,
- "pending_build_round6": [
-  "7,7,7,7",
-  "8,8,8,8",
-  "9,9,9,9",
-  "6,6,6,6,6",
-  "5,5,5,5,5,5",
-  "6,6,6,6,6,6"
+ "witness_files": 86,
+ "witness_bytes": 2544330,
+ "partial": [
+  "7,21",
+  "9,9,9,9"
  ]
 }
