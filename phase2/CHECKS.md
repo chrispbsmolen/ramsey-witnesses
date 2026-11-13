@@ -112,3 +112,96 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 | R(3,8,8) | VERIFIED | `R3_8_8_n940.colormat.gz` (6a27c0367149...) | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,9,9) | VERIFIED | `R3_9_9_n1843.colormat.gz` (177449e9b110...) | verify_ramsey PASS (14 s) and crosscheck_mc PASS (110 s). Cloud, 7 Nov. |
 | R(8,8,9) | VERIFIED (by proof: XXER Cor. 5, p.15) | `R8_8_9_n10768.colormat.gz` (268519f30308...) | Vertex-transitive (7 automorphisms checked). Colours 1 and 2: no K7 in N(0), clique.c (37 s, 32 s) and gen0 (39 s, 35 s), cloud. Input (3,7,7;673): verify_ramsey and crosscheck_mc PASS. |
+
+## Repository checker on every witness file
+
+Output of `python3 phase2/check_phase2.py --limit 120` run from a fresh clone of this branch (see `phase2/results/RUN_NOTE.txt`) (`phase2/results/repo_check.txt`, records in `phase2/results/repo_check.jsonl`). This is a uniform light re-check with a time limit. NOT_COMPLETED means the limit was reached. NOT_RUN_SIZE means the file has more vertices than the in-memory checker loads. Neither is a failure, and the labels rest on the checks listed above.
+
+```
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 120 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+4,10                   R4_10_n91.g6.gz                         91 PASS                0.0  VERIFIED
+5,7                    R5_7_n79.g6.gz                          79 PASS                0.0  VERIFIED
+5,8                    R5_8_n100.g6.gz                        100 PASS                0.0  VERIFIED
+5,15                   R5_15_n274.g6.gz                       274 PASS               46.7  VERIFIED
+6,15                   R6_15_n400.g6.gz                       400 NOT_COMPLETED     120.2  VERIFIED (symmetry-reduced)
+7,11                   R7_11_n404.g6.gz                       404 NOT_COMPLETED     120.2  VERIFIED
+7,12                   R7_12_n416.g6.gz                       416 NOT_COMPLETED     120.2  VERIFIED (by proof: XSR2 Thm 3, preprint pp.4-5, Cor. 3 p.6)
+8,9                    R8_9_n328.g6.gz                        328 PASS                0.1  VERIFIED
+8,11                   R8_11_n456.g6.gz                       456 NOT_COMPLETED     120.2  VERIFIED
+8,13                   R8_13_n816.g6.gz                       816 NOT_COMPLETED     120.5  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+8,15                   R8_15_n872.g6.gz                       872 NOT_COMPLETED     120.5  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+9,10                   R9_10_n580.g6.gz                       580 NOT_COMPLETED     120.3  VERIFIED
+10,15                  R10_15_n1312.g6.gz                    1312 NOT_COMPLETED     120.9  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+11,11                  R11_11_n1596.g6.gz                    1596 NOT_COMPLETED     121.9  VERIFIED (symmetry-reduced)
+13,13                  R13_13_n2556.g6.gz                    2556 NOT_COMPLETED     124.3  VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+14,14                  R14_14_n2988.g6.gz                    2988 NOT_COMPLETED     127.4  VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+15,15                  R15_15_n5484.g6.gz                    5484 NOT_COMPLETED     147.5  VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+16,16                  R16_16_n5604.g6.gz                    5604 NOT_COMPLETED     153.4  VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+17,17                  R17_17_n8916.g6.gz                    8916 NOT_RUN_SIZE             VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+18,18                  R18_18_n11004.g6.gz                  11004 NOT_RUN_SIZE             VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+3,21                   R3_21_n121.g6.gz                       121 PASS                1.0  VERIFIED
+3,22                   R3_22_n130.g6.gz                       130 PASS                6.3  VERIFIED
+4,17                   R4_17_n199.g6.gz                       199 PASS                0.3  VERIFIED (symmetry-reduced)
+4,22                   R4_22_n313.g6.gz                       313 PASS               64.3  VERIFIED (symmetry-reduced)
+5,21                   R5_21_n440.g6.gz                       440 NOT_COMPLETED     120.3  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+5,22                   R5_22_n491.g6.gz                       491 NOT_COMPLETED     120.3  VERIFIED (symmetry-reduced)
+5,23                   R5_23_n520.g6.gz                       520 NOT_COMPLETED     120.5  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+6,16                   R6_16_n433.g6.gz                       433 PASS               10.7  VERIFIED (symmetry-reduced)
+6,17                   R6_17_n547.g6.gz                       547 PASS               84.3  VERIFIED (symmetry-reduced)
+6,18                   R6_18_n613.g6.gz                       613 NOT_COMPLETED     120.5  VERIFIED (symmetry-reduced)
+6,19                   R6_19_n709.g6.gz                       709 NOT_COMPLETED     120.6  VERIFIED (symmetry-reduced)
+6,20                   R6_20_n877.g6.gz                       877 NOT_COMPLETED     120.9  VERIFIED (symmetry-reduced)
+6,21                   R6_21_n887.g6.gz                       887 NOT_COMPLETED     121.0  VERIFIED (by proof: XSR2 Thm 3, preprint pp.4-5, Cor. 3 p.6)
+6,22                   R6_22_n1069.g6.gz                     1069 NOT_COMPLETED     121.4  VERIFIED (symmetry-reduced)
+7,16                   R7_16_n628.g6.gz                       628 NOT_COMPLETED     120.6  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+7,17                   R7_17_n728.g6.gz                       728 NOT_COMPLETED     120.7  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+7,18                   R7_18_n796.g6.gz                       796 NOT_COMPLETED     120.7  VERIFIED (symmetry-reduced)
+7,19                   R7_19_n907.g6.gz                       907 NOT_COMPLETED     121.0  VERIFIED (symmetry-reduced)
+7,21                   R7_21_n1213.g6.gz                     1213 NOT_COMPLETED     121.8  PARTIAL: one independence subproblem (w = 4) has clique.c only, gen0 not finished
+8,17                   R8_17_n1004.g6.gz                     1004 NOT_COMPLETED     121.2  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+8,19                   R8_19_n1236.g6.gz                     1236 NOT_COMPLETED     121.8  VERIFIED (by proof: XSR2 Thm 3, preprint pp.4-5)
+8,21                   R8_21_n1616.g6.gz                     1616 NOT_COMPLETED     122.6  VERIFIED (by proof: XXER Thm 9, pp.15-16)
+3,27                   R3_27_n171.g6.gz                       171 PASS               74.1  VERIFIED (symmetry-reduced)
+5,5,5                  R5_5_5_n453.colormat.gz                453 PASS                0.2  VERIFIED
+6,6,6                  R6_6_6_n1105.lengths.gz               1105 PASS                1.2  VERIFIED
+7,7,7                  R7_7_7_n3213.colormat.gz              3213 NOT_COMPLETED     126.3  VERIFIED (symmetry-reduced)
+9,9,9                  R9_9_9_n15040.colormat.gz            15040 NOT_RUN_SIZE             VERIFIED (by proof: XXER Cor. 5, p.15)
+10,10,10               R10_10_10_n23093.lengths.gz          23093 NOT_RUN_SIZE             VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250)
+3,3,3,3                R3x4_n50.colormat.gz                    50 PASS                0.0  VERIFIED
+4,4,4,4                R4x4_n633.lengths.gz                   633 PASS                0.5  VERIFIED
+5,5,5,5                R5x4_n4072.lengths.gz                 4072 PASS               25.6  VERIFIED (symmetry-reduced)
+6,6,6,6                R6x4_n23501.lengths.gz               23501 NOT_RUN_SIZE             VERIFIED (symmetry-reduced)
+3,3,3,3,3              R3x5_n161.colormat.gz                  161 PASS                0.1  VERIFIED
+4,4,4,4,4              R4x5_n4175.lengths.gz                 4175 PASS               25.2  VERIFIED
+5,5,5,5,5              R5x5_n44337.lengths.gz               44337 NOT_RUN_SIZE             VERIFIED (symmetry-reduced)
+3,3,3,3,3,3            R3x6_n537.colormat.gz                  537 PASS                0.5  VERIFIED
+4,4,4,4,4,4            R4x6_n32005.lengths.gz               32005 NOT_RUN_SIZE             VERIFIED (symmetry-reduced)
+3,3,3,3,3,3,3          R3x7_n1697.colormat.gz                1697 PASS                5.6  VERIFIED
+4,4,4,4,4,4,4          R4x7_n160023.lengths.gz             160023 NOT_RUN_SIZE             VERIFIED (symmetry-reduced)
+3,3,3,3,3,3,3,3        R3x8_n5287.lengths.gz                 5287 PASS               65.3  VERIFIED
+3,3,3,3,3,3,3,3,3      R3x9_n17804.lengths.gz               17804 NOT_RUN_SIZE             VERIFIED
+3,3,4                  R3_3_4_n29.colormat.gz                  29 PASS                0.0  VERIFIED
+3,3,5                  R3_3_5_n44.colormat.gz                  44 PASS                0.0  VERIFIED
+3,4,4                  R3_4_4_n54.colormat.gz                  54 PASS                0.0  VERIFIED
+3,4,8                  R3_4_8_n192.colormat.gz                192 PASS                0.1  VERIFIED
+3,5,5                  R3_5_5_n139.colormat.gz                139 PASS                0.0  VERIFIED
+3,5,6                  R3_5_6_n191.colormat.gz                191 PASS                0.0  VERIFIED
+3,5,7                  R3_5_7_n240.colormat.gz                240 PASS                0.1  VERIFIED
+3,3,4,4                R3_3_4_4_n173.colormat.gz              173 PASS                0.0  VERIFIED
+3,4,4,4                R3_4_4_4_n380.colormat.gz              380 PASS                0.3  VERIFIED
+3,3,3,10               R3_3_3_10_n512.colormat.gz             512 PASS               18.4  VERIFIED
+3,3,3,11               R3_3_3_11_n596.colormat.gz             596 PASS               51.2  VERIFIED
+3,4,5,5                R3_4_5_5_n728.colormat.gz              728 PASS                0.6  VERIFIED
+3,5,5,5                R3_5_5_5_n1429.colormat.gz            1429 PASS                4.2  VERIFIED
+3,6,6                  R3_6_6_n337.colormat.gz                337 PASS                0.2  VERIFIED
+3,7,7                  R3_7_7_n673.colormat.gz                673 PASS                0.7  VERIFIED
+3,8,8                  R3_8_8_n940.colormat.gz                940 PASS                1.7  VERIFIED
+3,9,9                  R3_9_9_n1843.colormat.gz              1843 PASS               33.0  VERIFIED
+8,8,9                  R8_8_9_n10768.colormat.gz            10768 NOT_RUN_SIZE             VERIFIED (by proof: XXER Cor. 5, p.15)
+
+totals: NOT_COMPLETED 30, NOT_RUN_SIZE 10, PASS 39
+sha256 all match: True
+```

@@ -87,7 +87,7 @@ for c in cov:
     ck.append('| %s | %s | `%s` (%s...) | %s |' % (R(c['cell']), c['label'], os.path.basename(c['witness']), c['sha256_file'][:12], ' '.join(c['checks'].split())))
 if os.path.exists('phase2/results/repo_check.txt'):
     ck += ['', '## Repository checker on every witness file', '',
-           'Output of `python3 phase2/check_phase2.py --limit 120` run from a fresh clone of this branch (`phase2/results/repo_check.txt`, records in `phase2/results/repo_check.jsonl`). This is a uniform light re-check with a time limit. NOT_COMPLETED means the limit was reached. NOT_RUN_SIZE means the file has more vertices than the in-memory checker loads. Neither is a failure, and the labels rest on the checks listed above.', '',
+           'Output of `python3 phase2/check_phase2.py --limit 120` run from a fresh clone of this branch (see `phase2/results/RUN_NOTE.txt`) (`phase2/results/repo_check.txt`, records in `phase2/results/repo_check.jsonl`). This is a uniform light re-check with a time limit. NOT_COMPLETED means the limit was reached. NOT_RUN_SIZE means the file has more vertices than the in-memory checker loads. Neither is a failure, and the labels rest on the checks listed above.', '',
            '```'] + open('phase2/results/repo_check.txt').read().rstrip().split('\n') + ['```']
 open('phase2/CHECKS.md', 'w').write('\n'.join(ck) + '\n')
 

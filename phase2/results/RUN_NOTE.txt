@@ -1,0 +1,2 @@
+Run from a fresh clone of branch phase2-2026-11-12 at commit 117da16. The witness files, manifest.csv, check_phase2.py, verify_ramsey.py and clique.c are unchanged at later commits of the branch.
+Command: python3 phase2/check_phase2.py --limit 120, at idle CPU priority on one core while another long run shared the machine, so the 120 s limit is wall-clock time under load.
