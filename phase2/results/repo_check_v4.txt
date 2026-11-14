@@ -1,0 +1,10 @@
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 120 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+19,19                  R19_19_n17884.g6.gz                  17884 NOT_RUN_SIZE             VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+20,20                  R20_20_n21724.g6.gz                  21724 NOT_RUN_SIZE             VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303)
+7,21                   R7_21_n1213.g6.gz                     1213 NOT_COMPLETED     122.5  VERIFIED (symmetry-reduced)
+
+totals: NOT_COMPLETED 1, NOT_RUN_SIZE 2
+sha256 all match: True
