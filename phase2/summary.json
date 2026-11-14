@@ -1,7 +1,7 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "cells": 105,
- "verified": 86,
+ "verified": 89,
  "by_group": {
   "computer": {
    "two_colour": 8,
@@ -9,14 +9,14 @@
    "total": 35
   },
   "symmetry": {
-   "two_colour": 14,
+   "two_colour": 15,
    "multicolour": 6,
-   "total": 20
+   "total": 21
   },
   "proof": {
-   "two_colour": 18,
+   "two_colour": 20,
    "multicolour": 9,
-   "total": 27
+   "total": 29
   },
   "search": {
    "two_colour": 3,
@@ -24,14 +24,14 @@
    "total": 4
   },
   "partial": {
-   "two_colour": 1,
+   "two_colour": 0,
    "multicolour": 0,
-   "total": 1
+   "total": 0
   },
   "recipe": {
-   "two_colour": 5,
+   "two_colour": 3,
    "multicolour": 0,
-   "total": 5
+   "total": 3
   },
   "not_reproduced": {
    "two_colour": 3,
@@ -44,9 +44,7 @@
    "total": 8
   }
  },
- "witness_files": 87,
- "witness_bytes": 2545003,
- "partial": [
-  "7,21"
- ]
+ "witness_files": 89,
+ "witness_bytes": 3224052,
+ "partial": []
 }

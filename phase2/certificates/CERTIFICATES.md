@@ -1,6 +1,6 @@
 # Certificates for the rows labelled VERIFIED (by proof: citation)
 
-In these 27 rows one half, one colour or the whole row follows from a published theorem. The rule (Amendments 3 and 4
+In these 29 rows one half, one colour or the whole row follows from a published theorem. The rule (Amendments 3 and 4
 of the phase-2 registration) is that the theorem is cited with page, that every input it is applied to was checked
 here by both checkers, and that every computed part was checked by both checkers. Where a whole row rests on the
 theorem, the object was also rebuilt from its hashed inputs, the hypotheses of the theorem were checked, and the
@@ -10,8 +10,9 @@ Files in this folder (copies of records also kept in `../checks/logs/`):
 
 | file | what it records |
 |---|---|
-| `rebuild_certificates.jsonl` | rebuild certificates: R(13,13) to R(18,18) (Shearer), R(7,16) (XXER Thm 9), R(10,10,10) (Rowley Thm 3.2), and the control p = 101 |
+| `rebuild_certificates.jsonl` | rebuild certificates: R(13,13) to R(20,20) (Shearer), R(7,16) (XXER Thm 9), R(10,10,10) (Rowley Thm 3.2), and the control p = 101 |
 | `paley_omega_inputs.jsonl` | the inputs c(Q_p) for the Shearer rows: verified automorphisms, both checkers on every orbit representative, K_k witnesses, negative controls |
+| `paley_omega_ordered_wave9.jsonl` | the inputs c(Q_8941) and c(Q_10861) for R(19,19) and R(20,20): the automorphism checks and the final record of each run (every piece once, all NONE, K_k witness). The pieces themselves are in `../checks/logs/mac_batch/wave9/runs/` |
 | `rowley_r10_window.jsonl` | the 253-vertex window that Rowley Thm 3.2 leaves for colour 1 of R(10,10,10), checked by clique.c, gen0 and linear0, with a K9 control |
 | `inputs_both_checkers.jsonl` | the inputs of the XXER Thm 9 rows, each rerun with both checkers on the whole graph and matched to its pinned SHA-256 |
 | `xsr2_reduction_G3.jsonl`, `xsr2_reduction_6_21.jsonl` | the exact reduction alpha(F) <= alpha(G) + 1 of XSR2 Thm 3, checked on the object |
@@ -19,7 +20,7 @@ Files in this folder (copies of records also kept in `../checks/logs/`):
 | `rowley_round6_windows_full.jsonl`, `rowley_round6_summary_final.jsonl` | all 119 window records, with the split search of the R(9,9,9,9) window finished on 13 November, and the summary that checks that the split ranges cover every piece exactly once |
 | `two_implementations_G3.json`, `two_implementations_round4.jsonl` | every built graph was produced by two separate implementations and the two agree edge for edge |
 
-The scripts that wrote these records are in `../scripts_as_run/build_round5/scripts/` (`cert_shearer.py`,
+The scripts that wrote these records are in `../scripts_as_run/build_round5/scripts/` (`cert_shearer.py`, and `../scripts_as_run/build_round8/scripts/cert_shearer_rows.py` for the two largest rows, which gives the same record for R(18,18),
 `cert_xxer_t9.py`, `cert_rowley_r10.py`, `paley_check.py`, `r10_window.py`, `confirm_inputs.py`),
 `../scripts_as_run/build_round4/src/` and `../scripts_as_run/build_G3/`. They are kept as they were run. Paths inside
 them point to the working folders of 7 to 12 November.
@@ -34,6 +35,8 @@ them point to the working folders of 7 to 12 November.
 | R(16,16) | same | p = 2801, c = 14, 350 representatives | identical (eebd70ad...) |
 | R(17,17) | same, with c(Q_4457) = 15 from Luo, Su, Li, Australas. J. Combin. 25 (2002) Thm 2 | both checkers on all 557 representatives (cloud, 7 Nov), automorphisms rechecked 12 Nov | identical (7c3b5e70...) |
 | R(18,18) | same, with c(Q_5501) = 16 from Luo, Su, Li | gen0 and clique.c on all 687 representatives (Mac, wave 8a, 2566 s and 2571 s) | identical (20de6f9e...) |
+| R(19,19) | same, with c(Q_8941) = 17 from Luo, Su, Li | gen0 and clique.c on all 1117 representatives, ordered subproblems (`../NOTES.md`, section 10), 2234 pieces (Mac, wave 9, 16585 s and 17319 s of solver time) | identical (8d1ece32...), checked row by row |
+| R(20,20) | same, with c(Q_10861) = 18 from Exoo's Paley page | gen0 and clique.c on all 1357 representatives, ordered subproblems, 2714 pieces (Mac, wave 9, 20.6 h and 21.8 h of solver time) | identical (00030a68...), checked row by row |
 
 Control: the repository file `constructions/witnesses/mathon101_R7_7.g6` (p = 101) is certified the same way, and
 both checkers find a K6 and no K7 in it and in its complement. Theorem 1 is used with c(G_p) = k (see `../NOTES.md`,

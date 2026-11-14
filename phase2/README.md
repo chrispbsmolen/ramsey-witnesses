@@ -2,11 +2,11 @@
 
 On 4 November 2026, 105 lower bounds in the tables of Radziszowski's survey *Small Ramsey Numbers* (DS1, revision
 18) had no public witness file that was checked here (32 marked RECIPE and 73 marked NO_FILE_FOUND in
-`results/coverage.csv`). Phase 2, from 7 to 13 November 2026, built the constructions that the survey and the cited
+`results/coverage.csv`). Phase 2, from 7 to 14 November 2026, built the constructions that the survey and the cited
 papers describe, looked again for public files, and checked what was found or built. This folder holds the result.
 
-The work followed a registration written before it started, with six amendments on what each label means and on
-searching. The labels are:
+The work followed a registration written before it started, with amendments on what each label means, on
+searching and on the symmetry reductions that may be used. The labels are:
 
 - **VERIFIED**: every half (two colours) or every colour of the witness was checked by two independent exact
   checkers on the object itself.
@@ -26,21 +26,21 @@ searching. The labels are:
 
 A TIMEOUT is never counted as a check.
 
-## Status on 13 November 2026
+## Status on 14 November 2026
 
 | status | two-colour | multicolour | total |
 |---|---|---|---|
 | VERIFIED | 8 | 27 | 35 |
-| VERIFIED (symmetry-reduced) | 14 | 6 | 20 |
-| VERIFIED (by proof: citation) | 18 | 9 | 27 |
+| VERIFIED (symmetry-reduced) | 15 | 6 | 21 |
+| VERIFIED (by proof: citation) | 20 | 9 | 29 |
 | VERIFIED (witness found here by search) | 3 | 1 | 4 |
-| PARTIAL | 1 | 0 | 1 |
-| RECIPE ONLY | 5 | 0 | 5 |
+| PARTIAL | 0 | 0 | 0 |
+| RECIPE ONLY | 3 | 0 | 3 |
 | NOT REPRODUCED | 3 | 2 | 5 |
 | STILL NO FILE | 3 | 5 | 8 |
 | all | 55 | 50 | 105 |
 
-86 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
+89 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
 `summary.json` and `COVERAGE.md`. Two rows changed on 13 November:
 
 - R(9,9,9,9) is VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250). The window search for colours 1 and 2
@@ -50,11 +50,17 @@ A TIMEOUT is never counted as a check.
   (21 January 2022, 31 December 2024, 20 February 2025). The page states no licence. The matrix is included as a
   transcribed fact with credit, exact source and SHA-256, and is removed on request (`CORRECTIONS.md`).
 
-One row is PARTIAL:
+Three rows changed on 14 November:
 
-- R(7,21): one reduced independence subproblem has been decided by clique.c only.
+- R(7,21) is VERIFIED (symmetry-reduced). The one reduced independence subproblem that had been decided by clique.c
+  only was decided by gen0 as well (NONE, 613 s). The record is `checks/logs/build_round7/`.
+- R(19,19) and R(20,20) are VERIFIED (by proof: Shearer 1986). Their inputs, c(G_8941) = 17 and c(G_10861) = 18, were
+  checked by clique.c and by gen0 on every orbit representative (2234 and 2714 pieces, all NONE), with a K_17 and a
+  K_18 checked edge by edge. These two runs use one more step of symmetry than the rows R(13,13) to R(18,18). It is
+  described in `NOTES.md`, section 10, and was written into the registration after the first of the two runs. The
+  records are `certificates/paley_omega_ordered_wave9.jsonl` and `checks/logs/mac_batch/wave9/`.
 
-When such a check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
+No row is PARTIAL. When a later check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
 `label`, `group`, `checks` and `proof` in `coverage.csv`, then `python3 phase2/make_phase2.py`,
 `python3 make_readme.py` and `python3 phase2/check_phase2.py --only CELL`. A row moves up only with a new check entry.
 
@@ -105,14 +111,14 @@ and not evidence that no colouring exists.
 |---|---|
 | `coverage.csv` | one row per cell: survey bound and reference, label, witness file and SHA-256, source with page, table or row, URL or DOI, how the file was read or built, licence or credit, checks, proof, notes |
 | `COVERAGE.md` | the same, as tables grouped by label |
-| `witnesses/` | 87 witness files, gzip-compressed (2.5 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
+| `witnesses/` | 89 witness files, gzip-compressed (3.2 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and licence |
 | `CHECKS.md` | the checks behind each label, the checkers and machines, and how to rerun a check |
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
 | `NOTES.md` | a misprint, three constructions not reproduced from the text, readings of printed tables, third-party claims noted and not counted, and what the search for Exoo's unpublished colourings covered |
 | `search_s1/` | the record of the Amendment 6 search: the run behind R(3,3,3,7), and in `all_targets/` the scripts and logs of every target, with the outcome for each in `SEARCH_RECORD.md` |
 | `search_records/` | where each search round looked, with what it found, including searches that found nothing (`sources.csv` and `searched_before.csv` of the rounds), with `INDEX.csv` |
-| `recipes.csv` | the large built objects (the five RECIPE ONLY rows and the six Rowley rows): the object, the expected SHA-256 of the built file, the build script and the row's status |
+| `recipes.csv` | the large built objects (the diagonal rows R(19,19) to R(23,23), of which three are RECIPE ONLY, and the six Rowley rows): the object, the expected SHA-256 of the built file, the build script and the row's status |
 | `scripts_as_run/` | the build and check scripts as they were run, with `INDEX.csv` |
 | `check_phase2.py` | runs the repository checker on every witness file |
 | `make_phase2.py` | writes `COVERAGE.md`, `CHECKS.md`, `summary.json` and the README section from the CSV files |

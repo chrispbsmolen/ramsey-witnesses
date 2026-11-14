@@ -1,0 +1,4 @@
+Fri Nov 13 13:39:43 CST 2026
+{"file": "R7_21_n1213_SLLLcubic.g6", "sha256": "db16402b6e0676f1d7a345a799485aff2e09422325dbb996e7e4113757a2276d", "p": 1213, "primitive_root": 2, "multiplier": "g^3 = 8", "automorphism_checks": {"sha_match": true, "translation": true, "multiplier": true}, "orbit_reps": {"edge": [1], "nonedge": [2, 4]}, "orbit_sizes": {"edge": [404], "nonedge": [404, 404]}, "side": "nonedge", "claim": "no K_21 in colour nonedge through {0,4}", "w": 4, "subgraph_vertices": 545, "checker": "gen0", "asked": "K_19", "found": false, "out": "NONE n=545 K=19 start_vertices_done=545/545 seconds=613.1", "solver_seconds": 791.4, "total_seconds": 791.4, "result": "NONE", "time": "2026-11-13 13:52:54"}
+exit=0
+Fri Nov 13 13:52:55 CST 2026

@@ -1,0 +1,1 @@
+{"file": "R7_21_n1213_SLLLcubic.g6", "sha256": "db16402b6e0676f1d7a345a799485aff2e09422325dbb996e7e4113757a2276d", "p": 1213, "primitive_root": 2, "multiplier": "g^3 = 8", "automorphism_checks": {"sha_match": true, "translation": true, "multiplier": true}, "orbit_reps": {"edge": [1], "nonedge": [2, 4]}, "orbit_sizes": {"edge": [404], "nonedge": [404, 404]}}

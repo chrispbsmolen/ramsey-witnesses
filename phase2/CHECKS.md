@@ -15,8 +15,8 @@ Every record names the SHA-256 of the object it checked. The witness files in `p
 
 ## Machines
 
-- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 13 November 2026.
-- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`.
+- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 14 November 2026.
+- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`. Wave 9 (13 November, the inputs of R(19,19) and R(20,20)) ran with 4 and with 12 processes.
 
 ## How to rerun one check
 
@@ -27,7 +27,7 @@ python3 phase2/check_phase2.py --only 6,16 --limit 600                   # one r
 python3 phase2/check_phase2.py                                            # every witness file, 60 s per search
 ```
 
-The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_as_run/` (for example `build_round5/scripts/cyclo_reduce.py` for the cubic-residue rows, `build_round5/scripts/paley_check.py` for c(Q_p)). They are kept as run, and their paths point to the working folders, so a rerun needs the paths adjusted.
+The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_as_run/` (for example `build_round5/scripts/cyclo_reduce.py` for the cubic-residue rows, `build_round5/scripts/paley_check.py` and `mac_batch/wave9/paley/paley9.py` for c(Q_p)). They are kept as run, and their paths point to the working folders, so a rerun needs the paths adjusted.
 
 ## Per cell
 
@@ -54,6 +54,8 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 | R(16,16) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R16_16_n5604.g6.gz` (5f6e3f8d58a3...) | Input: omega(Q_2801) = 14, no K_15 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_14 checked edge by edge (cloud 12 Nov). Also: reduced clique.c check of the doubled graph, both colours PASS (Mac, wave 5). |
 | R(17,17) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R17_17_n8916.g6.gz` (cf548408ad39...) | Input: omega(Q_4457) = 15, no K_16 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_15 checked edge by edge (cloud 7 Nov). |
 | R(18,18) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R18_18_n11004.g6.gz` (4e4e1a46c4f7...) | Input: omega(Q_5501) = 16, no K_17 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_16 checked edge by edge (Mac wave 8a, 12 Nov). |
+| R(19,19) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R19_19_n17884.g6.gz` (a80de56e2094...) | Input: omega(Q_8941) = 17, no K_18 with clique.c and gen0 on every one of the 1117 orbit representatives after verified automorphisms (ordered subproblems, NOTES.md section 10: 2234 pieces, the largest on 1122 vertices, all NONE), and a K_17 checked edge by edge (Mac, wave 9, 13 Nov, 4 processes, 2.4 h). |
+| R(20,20) | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R20_20_n21724.g6.gz` (6b8fa8b6bc6a...) | Input: omega(Q_10861) = 18, no K_19 with clique.c and gen0 on every one of the 1357 orbit representatives after verified automorphisms (ordered subproblems, NOTES.md section 10: 2714 pieces, the largest on 1375 vertices, all NONE), and a K_18 checked edge by edge (Mac, wave 9, 13 Nov, 12 processes, 3.7 h). |
 | R(3,21) | VERIFIED | `R3_21_n121.g6.gz` (ad8557d4ac2a...) | verify_ramsey PASS and networkx PASS, both halves. Cloud, 7 Nov. |
 | R(3,22) | VERIFIED | `R3_22_n130.g6.gz` (f581a1592676...) | verify_ramsey PASS and networkx PASS, both halves. Cloud, 7 Nov. |
 | R(4,17) | VERIFIED (witness found here by search) | `R4_17_n199.g6.gz` (ce66ef50b537...) | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
@@ -72,7 +74,7 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 | R(7,17) | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R7_17_n728.g6.gz` (0026a3def1fe...) | Vertex transitivity checked. No K7: clique.c NONE and networkx NONE (cloud). Input (6,9;182): both checkers, whole graph (build_round5). |
 | R(7,18) | VERIFIED (symmetry-reduced) | `R7_18_n796.g6.gz` (08392b78e557...) | No K7: clique.c on the whole graph NONE 6 (32 s), networkx on N(0) NONE. No independent 18-set: clique.c --sym NONE 17 (13.6 s) and gen0 on N(0) (10.1 s). 4 automorphism generators and transitivity checked. Cloud, 12 Nov. |
 | R(7,19) | VERIFIED (symmetry-reduced) | `R7_19_n907.g6.gz` (669a8848694b...) | Translations and x -> g^3 x verified on the matrix, edge and non-edge orbits through 0 computed (clique side w=1, independence side w=2, 4). clique.c and gen0 NONE on every subproblem (cloud, 12 Nov). Full verify_ramsey PASS (1366 s, Mac, wave 8a). |
-| R(7,21) | PARTIAL: one independence subproblem (w = 4) has clique.c only, gen0 not finished | `R7_21_n1213.g6.gz` (7a8be2327408...) | No K7: clique.c and gen0 NONE (cloud). Independence subproblem w = 2 (532 vertices): clique.c NONE 18 (424.5 s, Mac, wave 8b) and gen0 NONE (546 s, cloud). Subproblem w = 4 (545 vertices): clique.c NONE 18 (465.6 s, Mac, wave 8b), gen0 not finished in 570 s (cloud). The Mac inputs are byte-identical to the cloud subproblems. |
+| R(7,21) | VERIFIED (symmetry-reduced) | `R7_21_n1213.g6.gz` (7a8be2327408...) | No K7: clique.c and gen0 NONE (cloud). No independent 21-set: x -> x+1 and x -> 8x verified on the matrix, 2 orbits of non-neighbours of 0 (reps 2, 4). Subproblem w = 2 (532 vertices): clique.c NONE 18 (424.5 s, Mac, wave 8b) and gen0 NONE (546 s, cloud). Subproblem w = 4 (545 vertices): clique.c NONE 18 (465.6 s, Mac, wave 8b) and gen0 NONE (613.1 s, cloud, 13 Nov, build_round7; asked for an 18-set on the same input it answers FOUND). The Mac inputs are byte-identical to the cloud subproblems. |
 | R(8,17) | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R8_17_n1004.g6.gz` (ccb32910e841...) | Vertex transitivity checked. No K8: clique.c NONE (0.2 s) and networkx NONE (5.0 s), cloud. Input (7,9;251): both checkers (build_round5). |
 | R(8,19) | VERIFIED (by proof: XSR2 Thm 3, preprint pp.4-5) | `R8_19_n1236.g6.gz` (8598388ef20f...) | No K8: clique.c NONE (34 s, cloud) and networkx NONE (1848 s, Mac, wave 2). Inputs: (8,13;816) row R(8,13), (7,8;216) both checkers on both halves. |
 | R(8,21) | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R8_21_n1616.g6.gz` (6a1a5f726200...) | Vertex transitivity checked (7 generators). No K8: clique.c NONE (0.3 s) and networkx NONE (5.6 s), cloud. Input (7,11;404): both checkers on both halves. |

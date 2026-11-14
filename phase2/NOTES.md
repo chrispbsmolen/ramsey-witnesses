@@ -164,6 +164,10 @@ cells, but it was not added to the running count at that step. The table counts 
 On 13 November two rows moved, and the count is 86: R(9,9,9,9) (the window search finished, VERIFIED by proof) and
 R(3,14) (Kolodyazhny's graph found in the Wayback Machine, VERIFIED).
 
+On 14 November three rows moved, and the count is 89: R(7,21) (the last reduced subproblem decided by the second
+checker, VERIFIED symmetry-reduced), and R(19,19) and R(20,20) (the clique numbers of the Paley graphs on 8941 and
+10861 vertices checked, VERIFIED by proof, see section 10).
+
 ## 9. The cells that rest on colourings by Exoo that are not public (fourth search round, 13 November)
 
 The survey cites personal communications of Exoo for R(3,3,7) >= 85 and R(3,3,8) >= 103 (Ex18) and for
@@ -183,3 +187,34 @@ This is a statement about which files are public, and nothing else. The record i
 and the SHA-256 of every listing and page that was read is in `checks/logs/hunt4/downloads_SHA256SUMS.txt`.
 
 The same round found Kolodyazhny's page in the Wayback Machine (row R(3,14)). For R(6,13), R(3,23), R(5,17) to R(5,20), R(8,8,8) and R(3,10,10) it found nothing new.
+
+## 10. The ordered subproblems behind R(19,19) and R(20,20)
+
+For R(13,13) to R(18,18) the clique number of the Paley graph G_p was checked as follows (`build_round5`). The maps
+x -> x + 1 and x -> g^2 x are automorphisms and together move every edge to {0, 1}. With B the common neighbours of
+0 and 1, the map sigma: x -> 1 - x fixes the edge {0, 1} and maps B to itself. So G_p has a K_(k+1) exactly when, for
+some representative a of an orbit {a, 1 - a} of sigma on B, the common neighbours of 0, 1 and a hold a K_(k-2). Both
+checkers ran on that set for every representative.
+
+For p = 8941 and p = 10861 one more step was used. Number the orbits of sigma on B in increasing order of their least
+element, and write idx(x) for the number of the orbit of x. Take a K_(k+1) through 0 and 1, and among its other
+vertices one, x, of least idx. If x is not the representative of its orbit, apply sigma to the clique. It is again
+a clique through 0 and 1, with the same idx values, and it now holds the representative. So a K_(k+1) exists exactly
+when, for some i, the vertices y of B that are adjacent to the i-th representative and have idx(y) >= i hold a
+K_(k-2). This uses sigma only. The subproblems become smaller as i grows, and the total work is about a ninth.
+
+Before any search the script checks on the graph that x -> x + 1 and x -> g^2 x are automorphisms, that the second
+is transitive on the squares, that sigma maps B to itself, that the representatives cover B, and that idx is constant
+on the orbits of sigma. Every representative needs the answer NONE from clique.c and from gen0, on byte-identical
+input, and the final step checks that every piece is recorded exactly once with the input hash it recomputes from p
+alone. On p = 101 the ordered and the plain form both pass, and on p = 1277 the ordered form gives the value of the R(13,13)
+row. With the wanted size lowered by one the script reports the clique that exists. The script is `scripts_as_run/mac_batch/wave9/paley/paley9.py`.
+
+This step was not in the registration when the run for p = 8941 started on 13 November. The script was fixed before
+the run and was not changed after it, and the amendment that describes the step was written the same evening, after
+that run and before the result was counted. The run for p = 10861 followed. The plain form can be run with the same
+script (`W9_MODE=plain`) and takes about nine times as long.
+
+Results: c(G_8941) = 17 (1117 representatives, 2234 pieces, the largest on 1122 vertices, 9.4 hours of solver time)
+and c(G_10861) = 18 (1357 representatives, 2714 pieces, the largest on 1375 vertices, 42.4 hours of solver time).
+These are the values published by Luo, Su and Li (2002) and by Exoo.

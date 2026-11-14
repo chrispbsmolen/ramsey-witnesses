@@ -1,0 +1,121 @@
+=== wave9 setup start 2026-11-13 14:51:14 part=a Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+README_wave9.txt: OK
+TEST_LOG_wave9.txt: OK
+paley/paley9.py: OK
+paley/tools/clique.c: OK
+paley/tools/gen0.c: OK
+paley/witnesses/Q10861_K18.txt: OK
+paley/witnesses/Q8941_K17.txt: OK
+r6_13/SOURCE.txt: OK
+r6_13/kuz_check.py: OK
+r6_13/port/Windows.h: OK
+r6_13/port/concurrent_vector.h: OK
+r6_13/port/driver.cpp: OK
+r6_13/port/kuz_ramsey.cpp: OK
+r6_13/port/kz_port.h: OK
+r6_13/port/kz_sse.h: OK
+r6_13/port/ompstub/omp.h: OK
+r6_13/port/portability.diff: OK
+r6_13/port/sseshim/emmintrin.h: OK
+r6_13/port/sseshim/immintrin.h: OK
+r6_13/port/tbb/parallel_sort.h: OK
+r6_13/src/bigint.h: OK
+r6_13/src/graph.cpp: OK
+r6_13/src/graph.h: OK
+r6_13/src/ramsey_df.cpp: OK
+r6_13/src/stdafx.h: OK
+wave9.sh: OK
+python 3.12.10 numpy 2.5.4
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave9/paley/tools/clique.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave9/bin/clique_w9
+cc -O2 /Users/<user>/Ramsey/phase2/mac_batch/wave9/paley/tools/gen0.c -> /Users/<user>/Ramsey/phase2/mac_batch/wave9/bin/gen0_w9
+OK solvers on a triangle
+selftest ordered: VERDICT p=101: PASS: c(G_101) = 5 (both checkers, all 12 reps, every piece exactly once, mode ordered)
+selftest plain: VERDICT p=101: PASS: c(G_101) = 5 (both checkers, all 12 reps, every piece exactly once, mode plain)
+selftest ordered: VERDICT p=101: FAIL: a checker reports a K_5 in G_101 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+selftest plain: VERDICT p=101: FAIL: a checker reports a K_5 in G_101 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+selftest ordered: VERDICT p=1277: PASS: c(G_1277) = 11 (both checkers, all 159 reps, every piece exactly once, mode ordered)
+selftest ordered: VERDICT p=1277: FAIL: a checker reports a K_11 in G_1277 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+witness file Q10861_K18.txt K_18 in Q_10861, every edge checked: True
+witness file Q8941_K17.txt K_17 in Q_8941, every edge checked: True
+OK paley9 self-tests (PASS on Q_101 and Q_1277, FAIL on both negative controls)
+{"p": 8941, "k": 17, "mode": "ordered", "i": 447, "n": 670, "gen0": "NONE", "gen0_seconds": 2.5, "clique": "NONE", "clique_seconds": 2.5}
+{"p": 8941, "k": 17, "mode": "ordered", "i": 335, "n": 763, "gen0": "NONE", "gen0_seconds": 6.8, "clique": "NONE", "clique_seconds": 6.8}
+{"p": 8941, "k": 17, "mode": "ordered", "i": 223, "n": 873, "gen0": "NONE", "gen0_seconds": 19.8, "clique": "NONE", "clique_seconds": 19.7}
+TIMING: the three test pieces took 58.1 s here; the cloud reference is 100.7 s; this machine is 0.58 x the cloud time
+TIMING: estimate for this machine, 4 lanes, ordered mode: part a about 2.5 h, part b about 11.5 h (plain mode: about 9 times longer)
+=== wave9 setup OK 2026-11-13 14:52:18
+=== wave9 setup start 2026-11-13 17:51:39 part=b Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+README_wave9.txt: FAILED
+TEST_LOG_wave9.txt: OK
+paley/paley9.py: OK
+paley/tools/clique.c: OK
+paley/tools/gen0.c: OK
+paley/witnesses/Q10861_K18.txt: OK
+paley/witnesses/Q8941_K17.txt: OK
+r6_13/SOURCE.txt: OK
+r6_13/kuz_check.py: OK
+r6_13/port/Windows.h: OK
+r6_13/port/concurrent_vector.h: OK
+r6_13/port/driver.cpp: OK
+r6_13/port/kuz_ramsey.cpp: OK
+r6_13/port/kz_port.h: OK
+r6_13/port/kz_sse.h: OK
+r6_13/port/ompstub/omp.h: OK
+r6_13/port/portability.diff: OK
+r6_13/port/sseshim/emmintrin.h: OK
+r6_13/port/sseshim/immintrin.h: OK
+r6_13/port/tbb/parallel_sort.h: OK
+r6_13/src/bigint.h: OK
+r6_13/src/graph.cpp: OK
+r6_13/src/graph.h: OK
+r6_13/src/ramsey_df.cpp: OK
+r6_13/src/stdafx.h: OK
+wave9.sh: FAILED
+shasum: WARNING: 2 computed checksums did NOT match
+WAVE9 SETUP FAIL: checksum mismatch
+=== wave9 setup start 2026-11-13 17:52:20 part=b Darwin <mac> 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:48 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6041 arm64
+README_wave9.txt: OK
+TEST_LOG_wave9.txt: OK
+paley/paley9.py: OK
+paley/tools/clique.c: OK
+paley/tools/gen0.c: OK
+paley/witnesses/Q10861_K18.txt: OK
+paley/witnesses/Q8941_K17.txt: OK
+r6_13/SOURCE.txt: OK
+r6_13/kuz_check.py: OK
+r6_13/port/Windows.h: OK
+r6_13/port/concurrent_vector.h: OK
+r6_13/port/driver.cpp: OK
+r6_13/port/kuz_ramsey.cpp: OK
+r6_13/port/kz_port.h: OK
+r6_13/port/kz_sse.h: OK
+r6_13/port/ompstub/omp.h: OK
+r6_13/port/portability.diff: OK
+r6_13/port/sseshim/emmintrin.h: OK
+r6_13/port/sseshim/immintrin.h: OK
+r6_13/port/tbb/parallel_sort.h: OK
+r6_13/src/bigint.h: OK
+r6_13/src/graph.cpp: OK
+r6_13/src/graph.h: OK
+r6_13/src/ramsey_df.cpp: OK
+r6_13/src/stdafx.h: OK
+wave9.sh: OK
+python 3.12.10 numpy 2.5.4
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave9/bin/clique_w9
+keep existing /Users/<user>/Ramsey/phase2/mac_batch/wave9/bin/gen0_w9
+OK solvers on a triangle
+selftest ordered: VERDICT p=101: PASS: c(G_101) = 5 (both checkers, all 12 reps, every piece exactly once, mode ordered)
+selftest plain: VERDICT p=101: PASS: c(G_101) = 5 (both checkers, all 12 reps, every piece exactly once, mode plain)
+selftest ordered: VERDICT p=101: FAIL: a checker reports a K_5 in G_101 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+selftest plain: VERDICT p=101: FAIL: a checker reports a K_5 in G_101 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+selftest ordered: VERDICT p=1277: PASS: c(G_1277) = 11 (both checkers, all 159 reps, every piece exactly once, mode ordered)
+selftest ordered: VERDICT p=1277: FAIL: a checker reports a K_11 in G_1277 (pieces [(0, 'clique'), (0, 'gen0'), (1, 'clique'), (1, 'gen0'), (2, 'clique')]): the published value is not reproduced
+witness file Q10861_K18.txt K_18 in Q_10861, every edge checked: True
+witness file Q8941_K17.txt K_17 in Q_8941, every edge checked: True
+OK paley9 self-tests (PASS on Q_101 and Q_1277, FAIL on both negative controls)
+{"p": 8941, "k": 17, "mode": "ordered", "i": 447, "n": 670, "gen0": "NONE", "gen0_seconds": 2.5, "clique": "NONE", "clique_seconds": 2.5}
+{"p": 8941, "k": 17, "mode": "ordered", "i": 335, "n": 763, "gen0": "NONE", "gen0_seconds": 6.9, "clique": "NONE", "clique_seconds": 6.7}
+{"p": 8941, "k": 17, "mode": "ordered", "i": 223, "n": 873, "gen0": "NONE", "gen0_seconds": 19.8, "clique": "NONE", "clique_seconds": 20.0}
+TIMING: the three test pieces took 58.4 s here; the cloud reference is 100.7 s; this machine is 0.58 x the cloud time
+TIMING: estimate for this machine at 4 lanes (divide by lanes/4 for more), ordered mode: part a about 2.5 h, part b about 11.6 h (plain mode: about 9 times longer)
+=== wave9 setup OK 2026-11-13 17:53:22

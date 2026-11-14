@@ -1,20 +1,20 @@
 # Phase 2 coverage: the 105 cells without a public witness on 4 November 2026
 
-Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 13 November 2026.
+Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 14 November 2026.
 
 | group | two-colour | multicolour | total |
 |---|---|---|---|
 | VERIFIED, every half or colour checked by two independent checkers on the object | 8 | 27 | 35 |
-| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 14 | 6 | 20 |
-| VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 18 | 9 | 27 |
+| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 15 | 6 | 21 |
+| VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 20 | 9 | 29 |
 | VERIFIED (witness found here by search), the witness or its input found here by search (Amendments 2 and 6), every colour checked by both checkers | 3 | 1 | 4 |
-| PARTIAL | 1 | 0 | 1 |
-| RECIPE ONLY | 5 | 0 | 5 |
+| PARTIAL | 0 | 0 | 0 |
+| RECIPE ONLY | 3 | 0 | 3 |
 | NOT REPRODUCED | 3 | 2 | 5 |
 | STILL NO FILE | 3 | 5 | 8 |
 | all | 55 | 50 | 105 |
 
-VERIFIED in one of its four forms: 86 of 105.
+VERIFIED in one of its four forms: 89 of 105.
 
 ## VERIFIED, every half or colour checked by two independent checkers on the object (35)
 
@@ -56,7 +56,7 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(3,8,8) | 941 [Row5] | VERIFIED | `R3_8_8_n940.colormat.gz` | 940 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,9,9) | 1,844 [Row5] | VERIFIED | `R3_9_9_n1843.colormat.gz` | 1,843 | verify_ramsey PASS (14 s) and crosscheck_mc PASS (110 s). Cloud, 7 Nov. |
 
-## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (20)
+## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (21)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
@@ -73,6 +73,7 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(6,22) | 1,070 [SLLL] | VERIFIED (symmetry-reduced) | `R6_22_n1069.g6.gz` | 1,069 | Translations and x -> g^3 x verified on the matrix, edge and non-edge orbits through 0 computed (clique side w=1, independence side w=3, 7 (475, 479 vertices)). clique.c ... |
 | R(7,18) | 797 [2.3.i] | VERIFIED (symmetry-reduced) | `R7_18_n796.g6.gz` | 796 | No K7: clique.c on the whole graph NONE 6 (32 s), networkx on N(0) NONE. No independent 18-set: clique.c --sym NONE 17 (13.6 s) and gen0 on N(0) (10.1 s). 4 automorphism ... |
 | R(7,19) | 908 [SLLL] | VERIFIED (symmetry-reduced) | `R7_19_n907.g6.gz` | 907 | Translations and x -> g^3 x verified on the matrix, edge and non-edge orbits through 0 computed (clique side w=1, independence side w=2, 4). clique.c and gen0 NONE on ... |
+| R(7,21) | 1,214 [SLLL] | VERIFIED (symmetry-reduced) | `R7_21_n1213.g6.gz` | 1,213 | No K7: clique.c and gen0 NONE (cloud). No independent 21-set: x -> x+1 and x -> 8x verified on the matrix, 2 orbits of non-neighbours of 0 (reps 2, 4). Subproblem w = 2 ... |
 | R(3,27) | 172 [LiLi] | VERIFIED (symmetry-reduced) | `R3_27_n171.g6.gz` | 171 | verify_ramsey PASS (circulant, 30.6 s cloud). Negative control (3,26) FAIL as required. networkx with translation symmetry: clique number 2, independence number 26 (8712 ... |
 | R(7,7,7) | 3,214 [XuR1] | VERIFIED (symmetry-reduced) | `R7_7_7_n3213.colormat.gz` | 3,213 | Reduced check with verified automorphisms, clique.c and networkx (99 searches, cloud). Full verify_ramsey on all three colours, NONE 6 (about 1200 s each, Mac, waves 5 ... |
 | R(5,5,5,5) | 4,073 [Row3] | VERIFIED (symmetry-reduced) | `R5x4_n4072.lengths.gz` | 4,072 | Cyclic (rotation tested). verify_ramsey PASS (11.1 s) and crosscheck_mc PASS (41 s), cliques through vertex 0. Cloud, 7 Nov. |
@@ -81,7 +82,7 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(4,4,4,4,4,4) | 32,006 [Row1] | VERIFIED (symmetry-reduced) | `R4x6_n32005.lengths.gz` | 32,005 | Cyclic, cliques through vertex 0. clique.c --sym NONE 3 in all 6 colours (58 s) and linear0 NONE in all 6 colours. Cloud, 7 Nov. |
 | R(4,4,4,4,4,4,4) | 160,024 [Row1] | VERIFIED (symmetry-reduced) | `R4x7_n160023.lengths.gz` | 160,023 | Cyclic, cliques through vertex 0: clique.c on N(0) in each of 7 colours (82 s) and linear0 NONE in all 7 colours (50 s). Cloud, 7 Nov. |
 
-## VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers (27)
+## VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers (29)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
@@ -95,6 +96,8 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(16,16) | 5,605 [2.2.c] | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R16_16_n5604.g6.gz` | 5,604 | Input: omega(Q_2801) = 14, no K_15 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_14 checked edge by edge (cloud 12 Nov). ... |
 | R(17,17) | 8,917 [LuSL] | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R17_17_n8916.g6.gz` | 8,916 | Input: omega(Q_4457) = 15, no K_16 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_15 checked edge by edge (cloud 7 Nov). |
 | R(18,18) | 11,005 [LuSL] | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R18_18_n11004.g6.gz` | 11,004 | Input: omega(Q_5501) = 16, no K_17 with clique.c and gen0 on every orbit representative after verified automorphisms, and a K_16 checked edge by edge (Mac wave 8a, 12 ... |
+| R(19,19) | 17,885 [LuSL] | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R19_19_n17884.g6.gz` | 17,884 | Input: omega(Q_8941) = 17, no K_18 with clique.c and gen0 on every one of the 1117 orbit representatives after verified automorphisms (ordered subproblems, NOTES.md ... |
+| R(20,20) | 21,725 [Ex23] | VERIFIED (by proof: Shearer 1986, Lemma 1 pp.302-303 and Thm 1 p.303) | `R20_20_n21724.g6.gz` | 21,724 | Input: omega(Q_10861) = 18, no K_19 with clique.c and gen0 on every one of the 1357 orbit representatives after verified automorphisms (ordered subproblems, NOTES.md ... |
 | R(5,21) | 441 [2.3.i] | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R5_21_n440.g6.gz` | 440 | No K5: clique.c NONE (0.1 s) and networkx NONE (2.4 s), cloud. Input r3.20.110: both checkers, whole graph (build_round5). |
 | R(5,23) | 521 [2.3.i] | VERIFIED (by proof: XXER Thm 9, pp.15-16) | `R5_23_n520.g6.gz` | 520 | No K5: clique.c --sym NONE 4 and networkx on N(0), after 4 automorphisms checked (cloud). Input (3,22;130): both checkers (build_round5). |
 | R(6,21) | 888 [2.3.h] | VERIFIED (by proof: XSR2 Thm 3, preprint pp.4-5, Cor. 3 p.6) | `R6_21_n887.g6.gz` | 887 | No K6: clique.c and networkx on the whole graph, no symmetry (cloud, 12 Nov). Exact reduction alpha(F) <= alpha(G) + 1 checked on the object. Input alpha(G) <= 19: both ... |
@@ -122,18 +125,10 @@ VERIFIED in one of its four forms: 86 of 105.
 | R(4,17) | 200 [Lia+] | VERIFIED (witness found here by search) | `R4_17_n199.g6.gz` | 199 | verify_ramsey PASS (circulant). networkx: clique number 3 on the whole graph, independence number 16 through vertex 0 (circulant). Cloud, 7 Nov. |
 | R(3,3,3,7) | 247 [6.2.h (derived, unpublished explicit)] | VERIFIED (witness found here by search) | `R3_3_3_7_n246.colormat.gz` | 246 | Input (3,3,7;80): verify_ramsey PASS (circulant), and clique.c and gen0 on every colour, whole graph: NONE 2, NONE 2, NONE 6. Witness (3,3,3,7;246): verify_ramsey PASS ... |
 
-## PARTIAL (1)
-
-| cell | survey bound [ref] | label | witness | n | checks |
-|---|---|---|---|---|---|
-| R(7,21) | 1,214 [SLLL] | PARTIAL: one independence subproblem (w = 4) has clique.c only, gen0 not finished | `R7_21_n1213.g6.gz` | 1,213 | No K7: clique.c and gen0 NONE (cloud). Independence subproblem w = 2 (532 vertices): clique.c NONE 18 (424.5 s, Mac, wave 8b) and gen0 NONE (546 s, cloud). Subproblem w ... |
-
-## RECIPE ONLY (5)
+## RECIPE ONLY (3)
 
 | cell | survey bound [ref] | label | what there is | notes |
 |---|---|---|---|---|
-| R(19,19) | 17,885 [LuSL] | RECIPE ONLY | built in the cloud as graph6 (2p+2 = 17884 vertices), not checked, not committed | The file can be rebuilt with the doubling rule of the R(13,13) to R(18,18) rows. Expected SHA-256 of the built file is in phase2/recipes.csv. |
-| R(20,20) | 21,725 [Ex23] | RECIPE ONLY | built in the cloud as graph6 (2p+2 = 21724 vertices), not checked, not committed | The file can be rebuilt with the doubling rule of the R(13,13) to R(18,18) rows. Expected SHA-256 of the built file is in phase2/recipes.csv. |
 | R(21,21) | 30,925 [Ex23] | RECIPE ONLY | built in the cloud as graph6 (2p+2 = 30924 vertices), not checked, not committed | The file can be rebuilt with the doubling rule of the R(13,13) to R(18,18) rows. Expected SHA-256 of the built file is in phase2/recipes.csv. |
 | R(22,22) | 39,109 [Ex23] | RECIPE ONLY | built in the cloud as graph6 (2p+2 = 39108 vertices), not checked, not committed | The file can be rebuilt with the doubling rule of the R(13,13) to R(18,18) rows. Expected SHA-256 of the built file is in phase2/recipes.csv. |
 | R(23,23) | 49,421 [Ex23] | RECIPE ONLY | formula only, no file written (49,420 vertices) | The file can be rebuilt with the doubling rule of the R(13,13) to R(18,18) rows. Expected SHA-256 of the built file is in phase2/recipes.csv. |

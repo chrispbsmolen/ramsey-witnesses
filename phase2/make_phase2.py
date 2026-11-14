@@ -29,7 +29,7 @@ cnt = {g: collections.Counter() for g, _ in GROUPS}
 for c in cov: cnt[c['group']]['two' if two(c) else 'multi'] += 1
 ver = sum(sum(cnt[g].values()) for g in ('computer', 'symmetry', 'proof', 'search'))
 partial = [c['cell'] for c in cov if c['group'] == 'partial']
-summary = dict(date='2026-11-13', cells=len(cov), verified=ver,
+summary = dict(date='2026-11-14', cells=len(cov), verified=ver,
                by_group={g: dict(two_colour=cnt[g]['two'], multicolour=cnt[g]['multi'], total=sum(cnt[g].values())) for g, _ in GROUPS},
                witness_files=len(man), witness_bytes=sum(int(m['bytes']) for m in man), partial=partial)
 json.dump(summary, open('phase2/summary.json', 'w'), indent=1)
@@ -39,7 +39,7 @@ def short(t, k=170):
     return t if len(t) <= k else t[:k].rsplit(' ', 1)[0] + ' ...'
 
 lines = ['# Phase 2 coverage: the 105 cells without a public witness on 4 November 2026', '',
-         'Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 13 November 2026.', '',
+         'Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 14 November 2026.', '',
          '| group | two-colour | multicolour | total |', '|---|---|---|---|']
 for g, name in GROUPS:
     lines.append('| %s | %d | %d | %d |' % (name, cnt[g]['two'], cnt[g]['multi'], sum(cnt[g].values())))
@@ -71,8 +71,8 @@ ck = ['# Checks behind the phase-2 labels', '',
       '| linear0 | `phase2/scripts_as_run/build_round2/checker/linear0.c` (sha256 db46ca7e...) | exact clique search for colourings given by a length vector, cliques through vertex 0 |', '',
       'Every record names the SHA-256 of the object it checked. The witness files in `phase2/witnesses/` are those objects, gzip-compressed where they were not already. `phase2/witnesses/manifest.csv` gives both hashes: `sha256` of the committed file and `sha256_as_checked` of the object as named in the logs.', '',
       '## Machines', '',
-      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 13 November 2026.',
-      '- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`.', '',
+      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 14 November 2026.',
+      '- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`. Wave 9 (13 November, the inputs of R(19,19) and R(20,20)) ran with 4 and with 12 processes.', '',
       '## How to rerun one check', '',
       '```',
       'python3 verify_ramsey.py g6 phase2/witnesses/R7_11_n404.g6.gz 7,11      # both halves with clique.c',
@@ -80,7 +80,7 @@ ck = ['# Checks behind the phase-2 labels', '',
       'python3 phase2/check_phase2.py --only 6,16 --limit 600                   # one row, repository checker',
       'python3 phase2/check_phase2.py                                            # every witness file, 60 s per search',
       '```', '',
-      'The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_as_run/` (for example `build_round5/scripts/cyclo_reduce.py` for the cubic-residue rows, `build_round5/scripts/paley_check.py` for c(Q_p)). They are kept as run, and their paths point to the working folders, so a rerun needs the paths adjusted.', '',
+      'The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_as_run/` (for example `build_round5/scripts/cyclo_reduce.py` for the cubic-residue rows, `build_round5/scripts/paley_check.py` and `mac_batch/wave9/paley/paley9.py` for c(Q_p)). They are kept as run, and their paths point to the working folders, so a rerun needs the paths adjusted.', '',
       '## Per cell', '',
       '| cell | label | witness (sha256 of committed file) | checks |', '|---|---|---|---|']
 for c in cov:
@@ -96,13 +96,16 @@ if os.path.exists('phase2/results/repo_check_v2.txt'):
 if os.path.exists('phase2/results/repo_check_v3.txt'):
     ck += ['', 'The two rows that changed on 13 November, R(3,14) and R(9,9,9,9), checked the same way from a fresh clone (`phase2/results/repo_check_v3.txt`):', '',
            '```'] + open('phase2/results/repo_check_v3.txt').read().rstrip().split('\n') + ['```']
+if os.path.exists('phase2/results/repo_check_v4.txt'):
+    ck += ['', 'The three rows that changed on 14 November, R(7,21), R(19,19) and R(20,20), checked the same way from a fresh clone (`phase2/results/repo_check_v4.txt`):', '',
+           '```'] + open('phase2/results/repo_check_v4.txt').read().rstrip().split('\n') + ['```']
 open('phase2/CHECKS.md', 'w').write('\n'.join(ck) + '\n')
 
 # section for the top-level README (make_readme.py includes it)
 P = lambda g: sum(cnt[g].values())
-sec = ['## Phase 2 (13 November 2026)', '',
+sec = ['## Phase 2 (14 November 2026)', '',
        'On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published colouring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input colouring needed by the published construction is not public, and a registered search found one (see below). For R(3,14) the witness is the graph of the author the survey cites, Kolodyazhny, read from archived copies of his page. Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.', '',
-       '| status on 13 November | two-colour | multicolour | total |', '|---|---|---|---|']
+       '| status on 14 November | two-colour | multicolour | total |', '|---|---|---|---|']
 for g, name in GROUPS:
     sec.append('| %s | %d | %d | %d |' % (name.split(',')[0], cnt[g]['two'], cnt[g]['multi'], P(g)))
 sec += ['| all | %d | %d | %d |' % (sum(cnt[g]['two'] for g in cnt), sum(cnt[g]['multi'] for g in cnt), len(cov)), '',
