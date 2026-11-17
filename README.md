@@ -11,7 +11,7 @@ bounds) searches for a clique of the forbidden size. `selftest.py` checks the so
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
-The results below are those of 4 November 2026. Phase 2 (14 November 2026) adds witnesses, checks and notes for the
+The results below are those of 4 November 2026. Phase 2 (7 to 16 November 2026) adds witnesses, checks and notes for the
 105 cells that had no public witness then. It is summarised in the section Phase 2 below and kept in `phase2/`.
 
 ## Results
@@ -120,7 +120,7 @@ An unlisted file g1212.1640 (1640 vertices) is also in Tatarevic's graphs/ folde
 
 ### Survey lower bounds with no public witness found on 4 November 2026
 
-The section Phase 2 below gives the status of each of these cells on 14 November 2026.
+The section Phase 2 below gives the status of each of these cells on 16 November 2026.
 
 No witness file of the survey's strength was found for these (in brackets the survey's reference; "recipe" marks
 a construction described in the survey or the cited paper). Two-colour with k <= l <= 15 (19): R(3,14) >= 67 [Kol2], R(4,10) >= 92 [HaKr1], R(5,7) >= 80 [CaET], R(5,8) >= 101 [HaKr1], R(5,15) >= 275 [2.3.h] (recipe), R(6,13) >= 347 [Kuz], R(6,15) >= 401 [2.3.i] (recipe), R(7,11) >= 405 [XXER] (recipe), R(7,12) >= 417 [XSR2] (recipe), R(8,9) >= 329 [Kuz], R(8,11) >= 457 [2.3.i] (recipe), R(8,13) >= 817 [XXER] (recipe), R(8,15) >= 873 [2.3.i] (recipe), R(9,10) >= 581 [XSR2] (recipe), R(10,15) >= 1,313 [2.3.i] (recipe), R(11,11) >= 1,597 [2.2.c] (recipe), R(13,13) >= 2,557 [2.2.c] (recipe), R(14,14) >= 2,989 [2.2.c] (recipe), R(15,15) >= 5,485 [2.2.c] (recipe).
@@ -148,22 +148,22 @@ of K_127):
 | `constructions/witnesses/paley797_R10_10.g6` | R(10,10) | 798 | 797 | PASS |
 
 `constructions/paley_omega.py` computes the clique numbers of larger Paley graphs exactly (Q_101 has clique number 5; Q_281 has clique number 7; Q_797 has clique number 9; Q_1277 has clique number 11; Q_1493 has clique number 12; Q_2741 has clique number 13); with the doubling
-construction these give the survey's bounds for R(11,11), R(13,13), R(14,14), R(15,15), whose graphs were not built or checked here by 4 November (status RECIPE). Phase 2 built them, and their status on 14 November is in the section Phase 2.
+construction these give the survey's bounds for R(11,11), R(13,13), R(14,14), R(15,15), whose graphs were not built or checked here by 4 November (status RECIPE). Phase 2 built them, and their status on 16 November is in the section Phase 2.
 
-## Phase 2 (14 November 2026)
+## Phase 2 (updated 16 November 2026)
 
-On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published colouring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input colouring needed by the published construction is not public, and a registered search found one (see below). For R(3,14) the witness is the graph of the author the survey cites, Kolodyazhny, read from archived copies of his page. Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.
+On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published colouring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input colouring needed by the published construction is not public, and a registered search found one (see below). For R(3,14) the witness is the graph of the author the survey cites, Kolodyazhny, read from archived copies of his page. For R(6,13), R(3,3,7), R(3,3,8), R(3,4,6) and R(3,3,3,4) the witness is the colouring of the author the survey cites, sent by him on request in November 2026 (Eugene Kuznetsov and Geoffrey Exoo) and credited to him as personal communication. Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.
 
-| status on 14 November | two-colour | multicolour | total |
+| status on 16 November | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED | 8 | 27 | 35 |
-| VERIFIED (symmetry-reduced) | 15 | 6 | 21 |
+| VERIFIED | 8 | 31 | 39 |
+| VERIFIED (symmetry-reduced) | 16 | 6 | 22 |
 | VERIFIED (by proof: citation) | 20 | 9 | 29 |
 | VERIFIED (witness found here by search) | 3 | 1 | 4 |
 | PARTIAL | 0 | 0 | 0 |
 | RECIPE ONLY | 3 | 0 | 3 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 3 | 5 | 8 |
+| STILL NO FILE | 2 | 1 | 3 |
 | all | 55 | 50 | 105 |
 
 - VERIFIED: every half (every colour) of the witness was checked here by two independent exact checkers, `clique.c` and networkx or the separate C program `gen0.c` (or `linear0.c` for colourings given by a length vector).
@@ -173,7 +173,7 @@ On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 
 - PARTIAL: one check is missing, as stated in the row. RECIPE ONLY: the construction is written down or built, and not checked. NOT REPRODUCED: the construction as described could not be reproduced from the paper here (`phase2/NOTES.md`). STILL NO FILE: no public witness was found.
 - Credit for every construction goes to the authors named in the row. The survey reference is kept for each cell, and where the witness comes from a different paper the row names it (`phase2/NOTES.md`, section 4).
 
-89 witness files (3,224,052 bytes in all, compressed) are in `phase2/witnesses/`, each with its SHA-256, source and licence or credit in `phase2/witnesses/manifest.csv`. The checks behind each label are summarised in `phase2/CHECKS.md`, with the logs in `phase2/checks/logs/`. `python3 phase2/check_phase2.py` reruns the repository checker on every witness file.
+94 witness files (3,230,842 bytes in all, compressed) are in `phase2/witnesses/`, each with its SHA-256, source and licence or credit in `phase2/witnesses/manifest.csv`. The checks behind each label are summarised in `phase2/CHECKS.md`, with the logs in `phase2/checks/logs/`. `python3 phase2/check_phase2.py` reruns the repository checker on every witness file.
 
 **Searches.** Searching for new witnesses was outside the original registration. It was allowed later by two amendments, and every row whose witness was found by search says so. Amendment 2 (7 November) kept three witnesses found by short searches, R(4,10), R(5,8) and R(4,17), with this label. Amendment 6 (12 November) allowed a search for the lost cells, with these rules: runs in the cloud only, each restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code only from its public source, with its commit recorded. Every find is checked with both checkers like any other witness and labelled "witness found here by search". Nothing is published or sent as part of the search. Under Amendment 6 a cyclic (3,3,7;80) colouring was found by SAT on Z_80. With Robertson's construction it gives the 246-vertex witness for R(3,3,3,7) >= 247 (`phase2/NOTES.md`, section 5, and `phase2/search_s1/SEARCH_RECORD.md`). The search ended on 13 November with no witness for another cell. For each target `phase2/search_s1/SEARCH_RECORD.md` lists the symmetric forms that were excluded exactly (for example, there is no (3,14;66) Cayley graph on any group of order 66) and the runs that ended undecided.
 

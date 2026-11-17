@@ -1,22 +1,22 @@
 # Phase 2 coverage: the 105 cells without a public witness on 4 November 2026
 
-Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 14 November 2026.
+Written by `phase2/make_phase2.py` from `phase2/coverage.csv`, which has the full text of every field (source, how the file was read or built, licence or credit, checks, proof, notes). Status as of 16 November 2026.
 
 | group | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED, every half or colour checked by two independent checkers on the object | 8 | 27 | 35 |
-| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 15 | 6 | 21 |
+| VERIFIED, every half or colour checked by two independent checkers on the object | 8 | 31 | 39 |
+| VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object | 16 | 6 | 22 |
 | VERIFIED (by proof: citation), a half or the whole row follows by a published, cited theorem from inputs checked by both checkers | 20 | 9 | 29 |
 | VERIFIED (witness found here by search), the witness or its input found here by search (Amendments 2 and 6), every colour checked by both checkers | 3 | 1 | 4 |
 | PARTIAL | 0 | 0 | 0 |
 | RECIPE ONLY | 3 | 0 | 3 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 3 | 5 | 8 |
+| STILL NO FILE | 2 | 1 | 3 |
 | all | 55 | 50 | 105 |
 
-VERIFIED in one of its four forms: 89 of 105.
+VERIFIED in one of its four forms: 94 of 105.
 
-## VERIFIED, every half or colour checked by two independent checkers on the object (35)
+## VERIFIED, every half or colour checked by two independent checkers on the object (39)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
@@ -40,11 +40,15 @@ VERIFIED in one of its four forms: 89 of 105.
 | R(3,3,3,3,3,3,3,3,3) | 17,805 [AgCP+] | VERIFIED | `R3x9_n17804.lengths.gz` | 17,804 | No K3 in any of 9 colours: clique.c, all vertices (46 s). Exact sum-free check. linear0 PASS. Cloud, 7 Nov. |
 | R(3,3,4) | 30 [Ka2] | VERIFIED | `R3_3_4_n29.colormat.gz` | 29 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,3,5) | 45 [Ex2] | VERIFIED | `R3_3_5_n44.colormat.gz` | 44 | verify_ramsey PASS and crosscheck_mc PASS. All 13 graphs of Table III pass both. Negative controls FAIL as required. Cloud, 7 Nov. |
+| R(3,3,7) | 85 [Ex18] | VERIFIED | `R3_3_7_n84.colormat.gz` | 84 | clique.c and gen0 on every colour, whole graph, no reduction: colour 0: NONE 2 with both (no K3); colour 1: NONE 2 with both (no K3); colour 2: NONE 6 with both (no K7). ... |
+| R(3,3,8) | 103 [Ex18] | VERIFIED | `R3_3_8_n102.colormat.gz` | 102 | clique.c and gen0 on every colour, whole graph, no reduction: colour 0: NONE 2 with both (no K3); colour 1: NONE 2 with both (no K3); colour 2: NONE 7 with both (no K8). ... |
 | R(3,4,4) | 55 [KrLR] | VERIFIED | `R3_4_4_n54.colormat.gz` | 54 | verify_ramsey PASS and crosscheck_mc PASS. 16 of the 18 Table IV rows pass both. Cloud, 7 Nov. |
+| R(3,4,6) | 117 [Ex17] | VERIFIED | `R3_4_6_n116.colormat.gz` | 116 | clique.c and gen0 on every colour, whole graph, no reduction: colour 0: NONE 2 with both (no K3); colour 1: NONE 3 with both (no K4); colour 2: NONE 5 with both (no K6). ... |
 | R(3,4,8) | 193 [6.2.g] | VERIFIED | `R3_4_8_n192.colormat.gz` | 192 | verify_ramsey PASS. networkx clique numbers 3, 7, 2. Cloud, 7 Nov. |
 | R(3,5,5) | 139 [Ex17] | VERIFIED | `R3_5_5_n139.colormat.gz` | 139 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,5,6) | 181 [Ex17] | VERIFIED | `R3_5_6_n191.colormat.gz` | 191 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,5,7) | 241 [6.2.g] | VERIFIED | `R3_5_7_n240.colormat.gz` | 240 | verify_ramsey PASS. networkx clique numbers 2, 6, 4. Cloud, 7 Nov. |
+| R(3,3,3,4) | 97 [Ex17] | VERIFIED | `R3_3_3_4_n96.colormat.gz` | 96 | clique.c and gen0 on every colour, whole graph, no reduction: colour 0: NONE 2 with both (no K3); colour 1: NONE 2 with both (no K3); colour 2: NONE 2 with both (no K3); ... |
 | R(3,3,4,4) | 174 [Row2] | VERIFIED | `R3_3_4_4_n173.colormat.gz` | 173 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,4,4,4) | 381 [6.2.j] | VERIFIED | `R3_4_4_4_n380.colormat.gz` | 380 | verify_ramsey PASS (circulant). networkx clique numbers 3, 3, 3, 2. Cloud, 7 Nov. |
 | R(3,3,3,10) | 513 [6.2.g] | VERIFIED | `R3_3_3_10_n512.colormat.gz` | 512 | verify_ramsey PASS (12 s). networkx clique numbers 2, 2, 9, 2 (colour 2 in 3 parts, 1100 s). Cloud, 7 Nov. |
@@ -56,10 +60,11 @@ VERIFIED in one of its four forms: 89 of 105.
 | R(3,8,8) | 941 [Row5] | VERIFIED | `R3_8_8_n940.colormat.gz` | 940 | verify_ramsey PASS and crosscheck_mc PASS. Cloud, 7 Nov. |
 | R(3,9,9) | 1,844 [Row5] | VERIFIED | `R3_9_9_n1843.colormat.gz` | 1,843 | verify_ramsey PASS (14 s) and crosscheck_mc PASS (110 s). Cloud, 7 Nov. |
 
-## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (21)
+## VERIFIED (symmetry-reduced), both checkers on a reduction by automorphisms verified on the object (22)
 
 | cell | survey bound [ref] | label | witness | n | checks |
 |---|---|---|---|---|---|
+| R(6,13) | 347 [Kuz] | VERIFIED (symmetry-reduced) | `R6_13_n346.g6.gz` | 346 | Circulant: the mask is symmetric and x -> x+1 is an automorphism, checked entry by entry on the matrix, so only cliques through vertex 0 are searched (Amendment 1). ... |
 | R(6,15) | 401 [2.3.i] | VERIFIED (symmetry-reduced) | `R6_15_n400.g6.gz` | 400 | No K6: clique.c and networkx on the whole graph. No independent 15-set: clique.c --sym NONE 14 (54 s) and gen0 on N(0) (38.6 s), 4 automorphism generators and ... |
 | R(7,11) | 405 [XXER] | VERIFIED (symmetry-reduced) | `R7_11_n404.g6.gz` | 404 | Vertex transitivity checked on the graph (4 automorphism generators, orbit of vertex 0 is everything). Both checkers on cliques through vertex 0: no K7, clique.c NONE ... |
 | R(11,11) | 1,597 [2.2.c] | VERIFIED (symmetry-reduced) | `R11_11_n1596.g6.gz` | 1,596 | Reduced check with verified automorphisms, clique.c and networkx, both colours (10 searches, 908 s, cloud). Full verify_ramsey on both colours, NONE 10 (23039 s and ... |
@@ -143,15 +148,10 @@ VERIFIED in one of its four forms: 89 of 105.
 | R(8,8,8) | 7,174 [Row5] | NOT REPRODUCED | the (8,9,8;10768) colouring of row R(8,8,9) built from the public (3,7,7;673) | See NOTES.md. |
 | R(3,3,3,5) | 162 [XXER] | NOT REPRODUCED | merges tested on every public and every symmetric S(5) partition | See NOTES.md, sections 2 and 9. No partition file was captured on Exoo's pages. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
 
-## STILL NO FILE (8)
+## STILL NO FILE (3)
 
 | cell | survey bound [ref] | label | what there is | notes |
 |---|---|---|---|---|
-| R(6,13) | 347 [Kuz] | STILL NO FILE | searched in four rounds (phase2/search_records/) | The paper states a cyclic (6,13;346) colouring. Its data were not printed and were not found. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
 | R(3,23) | 139 [XWCS] | STILL NO FILE | searched in four rounds (phase2/search_records/) | No public version found. |
 | R(5,18) | 396 [2.3.h] | STILL NO FILE | not built: the input G387 was not reproduced (row R(5,17)) |  |
-| R(3,3,7) | 85 [Ex18] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 84-vertex file was captured. The largest (3,3,7) files in the fullest captured listing have 80 vertices (g337.80a to g337.80e), and the older g337.78 is ... |
-| R(3,3,8) | 103 [Ex18] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 102-vertex file was captured. The largest in the fullest captured listing is g338.100. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
-| R(3,4,6) | 117 [Ex17] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 116-vertex file was captured. The largest in the fullest captured listing is g346.108. Search S1 did not find one (phase2/search_s1/SEARCH_RECORD.md). |
-| R(3,3,3,4) | 97 [Ex17] | STILL NO FILE | searched in four rounds. In the fourth every Wayback Machine capture of Exoo's Ramsey pages on cs.indstate.edu, ... | No 96-vertex file was captured. Only g3334.92 and an older cyclic colouring on 86 vertices are public. Search S1 did not find one ... |
 | R(3,10,10) | 2,841 [Row5] | STILL NO FILE | searched in four rounds (phase2/search_records/) | Neither the text, the tables nor the spreadsheet of Row5 contain a (3,10,10) or (10,10,3) colouring. |

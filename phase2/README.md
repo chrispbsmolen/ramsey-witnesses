@@ -26,21 +26,21 @@ searching and on the symmetry reductions that may be used. The labels are:
 
 A TIMEOUT is never counted as a check.
 
-## Status on 14 November 2026
+## Status on 16 November 2026
 
 | status | two-colour | multicolour | total |
 |---|---|---|---|
-| VERIFIED | 8 | 27 | 35 |
-| VERIFIED (symmetry-reduced) | 15 | 6 | 21 |
+| VERIFIED | 8 | 31 | 39 |
+| VERIFIED (symmetry-reduced) | 16 | 6 | 22 |
 | VERIFIED (by proof: citation) | 20 | 9 | 29 |
 | VERIFIED (witness found here by search) | 3 | 1 | 4 |
 | PARTIAL | 0 | 0 | 0 |
 | RECIPE ONLY | 3 | 0 | 3 |
 | NOT REPRODUCED | 3 | 2 | 5 |
-| STILL NO FILE | 3 | 5 | 8 |
+| STILL NO FILE | 2 | 1 | 3 |
 | all | 55 | 50 | 105 |
 
-89 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
+94 of the 105 cells are VERIFIED in one of the four forms. The table is written by `make_phase2.py` into
 `summary.json` and `COVERAGE.md`. Two rows changed on 13 November:
 
 - R(9,9,9,9) is VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250). The window search for colours 1 and 2
@@ -59,6 +59,18 @@ Three rows changed on 14 November:
   K_18 checked edge by edge. These two runs use one more step of symmetry than the rows R(13,13) to R(18,18). It is
   described in `NOTES.md`, section 10, and was written into the registration after the first of the two runs. The
   records are `certificates/paley_omega_ordered_wave9.jsonl` and `checks/logs/mac_batch/wave9/`.
+
+Five rows changed on 16 November. In each the witness is the colouring of the author the survey cites, sent by him
+on request and credited to him as personal communication (`CORRECTIONS.md` applies):
+
+- R(6,13) is VERIFIED (symmetry-reduced) with the first of the five cyclic (6,13;346) colourings that Eugene Kuznetsov
+  sent on 14 November (he agreed to its addition on 15 November). It was checked on 14 November by clique.c and gen0
+  through vertex 0 after the circulant automorphism was checked on the matrix. The record is
+  `scripts_as_run/kuznetsov_2026-11-14/`.
+- R(3,3,7), R(3,3,8), R(3,4,6) and R(3,3,3,4) are VERIFIED with the (3,3,7;84), (3,3,8;102), (3,4,6;116) and
+  (3,3,3,4;96) colourings that Geoffrey Exoo sent on 16 November. Every colour of each was checked on the whole graph
+  by clique.c and gen0, with controls. The record is `checks/logs/exoo_2026-11-16/` and the script is
+  `scripts_as_run/exoo_2026-11-16/exoo_check.py`.
 
 No row is PARTIAL. When a later check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
 `label`, `group`, `checks` and `proof` in `coverage.csv`, then `python3 phase2/make_phase2.py`,

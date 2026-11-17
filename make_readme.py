@@ -49,7 +49,7 @@ bounds) searches for a clique of the forbidden size. `selftest.py` checks the so
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
-The results below are those of 4 November 2026. Phase 2 (14 November 2026) adds witnesses, checks and notes for the
+The results below are those of 4 November 2026. Phase 2 (7 to 16 November 2026) adds witnesses, checks and notes for the
 105 cells that had no public witness then. It is summarised in the section Phase 2 below and kept in `phase2/`.
 
 ## Results
@@ -114,7 +114,7 @@ newer than the survey or not cited in it, not of omissions from the survey.
 
 ### Survey lower bounds with no public witness found on 4 November 2026
 
-The section Phase 2 below gives the status of each of these cells on 14 November 2026.
+The section Phase 2 below gives the status of each of these cells on 16 November 2026.
 
 No witness file of the survey's strength was found for these (in brackets the survey's reference; "recipe" marks
 a construction described in the survey or the cited paper). Two-colour with k <= l <= 15 ({n0}): {m0}.
@@ -134,7 +134,7 @@ of K_127):
 {cons_rows}
 
 `constructions/paley_omega.py` computes the clique numbers of larger Paley graphs exactly ({po}); with the doubling
-construction these give the survey's bounds for {pc}, whose graphs were not built or checked here by 4 November (status RECIPE). Phase 2 built them, and their status on 14 November is in the section Phase 2.
+construction these give the survey's bounds for {pc}, whose graphs were not built or checked here by 4 November (status RECIPE). Phase 2 built them, and their status on 16 November is in the section Phase 2.
 
 {phase2}
 ## Usage
