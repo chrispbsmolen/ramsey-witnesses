@@ -268,3 +268,20 @@ cell                   file                                     n verdict       
 totals: NOT_COMPLETED 1, NOT_RUN_SIZE 2
 sha256 all match: True
 ```
+
+The five rows that changed on 16 November, R(6,13), R(3,3,7), R(3,3,8), R(3,4,6) and R(3,3,3,4), checked the same way from a fresh clone (`phase2/results/repo_check_v5.txt`):
+
+```
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 120 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+6,13                   R6_13_n346.g6.gz                       346 PASS                2.1  VERIFIED (symmetry-reduced)
+3,3,7                  R3_3_7_n84.colormat.gz                  84 PASS                0.0  VERIFIED
+3,3,8                  R3_3_8_n102.colormat.gz                102 PASS                0.0  VERIFIED
+3,4,6                  R3_4_6_n116.colormat.gz                116 PASS                0.0  VERIFIED
+3,3,3,4                R3_3_3_4_n96.colormat.gz                96 PASS                0.0  VERIFIED
+
+totals: PASS 5
+sha256 all match: True
+```
