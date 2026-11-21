@@ -2,16 +2,16 @@
 
 ## Runs
 
-| run | where and how | records | graphs passed (all colour classes) | seconds | verifier (SHA-256 prefixes) |
+| run | where and how | records | graphs passed (all color classes) | seconds | verifier (SHA-256 prefixes) |
 |---|---|---|---|---|---|
 | cloud | cloud machine, 3 November 2026, working layout (paths rewritten for this repository, per-graph records of McKay files merged per file) | 171 | 12,115 | 4483.7 | verify_ramsey.py 786a69c43a9b4b95 (working version), clique.c 34b72631979d0ebf |
 | cloud_constructions | cloud machine, 3 November 2026, constructions built then | 5 | 5 | 84.8 | verify_ramsey.py 786a69c43a9b4b95 (working version), clique.c 34b72631979d0ebf |
-| mac | separate machine (Mac), tools/run_hard.py, one process per half | 9 | 2 | 9869.7 | tools/run_hard.py, clique.c 34b72631979d0ebf (the copy kept on the Mac, hashed afterwards) |
-| repo | this repository, 4 November 2026, after fetch_data.py: run_ramsey.py repo --quick --max-n 300 (a first pass under a looser quick rule was stopped by hand during the first check of furini/R_3_33_graphSize_229.clq, which wrote no record; the run then resumed under the current rule; constructions/cubic3_127_R4_4_4.txt was added afterwards with --id) | 150 | 9,455 | 45.5 | verify_ramsey.py 657db0ada9f88716, clique.c 34b72631979d0ebf |
+| mac | separate machine (Mac), tools/run_hard.py, one process per half | 9 | 2 | 9869.7 | tools/run_hard.py, clique.c 34b72631979d0ebf (the copy kept on the Mac, hashed afterward) |
+| repo | this repository, 4 November 2026, after fetch_data.py: run_ramsey.py repo --quick --max-n 300 (a first pass under a looser quick rule was stopped by hand during the first check of furini/R_3_33_graphSize_229.clq, which wrote no record; the run then resumed under the current rule; constructions/cubic3_127_R4_4_4.txt was added afterward with --id) | 150 | 9,455 | 45.5 | verify_ramsey.py 657db0ada9f88716, clique.c 34b72631979d0ebf |
 
 The cloud runs used an earlier layout of the same code (`verify_ramsey.py` before it was tidied for this
 repository). Every run used `clique.c` with SHA-256 34b72631979d0ebfdb871d8e04fc62a3547477aef96b945d71b91ec30a147c6c
-(for the Mac run, the copy kept on that machine was hashed afterwards and is identical). After all runs the header
+(for the Mac run, the copy kept on that machine was hashed afterward and is identical). After all runs the header
 comment of `clique.c` was corrected (it described a MAX output line the program never prints); the code is unchanged,
 and the file's SHA-256 prefix is now 137a100275a4a061. The repository run rechecked 143 witnesses that the
 earlier runs had also checked: 0 differences in verdict or vertex count. It also checked

@@ -143,7 +143,7 @@ parameters,colours,survey_tables,survey_lower,lower_ref,survey_table_of_lower,ot
 "3,48",2,IIb,384,Ji+,IIb,,PARTIAL,,,,,391,furini/R_3_48_graphSize_390.clq,NOT_CHECKED: none,
 "3,49",2,IIb,402,Ji+,IIb,,PARTIAL,,,,,411,furini/R_3_49_graphSize_410.clq,NOT_CHECKED: none,
 "3,3,3",3,XIa,17,GG,XIa,,VERIFIED,17,constructions/clebsch16_R3_3_3.txt,constructed_here,,,,,Greenwood-Gleason / Kalbfleisch-Stanton critical colorings (classical; recipe via GF(16) cubic residues)
-"4,4,4",3,XIa,128,HiIr,XIa,,VERIFIED,128,constructions/cubic3_127_R4_4_4.txt,constructed_here,,,,,"Hill-Irving group partition (HiIr), no file located; the cubic-coset colouring of Z_127 built here (constructions/witnesses/cubic3_127_R4_4_4.txt) passed"
+"4,4,4",3,XIa,128,HiIr,XIa,,VERIFIED,128,constructions/cubic3_127_R4_4_4.txt,constructed_here,,,,,"Hill-Irving group partition (HiIr), no file located; the cubic-coset coloring of Z_127 built here (constructions/witnesses/cubic3_127_R4_4_4.txt) passed"
 "5,5,5",3,XIa,454,Ex23,XIa,,NO_FILE_FOUND,415,exoo_site/ch555.414,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=414 (needs 453); cited source Ex23 not retrieved
 "6,6,6",3,XIa,1106,Row3,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row3 not retrieved
 "7,7,7",3,XIa,3214,XuR1,XIa,,RECIPE,,,,,,,,Mathon cyclotomic coloring of a Paley graph (XuR1 improvement); no file located
@@ -164,7 +164,7 @@ parameters,colours,survey_tables,survey_lower,lower_ref,survey_table_of_lower,ot
 "3,3,3,3,3,3",6,XIa,538,FreSw,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source FreSw not retrieved
 "4,4,4,4,4,4",6,XIa,32006,Row1,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row1 not retrieved
 "5,5,5,5,5,5",6,XIa,441606,Row5,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
-"3,3,3,3,3,3,3",7,XIa,1698,Row4,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2107.03560 ancillary (Schur S(7)>=1696 partition, xls); sum-free partition; Ramsey colouring is the circulant colouring of Z_n by partition class of |i-j|; coverage not confirmed"
+"3,3,3,3,3,3,3",7,XIa,1698,Row4,XIa,,NO_FILE_FOUND,,,,,,,,"Rowley arXiv:2107.03560 ancillary (Schur S(7)>=1696 partition, xls); sum-free partition; Ramsey coloring is the circulant coloring of Z_n by partition class of |i-j|; coverage not confirmed"
 "4,4,4,4,4,4,4",7,XIa,160024,Row1,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row1 not retrieved
 "3,3,3,3,3,3,3,3",8,XIa,5288,Row3,XIa,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Row3 not retrieved
 "3,3,3,3,3,3,3,3,3",9,XIa,17805,AgCP+,XIa,,NO_FILE_FOUND,,,,,,,,AgCP+ arXiv:2112.03175 PDF (Schur-partition templates); PDF downloaded; whether the partition is printed was not checked
@@ -173,7 +173,7 @@ parameters,colours,survey_tables,survey_lower,lower_ref,survey_table_of_lower,ot
 "3,3,6",3,XIb,61,ExT,XIb,,VERIFIED,61,exoo_tatarevic/g336.60,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
 "3,3,7",3,XIb,85,Ex18,XIb,,NO_FILE_FOUND,79,exoo_site/g337.78,exoo_site,,,,,no public witness found; weaker files on disk: Exoo site (older colorings) n=78 (needs 84); cited source Ex18 not retrieved
 "3,3,8",3,XIb,103,Ex18,XIb,,NO_FILE_FOUND,,,,,,,,no public witness found; cited source Ex18 not retrieved
-"3,3,9",3,XIb,129,Ex18,XIb,,VERIFIED,133,lachy_dauth/circulants.json#0,lachy_dauth,yes,,,,"Lachy-Dauth/ramsey-neighbourhood-counting (preprint), 3-colour circulant in ancillary/circulants.json; passed here"
+"3,3,9",3,XIb,129,Ex18,XIb,,VERIFIED,133,lachy_dauth/circulants.json#0,lachy_dauth,yes,,,,"Lachy-Dauth/ramsey-neighbourhood-counting (preprint), 3-color circulant in ancillary/circulants.json; passed here"
 "3,3,10",3,XIb,150,ExT,XIb,,VERIFIED,150,exoo_tatarevic/g3310.149,exoo_tatarevic2015,,,,,Exoo-Tatarevic 2015 data (ExT)
 "3,3,11",3,XIb,174,ExT,XIb,,VERIFIED,183,lachy_dauth/circulants.json#1,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)
 "3,3,12",3,XIb,194,ExT,XIb,,VERIFIED,203,lachy_dauth/circulants.json#2,lachy_dauth,yes,,,,Exoo-Tatarevic 2015 data (ExT)

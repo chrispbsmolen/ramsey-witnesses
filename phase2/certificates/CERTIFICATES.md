@@ -1,6 +1,6 @@
-# Certificates for the rows labelled VERIFIED (by proof: citation)
+# Certificates for the rows labeled VERIFIED (by proof: citation)
 
-In these 29 rows one half, one colour or the whole row follows from a published theorem. The rule (Amendments 3 and 4
+In these 29 rows one half, one color or the whole row follows from a published theorem. The rule (Amendments 3 and 4
 of the phase-2 registration) is that the theorem is cited with page, that every input it is applied to was checked
 here by both checkers, and that every computed part was checked by both checkers. Where a whole row rests on the
 theorem, the object was also rebuilt from its hashed inputs, the hypotheses of the theorem were checked, and the
@@ -13,7 +13,7 @@ Files in this folder (copies of records also kept in `../checks/logs/`):
 | `rebuild_certificates.jsonl` | rebuild certificates: R(13,13) to R(20,20) (Shearer), R(7,16) (XXER Thm 9), R(10,10,10) (Rowley Thm 3.2), and the control p = 101 |
 | `paley_omega_inputs.jsonl` | the inputs c(Q_p) for the Shearer rows: verified automorphisms, both checkers on every orbit representative, K_k witnesses, negative controls |
 | `paley_omega_ordered_wave9.jsonl` | the inputs c(Q_8941) and c(Q_10861) for R(19,19) and R(20,20): the automorphism checks and the final record of each run (every piece once, all NONE, K_k witness). The pieces themselves are in `../checks/logs/mac_batch/wave9/runs/` |
-| `rowley_r10_window.jsonl` | the 253-vertex window that Rowley Thm 3.2 leaves for colour 1 of R(10,10,10), checked by clique.c, gen0 and linear0, with a K9 control |
+| `rowley_r10_window.jsonl` | the 253-vertex window that Rowley Thm 3.2 leaves for color 1 of R(10,10,10), checked by clique.c, gen0 and linear0, with a K9 control |
 | `inputs_both_checkers.jsonl` | the inputs of the XXER Thm 9 rows, each rerun with both checkers on the whole graph and matched to its pinned SHA-256 |
 | `xsr2_reduction_G3.jsonl`, `xsr2_reduction_6_21.jsonl` | the exact reduction alpha(F) <= alpha(G) + 1 of XSR2 Thm 3, checked on the object |
 | `rowley_round6_certificates.jsonl`, `rowley_round6_inputs.jsonl`, `rowley_round6_windows.jsonl` | the six Rowley rows of 12 November: rebuild certificates, the inputs U and V with both checkers, and the window searches as recorded on 12 November (the first 54 records) |
@@ -42,7 +42,7 @@ Control: the repository file `constructions/witnesses/mathon101_R7_7.g6` (p = 10
 both checkers find a K6 and no K7 in it and in its complement. Theorem 1 is used with c(G_p) = k (see `../NOTES.md`,
 section 1).
 
-## Rows where one half or one colour rests on a theorem (Amendment 3)
+## Rows where one half or one color rests on a theorem (Amendment 3)
 
 | cell | theorem | computed parts (both checkers) | inputs (both checkers) | build evidence |
 |---|---|---|---|---|
@@ -58,19 +58,19 @@ section 1).
 | R(8,17) | XXER Thm 9 | no K8 | Kuznetsov (7,9;251) | two implementations agree |
 | R(8,19) | XSR2 Thm 3, pp.4-6 | no K8 | (8,13;816) of row R(8,13), (7,8;216) both halves | two implementations agree |
 | R(8,21) | XXER Thm 9 | no K8 | (7,11;404) graph | two implementations agree |
-| R(9,9,9) | XXER Cor. 5 p.15 | colours 1 and 2 (Mac, wave 8a) | Rowley (3,8,8;940) | 7 automorphisms verified |
-| R(8,8,9) | XXER Cor. 5 p.15 | colours 1 and 2 (cloud) | Rowley (3,7,7;673) | 7 automorphisms verified |
-| R(7,7,7,7) | Rowley Thm 3.2, pp.248-250 | colours 1, 2: window 0..2820, clique.c, gen0, linear0 | U (7,7,3;472), V circulant (7,7;202) | rebuilt from the proof text, byte-identical (3133b7b0...) |
-| R(8,8,8,8) | same | colours 1, 2: window 0..4536 | U (8,8,3;650), V Q_281 | identical (b5653bc4...) |
-| R(9,9,9,9) | same | colours 1, 2: window 0..10240, split exactly by smallest vertex into 2981 and 2908 pieces, clique.c and gen0 on every piece | U (9,9,3;1282), V circulant (9,9;562) | identical (0bb1901a... decompressed) |
-| R(5,5,5,5,5,5) | same | colours 1, 2, 3: window 0..3900 | U (5,5,5,3;977), V (5,5,5;453) | identical (e4599410... decompressed) |
-| R(6,6,6,6,6) | same | colour 1: window 0..50 | U (6,3;12), V the R(6,6,6,6) object | identical (ceb3897e... decompressed) |
-| R(6,6,6,6,6,6) | same | colours 1, 2: window 0..1165 | U (6,6,3;235), V the R(6,6,6,6) object | identical (f9413e70... decompressed). 5,499,101 vertices, Rowley's Table 2 route, first 4,515,701 used |
-| R(10,10,10) | Rowley, Australas. J. Combin. 81(2) Thm 3.2, pp.248-250 | colours 2 and 3 (Mac, waves 8a and 8b), colour 1 window (cloud) | template (10,3;30) (sheet sha256 53f2bf9d...), Q_797 | length file rebuilt from the proof text, byte-identical (7c26d120...) |
+| R(9,9,9) | XXER Cor. 5 p.15 | colors 1 and 2 (Mac, wave 8a) | Rowley (3,8,8;940) | 7 automorphisms verified |
+| R(8,8,9) | XXER Cor. 5 p.15 | colors 1 and 2 (cloud) | Rowley (3,7,7;673) | 7 automorphisms verified |
+| R(7,7,7,7) | Rowley Thm 3.2, pp.248-250 | colors 1, 2: window 0..2820, clique.c, gen0, linear0 | U (7,7,3;472), V circulant (7,7;202) | rebuilt from the proof text, byte-identical (3133b7b0...) |
+| R(8,8,8,8) | same | colors 1, 2: window 0..4536 | U (8,8,3;650), V Q_281 | identical (b5653bc4...) |
+| R(9,9,9,9) | same | colors 1, 2: window 0..10240, split exactly by smallest vertex into 2981 and 2908 pieces, clique.c and gen0 on every piece | U (9,9,3;1282), V circulant (9,9;562) | identical (0bb1901a... decompressed) |
+| R(5,5,5,5,5,5) | same | colors 1, 2, 3: window 0..3900 | U (5,5,5,3;977), V (5,5,5;453) | identical (e4599410... decompressed) |
+| R(6,6,6,6,6) | same | color 1: window 0..50 | U (6,3;12), V the R(6,6,6,6) object | identical (ceb3897e... decompressed) |
+| R(6,6,6,6,6,6) | same | colors 1, 2: window 0..1165 | U (6,6,3;235), V the R(6,6,6,6) object | identical (f9413e70... decompressed). 5,499,101 vertices, Rowley's Table 2 route, first 4,515,701 used |
+| R(10,10,10) | Rowley, Australas. J. Combin. 81(2) Thm 3.2, pp.248-250 | colors 2 and 3 (Mac, waves 8a and 8b), color 1 window (cloud) | template (10,3;30) (sheet sha256 53f2bf9d...), Q_797 | length file rebuilt from the proof text, byte-identical (7c26d120...) |
 
 Window searches use the translation step of Rowley's proof (cliques through vertex 0). The R(9,9,9,9) window was too
 large for one search within the time limit of a run (570 s), so it was split by the smallest vertex of the clique.
-The split is exact and uses no symmetry. `summarise.py` checks that the recorded ranges of each colour and checker
+The split is exact and uses no symmetry. `summarise.py` checks that the recorded ranges of each color and checker
 cover every piece once. The undivided runs that reached the time limit are recorded as TIMEOUT and are not counted.
 
 For R(7,12) and R(7,16) one checker also ran the independence half directly on the object (clique.c, Mac, wave 3),

@@ -11,8 +11,9 @@ rd = lambda f: open(f).read().strip() if os.path.exists(f) else '(not run)'
 fmt = lambda x: '{:,}'.format(int(x))
 R = lambda p: 'R(%s)' % p
 V = S['ledger_verdicts']; G = ['two-colour, k <= l <= 15', 'two-colour, l > 15', 'multicolour']
+US = lambda g: g.replace('colour', 'color')
 STAT = ['VERIFIED', 'PARTIAL', 'RECIPE', 'NO_FILE_FOUND']
-cov_rows = '\n'.join('| %s | %s | %s |' % (g, ' | '.join(str(S['coverage'][g].get(s, 0)) for s in STAT), sum(S['coverage'][g].get(s, 0) for s in STAT)) for g in G)
+cov_rows = '\n'.join('| %s | %s | %s |' % (US(g), ' | '.join(str(S['coverage'][g].get(s, 0)) for s in STAT), sum(S['coverage'][g].get(s, 0) for s in STAT)) for g in G)
 srcname = {s['source']: s['name'] for s in src}
 claims = {(r['parameters'], r['source']): r['where_claimed'] for r in csv.DictReader(open('sources/claims.csv'))}
 exc = '\n'.join('| %s | %s | %s (%s%s) | %s | %s | `%s` |' % (R(x['parameters']), fmt(x['verified']), fmt(x['survey_lower']), x['survey_tables'], '; ' + x['other_table_values'] if x['other_table_values'] else '',
@@ -23,14 +24,20 @@ cl_now = __import__('hashlib').sha256(open('clique.c', 'rb').read()).hexdigest()
 blank = '\n'.join('| %s | %s | `%s` | %s |' % (R(x['parameters']), fmt(x['verified']), x['witness'], led[x['witness']]['checked']) for x in S['no_survey_bound_verified'])
 unv = '\n'.join('| %s | %s | %s | `%s` | %s |' % (R(x['parameters']), fmt(x['claimed']), fmt(x['survey_lower']) if x['survey_lower'] else 'blank', x['witness'], x['check']) for x in S['unverified_above_survey'])
 def miss(g):
-    xs = [x for x in S['no_public_witness'] if (lambda r: (len(r) > 2 and g == 'multicolour') or (len(r) == 2 and ((max(r) <= 15) == (g == G[0])) and g != 'multicolour'))(sorted(map(int, x['parameters'].split(','))))]
+    xs = [x for x in S['no_public_witness'] if (lambda r: (len(r) > 2 and g == G[2]) or (len(r) == 2 and ((max(r) <= 15) == (g == G[0])) and g != G[2]))(sorted(map(int, x['parameters'].split(','))))]
     return ', '.join('%s >= %s [%s]%s' % (R(x['parameters']), fmt(x['survey_lower']), x['lower_ref'], ' (recipe)' if x['status'] == 'RECIPE' else '') for x in xs), len(xs)
 m0, n0 = miss(G[0]); m1, n1 = miss(G[1]); m2, n2 = miss(G[2])
 cons = [r for r in led.values() if r['source'] == 'constructed_here']
 cons_rows = '\n'.join('| `%s` | %s | %s | %s | %s |' % (r['file'], R(r['parameters']), r['claimed_bound'], r['n'], r['verdict']) for r in cons)
 pc = ', '.join(R(r['parameters']) for r in cov if 'computed here' in r['search_note'] and r['status'] == 'RECIPE')
 po = '; '.join('Q_%d has clique number %d' % (o['p'], o['omega']) for o in S['paley_omega'])
-src_rows = '\n'.join('| %s | %s | %s | %s |' % (s['name'], s['where'], s['licence found'], s['here']) for s in src)
+import re
+AM = [('colour', 'color'), ('Colour', 'Color'), ('licence', 'license'), ('Licence', 'License'), ('neighbour', 'neighbor'), ('labelled', 'labeled'), ('afterwards', 'afterward')]
+def us(t):
+    for x, y in AM: t = re.sub(r'(?<![A-Za-z/_.])' + x, y, t)
+    return t
+TITLED = ('Neighbourhood counting',)
+src_rows = '\n'.join('| %s | %s | %s | %s |' % (s['name'] if any(t in s['name'] for t in TITLED) else us(s['name']), s['where'], us(s['license found']), us(s['here'])) for s in src)
 by_src = '\n'.join('| %s | %s |' % (k, ', '.join('%s %s' % (kk, vv) for kk, vv in sorted(v.items()))) for k, v in S['ledger_by_source'].items())
 part_rows = '\n'.join('| %s | %s | %s | %s |' % (R(x['parameters']), fmt(x['survey_lower']), fmt(x['claimed']), x['check']) for x in S['partial'])
 phase2 = rd('phase2/README_section.md') + '\n' if os.path.exists('phase2/README_section.md') else ''
@@ -42,15 +49,15 @@ An exact checker for lower-bound witnesses of small Ramsey numbers, the results 
 witness files found, and a table of every lower bound in Radziszowski's dynamic survey *Small Ramsey Numbers*
 (Electron. J. Combin. DS1, revision 18, 24 April 2026) with whether a public witness for it was verified here.
 
-A witness for R(k_1, ..., k_r) >= n + 1 is a colouring of the edges of K_n with r colours and no K_(k_i) in
-colour i; for two colours, a graph on n vertices with no K_k and no independent set of size l. `verify_ramsey.py`
-decides this exactly: for each colour class the C program `clique.c` (bitset branch and bound with greedy-colouring
+A witness for R(k_1, ..., k_r) >= n + 1 is a coloring of the edges of K_n with r colors and no K_(k_i) in
+color i; for two colors, a graph on n vertices with no K_k and no independent set of size l. `verify_ramsey.py`
+decides this exactly: for each color class the C program `clique.c` (bitset branch and bound with greedy-coloring
 bounds) searches for a clique of the forbidden size. `selftest.py` checks the solver against networkx on random
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
 The results below are those of 4 November 2026. Phase 2 (7 to 16 November 2026) adds witnesses, checks and notes for the
-105 cells that had no public witness then. It is summarised in the section Phase 2 below and kept in `phase2/`.
+105 cells that had no public witness then. It is summarized in the section Phase 2 below and kept in `phase2/`.
 
 ## Results
 
@@ -60,8 +67,8 @@ Verdicts (`results/ledger.csv`, one row per witness file or per entry of a file 
 
 | verdict | witnesses |
 |---|---|
-| PASS: every colour class checked, no forbidden clique | {V.get('PASS', 0)} |
-| PARTIAL: only some colour classes checked, those passed | {V.get('PARTIAL', 0)} |
+| PASS: every color class checked, no forbidden clique | {V.get('PASS', 0)} |
+| PARTIAL: only some color classes checked, those passed | {V.get('PARTIAL', 0)} |
 | NOT_COMPLETED: check started, stopped at the time limit | {V.get('NOT_COMPLETED', 0)} |
 | NOT_CHECKED: located, no check run here | {V.get('NOT_CHECKED', 0)} |
 | FAIL | {V.get('FAIL', 0)} |
@@ -117,16 +124,16 @@ newer than the survey or not cited in it, not of omissions from the survey.
 The section Phase 2 below gives the status of each of these cells on 16 November 2026.
 
 No witness file of the survey's strength was found for these (in brackets the survey's reference; "recipe" marks
-a construction described in the survey or the cited paper). Two-colour with k <= l <= 15 ({n0}): {m0}.
+a construction described in the survey or the cited paper). Two-color with k <= l <= 15 ({n0}): {m0}.
 
-Two-colour with l > 15 ({n1}): {m1}.
+Two-color with l > 15 ({n1}): {m1}.
 
-Multicolour ({n2}): {m2}.
+Multicolor ({n2}): {m2}.
 
 ### Witnesses constructed here
 
 `constructions/build.py` builds these deterministically (Paley graphs Q_p and the doubling of Q_p on 2p + 2 vertices
-described in the survey, the 5-cycle, the GF(16) cube-coset colouring of K_16, the cubic-residue graph on Z_127 and the cube-coset colouring
+described in the survey, the 5-cycle, the GF(16) cube-coset coloring of K_16, the cubic-residue graph on Z_127 and the cube-coset coloring
 of K_127):
 
 | file | number | bound | vertices | verdict |
@@ -163,16 +170,16 @@ time limit of 1800 s per file, and the independence halves of the large AlphaEvo
 `survey/search_notes.csv` the notes from the search for each witness. `tools/run_hard.py` is the script used for
 the large AlphaEvolve witnesses on a separate machine.
 
-## Sources and licences
+## Sources and licenses
 
-| source | where | licence found | here |
+| source | where | license found | here |
 |---|---|---|---|
 {src_rows}
 
 Files of the other sources are identified by URL and SHA-256 in `sources/manifest.csv` and are not
 redistributed. The survey and the papers are not included.
 
-The phase-2 witness files are listed with their source, page or table, licence or credit in
+The phase-2 witness files are listed with their source, page or table, license or credit in
 `phase2/witnesses/manifest.csv` and `phase2/coverage.csv`. They use the constructions and data of:
 
 - Calkin, Erdos and Tovey
@@ -208,9 +215,9 @@ a GitHub issue or by email to the maintainer, Christopher Smolen (independent re
 chrispbsmolen@gmail.com. A file whose author objects to its inclusion is removed. Every such change is recorded,
 with its date and reason, in `CORRECTIONS.md`.
 
-## Licence
+## License
 
-MIT (`LICENSE`), except the files in `third_party/`, which keep their own licences (see the NOTICE file in each folder).
+MIT (`LICENSE`), except the files in `third_party/`, which keep their own licenses (see the NOTICE file in each folder).
 
 Christopher Smolen, November 2026.
 '''
@@ -220,8 +227,8 @@ runs = S['runs']
 run_desc = {'cloud': 'cloud machine, 3 November 2026, working layout (paths rewritten for this repository, per-graph records of McKay files merged per file)',
             'cloud_constructions': 'cloud machine, 3 November 2026, constructions built then',
             'mac': 'separate machine (Mac), tools/run_hard.py, one process per half',
-            'repo': 'this repository, 4 November 2026, after fetch_data.py: run_ramsey.py repo --quick --max-n 300 (a first pass under a looser quick rule was stopped by hand during the first check of furini/R_3_33_graphSize_229.clq, which wrote no record; the run then resumed under the current rule; constructions/cubic3_127_R4_4_4.txt was added afterwards with --id)'}
-run_rows = '\n'.join('| %s | %s | %s | %s | %s | %s |' % (k, run_desc.get(k, ''), v['records'], fmt(v['graphs_pass']), v['seconds'], '; '.join(S['run_verifiers'].get(k, []))) for k, v in runs.items())
+            'repo': 'this repository, 4 November 2026, after fetch_data.py: run_ramsey.py repo --quick --max-n 300 (a first pass under a looser quick rule was stopped by hand during the first check of furini/R_3_33_graphSize_229.clq, which wrote no record; the run then resumed under the current rule; constructions/cubic3_127_R4_4_4.txt was added afterward with --id)'}
+run_rows = '\n'.join('| %s | %s | %s | %s | %s | %s |' % (k, run_desc.get(k, ''), v['records'], fmt(v['graphs_pass']), v['seconds'], '; '.join(us(x) for x in S['run_verifiers'].get(k, []))) for k, v in runs.items())
 hard = [r for r in led.values() if r['runs'] and 'mac' in r['runs'].split(';')]
 hard_rows = '\n'.join('| `%s` | %s | %s | %s |' % (r['id'], r['verdict'], r['checked'], r['detail']) for r in hard)
 nc = [r for r in led.values() if r['verdict'] in ('NOT_COMPLETED', 'NOT_CHECKED')]
@@ -232,13 +239,13 @@ ver = f'''# Verification record
 
 ## Runs
 
-| run | where and how | records | graphs passed (all colour classes) | seconds | verifier (SHA-256 prefixes) |
+| run | where and how | records | graphs passed (all color classes) | seconds | verifier (SHA-256 prefixes) |
 |---|---|---|---|---|---|
 {run_rows}
 
 The cloud runs used an earlier layout of the same code (`verify_ramsey.py` before it was tidied for this
 repository). Every run used `clique.c` with SHA-256 34b72631979d0ebfdb871d8e04fc62a3547477aef96b945d71b91ec30a147c6c
-(for the Mac run, the copy kept on that machine was hashed afterwards and is identical). After all runs the header
+(for the Mac run, the copy kept on that machine was hashed afterward and is identical). After all runs the header
 comment of `clique.c` was corrected (it described a MAX output line the program never prints); the code is unchanged,
 and the file's SHA-256 prefix is now {cl_now}. The repository run rechecked {S['rerun_overlap']} witnesses that the
 earlier runs had also checked: {len(S['rerun_disagreements'])} differences in verdict or vertex count. It also checked

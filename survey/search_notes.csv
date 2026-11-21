@@ -67,7 +67,7 @@ parameters,class,witness_search_note
 "14,14",recipe_only,Paley doubling p=1493 (2.2.c); no file
 "15,15",recipe_only,Paley doubling p=2741 (2.2.c); no file
 "3,3,3",recipe_only,Greenwood-Gleason / Kalbfleisch-Stanton critical colorings (classical; recipe via GF(16) cubic residues)
-"4,4,4",recipe_only,"Hill-Irving group partition (HiIr), no file located; the cubic-coset colouring of Z_127 built here (constructions/witnesses/cubic3_127_R4_4_4.txt) passed"
+"4,4,4",recipe_only,"Hill-Irving group partition (HiIr), no file located; the cubic-coset coloring of Z_127 built here (constructions/witnesses/cubic3_127_R4_4_4.txt) passed"
 "5,5,5",none,no public witness found; weaker files on disk: Exoo site (older colorings) n=414 (needs 453); cited source Ex23 not retrieved
 "6,6,6",none,no public witness found; cited source Row3 not retrieved
 "7,7,7",recipe_only,Mathon cyclotomic coloring of a Paley graph (XuR1 improvement); no file located
@@ -88,7 +88,7 @@ parameters,class,witness_search_note
 "3,3,3,3,3,3",none,no public witness found; cited source FreSw not retrieved
 "4,4,4,4,4,4",none,no public witness found; cited source Row1 not retrieved
 "5,5,5,5,5,5",on_disk_unconfirmed,"Rowley arXiv:2203.13476 ancillary spreadsheet (ODS, unparsed); spreadsheet of template/cyclic graph specs; per-cell coverage NOT confirmed"
-"3,3,3,3,3,3,3",on_disk_unconfirmed,"Rowley arXiv:2107.03560 ancillary (Schur S(7)>=1696 partition, xls); sum-free partition; Ramsey colouring is the circulant colouring of Z_n by partition class of |i-j|; coverage not confirmed"
+"3,3,3,3,3,3,3",on_disk_unconfirmed,"Rowley arXiv:2107.03560 ancillary (Schur S(7)>=1696 partition, xls); sum-free partition; Ramsey coloring is the circulant coloring of Z_n by partition class of |i-j|; coverage not confirmed"
 "4,4,4,4,4,4,4",none,no public witness found; cited source Row1 not retrieved
 "3,3,3,3,3,3,3,3",none,no public witness found; cited source Row3 not retrieved
 "3,3,3,3,3,3,3,3,3",on_disk_unconfirmed,AgCP+ arXiv:2112.03175 PDF (Schur-partition templates); PDF downloaded; whether the partition is printed was not checked
@@ -97,7 +97,7 @@ parameters,class,witness_search_note
 "3,3,6",on_disk,Exoo-Tatarevic 2015 data (ExT)
 "3,3,7",none,no public witness found; weaker files on disk: Exoo site (older colorings) n=78 (needs 84); cited source Ex18 not retrieved
 "3,3,8",none,no public witness found; cited source Ex18 not retrieved
-"3,3,9",on_disk,"Lachy-Dauth/ramsey-neighbourhood-counting (preprint), 3-colour circulant in ancillary/circulants.json; passed here"
+"3,3,9",on_disk,"Lachy-Dauth/ramsey-neighbourhood-counting (preprint), 3-color circulant in ancillary/circulants.json; passed here"
 "3,3,10",on_disk,Exoo-Tatarevic 2015 data (ExT)
 "3,3,11",on_disk,Exoo-Tatarevic 2015 data (ExT)
 "3,3,12",on_disk,Exoo-Tatarevic 2015 data (ExT)
