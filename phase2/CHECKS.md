@@ -286,3 +286,16 @@ cell                   file                                     n verdict       
 totals: PASS 5
 sha256 all match: True
 ```
+
+The witness added on 21 November above the survey's table, R(3,3,16), checked the same way from a fresh clone (`phase2/results/repo_check_v6.txt`):
+
+```
+Repository checker on the phase-2 witness files (Linux x86_64, CPython 3.13.18, 2 cores, limit 600 s per clique search, max n 6000)
+verify_ramsey.py 657db0ada9f88716, clique.c 137a100275a4a061
+
+cell                   file                                     n verdict         seconds  label
+3,3,16                 R3_3_16_n292.colormat.gz               292 PASS              392.1  VERIFIED
+
+totals: PASS 1
+sha256 all match: True
+```
