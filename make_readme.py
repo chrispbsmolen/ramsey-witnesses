@@ -56,7 +56,7 @@ bounds) searches for a clique of the forbidden size. `selftest.py` checks the so
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
-The results below are those of 4 November 2026. Phase 2 (7 to 16 November 2026) adds witnesses, checks and notes for the
+The results below are those of 4 November 2026. Phase 2 (7 to 21 November 2026) adds witnesses, checks and notes for the
 105 cells that had no public witness then. It is summarized in the section Phase 2 below and kept in `phase2/`.
 
 ## Results

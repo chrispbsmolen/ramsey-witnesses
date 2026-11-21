@@ -1,0 +1,33 @@
+{
+ "checkers": {
+  "clique": {
+   "all_asked_for_k_minus_1": true,
+   "all_none": true,
+   "complete": true,
+   "every_v_once": true,
+   "pieces_match_recomputation": true,
+   "records": 292,
+   "seconds_max_piece": 0.51,
+   "seconds_total": 10.3
+  },
+  "gen0": {
+   "all_asked_for_k_minus_1": true,
+   "all_none": true,
+   "complete": true,
+   "every_v_once": true,
+   "pieces_match_recomputation": true,
+   "records": 292,
+   "seconds_max_piece": 0.43,
+   "seconds_total": 14.5
+  }
+ },
+ "class_edges": 25850,
+ "colour_digit": "2",
+ "file_sha256": "5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b",
+ "k": 16,
+ "largest_piece": 175,
+ "n": 292,
+ "pieces_below_k_minus_1_vertices": 37,
+ "sum_of_piece_sizes": 25850,
+ "verdict": "NONE: no K_16 in the class (exact split by smallest vertex, every piece present once, both checkers)"
+}

@@ -15,7 +15,7 @@ Every record names the SHA-256 of the object it checked. The witness files in `p
 
 ## Machines
 
-- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 16 November 2026.
+- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 21 November 2026.
 - Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`. Wave 9 (13 November, the inputs of R(19,19) and R(20,20)) ran with 4 and with 12 processes.
 
 ## How to rerun one check
@@ -127,6 +127,7 @@ The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_
 | R(8,8,9) | VERIFIED (by proof: XXER Cor. 5, p.15) | `R8_8_9_n10768.colormat.gz` (268519f30308...) | Vertex-transitive (7 automorphisms checked). Colors 1 and 2: no K7 in N(0), clique.c (37 s, 32 s) and gen0 (39 s, 35 s), cloud. Input (3,7,7;673): verify_ramsey and crosscheck_mc PASS. |
 | R(6,6,6,6,6,6) | VERIFIED (by proof: Rowley AJC 81(2) Thm 3.2, pp.248-250) | `R6x6_n5499101.lengths.gz` (c5645d4c19da...) | Inputs U and V: clique.c and gen0 on every color, whole graph, with lowered-k controls. Template color checked triangle-free and containing length m-1, phi and N checked. Then colors 3 to 6 by the theorem from V. Colors 1, 2: window 0..1165: clique.c, gen0 and linear0 NONE, K5 control FOUND by both (cloud, 12 Nov, build_round6). |
 | R(3,3,3,7) | VERIFIED (witness found here by search) | `R3_3_3_7_n246.colormat.gz` (797d057b62d7...) | Input (3,3,7;80): verify_ramsey PASS (circulant), and clique.c and gen0 on every color, whole graph: NONE 2, NONE 2, NONE 6. Witness (3,3,3,7;246): verify_ramsey PASS (0.3 s), and clique.c and gen0 on every color, whole graph, no reduction: NONE 2, 2, 2, 6. Negative controls for every color: the color asked for one vertex less is FOUND by both checkers, and a copy with one or two edges recolored is caught by both. Cloud, 12 Nov. |
+| R(3,3,16) | VERIFIED | `R3_3_16_n292.colormat.gz` (1474f13d5df3...) | Input (3,15;73): clique.c and gen0 on the whole graph, no reduction: no triangle and no independent set of 15 vertices, with controls (13 November), and verify_ramsey PASS (13 and 18 November). Witness (3,3,16;292): clique.c and gen0 on every color, whole graph, no reduction: NONE 2, NONE 2, NONE 15 (clique.c 359 s and gen0 10.5 s for the K_16 question). verify_ramsey PASS on the committed .gz (365 s). Controls for every color: a copy with one edge recolored is caught by both checkers, and both find a K_15 in color 3. The K_16 question was also answered on 13 November by an exact split into 292 pieces, with both checkers. Cloud, 13 November, rerun 18 November. Logs: phase2/checks/logs/build_r3316_292/ |
 
 ## Repository checker on every witness file
 

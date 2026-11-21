@@ -1,0 +1,89 @@
+{
+ "label": "input: Kolodyazhny (3,15;73), digit 1 = edge",
+ "file": "Kol2_R3_15_n73.matrix01",
+ "sha256": "457f9d54d8a949b3172af080da0b80eface1c510ae22a87344ee9476ed6abd33",
+ "n": 73,
+ "ks_by_digit": [
+  15,
+  3
+ ],
+ "clique_c_sha256": "137a100275a4a0618412707af2ebee2b1f4fc3b0c24e49bc709b83be09369101",
+ "gen0_c_sha256": "d82e1855554e5a43264dbd63d16494d837860ecd2d281e7d61a39873d4396614",
+ "reduction": "none (whole colour class, no symmetry)",
+ "per_colour": [
+  {
+   "digit": "0",
+   "k": 15,
+   "edges": 2142,
+   "class_text_sha256": "419816b556e2b89fd22ccf7831a7f7dda9701ab52be7efae5a6015ed03ebc3be",
+   "clique_c": "NONE 14",
+   "clique_c_s": 0.03,
+   "gen0": "NONE n=73 K=15 start_vertices_done=73/73",
+   "gen0_s": 0.03,
+   "control_lowered_k": {
+    "asked_for": 14,
+    "clique_c": "FOUND 14 72 70 62 61 69 64 58 54 45 32 14 13 59 3",
+    "gen0": "FOUND n=73 K=14 start_vertices_done=1/73",
+    "clique_rechecked_edge_by_edge": true
+   },
+   "control_corrupted_copy": {
+    "edges_recoloured": [
+     [
+      5,
+      59,
+      "from digit 1 to digit 0"
+     ]
+    ],
+    "number_of_edges_recoloured": 1,
+    "clique_c": "FOUND 15 72 70 62 61 69 64 59 58 54 45 32 14 13 5 3",
+    "gen0": "FOUND n=73 K=15 start_vertices_done=3/73",
+    "detected_by_both": true
+   },
+   "whole_graph_none_by": [
+    "clique_c",
+    "gen0"
+   ],
+   "pass_both_whole": true,
+   "no_checker_found_forbidden_clique": true,
+   "controls_pass": true
+  },
+  {
+   "digit": "1",
+   "k": 3,
+   "edges": 486,
+   "class_text_sha256": "7ba710109c9350e6e7f1459f20eda6ba9e18756622afcb276146aa59e4fb3fdd",
+   "clique_c": "NONE 2",
+   "clique_c_s": 0.0,
+   "gen0": "NONE n=73 K=3 start_vertices_done=73/73",
+   "gen0_s": 0.0,
+   "control_lowered_k": {
+    "asked_for": 2,
+    "clique_c": "FOUND 2 71 68",
+    "gen0": "FOUND n=73 K=2 start_vertices_done=1/73",
+    "clique_rechecked_edge_by_edge": true
+   },
+   "control_corrupted_copy": {
+    "edges_recoloured": [
+     [
+      10,
+      71,
+      "from digit 0 to digit 1"
+     ]
+    ],
+    "number_of_edges_recoloured": 1,
+    "clique_c": "FOUND 3 71 68 10",
+    "gen0": "FOUND n=73 K=3 start_vertices_done=11/73",
+    "detected_by_both": true
+   },
+   "whole_graph_none_by": [
+    "clique_c",
+    "gen0"
+   ],
+   "pass_both_whole": true,
+   "no_checker_found_forbidden_clique": true,
+   "controls_pass": true
+  }
+ ],
+ "verdict": "PASS",
+ "logged_at": "2026-11-13T12:38:28-0600"
+}

@@ -155,3 +155,11 @@ VERIFIED in one of its four forms: 94 of 105.
 | R(3,23) | 139 [XWCS] | STILL NO FILE | searched in four rounds (phase2/search_records/) | No public version found. |
 | R(5,18) | 396 [2.3.h] | STILL NO FILE | not built: the input G387 was not reproduced (row R(5,17)) |  |
 | R(3,10,10) | 2,841 [Row5] | STILL NO FILE | searched in four rounds (phase2/search_records/) | Neither the text, the tables nor the spreadsheet of Row5 contain a (3,10,10) or (10,10,3) coloring. |
+
+## Witnesses built here above the survey's table (1)
+
+Not among the 105 cells: the survey's value for these cells has a public witness (phase 1). The witness here gives the value the survey's own items give. Full text in `phase2/above_survey.csv`.
+
+| cell | survey bound [ref] | bound from the witness | label | witness | n | checks |
+|---|---|---|---|---|---|---|
+| R(3,3,16) | 291 [ExT] | 293 | VERIFIED | `R3_3_16_n292.colormat.gz` | 292 | Input (3,15;73): clique.c and gen0 on the whole graph, no reduction: no triangle and no independent set of 15 vertices, with controls (13 November), and verify_ramsey ... |

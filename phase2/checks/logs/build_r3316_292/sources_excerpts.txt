@@ -1,0 +1,27 @@
+# Excerpt: Xu, Xie, Exoo, Radziszowski, Electron. J. Combin. 11 (2004) #R35, Section 5, Theorem 7 and the start of its proof (page 11).
+# From phase2/build_G1_G2/downloads/v11i1r35.txt (text layer of v11i1r35.pdf, sha256 a267b8188b336a771f34698a71949e6a7aaf6fa882fddbd1a400d87758a6930c), lines 476-500; the page image of the PDF was read as well.
+Theorem 7 If k ≥ 3 and l ≥ 5, then R(3, k, l) ≥ 4R(k, l − 1) − 3.
+
+Proof. For suitable k and l, let m = R(k, l−1)−1, and consider any (k, l−1; m)-graph G
+with V G = {v1 , v2 , ..., vm }. We will prove the theorem by establishing a (3, k, l)-coloring on
+4R(k, l−1)−4 = 4m vertices. Using colors from the set {1, 2, 3}, we construct a 3-coloring
+                                                      S
+F ∈ R(3, k, l; 4m) on the vertex set VF = 4i=1 Ui , where Ui = {(ui, vj ) | 1 ≤ j ≤ m}.
+For each i, 1 ≤ i ≤ 4, we color the edges induced by Ui with colors 2 and 3 according to
+G, namely, F ((ui, vj1 ), (ui , vj2 )) = 2 if (vj1 , vj2 ) ∈ EG, otherwise F ((ui, vj1 ), (ui, vj2 )) = 3.
+Next, we color the edges between Ui1 and Ui2 , for i1 ∈ {1, 2} and i2 ∈ {3, 4} by letting
+                                               
+                                               
+                                                1,  if j1 = j2 ;
+                F ((ui1 , vj1 ), (ui2 , vj2 )) = 2, if (vj1 , vj2 ) ∈ EG;
+                                                
+                                                 3, if (v , v ) 6∈ EG, and j 6= j ,
+                                                          j1 j2              1    2
+
+
+and for (i1 , i2 ) ∈ {(1, 2), (3, 4)} by
+                                                                
+                                                                    3, if j1 = j2 ;
+                             F ((ui1 , vj1 ), (ui2 , vj2 )) =
+                                                                    1, if j1 6= j2 .
+    Clearly, F has the right number of vertices. From the construction, it is straightforward

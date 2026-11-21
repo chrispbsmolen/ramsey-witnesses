@@ -1,0 +1,19 @@
+# control for the split: one edge of the object recoloured to digit 2 (paper colour 3) so that a K_16 appears; the split must report FOUND with both checkers
+edge {222,290}: digit 1 -> 2; in sha256 5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b; out sha256 218a5447ecff788e1e3c15ebc723a5b3a8506689e89759483f12708d77ef7682
+FOUND at v=2: FOUND 15 172 121 119 125 150 117 159 173 171 164 166 154 148 144 57
+done clique 0 292 0.6
+FOUND at v=2: FOUND n=174 K=15 start_vertices_done=58/174
+done gen0 0 292 1.2
+   "all_none": false,
+   "every_v_once": false,
+   "all_none": false,
+   "every_v_once": false,
+ "verdict": "INCOMPLETE"
+# control: the same split asked for K_15 in the uncorrupted object (must report FOUND with both checkers)
+FOUND at v=0: FOUND 14 173 115 55 57 50 51 49 45 34 21 36 11 10 2
+done clique 0 292 0.0
+FOUND at v=0: FOUND n=175 K=14 start_vertices_done=1/175
+done gen0 0 292 0.0
+# the clique reported by clique.c at v=2 on the corrupted copy, mapped back to vertex numbers of the 292-vertex file: 2 75 222 224 226 230 252 256 259 265 272 279 282 288 290 291
+# all 120 pairs have digit 2 in the corrupted copy: True ; contains 222 and 290: True
+# pairs of it not of digit 2 in the true object: [(222, 290)]

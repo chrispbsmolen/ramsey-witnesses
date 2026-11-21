@@ -1,0 +1,8 @@
+# build of the (3,3,16;292) colouring, XXER Theorem 7 (EJC 11 (2004) #R35, p.11), input inputs/Kol2_R3_15_n73.matrix01
+{"input": "Kol2_R3_15_n73.matrix01", "input_sha256": "457f9d54d8a949b3172af080da0b80eface1c510ae22a87344ee9476ed6abd33", "input_n": 73, "input_edges": 486, "n": 292, "constructions_py_sha256": "4a25115b07ceb08d2fa43cad8594e33d002dc9d54e5031714aaca5d8a37f0602", "out_sha256": "5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b", "digits": "0 = paper colour 1 (new), 1 = paper colour 2 (edges of G), 2 = paper colour 3 (non-edges of G)"}
+n=292 input_sha256=457f9d54d8a949b3172af080da0b80eface1c510ae22a87344ee9476ed6abd33 out_sha256=5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b
+n=292: build_xxer7.py (constructions.py xxer_quadruple) output and xxer7_indep.py output byte-identical, sha256 5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b
+objects/R3_3_16_n292.colormat identical to both builds
+n 292 edges by digit {'0': 10804, '1': 5832, '2': 25850} total 42486 = C(292,2) = 42486
+expected from m=73, e(G)=486: digit0 10804 digit1 5832 digit2 25850
+degrees by digit {'0': [74], '1': [36, 39, 42], '2': [175, 178, 181]}

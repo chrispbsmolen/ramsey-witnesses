@@ -44,7 +44,15 @@
    "total": 3
   }
  },
- "witness_files": 94,
- "witness_bytes": 3230842,
- "partial": []
+ "witness_files": 95,
+ "witness_bytes": 3234073,
+ "partial": [],
+ "above_survey": [
+  {
+   "cell": "3,3,16",
+   "survey_lower": 291,
+   "bound_from_witness": 293,
+   "witness": "phase2/witnesses/R3_3_16_n292.colormat.gz"
+  }
+ ]
 }

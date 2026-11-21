@@ -1,0 +1,5 @@
+file R3_3_16_n292.colormat sha256 5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b n 292 networkx 3.7
+digit 0 edges 10804 maximal cliques enumerated 10804 clique number 2 seconds 0.0
+digit 1 edges 5832 maximal cliques enumerated 5832 clique number 2 seconds 0.0
+file R3_3_16_n292.colormat sha256 5a99d8595ec2d5d2d6f5ac89cc4d5da96835f4ee60e83c31c1512f11214ffb1b n 292 networkx 3.7
+digit 2 edges 25850 maximal cliques enumerated 452927488 NOT COMPLETED in 480 s (largest seen 15) seconds 480.0

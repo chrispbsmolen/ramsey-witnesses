@@ -6,11 +6,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROO
 cov = list(csv.DictReader(open('phase2/coverage.csv')))
 man = list(csv.DictReader(open('phase2/witnesses/manifest.csv')))
 rec = list(csv.DictReader(open('phase2/recipes.csv')))
+above = list(csv.DictReader(open('phase2/above_survey.csv')))
 assert len(cov) == 105, len(cov)
 for m in man:
     h = hashlib.sha256(open(m['file'], 'rb').read()).hexdigest()
     if h != m['sha256']: raise SystemExit('SHA-256 mismatch: %s' % m['file'])
 mand = {m['cell']: m for m in man}
+for c in above:
+    assert c['witness'] == mand[c['cell']]['file'] and c['sha256_file'] == mand[c['cell']]['sha256'], c['cell']
 for c in cov:
     if c['witness']: assert c['witness'] == mand[c['cell']]['file'] and c['sha256_file'] == mand[c['cell']]['sha256'], c['cell']
 
@@ -31,7 +34,8 @@ ver = sum(sum(cnt[g].values()) for g in ('computer', 'symmetry', 'proof', 'searc
 partial = [c['cell'] for c in cov if c['group'] == 'partial']
 summary = dict(date='2026-11-14', cells=len(cov), verified=ver,
                by_group={g: dict(two_colour=cnt[g]['two'], multicolour=cnt[g]['multi'], total=sum(cnt[g].values())) for g, _ in GROUPS},
-               witness_files=len(man), witness_bytes=sum(int(m['bytes']) for m in man), partial=partial)
+               witness_files=len(man), witness_bytes=sum(int(m['bytes']) for m in man), partial=partial,
+               above_survey=[dict(cell=c['cell'], survey_lower=int(c['survey_lower']), bound_from_witness=int(c['bound_from_witness']), witness=c['witness']) for c in above])
 json.dump(summary, open('phase2/summary.json', 'w'), indent=1)
 
 def short(t, k=170):
@@ -58,6 +62,12 @@ for g, name in GROUPS:
         for c in rows:
             lines.append('| %s | %s [%s] | %s | %s | %s |' % (R(c['cell']), fmt(c['survey_lower']), c['survey_ref'], c['label'], short(c['how'], 120), short(c['notes'], 160)))
     lines.append('')
+lines += ['## Witnesses built here above the survey\'s table (%d)' % len(above), '',
+          'Not among the 105 cells: the survey\'s value for these cells has a public witness (phase 1). The witness here gives the value the survey\'s own items give. Full text in `phase2/above_survey.csv`.', '',
+          '| cell | survey bound [ref] | bound from the witness | label | witness | n | checks |', '|---|---|---|---|---|---|---|']
+for c in above:
+    lines.append('| %s | %s [%s] | %s | %s | `%s` | %s | %s |' % (R(c['cell']), fmt(c['survey_lower']), c['survey_ref'], fmt(c['bound_from_witness']), c['label'], os.path.basename(c['witness']), fmt(c['n']), short(c['checks'])))
+lines.append('')
 open('phase2/COVERAGE.md', 'w').write('\n'.join(lines))
 
 # CHECKS.md: what was run for each row
@@ -71,7 +81,7 @@ ck = ['# Checks behind the phase-2 labels', '',
       '| linear0 | `phase2/scripts_as_run/build_round2/checker/linear0.c` (sha256 db46ca7e...) | exact clique search for colorings given by a length vector, cliques through vertex 0 |', '',
       'Every record names the SHA-256 of the object it checked. The witness files in `phase2/witnesses/` are those objects, gzip-compressed where they were not already. `phase2/witnesses/manifest.csv` gives both hashes: `sha256` of the committed file and `sha256_as_checked` of the object as named in the logs.', '',
       '## Machines', '',
-      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 16 November 2026.',
+      '- cloud: a Linux x86_64 machine, one to two cores per process, 7 to 21 November 2026.',
       '- Mac: an Apple Silicon laptop (macOS, arm64), at most four processes, runs pasted by hand in waves 0 to 8b, 7 to 12 November 2026. Each wave log starts with the command and ends with `exit=0`. Wave 9 (13 November, the inputs of R(19,19) and R(20,20)) ran with 4 and with 12 processes.', '',
       '## How to rerun one check', '',
       '```',
@@ -83,7 +93,7 @@ ck = ['# Checks behind the phase-2 labels', '',
       'The symmetry-reduced and proof-based checks need the scripts in `phase2/scripts_as_run/` (for example `build_round5/scripts/cyclo_reduce.py` for the cubic-residue rows, `build_round5/scripts/paley_check.py` and `mac_batch/wave9/paley/paley9.py` for c(Q_p)). They are kept as run, and their paths point to the working folders, so a rerun needs the paths adjusted.', '',
       '## Per cell', '',
       '| cell | label | witness (sha256 of committed file) | checks |', '|---|---|---|---|']
-for c in cov:
+for c in cov + above:
     if not c['witness']: continue
     ck.append('| %s | %s | `%s` (%s...) | %s |' % (R(c['cell']), c['label'], os.path.basename(c['witness']), c['sha256_file'][:12], ' '.join(c['checks'].split())))
 if os.path.exists('phase2/results/repo_check.txt'):
@@ -102,11 +112,14 @@ if os.path.exists('phase2/results/repo_check_v4.txt'):
 if os.path.exists('phase2/results/repo_check_v5.txt'):
     ck += ['', 'The five rows that changed on 16 November, R(6,13), R(3,3,7), R(3,3,8), R(3,4,6) and R(3,3,3,4), checked the same way from a fresh clone (`phase2/results/repo_check_v5.txt`):', '',
            '```'] + open('phase2/results/repo_check_v5.txt').read().rstrip().split('\n') + ['```']
+if os.path.exists('phase2/results/repo_check_v6.txt'):
+    ck += ['', 'The witness added on 21 November above the survey\'s table, R(3,3,16), checked the same way from a fresh clone (`phase2/results/repo_check_v6.txt`):', '',
+           '```'] + open('phase2/results/repo_check_v6.txt').read().rstrip().split('\n') + ['```']
 open('phase2/CHECKS.md', 'w').write('\n'.join(ck) + '\n')
 
 # section for the top-level README (make_readme.py includes it)
 P = lambda g: sum(cnt[g].values())
-sec = ['## Phase 2 (updated 16 November 2026)', '',
+sec = ['## Phase 2 (updated 21 November 2026)', '',
        'On 4 November 105 cells of the table above had no public witness (32 RECIPE, 73 NO_FILE_FOUND). Phase 2 built the published constructions for these cells, looked again for public files, and checked what was found or built. For three cells, R(4,10), R(5,8) and R(4,17), the published coloring is not public, and the witness here was found by a short search. Those rows, and R(6,15) and R(7,18), which are built from two of them, say so. For R(3,3,3,7) the input coloring needed by the published construction is not public, and a registered search found one (see below). For R(3,14) the witness is the graph of the author the survey cites, Kolodyazhny, read from archived copies of his page. For R(6,13), R(3,3,7), R(3,3,8), R(3,4,6) and R(3,3,3,4) the witness is the coloring of the author the survey cites, sent by him on request in November 2026 (Eugene Kuznetsov and Geoffrey Exoo) and credited to him as personal communication. Everything is in `phase2/`, with one row per cell in `phase2/coverage.csv` and `phase2/COVERAGE.md`.', '',
        '| status on 16 November | two-color | multicolor | total |', '|---|---|---|---|']
 for g, name in GROUPS:
@@ -118,6 +131,7 @@ sec += ['| all | %d | %d | %d |' % (sum(cnt[g]['two'] for g in cnt), sum(cnt[g][
         '- VERIFIED (witness found here by search): the witness, or the input it is built from, was found here by a search (Amendment 2 or 6, see below), and every color of the witness was checked by both checkers, on the whole object or with a reduction verified on the object, as the row says.',
         '- PARTIAL: one check is missing, as stated in the row. RECIPE ONLY: the construction is written down or built, and not checked. NOT REPRODUCED: the construction as described could not be reproduced from the paper here (`phase2/NOTES.md`). STILL NO FILE: no public witness was found.',
         '- Credit for every construction goes to the authors named in the row. The survey reference is kept for each cell, and where the witness comes from a different paper the row names it (`phase2/NOTES.md`, section 4).', '', '%d witness files (%s bytes in all, compressed) are in `phase2/witnesses/`, each with its SHA-256, source and license or credit in `phase2/witnesses/manifest.csv`. The checks behind each label are summarized in `phase2/CHECKS.md`, with the logs in `phase2/checks/logs/`. `python3 phase2/check_phase2.py` reruns the repository checker on every witness file.' % (len(man), fmt(summary['witness_bytes'])),
-        '', '**Searches.** Searching for new witnesses was outside the original registration. It was allowed later by two amendments, and every row whose witness was found by search says so. Amendment 2 (7 November) kept three witnesses found by short searches, R(4,10), R(5,8) and R(4,17), with this label. Amendment 6 (12 November) allowed a search for the lost cells, with these rules: runs in the cloud only, each restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code only from its public source, with its commit recorded. Every find is checked with both checkers like any other witness and labeled \"witness found here by search\". Nothing is published or sent as part of the search. Under Amendment 6 a cyclic (3,3,7;80) coloring was found by SAT on Z_80. With Robertson\'s construction it gives the 246-vertex witness for R(3,3,3,7) >= 247 (`phase2/NOTES.md`, section 5, and `phase2/search_s1/SEARCH_RECORD.md`). The search ended on 13 November with no witness for another cell. For each target `phase2/search_s1/SEARCH_RECORD.md` lists the symmetric forms that were excluded exactly (for example, there is no (3,14;66) Cayley graph on any group of order 66) and the runs that ended undecided.', '', 'Observations made on the way (a misprint in Shearer 1986, three constructions that could not be reproduced from the text, third-party claims above the survey, which are noted and not counted, and what the search for unpublished colorings covered) are in `phase2/NOTES.md`.', '', ('One row is PARTIAL (%s): the row says which check is missing.' if len(partial) == 1 else 'These rows are PARTIAL (%s): each row says which check is missing.') % ', '.join(R(x) for x in partial), '']
+        '', '**Searches.** Searching for new witnesses was outside the original registration. It was allowed later by two amendments, and every row whose witness was found by search says so. Amendment 2 (7 November) kept three witnesses found by short searches, R(4,10), R(5,8) and R(4,17), with this label. Amendment 6 (12 November) allowed a search for the lost cells, with these rules: runs in the cloud only, each restartable and under 10 minutes, at most 2 cores at low priority. About one day of computing per target, and a target is dropped once three independent methods have stopped improving. Methods are cyclic, block-cyclic and Cayley ansatzes, annealing, and SAT with clique clauses added lazily. Third-party code only from its public source, with its commit recorded. Every find is checked with both checkers like any other witness and labeled \"witness found here by search\". Nothing is published or sent as part of the search. Under Amendment 6 a cyclic (3,3,7;80) coloring was found by SAT on Z_80. With Robertson\'s construction it gives the 246-vertex witness for R(3,3,3,7) >= 247 (`phase2/NOTES.md`, section 5, and `phase2/search_s1/SEARCH_RECORD.md`). The search ended on 13 November with no witness for another cell. For each target `phase2/search_s1/SEARCH_RECORD.md` lists the symmetric forms that were excluded exactly (for example, there is no (3,14;66) Cayley graph on any group of order 66) and the runs that ended undecided.', '', 'Observations made on the way (a misprint in Shearer 1986, three constructions that could not be reproduced from the text, third-party claims above the survey, which are noted and not counted, and what the search for unpublished colorings covered) are in `phase2/NOTES.md`.', '', ('No row is PARTIAL.' if not partial else ('One row is PARTIAL (%s): the row says which check is missing.' if len(partial) == 1 else 'These rows are PARTIAL (%s): each row says which check is missing.') % ', '.join(R(x) for x in partial)), '',
+        '**A witness above the survey\'s table.** One witness above the survey\'s table was added on 21 November. It is not one of the 105 cells. Table XIb of the survey lists R(3,3,16) >= 291 [ExT], and that value has a public witness, checked in phase 1. The survey\'s item 6.2.g (p.58), R(3,k,l) >= 4R(k,l-1) - 3 [XuX2, XXER], with its own entry R(3,15) >= 74 [Kol2] (Tables Ia and IIa), gives 4 * 74 - 3 = 293. `phase2/witnesses/R3_3_16_n292.colormat.gz` is a 3-coloring of K_292 with no triangle in colors 1 and 2 and no K_16 in color 3, so R(3,3,16) >= 293. It was built here by the construction in the proof of Theorem 7 of Xu, Xie, Exoo and Radziszowski (Electron. J. Combin. 11 (2004) #R35, pp.11-12) from Kolodyazhny\'s (3,15;73) graph, read from the same archived page as the R(3,14) graph. Every color was checked on the whole graph by `clique.c` and `gen0.c`, with controls. This is not a new bound. It is a checked, explicit coloring for the value the survey\'s own items give. The row is in `phase2/above_survey.csv` and `phase2/COVERAGE.md`, and the logs are in `phase2/checks/logs/build_r3316_292/`.', '']
 open('phase2/README_section.md', 'w').write('\n'.join(sec))
 print(json.dumps(summary['by_group']), ver)

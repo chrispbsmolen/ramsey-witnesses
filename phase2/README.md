@@ -72,6 +72,21 @@ on request and credited to him as personal communication (`CORRECTIONS.md` appli
   by clique.c and gen0, with controls. The record is `checks/logs/exoo_2026-11-16/` and the script is
   `scripts_as_run/exoo_2026-11-16/exoo_check.py`.
 
+One witness above the survey's table was added on 21 November. It is not one of the 105 cells. Table XIb of the
+survey lists R(3,3,16) >= 291 [ExT], and that value has a public witness, checked in phase 1. The survey's item 6.2.g
+(p.58), R(3,k,l) >= 4R(k,l-1) - 3 [XuX2, XXER], with its own entry R(3,15) >= 74 [Kol2] (Tables Ia and IIa), gives
+4 * 74 - 3 = 293.
+
+- `witnesses/R3_3_16_n292.colormat.gz` is a 3-coloring of K_292 with no triangle in colors 1 and 2 and no K_16 in
+  color 3, so R(3,3,16) >= 293. It was built here by the construction in the proof of Theorem 7 of Xu, Xie, Exoo
+  and Radziszowski (Electron. J. Combin. 11 (2004) #R35, pp.11-12) from Kolodyazhny's (3,15;73) graph, read from the same
+  archived page as the R(3,14) graph (`witnesses/inputs/R3_15_n73_Kol2.colormat.gz`). Two implementations of the
+  construction give byte-identical files. Every color was checked on the whole graph by clique.c and by gen0, with
+  controls, on 13 November and again on 18 November. The record is `checks/logs/build_r3316_292/` and the scripts
+  are in `scripts_as_run/build_r3316_292/`.
+- This is not a new bound. It is a checked, explicit coloring for the value the survey's own items give. The row is
+  in `above_survey.csv` and in `COVERAGE.md`. It does not change the count of the 105 cells.
+
 No row is PARTIAL. When a later check finishes, the row is updated the same way as the others: logs under `checks/logs/`, the new
 `label`, `group`, `checks` and `proof` in `coverage.csv`, then `python3 phase2/make_phase2.py`,
 `python3 make_readme.py` and `python3 phase2/check_phase2.py --only CELL`. A row moves up only with a new check entry.
@@ -123,7 +138,8 @@ and not evidence that no coloring exists.
 |---|---|
 | `coverage.csv` | one row per cell: survey bound and reference, label, witness file and SHA-256, source with page, table or row, URL or DOI, how the file was read or built, license or credit, checks, proof, notes |
 | `COVERAGE.md` | the same, as tables grouped by label |
-| `witnesses/` | 89 witness files, gzip-compressed (3.2 MB in all, the largest 1.2 MB), the search input in `witnesses/inputs/`, and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and license |
+| `above_survey.csv` | witnesses built here for a value above the survey's table that the survey's own items give, with the same fields as `coverage.csv` |
+| `witnesses/` | 95 witness files, gzip-compressed (3.2 MB in all, the largest 1.2 MB), two input files in `witnesses/inputs/` (the search input of R(3,3,3,7) and Kolodyazhny's (3,15;73) graph), and `manifest.csv` with format, vertex count, SHA-256 of the committed file and of the object as named in the check logs, credit and license |
 | `CHECKS.md` | the checks behind each label, the checkers and machines, and how to rerun a check |
 | `checks/logs/` | the check logs and build records, with `INDEX.csv` |
 | `certificates/` | rebuild certificates and the records for the rows that rest on a theorem, with `CERTIFICATES.md` |
