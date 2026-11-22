@@ -47,3 +47,14 @@ SOFTWARE.
   disclaims warranties (its section 5)
 - Changed: compressed with `gzip -n -9`. The content is the published file byte for byte (SHA-256
   5ef65b6ab402cc5cc6c71d52660563434aa17d36fec412389d646d1494f795d1)
+
+## R4_18_n211.g6.gz
+
+- Creator: Rustem Galyavin (ORCID 0009-0006-6875-9170)
+- Source: Rustem Galyavin, *New lower bounds for the Ramsey numbers R(3,18) and R(4,18): witness graphs*, Zenodo,
+  16 November 2026, doi:10.5281/zenodo.24285935, file `R4-18_n211.g6.txt`
+- Copyright notice: none was supplied with the record, beyond the creator's name
+- License: Creative Commons Attribution 4.0 International, https://creativecommons.org/licenses/by/4.0/. The license
+  disclaims warranties (its section 5)
+- Changed: compressed with `gzip -n -9`. The content is the published file byte for byte (SHA-256
+  5d0e20dc8de6205e0af37f58624d7136c23b2f64836875a924bb8f8bb77fbad7)
