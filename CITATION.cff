@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use these witnesses or the checker, please cite this repository, and the authors credited for each witness file."
+title: "ramsey-witnesses: checked witnesses for lower bounds on small Ramsey numbers"
+authors:
+  - family-names: Smolen
+    given-names: Christopher
+    orcid: "https://orcid.org/0009-0002-9537-7961"
+repository-code: "https://github.com/chrispbsmolen/ramsey-witnesses"
+license: MIT
