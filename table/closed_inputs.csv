@@ -1,0 +1,11 @@
+path,sha256,closed_by,basis
+results/ledger.csv,eb6ec42aa09c85c7d4f9a0e57591a3730af874411e7bd16610e9511d6763f836,"phase-1 registration, 4 November 2026",phase 1
+results/coverage.csv,9848a60b0ef269770c609d06870526ce127cb464ff5268bd22568d087fbc8727,"phase-1 registration, 4 November 2026",phase 1
+sources/manifest.csv,bef977b3ec9043218bc5efff1616a20f6c0cd3fa172763ff4f39d8e991f3858f,"phase-1 registration, 4 November 2026",phase 1
+sources/sources.csv,3e725b028e9e498e6bbdb382bb4e274c1e1d8bb2b27fa3a91de329f4b08bdf35,"phase-1 registration, 4 November 2026",phase 1
+sources/claims.csv,32d83e4a1da88ab4821d59252f936042419a78a51109d46af0ef94400f5c8678,"phase-1 registration, 4 November 2026",phase 1
+results/crosscheck_output.txt,b9331f7cb6ccff688ef1838161315942b85de9de5ae9deb2997f2c91071d4a79,"phase-1 registration, 4 November 2026",phase 1
+phase2/coverage.csv,9dd13879d5b536fb3a806c182403f1e128cc0a1128eb0e34283eac99a160f4af,"phase-2 Amendment 11, at commit 1d7aabe","phase 2, closed at 1d7aabe (Amendment 11)"
+phase2/witnesses/manifest.csv,0afb3391a2e60bfc95983678b7c58affa739d25f5350ae8153cb71d83965ecc8,"phase-2 Amendment 11, at commit 1d7aabe","phase 2, closed at 1d7aabe (Amendment 11)"
+phase2/above_survey.csv,7195f5c7abe5e68ec87456313844d3f1ca13e87c0e346b598f8fe643ea647c2f,"phase-2 Amendment 11, at commit 1d7aabe","phase 2, closed at 1d7aabe (Amendment 11)"
+table/phase2_entered.csv,60abf3fe773979c3dd904ce949971b30a79ab59a4af0f5b4a9040dcd41a5fd7d,"phase-2 Amendment 11, at commit 1d7aabe","phase 2, from git log --diff-filter=A"
