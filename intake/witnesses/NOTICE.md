@@ -36,3 +36,14 @@ SOFTWARE.
 
 - Changed: compressed with `gzip -n -9`. The content is the published file byte for byte (SHA-256
   f4bbf9a963aa8a400bab09ff3f0e479d818f4b4a54b14397fff68d7058dd3341)
+
+## R3_18_n100.g6.gz
+
+- Creator: Rustem Galyavin (ORCID 0009-0006-6875-9170)
+- Source: Rustem Galyavin, *New lower bounds for the Ramsey numbers R(3,18) and R(4,18): witness graphs*, Zenodo,
+  16 November 2026, doi:10.5281/zenodo.24285935, file `r318_n100.g6.txt`
+- Copyright notice: none was supplied with the record, beyond the creator's name
+- License: Creative Commons Attribution 4.0 International, https://creativecommons.org/licenses/by/4.0/. The license
+  disclaims warranties (its section 5)
+- Changed: compressed with `gzip -n -9`. The content is the published file byte for byte (SHA-256
+  5ef65b6ab402cc5cc6c71d52660563434aa17d36fec412389d646d1494f795d1)
