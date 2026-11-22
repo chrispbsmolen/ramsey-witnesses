@@ -40,6 +40,33 @@ TITLED = ('Neighbourhood counting',)
 src_rows = '\n'.join('| %s | %s | %s | %s |' % (s['name'] if any(t in s['name'] for t in TITLED) else us(s['name']), s['where'], us(s['license found']), us(s['here'])) for s in src)
 by_src = '\n'.join('| %s | %s |' % (k, ', '.join('%s %s' % (kk, vv) for kk, vv in sorted(v.items()))) for k, v in S['ledger_by_source'].items())
 part_rows = '\n'.join('| %s | %s | %s | %s |' % (R(x['parameters']), fmt(x['survey_lower']), fmt(x['claimed']), x['check']) for x in S['partial'])
+with open('table/cells.csv', newline='') as h:
+    tcells = list(csv.DictReader(h))
+tcount = collections.Counter(c['status_now'] for c in tcells)
+tcur = open('table/CURRENT.md').read()
+tabove = tcur.split("## Checked witnesses above the survey's table\n\n")[1].split('\n\n')[0]
+with open('table/intake.csv', newline='') as h:
+    tint = collections.Counter(r['decision'] for r in csv.DictReader(h))
+current = '\n'.join([
+    '## Current table', '',
+    '`table/` holds one table of record: the phase-1 results of 4 November 2026, phase 2',
+    '(closed at commit 1d7aabe by its Amendment 11), and the intake under `registration/REGISTRATION_intake.md`. The intake',
+    "holds the items in flight at phase 2's close and everything received or found since, each in its own row. The",
+    'third-party files and claims that phase 2 recorded only in its notes, search records or check logs stay there, and',
+    'each is entered when its file has been fetched at a fixed address and checked here. It is',
+    'written by `table/make_register.py` and checked by',
+    '`table/check_register.py`, and its columns are described in `table/COLUMNS.md`. Each row says exactly what was',
+    'checked and how. The word VERIFIED is used only with the meaning a registration gives it (`registration/`): in the',
+    'dated sections below, and in the columns of the table that copy a phase label unchanged.', '',
+    '| survey value (revision 18) | cells |', '|---|---|',
+    '| witness checked by two independent checkers | %d |' % tcount['survey value: witness checked by two checkers'],
+    '| witness checked by one checker | %d |' % tcount['survey value: witness checked by one checker'],
+    '| no witness checked here | %d |' % tcount['survey value: no checked witness'],
+    '| no survey value | %d |' % tcount['no survey value'], '',
+    "Checked witnesses that give more than the survey's table:", '', tabove, '',
+    'Intake: %d accepted, %d pending, %d recorded as claims with no file checked here'
+    % (tint['accepted'], tint['pending'], tint['noted']) + ' (`table/CURRENT.md`). To offer a witness, open a GitHub issue',
+    'with the template "Offer a witness".'])
 phase2 = rd('phase2/README_section.md') + '\n' if os.path.exists('phase2/README_section.md') else ''
 fl = rd('results/fetch_log.txt').split('\n'); fetch_ok = sum(1 for l in fl if l.startswith('OK ')); fetch_n = len(fl) - 1
 
@@ -56,10 +83,14 @@ bounds) searches for a clique of the forbidden size. `selftest.py` checks the so
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
-The results below are those of 4 November 2026. Phase 2 (7 to 21 November 2026) adds witnesses, checks and notes for the
-105 cells that had no public witness then. It is summarized in the section Phase 2 below and kept in `phase2/`.
+The current table comes first. The dated sections after it are kept, with their dates added to the headings: the results of 4 November 2026
+(phase 1), and phase 2 (7 to 21 November 2026), which added witnesses, checks and notes for the 105 cells that had no
+public witness then and is kept in `phase2/`. Two statements, one of them in the License section, are corrected and
+recorded in `CORRECTIONS.md`.
 
-## Results
+{current}
+
+## Results of 4 November 2026 (phase 1)
 
 {fmt(S['manifest_witnesses'])} witnesses are listed in `sources/manifest.csv` ({S['committed']} of them are in this repository; the others are
 downloaded from their original URLs by `fetch_data.py`, and all {fetch_n} downloads matched the recorded SHA-256, `results/fetch_log.txt`).
@@ -91,7 +122,7 @@ Every lower bound in the survey's tables Ia, IIa, IIb, IIc, XIa, XIb and the bou
 Only witnesses for exactly the cell's parameters are counted. The survey is the reference point only; these are
 statements about public files, checked on the dates in `results/VERIFICATION.md`.
 
-### Public witnesses above the survey's table
+### Public witnesses above the survey's table (4 November 2026)
 
 These witness files passed here and give a larger lower bound than the survey's table entry:
 
@@ -105,13 +136,13 @@ of fritzcremer/ramsey-lower-bounds (arXiv:2610.12122, October 2026) and of Lachy
 repository files and of version 5 of arXiv:2603.09172, not the values the survey cites. So this list is of files
 newer than the survey or not cited in it, not of omissions from the survey.
 
-### Witnesses for cells the survey leaves blank
+### Witnesses for cells the survey leaves blank (4 November 2026)
 
 | number | bound from the witness | witness | checked |
 |---|---|---|---|
 {blank}
 
-### Public files above the survey that were not fully checked here
+### Public files above the survey that were not fully checked here (4 November 2026)
 
 | number | bound the file would give | survey | witness | check here |
 |---|---|---|---|---|
@@ -130,7 +161,7 @@ Two-color with l > 15 ({n1}): {m1}.
 
 Multicolor ({n2}): {m2}.
 
-### Witnesses constructed here
+### Witnesses constructed here (4 November 2026)
 
 `constructions/build.py` builds these deterministically (Paley graphs Q_p and the doubling of Q_p on 2p + 2 vertices
 described in the survey, the 5-cycle, the GF(16) cube-coset coloring of K_16, the cubic-residue graph on Z_127 and the cube-coset coloring
@@ -217,7 +248,11 @@ with its date and reason, in `CORRECTIONS.md`.
 
 ## License
 
-MIT (`LICENSE`), except the files in `third_party/`, which keep their own licenses (see the NOTICE file in each folder).
+MIT (`LICENSE`) for this repository's own code and text. Third-party files keep their own licenses or terms, recorded
+with them: in `third_party/` the NOTICE file of each folder, in `phase2/witnesses/` the license column of
+`phase2/witnesses/manifest.csv`, in `intake/witnesses/` its `NOTICE.md`, and for third-party inputs and copies kept
+elsewhere in `phase2/` (for example `phase2/witnesses/inputs/` and the files sent by their authors in
+`phase2/scripts_as_run/`) the row or note that uses them, with its credit.
 
 Christopher Smolen, November 2026.
 '''

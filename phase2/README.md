@@ -72,7 +72,7 @@ on request and credited to him as personal communication (`CORRECTIONS.md` appli
   by clique.c and gen0, with controls. The record is `checks/logs/exoo_2026-11-16/` and the script is
   `scripts_as_run/exoo_2026-11-16/exoo_check.py`.
 
-One witness above the survey's table was added on 21 November. It is not one of the 105 cells. Table XIb of the
+A witness for R(3,3,16), built here, was added on 21 November. It is not one of the 105 cells. Table XIb of the
 survey lists R(3,3,16) >= 291 [ExT], and that value has a public witness, checked in phase 1. The survey's item 6.2.g
 (p.58), R(3,k,l) >= 4R(k,l-1) - 3 [XuX2, XXER], with its own entry R(3,15) >= 74 [Kol2] (Tables Ia and IIa), gives
 4 * 74 - 3 = 293.

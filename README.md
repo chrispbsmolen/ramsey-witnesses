@@ -11,10 +11,66 @@ bounds) searches for a clique of the forbidden size. `selftest.py` checks the so
 graphs and on planted cliques and corrupted witnesses; `crosscheck.py` rechecks some witnesses with networkx, which
 shares no solver code with `clique.c`.
 
-The results below are those of 4 November 2026. Phase 2 (7 to 21 November 2026) adds witnesses, checks and notes for the
-105 cells that had no public witness then. It is summarized in the section Phase 2 below and kept in `phase2/`.
+The current table comes first. The dated sections after it are kept, with their dates added to the headings: the results of 4 November 2026
+(phase 1), and phase 2 (7 to 21 November 2026), which added witnesses, checks and notes for the 105 cells that had no
+public witness then and is kept in `phase2/`. Two statements, one of them in the License section, are corrected and
+recorded in `CORRECTIONS.md`.
 
-## Results
+## Current table
+
+`table/` holds one table of record: the phase-1 results of 4 November 2026, phase 2
+(closed at commit 1d7aabe by its Amendment 11), and the intake under `registration/REGISTRATION_intake.md`. The intake
+holds the items in flight at phase 2's close and everything received or found since, each in its own row. The
+third-party files and claims that phase 2 recorded only in its notes, search records or check logs stay there, and
+each is entered when its file has been fetched at a fixed address and checked here. It is
+written by `table/make_register.py` and checked by
+`table/check_register.py`, and its columns are described in `table/COLUMNS.md`. Each row says exactly what was
+checked and how. The word VERIFIED is used only with the meaning a registration gives it (`registration/`): in the
+dated sections below, and in the columns of the table that copy a phase label unchanged.
+
+| survey value (revision 18) | cells |
+|---|---|
+| witness checked by two independent checkers | 102 |
+| witness checked by one checker | 72 |
+| no witness checked here | 30 |
+| no survey value | 3 |
+
+Checked witnesses that give more than the survey's table:
+
+| number | survey [ref] | bound from the witness | file credit | origin | checks | survey basis | entered |
+|---|---|---|---|---|---|---|---|
+| R(4,15) | 159 [NaRT] | 163 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | two checkers, every color | above the survey table | 2026-11-04 |
+| R(6,8) | 134 [ExT] | 135 | witness graphs in the GitHub repository fritzcremer/ramsey-lower-bounds (arXiv:2610.12122) | third party: public file | two checkers, every color | above the survey table | 2026-11-04 |
+| R(3,17) | 92 [W1+] | 93 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,18) | 100 [NaRT] | 101 | Rustem Galyavin | third party: public file | two checkers, every color | above the survey table | 2026-11-21 |
+| R(4,16) | 170 [Tat] | 174 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(4,18) | 205 [2.3.e] | 212 | Rustem Galyavin | third party: public file | two checkers, every color | above the survey table | 2026-11-21 |
+| R(4,19) | 213 [2.3.h] | 219 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(4,20) | 234 [Ex16] | 237 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(4,21) | 242 [SLZL] | 244 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,24) | 143 [W1+] | 151 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,25) | 154 [W2+] | 160 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,26) | 161 [FuLS] | 163 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,28) | 179 [FuLS] | 181 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,29) | 190 [LiLi] | 194 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,30) | 197 [FuLS] | 199 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,31) | 208 [FuLS] | 210 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,32) | 217 [LiLi] | 219 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(5,5,5,5,5) | 41626 [Row5] | 44338 | Courties, github.com/JuloJC/multicolour-ramsey-numbers, commit d9ca62fe0307bebf00e519103cb711e588b69a5f (6 Nov 2026), records/R_5_5_5_5_5_n44337_firstrow.txt (CC0 1.0) | third party: public file | two checkers, symmetry-reduced | above the survey table | 2026-11-12 |
+| R(3,3,9) | 129 [Ex18] | 133 | Lachlan Dauth, Neighbourhood counting and new bounds for small three-colour Ramsey numbers (preprint), ancillary data | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,3,11) | 174 [ExT] | 183 | Lachlan Dauth, Neighbourhood counting and new bounds for small three-colour Ramsey numbers (preprint), ancillary data | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,3,12) | 194 [ExT] | 203 | Lachlan Dauth, Neighbourhood counting and new bounds for small three-colour Ramsey numbers (preprint), ancillary data | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,3,13) | 217 [ExT] | 232 | Lachlan Dauth, Neighbourhood counting and new bounds for small three-colour Ramsey numbers (preprint), ancillary data | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,3,14) | 242 [ExT] | 267 | Lachlan Dauth, Neighbourhood counting and new bounds for small three-colour Ramsey numbers (preprint), ancillary data | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(3,3,16) | 291 [ExT] | 293 | Xu, Xie, Exoo, Radziszowski, Constructive lower bounds on classical multicolor Ramsey numbers, Electron. J. Combin. 11 (2004) #R35, Theorem 7 (p.11) and its proof (pp.11-12) (survey item 6.2.g, p.58, references XuX2 and XXER), applied to M. Kolodyazhny, New lower bounds for Ramsey numbers (in Russian), article 17 of the Aluarium forum, dated 31 March 2016 (the survey's reference Kol2), the (3,15;73) graph printed on that page, read from the same three Wayback Machine captures as the R(3,14) row (phase2/witnesses/inputs/R3_15_n73_Kol2.colormat.gz) | built here from a published construction | two checkers, every color | implied by the survey's own items | 2026-11-21 |
+| R(3,5,5) | 139 [Ex17] | 140 | Courties, github.com/JuloJC/multicolour-ramsey-numbers, commit d9ca62fe0307bebf00e519103cb711e588b69a5f (6 Nov 2026), records/R_3_5_5_n139_firstrow.txt (CC0 1.0) | third party: public file | two checkers, every color | above the survey table | 2026-11-12 |
+| R(3,5,6) | 181 [Ex17] | 192 | Courties, github.com/JuloJC/multicolour-ramsey-numbers, commit d9ca62fe0307bebf00e519103cb711e588b69a5f (6 Nov 2026), records/R_3_5_6_n191_firstrow.txt (CC0 1.0) | third party: public file | two checkers, every color | above the survey table | 2026-11-12 |
+| R(6,6,6,6,6,6) | 4515702 [Row2/Row3 (linear Ramsey graphs)] | 5499102 | Rowley, A generalised linear Ramsey graph construction, Australas. J. Combin. 81(2) (2021) 245-256, Def. 3.1 and Thm 3.2 p.248, construction and proof pp.248-250, with Rowley Table 1 and its ancillary sheet: U = (6,6,3;235), column 15, phi = 100, V = the R(6,6,6,6) object, N = 234*23500+1+100 = 5499101 | built here from a published construction | two checkers and a cited theorem | above the survey table | 2026-11-12 |
+
+Intake: 3 accepted, 0 pending, 0 recorded as claims with no file checked here (`table/CURRENT.md`). To offer a witness, open a GitHub issue
+with the template "Offer a witness".
+
+## Results of 4 November 2026 (phase 1)
 
 213 witnesses are listed in `sources/manifest.csv` (32 of them are in this repository; the others are
 downloaded from their original URLs by `fetch_data.py`, and all 181 downloads matched the recorded SHA-256, `results/fetch_log.txt`).
@@ -48,7 +104,7 @@ Every lower bound in the survey's tables Ia, IIa, IIb, IIc, XIa, XIb and the bou
 Only witnesses for exactly the cell's parameters are counted. The survey is the reference point only; these are
 statements about public files, checked on the dates in `results/VERIFICATION.md`.
 
-### Public witnesses above the survey's table
+### Public witnesses above the survey's table (4 November 2026)
 
 These witness files passed here and give a larger lower bound than the survey's table entry:
 
@@ -82,14 +138,14 @@ of fritzcremer/ramsey-lower-bounds (arXiv:2610.12122, October 2026) and of Lachy
 repository files and of version 5 of arXiv:2603.09172, not the values the survey cites. So this list is of files
 newer than the survey or not cited in it, not of omissions from the survey.
 
-### Witnesses for cells the survey leaves blank
+### Witnesses for cells the survey leaves blank (4 November 2026)
 
 | number | bound from the witness | witness | checked |
 |---|---|---|---|
 | R(8,12) | 511 | `alphaevolve/R(8, 12) >= 511.txt` | no K_8 and no independent 12-set (two separate processes) |
 | R(9,11) | 617 | `alphaevolve/R(9, 11) >= 617.txt` | no K_9 and no independent 11-set (two separate processes) |
 
-### Public files above the survey that were not fully checked here
+### Public files above the survey that were not fully checked here (4 November 2026)
 
 | number | bound the file would give | survey | witness | check here |
 |---|---|---|---|---|
@@ -129,7 +185,7 @@ Two-color with l > 15 (36): R(16,16) >= 5,605 [2.2.c] (recipe), R(17,17) >= 8,91
 
 Multicolor (50): R(5,5,5) >= 454 [Ex23], R(6,6,6) >= 1,106 [Row3], R(7,7,7) >= 3,214 [XuR1] (recipe), R(8,8,8) >= 7,174 [Row5], R(9,9,9) >= 15,041 [Row5], R(10,10,10) >= 23,094 [Row5], R(3,3,3,3) >= 51 [Chu1] (recipe), R(4,4,4,4) >= 634 [XXER], R(5,5,5,5) >= 4,073 [Row3], R(6,6,6,6) >= 23,502 [Row5], R(7,7,7,7) >= 94,874 [Row5], R(8,8,8,8) >= 182,002 [Row5], R(9,9,9,9) >= 719,204 [Row5], R(3,3,3,3,3) >= 162 [Ex10], R(4,4,4,4,4) >= 4,176 [Row1], R(5,5,5,5,5) >= 41,626 [Row5], R(6,6,6,6,6) >= 258,506 [Row5], R(3,3,3,3,3,3) >= 538 [FreSw], R(4,4,4,4,4,4) >= 32,006 [Row1], R(5,5,5,5,5,5) >= 441,606 [Row5], R(3,3,3,3,3,3,3) >= 1,698 [Row4], R(4,4,4,4,4,4,4) >= 160,024 [Row1], R(3,3,3,3,3,3,3,3) >= 5,288 [Row3], R(3,3,3,3,3,3,3,3,3) >= 17,805 [AgCP+], R(3,3,4) >= 30 [Ka2], R(3,3,5) >= 45 [Ex2], R(3,3,7) >= 85 [Ex18], R(3,3,8) >= 103 [Ex18], R(3,4,4) >= 55 [KrLR], R(3,4,6) >= 117 [Ex17], R(3,4,8) >= 193 [6.2.g] (recipe), R(3,5,5) >= 139 [Ex17], R(3,5,6) >= 181 [Ex17], R(3,5,7) >= 241 [6.2.g] (recipe), R(3,3,3,4) >= 97 [Ex17], R(3,3,4,4) >= 174 [Row2], R(3,4,4,4) >= 381 [6.2.j] (recipe), R(3,3,3,5) >= 162 [XXER], R(3,3,3,10) >= 513 [6.2.g] (recipe), R(3,3,3,11) >= 597 [6.2.g] (recipe), R(3,4,5,5) >= 729 [Row2], R(3,5,5,5) >= 1,430 [Row5], R(3,6,6) >= 338 [Row5], R(3,7,7) >= 674 [Row5], R(3,8,8) >= 941 [Row5], R(3,9,9) >= 1,844 [Row5], R(3,10,10) >= 2,841 [Row5], R(8,8,9) >= 10,769 [Row5], R(6,6,6,6,6,6) >= 4,515,702 [Row2/Row3 (linear Ramsey graphs)], R(3,3,3,7) >= 247 [6.2.h (derived, unpublished explicit)] (recipe).
 
-### Witnesses constructed here
+### Witnesses constructed here (4 November 2026)
 
 `constructions/build.py` builds these deterministically (Paley graphs Q_p and the doubling of Q_p on 2p + 2 vertices
 described in the survey, the 5-cycle, the GF(16) cube-coset coloring of K_16, the cubic-residue graph on Z_127 and the cube-coset coloring
@@ -181,7 +237,7 @@ Observations made on the way (a misprint in Shearer 1986, three constructions th
 
 No row is PARTIAL.
 
-**A witness above the survey's table.** One witness above the survey's table was added on 21 November. It is not one of the 105 cells. Table XIb of the survey lists R(3,3,16) >= 291 [ExT], and that value has a public witness, checked in phase 1. The survey's item 6.2.g (p.58), R(3,k,l) >= 4R(k,l-1) - 3 [XuX2, XXER], with its own entry R(3,15) >= 74 [Kol2] (Tables Ia and IIa), gives 4 * 74 - 3 = 293. `phase2/witnesses/R3_3_16_n292.colormat.gz` is a 3-coloring of K_292 with no triangle in colors 1 and 2 and no K_16 in color 3, so R(3,3,16) >= 293. It was built here by the construction in the proof of Theorem 7 of Xu, Xie, Exoo and Radziszowski (Electron. J. Combin. 11 (2004) #R35, pp.11-12) from Kolodyazhny's (3,15;73) graph, read from the same archived page as the R(3,14) graph. Every color was checked on the whole graph by `clique.c` and `gen0.c`, with controls. This is not a new bound. It is a checked, explicit coloring for the value the survey's own items give. The row is in `phase2/above_survey.csv` and `phase2/COVERAGE.md`, and the logs are in `phase2/checks/logs/build_r3316_292/`.
+**R(3,3,16), built here above the survey's table.** A witness for R(3,3,16), built here, was added on 21 November. It is not one of the 105 cells. Table XIb of the survey lists R(3,3,16) >= 291 [ExT], and that value has a public witness, checked in phase 1. The survey's item 6.2.g (p.58), R(3,k,l) >= 4R(k,l-1) - 3 [XuX2, XXER], with its own entry R(3,15) >= 74 [Kol2] (Tables Ia and IIa), gives 4 * 74 - 3 = 293. `phase2/witnesses/R3_3_16_n292.colormat.gz` is a 3-coloring of K_292 with no triangle in colors 1 and 2 and no K_16 in color 3, so R(3,3,16) >= 293. It was built here by the construction in the proof of Theorem 7 of Xu, Xie, Exoo and Radziszowski (Electron. J. Combin. 11 (2004) #R35, pp.11-12) from Kolodyazhny's (3,15;73) graph, read from the same archived page as the R(3,14) graph. Every color was checked on the whole graph by `clique.c` and `gen0.c`, with controls. This is not a new bound. It is a checked, explicit coloring for the value the survey's own items give. The row is in `phase2/above_survey.csv` and `phase2/COVERAGE.md`, and the logs are in `phase2/checks/logs/build_r3316_292/`.
 
 ## Usage
 
@@ -265,6 +321,10 @@ with its date and reason, in `CORRECTIONS.md`.
 
 ## License
 
-MIT (`LICENSE`), except the files in `third_party/`, which keep their own licenses (see the NOTICE file in each folder).
+MIT (`LICENSE`) for this repository's own code and text. Third-party files keep their own licenses or terms, recorded
+with them: in `third_party/` the NOTICE file of each folder, in `phase2/witnesses/` the license column of
+`phase2/witnesses/manifest.csv`, in `intake/witnesses/` its `NOTICE.md`, and for third-party inputs and copies kept
+elsewhere in `phase2/` (for example `phase2/witnesses/inputs/` and the files sent by their authors in
+`phase2/scripts_as_run/`) the row or note that uses them, with its credit.
 
 Christopher Smolen, November 2026.

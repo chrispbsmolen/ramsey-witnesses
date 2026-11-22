@@ -143,6 +143,11 @@ Kolodyazhny's (3,14;66) graph, which is not a Cayley graph, is the witness of ro
 These files or papers give more than the survey's value. They are recorded here only. The table counts each cell at
 the survey's value.
 
+The intake registration (`registration/REGISTRATION_intake.md`) applies to this section from the commit that adds it.
+The third-party files and claims that phase 2 recorded only in its notes, search records or check logs stay there, and
+each is entered when its file has been fetched at a fixed address and checked here.
+The table below is kept as it was written.
+
 | cell | claim | where | check here |
 |---|---|---|---|
 | R(5,15) | >= 283 (and >= 279) | arhancanli/quantavane-ramsey-records (CC BY 4.0), Zenodo 10.5281/zenodo.23920916 | the 282-vertex file passed both checkers |
