@@ -42,7 +42,6 @@ Written by `table/make_register.py` from `table/register.csv` and `table/cells.c
 | R(21,21) | 30925 [Ex23] | NO_FILE_FOUND | RECIPE ONLY |
 | R(22,22) | 39109 [Ex23] | NO_FILE_FOUND | RECIPE ONLY |
 | R(23,23) | 49421 [Ex23] | NO_FILE_FOUND | RECIPE ONLY |
-| R(3,23) | 139 [XWCS] | NO_FILE_FOUND | STILL NO FILE |
 | R(5,17) | 388 [XSR2] | NO_FILE_FOUND | NOT REPRODUCED |
 | R(5,18) | 396 [2.3.h] | RECIPE | STILL NO FILE |
 | R(5,19) | 411 [XSR2] | NO_FILE_FOUND | NOT REPRODUCED |
