@@ -17,6 +17,7 @@ Written by `table/make_register.py` from `table/register.csv` and `table/cells.c
 | R(4,19) | 213 [2.3.h] | 219 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(4,20) | 234 [Ex16] | 237 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(4,21) | 242 [SLZL] | 244 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(5,16) | 293 [ExT] | 323 | Eugene Kuznetsov, personal communication | third party: sent by the author | two checkers, every color | above the survey table | 2026-11-22 |
 | R(3,24) | 143 [W1+] | 151 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(3,25) | 154 [W2+] | 160 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(3,26) | 161 [FuLS] | 163 | Coniglio, Furini, Ljubic, San Segundo, Thuerauf, Traversi, certificates (arXiv:2608.18769) | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
