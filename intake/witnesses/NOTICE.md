@@ -67,3 +67,12 @@ SOFTWARE.
 - License: none
 - Changed: the author sent the order and the connection set of a circulant graph. The graph6 file was written here from
   them (`intake/checks/2026-11-15_kuznetsov_R3_23_n138_A/connection_set.txt`)
+
+## R3_23_n138_B.g6.gz
+
+- Creator: Eugene Kuznetsov
+- Source: sent by the author by email on 15 November 2026. Published here with his written permission (email of 22 November 2026),
+  credited as personal communication
+- License: none
+- Changed: the author sent the order and the connection set of a circulant graph. The graph6 file was written here from
+  them (`intake/checks/2026-11-15_kuznetsov_R3_23_n138_B/connection_set.txt`)
