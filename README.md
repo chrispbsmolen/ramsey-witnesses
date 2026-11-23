@@ -30,8 +30,8 @@ dated sections below, and in the columns of the table that copy a phase label un
 
 | survey value (revision 18) | cells |
 |---|---|
-| witness checked by two independent checkers | 102 |
-| witness checked by one checker | 72 |
+| witness checked by two independent checkers | 103 |
+| witness checked by one checker | 71 |
 | no witness checked here | 30 |
 | no survey value | 3 |
 
@@ -43,7 +43,7 @@ Checked witnesses that give more than the survey's table:
 | R(6,8) | 134 [ExT] | 135 | witness graphs in the GitHub repository fritzcremer/ramsey-lower-bounds (arXiv:2610.12122) | third party: public file | two checkers, every color | above the survey table | 2026-11-04 |
 | R(3,17) | 92 [W1+] | 93 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(3,18) | 100 [NaRT] | 101 | Rustem Galyavin | third party: public file | two checkers, every color | above the survey table | 2026-11-21 |
-| R(4,16) | 170 [Tat] | 174 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
+| R(4,16) | 170 [Tat] | 178 | Eugene Kuznetsov, personal communication | third party: sent by the author | two checkers, every color | above the survey table | 2026-11-22 |
 | R(4,18) | 205 [2.3.e] | 212 | Rustem Galyavin | third party: public file | two checkers, every color | above the survey table | 2026-11-21 |
 | R(4,19) | 213 [2.3.h] | 219 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(4,20) | 234 [Ex16] | 237 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
@@ -67,7 +67,7 @@ Checked witnesses that give more than the survey's table:
 | R(3,5,6) | 181 [Ex17] | 192 | Courties, github.com/JuloJC/multicolour-ramsey-numbers, commit d9ca62fe0307bebf00e519103cb711e588b69a5f (6 Nov 2026), records/R_3_5_6_n191_firstrow.txt (CC0 1.0) | third party: public file | two checkers, every color | above the survey table | 2026-11-12 |
 | R(6,6,6,6,6,6) | 4515702 [Row2/Row3 (linear Ramsey graphs)] | 5499102 | Rowley, A generalised linear Ramsey graph construction, Australas. J. Combin. 81(2) (2021) 245-256, Def. 3.1 and Thm 3.2 p.248, construction and proof pp.248-250, with Rowley Table 1 and its ancillary sheet: U = (6,6,3;235), column 15, phi = 100, V = the R(6,6,6,6) object, N = 234*23500+1+100 = 5499101 | built here from a published construction | two checkers and a cited theorem | above the survey table | 2026-11-12 |
 
-Intake: 5 accepted, 0 pending, 0 recorded as claims with no file checked here (`table/CURRENT.md`). To offer a witness, open a GitHub issue
+Intake: 6 accepted, 0 pending, 0 recorded as claims with no file checked here (`table/CURRENT.md`). To offer a witness, open a GitHub issue
 with the template "Offer a witness".
 
 ## Results of 4 November 2026 (phase 1)
