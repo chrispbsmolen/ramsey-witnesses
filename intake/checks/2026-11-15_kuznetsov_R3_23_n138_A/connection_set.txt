@@ -1,0 +1,4 @@
+order 138
+connection set (distances, each joined in both directions)
+2 3 8 12 18 34 43 49 56 62 66
+graph6 written by networkx.circulant_graph(138, connection set), compressed with gzip level 9 and mtime 0

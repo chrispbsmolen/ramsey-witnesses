@@ -58,3 +58,12 @@ SOFTWARE.
   disclaims warranties (its section 5)
 - Changed: compressed with `gzip -n -9`. The content is the published file byte for byte (SHA-256
   5d0e20dc8de6205e0af37f58624d7136c23b2f64836875a924bb8f8bb77fbad7)
+
+## R3_23_n138_A.g6.gz
+
+- Creator: Eugene Kuznetsov
+- Source: sent by the author by email on 15 November 2026. Published here with his written permission (email of 22 November 2026),
+  credited as personal communication
+- License: none
+- Changed: the author sent the order and the connection set of a circulant graph. The graph6 file was written here from
+  them (`intake/checks/2026-11-15_kuznetsov_R3_23_n138_A/connection_set.txt`)
