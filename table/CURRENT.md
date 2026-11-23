@@ -7,6 +7,7 @@ Written by `table/make_register.py` from `table/register.csv` and `table/cells.c
 | number | survey [ref] | bound from the witness | file credit | origin | checks | survey basis | entered |
 |---|---|---|---|---|---|---|---|
 | R(4,15) | 159 [NaRT] | 163 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | two checkers, every color | above the survey table | 2026-11-04 |
+| R(5,13) | 233 [Kuz] | 235 | Eugene Kuznetsov, personal communication | third party: sent by the author | two checkers, every color | above the survey table | 2026-11-22 |
 | R(6,8) | 134 [ExT] | 135 | witness graphs in the GitHub repository fritzcremer/ramsey-lower-bounds (arXiv:2610.12122) | third party: public file | two checkers, every color | above the survey table | 2026-11-04 |
 | R(3,17) | 92 [W1+] | 93 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | above the survey table | 2026-11-04 |
 | R(3,18) | 100 [NaRT] | 101 | Rustem Galyavin | third party: public file | two checkers, every color | above the survey table | 2026-11-21 |
