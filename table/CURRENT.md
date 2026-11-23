@@ -43,6 +43,7 @@ Written by `table/make_register.py` from `table/register.csv` and `table/cells.c
 |---|---|---|---|---|---|
 | R(8,12) | 511 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | 2026-11-04 |
 | R(9,11) | 617 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | 2026-11-04 |
+| R(6,14) | 357 | Eugene Kuznetsov, personal communication | third party: sent by the author | two checkers, every color | 2026-11-22 |
 
 ## Survey values with no checked witness
 
