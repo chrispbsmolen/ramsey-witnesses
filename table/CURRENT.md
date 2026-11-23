@@ -34,6 +34,13 @@ Written by `table/make_register.py` from `table/register.csv` and `table/cells.c
 | R(3,5,6) | 181 [Ex17] | 192 | Courties, github.com/JuloJC/multicolour-ramsey-numbers, commit d9ca62fe0307bebf00e519103cb711e588b69a5f (6 Nov 2026), records/R_3_5_6_n191_firstrow.txt (CC0 1.0) | third party: public file | two checkers, every color | above the survey table | 2026-11-12 |
 | R(6,6,6,6,6,6) | 4515702 [Row2/Row3 (linear Ramsey graphs)] | 5499102 | Rowley, A generalised linear Ramsey graph construction, Australas. J. Combin. 81(2) (2021) 245-256, Def. 3.1 and Thm 3.2 p.248, construction and proof pp.248-250, with Rowley Table 1 and its ancillary sheet: U = (6,6,3;235), column 15, phi = 100, V = the R(6,6,6,6) object, N = 234*23500+1+100 = 5499101 | built here from a published construction | two checkers and a cited theorem | above the survey table | 2026-11-12 |
 
+## Checked witnesses for cells the survey gives no lower bound
+
+| number | bound from the witness | file credit | origin | checks | entered |
+|---|---|---|---|---|---|
+| R(8,12) | 511 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | 2026-11-04 |
+| R(9,11) | 617 | Nagda, Raghavan and Thakurta (AlphaEvolve), arXiv:2603.09172, witness matrices | third party: public file | one checker, every color | 2026-11-04 |
+
 ## Survey values with no checked witness
 
 | number | survey [ref] | status on 4 November | phase-2 label |

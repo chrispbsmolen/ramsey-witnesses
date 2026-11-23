@@ -258,6 +258,13 @@ for c in cells:
         out.append('| %s | %s [%s] | %s | %s | %s | %s | %s | %s |' % (
             R(c['cell']), c['survey_lower'], c['survey_ref'], c['best_bound'], b['file_credit'], b['origin'],
             b['checks'], b['survey_basis'], b['entered_on']))
+out += ['', '## Checked witnesses for cells the survey gives no lower bound', '',
+        '| number | bound from the witness | file credit | origin | checks | entered |', '|---|---|---|---|---|---|']
+for c in cells:
+    if c['status_now'] == 'no survey value' and c['best_witness']:
+        b = byid[c['best_witness']]
+        out.append('| %s | %s | %s | %s | %s | %s |' % (R(c['cell']), c['best_bound'], b['file_credit'], b['origin'],
+                                                    b['checks'], b['entered_on']))
 out += ['', '## Survey values with no checked witness', '',
         '| number | survey [ref] | status on 4 November | phase-2 label |', '|---|---|---|---|']
 for c in cells:

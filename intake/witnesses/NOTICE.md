@@ -1,7 +1,7 @@
 # Third-party files in intake/witnesses
 
-Each file here is a third-party file stored under its license. For each: the creator, the source, the license, and
-what was changed.
+Each file here is a third-party file, stored under its license or with its author's written permission. For each: the
+creator, the source, the license, and what was changed.
 
 ## R3_23_n138.g6.gz
 
